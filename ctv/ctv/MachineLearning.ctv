@@ -1,0 +1,273 @@
+<CRANTaskView>
+
+  <name>MachineLearning</name>
+  <topic>Machine Learning &amp; Statistical Learning</topic>
+  <maintainer email="Torsten.Hothorn@R-project.org">Torsten Hothorn</maintainer>
+  <version>2014-07-18</version>
+  
+  <info>
+    Several add-on packages implement ideas and methods developed at the
+    borderline between computer science and statistics - this field of research
+    is usually referred to as machine learning. 
+
+    The packages can be roughly structured into the following topics:
+    <ul>
+      <li><i>Neural Networks</i>: Single-hidden-layer neural network are 
+             implemented in package <pkg>nnet</pkg> (shipped with base R).
+             Package <pkg>RSNNS</pkg> offers an interface to the Stuttgart 
+             Neural Network Simulator (SNNS).</li>
+      <li><i>Recursive Partitioning</i>: Tree-structured models for
+             regression, classification and survival analysis, following the
+	     ideas in the CART book, are
+             implemented in <pkg>rpart</pkg> (shipped with base R) and <pkg>tree</pkg>.
+             Package <pkg>rpart</pkg> is recommended for computing CART-like
+             trees. 
+             A rich toolbox of partitioning algorithms is available in
+             <a href="http://www.cs.waikato.ac.nz/~ml/weka/">Weka</a>, 
+             package <pkg>RWeka</pkg> provides an interface to this
+             implementation, including the J4.8-variant of C4.5 and M5.
+             The <pkg>Cubist</pkg> package fits rule-based models (similar
+             to trees) with linear regression models in the terminal leaves,
+             instance-based corrections and boosting. The <pkg>C50</pkg> package can fit
+             C5.0 classification trees, rule-based models, and boosted versions of these.
+             <br/>
+             Two recursive partitioning algorithms with unbiased variable
+             selection and statistical stopping criterion are implemented in 
+             package <pkg>party</pkg>. Function <code>ctree()</code> is based on 
+             non-parametrical conditional inference procedures for testing 
+             independence between response and each input variable whereas
+             <code>mob()</code> can be used to partition parametric models.
+             Extensible tools for visualizing binary trees
+             and node distributions of the response are available in package
+             <pkg>party</pkg> as well.
+             <br/>
+             An adaptation of <pkg>rpart</pkg> for multivariate responses
+             is available in package <pkg>mvpart</pkg>. For problems with binary input variables
+             the package <pkg>LogicReg</pkg> implements logic regression.
+             Graphical tools for the visualization of
+             trees are available in package <pkg>maptree</pkg>.
+             <br/> Trees for modelling longitudinal data by means of
+             random effects is offered by package <pkg>REEMtree</pkg>.
+	     Partitioning of mixture models is performed by <pkg>RPMM</pkg>.
+             <br/>
+             Computational infrastructure for representing trees and
+             unified methods for predition and visualization is implemented
+             in <pkg>partykit</pkg>.
+	     This infrastructure is used by package <pkg>evtree</pkg> to implement evolutionary learning 
+             of globally optimal trees.
+             Oblique trees are available in package <pkg>oblique.tree</pkg>.</li>
+      <li><i>Random Forests</i>: The reference implementation of the random
+             forest algorithm for regression and classification is available in 
+             package <pkg>randomForest</pkg>. Package <pkg>ipred</pkg> has bagging
+             for regression, classification and survival analysis as well as
+             bundling, a combination of multiple models via
+             ensemble learning. In addition, a random forest variant for
+             response variables measured at arbitrary scales based on
+             conditional inference trees is implemented in package <pkg>party</pkg>.
+             <pkg>randomForestSRC</pkg> implements a unified treatment of Breiman's random forests for
+             survival, regression and classification problems. Quantile regression forests <pkg>quantregForest</pkg>
+             allow to regress quantiles of a numeric response on exploratory
+             variables via a random forest approach.
+             The <pkg>varSelRF</pkg> and <pkg>Boruta</pkg> packages focus on variable selection by means
+             for random forest algorithms. For large data sets, package <pkg>bigrf</pkg> 
+             computes random forests in parallel and uses large memory objects 
+             to store the data.</li>
+      <li><i>Regularized and Shrinkage Methods</i>: Regression models with some
+             constraint on the parameter estimates can be fitted with the
+             <pkg>lasso2</pkg> and <pkg>lars</pkg> packages.  Lasso with
+             simultaneous updates for groups of parameters (groupwise lasso)
+             is available in package <pkg>grplasso</pkg>; the
+             <pkg>grpreg</pkg> package implements a number of other group
+             penalization models, such as group MCP and group SCAD.
+             The L1 regularization path for generalized linear models and
+             Cox models can be obtained from functions available in package 
+             <pkg>glmpath</pkg>, the entire lasso or elastic-net regularization path (also in <pkg>elasticnet</pkg>)
+             for linear regression, 
+             logistic and multinomial regression models can be obtained from package <pkg>glmnet</pkg>.
+             The <pkg>penalized</pkg> package provides
+             an alternative implementation of lasso (L1) and ridge (L2) 
+             penalized regression models (both GLM and Cox models).
+             Package <pkg>RXshrink</pkg> can be used to identify and display TRACEs 
+             for a specified shrinkage path and to determine the appropriate extent of shrinkage.
+             Semiparametric additive hazards models under lasso penalties are offered
+             by package <pkg>ahaz</pkg>.
+             A generalisation of the Lasso shrinkage technique for linear regression
+             is called relaxed lasso and is available in package <pkg>relaxo</pkg>.
+             Fisher's LDA projection with an optional LASSO penalty to produce sparse 
+             solutions is implemented in package  <pkg>penalizedLDA</pkg>.
+             The shrunken
+             centroids classifier and utilities for gene expression analyses are
+             implemented in package <pkg>pamr</pkg>. An implementation
+             of multivariate adaptive regression splines is available
+             in package <pkg>earth</pkg>. Variable selection through clone selection
+             in SVMs in penalized models (SCAD or L1 penalties) is implemented
+             in package <pkg>penalizedSVM</pkg>. Various forms of
+             penalized discriminant analysis are implemented in 
+             packages <pkg>hda</pkg>, <pkg>rda</pkg>, <pkg>sda</pkg>, and
+             <pkg>SDDA</pkg>. Package <pkg>LiblineaR</pkg> offers an interface to 
+             the LIBLINEAR library.
+             The <pkg>ncvreg</pkg> package fits linear and logistic
+             regression models under the the SCAD and MCP 
+             regression penalties using a coordinate descent algorithm.
+	     High-throughput ridge regression (i.e., penalization with many predictor variables) and
+	     heteroskedastic effects models are the focus of the <pkg>bigRR</pkg> package.
+             An implementation of bundle methods for regularized risk minimization 
+             is available form package <pkg>bmrm</pkg>.</li> 
+      <li><i>Boosting</i>: Various forms of gradient boosting are
+             implemented in package <pkg>gbm</pkg> (tree-based functional gradient
+             descent boosting). The Hinge-loss is optimized by the boosting implementation 
+             in package <pkg>bst</pkg>. Package <pkg>GAMBoost</pkg> can be used to fit generalized additive models
+             by a boosting algorithm. An extensible boosting framework for
+             generalized linear, additive and nonparametric models is available in
+             package <pkg>mboost</pkg>. Likelihood-based boosting for Cox models
+             is implemented in <pkg>CoxBoost</pkg> and for mixed models in
+             <pkg>GMMBoost</pkg>.
+             GAMLSS models can be fitted using boosting by <pkg>gamboostLSS</pkg>.</li>
+      <li><i>Support Vector Machines and Kernel Methods</i>: The function <code>svm()</code> from 
+             <pkg>e1071</pkg> offers an interface to the LIBSVM library and
+             package <pkg>kernlab</pkg> implements a flexible framework 
+             for kernel learning (including SVMs, RVMs and other kernel
+	     learning algorithms). An interface to the SVMlight implementation
+	     (only for one-against-all classification) is provided in package
+	     <pkg>klaR</pkg>.
+             The relevant dimension in kernel feature spaces can be estimated
+             using <pkg>rdetools</pkg> which also offers procedures for model selection
+             and prediction.</li>
+      <li><i>Bayesian Methods</i>: 
+             Bayesian nonstationary, semiparametric nonlinear regression 
+             and design by treed Gaussian processes including Bayesian CART and 
+             treed linear models are made available by package <pkg>tgp</pkg>.
+             </li>
+      <li><i>Optimization using Genetic Algorithms</i>:
+             Packages <pkg>rgp</pkg> and
+             <pkg>rgenoud</pkg> offer optimization routines based on genetic algorithms. 
+             The package <pkg>Rmalschains</pkg> implements memetic algorithms 
+             with local search chains, which are a special type of 
+             evolutionary algorithms, combining a steady state genetic 
+             algorithm with local search for real-valued
+             parameter optimization.</li>
+      <li><i>Association Rules</i>: Package
+             <pkg>arules</pkg> provides both data structures for efficient
+             handling of sparse binary data as well as interfaces to
+             implementations of Apriori and Eclat for mining
+             frequent itemsets, maximal frequent itemsets, closed 
+             frequent itemsets and association rules.</li>
+      <li><i>Fuzzy Rule-based Systems</i>:
+             Package <pkg>frbs</pkg> implements a host of standard 
+             methods for learning fuzzy rule-based systems from data 
+             for regression and classification. Package <pkg>RoughSets</pkg> provides comprehensive implementations of the
+             rough set theory (RST) and the fuzzy rough set theory (FRST) in a single
+             package.</li>
+      <li><i>Model selection and validation</i>: Package <pkg>e1071</pkg>
+             has function <code>tune()</code> for hyper parameter tuning and 
+             function <code>errorest()</code> (<pkg>ipred</pkg>) can be used for
+             error rate estimation. The cost parameter C for support vector
+             machines can be chosen utilizing the functionality of package
+             <pkg>svmpath</pkg>.
+             Functions for ROC analysis and other visualisation techniques 
+             for comparing candidate classifiers are available from package 
+             <pkg>ROCR</pkg>.
+             Package <pkg>caret</pkg> provides miscellaneous functions 
+             for building predictive models, including parameter tuning 
+             and  variable importance measures. The package can be used 
+             with various parallel implementations (e.g. MPI, NWS etc).</li>
+      <li><i>Elements of Statistical Learning</i>: Data sets, functions and
+             examples from the book 
+             <a href="http://www-stat.stanford.edu/~tibs/ElemStatLearn/">The Elements of Statistical Learning: Data Mining,
+             Inference, and Prediction</a> by Trevor Hastie, Robert Tibshirani and 
+             Jerome Friedman have been packaged and are available as
+             <pkg>ElemStatLearn</pkg>.</li>
+      <li><i>GUI</i><pkg>rattle</pkg> is a graphical user interface for data mining in R.</li>
+    </ul>
+  <pkg>CORElearn</pkg> implements a rather broad class of machine learning
+  algorithms, such as nearest neighbors, trees, random forests, and 
+  several feature selection methods. Similar, package <pkg>rminer</pkg> interfaces
+  several learning algorithms implemented in other packages and computes
+  several performance measures.
+  <pkg>h2o</pkg> is an R-interface to the <a href="https://github.com/0xdata/h2o">H20</a> 
+  framework for
+  distributed and parallel computing which includes implementations of Deeplearning, 
+  GLMs, Gradient Boosted Machines, Random Forests, PCA, and KMeans.
+  </info>
+
+  <packagelist>
+    <pkg>ahaz</pkg>
+    <pkg>arules</pkg>
+    <pkg>bigrf</pkg>
+    <pkg>bigRR</pkg>
+    <pkg>bmrm</pkg>
+    <pkg>Boruta</pkg>
+    <pkg>bst</pkg>
+    <pkg>C50</pkg>
+    <pkg>caret</pkg>
+    <pkg>CORElearn</pkg>
+    <pkg>CoxBoost</pkg>
+    <pkg>Cubist</pkg>
+    <pkg priority="core">e1071</pkg>
+    <pkg>ElemStatLearn</pkg>
+    <pkg>earth</pkg>
+    <pkg>elasticnet</pkg>
+    <pkg>evtree</pkg>
+    <pkg>frbs</pkg>
+    <pkg>GAMBoost</pkg>
+    <pkg>gamboostLSS</pkg>
+    <pkg priority="core">gbm</pkg>
+    <pkg>glmnet</pkg>
+    <pkg>glmpath</pkg>
+    <pkg>GMMBoost</pkg>
+    <pkg>grplasso</pkg>
+    <pkg>grpreg</pkg>
+    <pkg>h2o</pkg>
+    <pkg>hda</pkg>
+    <pkg>ipred</pkg>
+    <pkg priority="core">kernlab</pkg>
+    <pkg>klaR</pkg>
+    <pkg>lars</pkg>
+    <pkg>lasso2</pkg>
+    <pkg>LiblineaR</pkg>
+    <pkg>LogicReg</pkg>
+    <pkg>maptree</pkg>
+    <pkg priority = "core">mboost</pkg>
+    <pkg>mvpart</pkg>
+    <pkg>ncvreg</pkg>
+    <pkg priority="core">nnet</pkg>
+    <pkg>oblique.tree</pkg>
+    <pkg>pamr</pkg>
+    <pkg>party</pkg>
+    <pkg>partykit</pkg>
+    <pkg>penalized</pkg>
+    <pkg>penalizedLDA</pkg>
+    <pkg>penalizedSVM</pkg>
+    <pkg>quantregForest</pkg>
+    <pkg priority="core">randomForest</pkg>
+    <pkg>randomForestSRC</pkg>
+    <pkg>rattle</pkg>
+    <pkg>rda</pkg>
+    <pkg>rdetools</pkg>
+    <pkg>relaxo</pkg>
+    <pkg>REEMtree</pkg>
+    <pkg>rgenoud</pkg>
+    <pkg>rgp</pkg>
+    <pkg>Rmalschains</pkg>
+    <pkg>rminer</pkg>
+    <pkg>ROCR</pkg>
+    <pkg>RoughSets</pkg>
+    <pkg priority="core">rpart</pkg>
+    <pkg>RPMM</pkg>
+    <pkg>RSNNS</pkg>
+    <pkg>RWeka</pkg>
+    <pkg>RXshrink</pkg>
+    <pkg>sda</pkg>
+    <pkg>SDDA</pkg>
+    <pkg>svmpath</pkg>
+    <pkg>tgp</pkg>
+    <pkg>tree</pkg>
+    <pkg>varSelRF</pkg>
+  </packagelist>
+
+  <links>
+    <a href="http://www.MLOSS.org/">MLOSS: Machine Learning Open Source Software</a>
+    <a href="http://www.boosting.org/">Boosting Research Site</a>
+  </links>
+
+</CRANTaskView>

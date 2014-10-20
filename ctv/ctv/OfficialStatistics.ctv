@@ -1,0 +1,574 @@
+<CRANTaskView>
+
+<name>OfficialStatistics</name>
+<topic>Official Statistics &amp; Survey Methodology</topic>
+<maintainer email="matthias.templ@gmail.com">Matthias Templ</maintainer>
+<version>2014-06-25</version>
+  
+<info> This CRAN task view contains a list of packages that includes
+methods typically used in official statistics and survey methodology.
+Many packages provide functionality for more than one of the topics listed 
+below.  Therefore this list is not a strict categorization and packages can be 
+listed more than once. Certain data import/export facilities regarding to often used statistical software tools
+like SPSS, SAS or Stata are mentioned in the end of the task view.
+ 
+
+<p><strong>Complex Survey Design: General Comments</strong></p>
+<ul>
+  <li> Package <pkg>sampling</pkg> includes many different algorithms for 
+  drawing survey samples and calibrating the design weights.  
+  </li>
+  <li> Package <pkg>survey</pkg> can also handle moderate data sets and is the 
+  standard package for dealing with already drawn survey samples in R.  Once 
+  the given survey design is specified within the function 
+  <code>svydesign()</code>, point and variance estimates can be computed.
+  </li>
+  <li> Package <pkg>simFrame</pkg> is designed for performing simulation 
+  studies in official statistics.  It provides a framework for comparing 
+  different point and variance estimators under different survey designs as 
+  well as different conditions regarding missing values, representative and 
+  non-representative outliers.
+  </li>
+</ul>
+
+
+
+<p><strong>Complex Survey Design: Details</strong></p>
+<ul>
+  <li>
+  Package <pkg>survey</pkg> allows to specify a complex survey design 
+  (stratified sampling design, cluster sampling, multi-stage sampling and pps 
+  sampling with or without replacement) for an already drawn survey sample in 
+  order to compute accurate point and variance estimates.
+  </li>
+  <li>
+  Various algorithms for drawing a sample are implemented in package 
+  <pkg>sampling</pkg> (Brewer, Midzuno, pps, systematic, Sampford, balanced 
+  (cluster or stratified) sampling via the cube method, etc.).
+  </li>
+  <!--
+  <li>
+  Package <pkg>simFrame</pkg> includes a fast (compiled C-Code) version of 
+  Midzuno sampling. 
+  </li>
+  -->
+  <li>
+  The <pkg>pps</pkg> package contains functions to select samples using pps 
+  sampling.  Also stratified simple random sampling is possible as well as to 
+  compute joint inclusion probabilities for Sampford's method of pps sampling. 
+  </li>
+  <li>
+  Package <pkg>stratification</pkg> allows univariate stratification of survey 
+  populations with a generalisation of the Lavallee-Hidiroglou method.
+  </li>
+  <li>
+  Package <pkg>SamplingStrata</pkg> offers an approach for choosing the best 
+  stratification of a sampling frame in a multivariate and multidomain setting, 
+  where the sampling sizes in each strata are determined in order to satisfy accuracy 
+  constraints on target estimates.
+To evaluate the distribution of target variables in different strata, information of the sampling frame, 
+or data from previous rounds of the same survey, may be used.
+  </li>
+</ul>
+
+
+
+<p><strong>Complex Survey Design: Point and Variance Estimation</strong></p>
+<ul>
+  <li>
+  Package <pkg>survey</pkg> allows to specify a complex survey design. The 
+  resulting object can be used to estimate (Horvitz-Thompson-) totals, means, 
+  ratios and quantiles for domains or the whole survey sample, and to apply 
+  regression models.  Variance estimation for means, totals and ratios can be 
+  done either by Taylor linearization or resampling (BRR, jackkife, bootstrap 
+  or user-defined).
+  </li>
+  <li>
+  Package <pkg>EVER</pkg> provides the estimation of variance for complex 
+  designs by delete-a-group jackknife replication for (Horvitz-Thompson-) 
+  totals, means, absolute and relative frequency distributions, contingency 
+  tables, ratios, quantiles and regression coefficients even for domains.
+  </li>
+  <li>
+  Package <pkg>laeken</pkg> provides functions to estimate certain Laeken 
+  indicators (at-risk-of-poverty rate, quintile share ratio, relative median 
+  risk-of-poverty gap, Gini coefficient) including their variance for domains 
+  and stratas based on bootstrap resampling. 
+  </li>
+  <li>
+  Package <pkg>simFrame</pkg> allows to compare (user-defined) point and 
+  variance estimators in a simulation environment. 
+  </li>
+  <li>
+  The <pkg>lavaan.survey</pkg> package provides a wrapper function for packages <pkg>survey</pkg> and <pkg>lavaan</pkg>. 
+  It can be used for 
+  fitting structural equation models (SEM) on samples from complex designs. Using 
+  the design object functionality from package <pkg>survey</pkg>, lavaan objects are re-fit 
+  (corrected) with the <code>lavaan.survey()</code> function of package <pkg>lavaan.survey</pkg>.
+  This allows for the incorporation of clustering, stratification, sampling weights, 
+and finite population corrections into a SEM analysis. <code>lavaan.survey()</code> also accomodates 
+replicate weights and multiply imputed datasets.
+  </li>
+</ul>
+
+
+
+<p><strong>Complex Survey Design: Calibration</strong></p>
+<ul>
+  <li>
+  Package <pkg>survey</pkg> allows for post-stratification, generalized 
+  raking/calibration, GREG estimation and trimming of weights. 
+  </li>
+  <li>
+  Package <pkg>EVER</pkg> provide facilities (function 
+  <code>kottcalibrate()</code>) to calibrate either on a total number of units 
+  in the population, on mariginal distributions or joint distributions of 
+  categorical variables, or on totals of quantitative variables. 
+  </li>
+  <li>
+  The <code>calib()</code> function in Package <pkg>sampling</pkg> allows to 
+  calibrate for nonresponse (with response homogeneity groups) for stratified 
+  samples.
+  </li>
+  <li>
+  The <code>calibWeights()</code> function in package <pkg>laeken</pkg> is a 
+  possible faster (depending on the example) implementation of parts of <code>calib()</code> from package 
+  <pkg>sampling</pkg>. 
+  </li>
+  <li>
+  Package <pkg>reweight</pkg> allows for calibration of survey weights for 
+  categorical survey data so that the marginal distributions of certain 
+  variables fit more closely to those from a given population, but does not 
+  allow complex sampling designs. 
+  </li>
+</ul>
+
+<p><strong>Editing and Visual Inspection of Microdata</strong></p>
+<p>Editing tools:</p>
+<ul>
+  <li> 
+    Package <pkg>editrules</pkg> convert readable linear (in)equalities into matrix form.
+  </li>
+  <li> 
+Package <pkg>deducorrect</pkg> depends on package <pkg>editrules</pkg> and applies deductive correction of simple rounding, typing and
+                    sign errors based on balanced edits. Values are changed so that the given balanced edits are fulfilled. To determine which values are changed the Levenstein-metric is applied.
+  </li>
+  <li>
+  Package <pkg>SeleMix</pkg> can be used for selective editing for continuous scaled data. 
+  A mixture model (Gaussian contamination model) based on response(s) y and a depended set of covariates is fit to the data to 
+  quantify the impact of errors to the estimates.
+  </li>
+  <li>
+  Package <pkg>rrcovNA</pkg> provides robust location and scatter estimation and robust
+                    principal component analysis with high breakdown point for
+                    incomplete data. It is therefore 
+                    applicable to find representative and non-representative outliers.
+  </li>
+</ul>  
+<p>Visual tools:</p>
+<ul>
+  <li> 
+    Package <pkg>VIM</pkg> is designed to visualize missing values 
+  using suitable plot methods. It can be used to analyse the structure of missing values in microdata using univariate, bivariate, multiple and multivariate plots where the  
+  information of missing values 
+  from specified variables are highlighted in selected variables. 
+  It also comes with a graphical user interface.  
+   </li>
+     <li> 
+   Package <pkg>tabplot</pkg>  provides the tableplot visualization method, which is used to profile or explore large statistical datasets. 
+   Up to a dozen of variables are shown column-wise as bar charts (numeric variables) or stacked bar charts (factors). 
+   Key aspects of the analysis with tableplots are the smoothness of a data distribution, 
+   the selective occurrence of missing values, and the distribution of correlated variables. 
+      </li>
+   	<li>
+   	Package <pkg>treemap</pkg> provide treemaps. A treemap is a space-filling visualization of aggregates of data with
+    hierarchical structures. Colors can be used to relate to highlight differences between comparable aggregates.
+    </li>
+</ul>
+   
+<p><strong>Imputation</strong></p>
+A distinction between iterative model-based methods, k-nearest neighbor methods 
+and miscellaneous methods is made.  However, often the criteria for using a 
+method depend on the scale of the data, which in official statistics are 
+typically a mixture of continuous, semi-continuous, binary, categorical and 
+count variables. In addition, measurement errors may corrupt non-robust imputation methods.
+Note that only few imputation methods can deal with mixed types of variables and only few methods account for robustness issues.
+<p>EM-based Imputation Methods:</p>
+<ul>
+  <li>
+  Package <pkg>mi</pkg> provides iterative EM-based multiple Bayesian 
+  regression imputation of missing values and model checking of the regression 
+  models used.  The regression models for each variable can also be
+  user-defined.  The data set may consist of continuous, semi-continuous, 
+  binary, categorical and/or count variables.
+  </li>
+  <li>
+  Package <pkg>mice</pkg> provides iterative EM-based multiple regression 
+  imputation.  The data set may consist of continuous, binary, categorical 
+  and/or count variables. 
+  </li>
+  <li>
+  Package <pkg>mitools</pkg> provides tools to perform analyses and combine 
+  results from multiply-imputated datasets.
+  </li>
+  <li>
+  Package <pkg>Amelia</pkg> provides multiple imputation where first bootstrap 
+  samples with the same dimensions as the original data are drawn, and then 
+  used for EM-based imputation.  It is also possible to impute longitudial 
+  data.  The package in addition comes with a graphical user interface. 
+  </li>
+  <li>
+  Package <pkg>VIM</pkg> provides EM-based multiple imputation (function 
+  <code>irmi()</code>) using robust estimations, which allows to adequately 
+  deal with data including outliers.  It can handle data consisting of 
+  continuous, semi-continuous, binary, categorical and/or count variables.
+  </li>
+  <li>
+  Package <pkg>mix</pkg> provides iterative EM-based multiple regression 
+  imputation.  The data set may consist of continuous, binary or categorical 
+  variables, but methods for semi-continuous variables are missing.
+  </li>
+  <li>
+  Package <pkg>pan</pkg> provides multiple imputation for multivariate panel or 
+  clustered data.
+  </li>
+  <li>
+  Package <pkg>norm</pkg> provides EM-based multiple imputation for 
+  multivariate normal data.
+  </li>
+  <li>
+  Package <pkg>cat</pkg> provides EM-based multiple imputation for multivariate 
+  categorical data.
+  </li>
+  <li>
+  Package <pkg>MImix</pkg> provides tools to combine results for 
+  multiply-imputed data using mixture approximations.
+  </li>
+  <li>
+  Package <pkg>robCompositions</pkg> provides iterative model-based imputation 
+  for compositional data (function <code>impCoda()</code>). 
+  </li>
+</ul>
+
+<p>Nearest Neighbor Imputation Methods</p>
+<ul>
+  <li>
+  Package <pkg>VIM</pkg> provides an implementation of the popular 
+  sequential and random (within a domain) hot-deck algorithm.  
+  </li> 
+  <li>
+  <pkg>VIM</pkg> also provides a fast k-nearest neighbor (knn) algorithm which can be used for large data sets.
+  It uses a modification of the Gower Distance for numerical, categorical, ordered, continuous and semi-continous variables.
+  </li>
+  <li>
+  Package <pkg>yaImpute</pkg> performs popular nearest neighbor routines for 
+  imputation of continuous variables where different metrics and methods can be 
+  used for determining the distance between observations.
+  </li>
+  <li>
+  Package <pkg>robCompositions</pkg> provides knn imputation for 
+  compositional data (function <code>impKNNa()</code>) using the Aitchison 
+  distance and adjustment of the nearest neighbor. 
+  </li>
+  <li> 
+  Package <pkg>rrcovNA</pkg> provides an algorithm for (robust) sequential imputation (function 
+  <code>impSeq()</code> and <code>impSeqRob()</code>  
+  by minimizing the determinant of the covariance of the augmented data matrix. It's application is limited to continuous scaled data.
+  </li>
+  <li>
+  Package <bioc>impute</bioc> on Bioconductor impute provides knn imputation of continuous 
+  variables.
+  </li>
+</ul>
+
+<p>Miscellaneous Imputation Methods:</p>
+<ul>
+  <li>
+  Package <pkg>missMDA</pkg> allows to impute incomplete continuous variables 
+  by principal component analysis (PCA) or categorical variables by multiple 
+  correspondence analysis (MCA).
+  </li>
+  <li>
+  Package <pkg>mice</pkg> (function <code>mice.impute.pmm()</code>) and 
+  Package <pkg>Hmisc</pkg> (function <code>aregImpute()</code>) allow 
+  predicitve mean matching imputation.
+  </li>
+  <li>
+  Package <pkg>VIM</pkg> allows to visualize the structure of missing values 
+  using suitable plot methods.  It also comes with a graphical user interface.
+  </li>
+</ul>
+
+
+<p><strong>Statistical Disclosure Control</strong></p>
+Data from statistical agencies and other institutions are in its raw form 
+mostly confidential and data providers have to be ensure confidentiality by 
+both modifying the original data so that no statistical units can be 
+re-identified and by guaranting a minimum amount of information loss.
+<ul>
+  <li>
+  Package <pkg>sdcMicro</pkg> can be used for the generation of confidential 
+  (micro)data, i.e. for the generation of public- and scientific-use files.  
+  The package also comes with a graphical user interface.
+  </li>
+<!--  <li>
+  Package <pkg>simPopulation</pkg> simulates synthetic, confidential, close-to-reality populations for 
+  surveys based on sample data. Such population data can then be used for 
+  extensive simulation studies in official statistics, using <pkg>simFrame</pkg> for example.
+  </li> -->
+  <li>
+  Package <pkg>sdcTable</pkg>  can be used to provide confidential 
+  (hierarchical) tabular data.  It includes the HITAS and the HYPERCUBE 
+  technique and uses linear programming packages Rglpk and lpSolveAPI for solving
+  (a large amount of) linear programs.
+  </li>
+</ul>
+
+<p><strong>Seasonal Adjustment</strong></p>
+For general time series methodology we refer to the 
+<view>TimeSeries</view> task view. 
+<ul>
+  <li>
+  Decomposition of time series can be done with the function 
+  <code>decompose()</code>, or more advanced by using the function 
+  <code>stl()</code>, both from the basic stats package.  
+  Decomposition is also possible with the <code>StructTS()</code> function, 
+  which can also be found in the stats package.
+  </li>
+  <li>
+  Many powerful tools can be accessed via packages <pkg>x12</pkg> and <pkg>x12GUI</pkg> and package <pkg>seasonal</pkg>. <pkg>x12</pkg> provides a wrapper function for the <a href="http://www.census.gov/srd/www/x12a/"> X12 binaries</a>, which have to be installed first. It uses  
+  with a S4-class interface for batch processing of multiple time series. <pkg>x12GUI</pkg> provides a graphical user interface for 
+  the X12-Arima seasonal adjustment software. 
+Less functionality but with the support of SEATS Spec is supported by package <pkg>seasonal</pkg>. 
+  </li>
+</ul>
+
+<p><strong>Statistical Record Matching</strong></p>
+<ul>
+  <li>
+  Package <pkg>StatMatch</pkg> provides functions to perform statistical 
+  matching between two data sources sharing a number of common variables. It 
+  creates a synthetic data set after matching of two data sources via a 
+  likelihood aproach or via hot-deck.
+  </li>
+  <li>
+  Package <pkg>MatchIt</pkg> allows nearest neighbor matching, exact matching, optimal matching and full matching amonst
+  other matching methods. If two data sets have to be matched, the data must come as one data frame including a factor
+  variable which includes information about the membership of each observation.
+  </li>
+</ul>  
+
+<p><strong>Small Area Estimation</strong></p>
+<ul>
+  <li>
+	Package <pkg>rsae</pkg> provides functions to estimate the parameters of the basic unit-level 
+	small area estimation (SAE) model (aka nested error regression model) 
+	by means of maximum likelihood (ML) or robust ML. On the basis of the estimated parameters, robust predictions of the area-specific 
+	means are computed (incl. MSE estimates; parametric bootstrap). 
+	The current version (rsae 0.4-x) does not allow for categorical independent variables.
+  </li>
+  <li>
+  Package <pkg>nlme</pkg> provides facilities to fit Gaussian linear and nonlinear mixed-effects models and 
+  <pkg>lme4</pkg> provides facilities to fit linear and generalized linear mixed-effects model, both used in 
+  small area estimation. 
+  </li>
+  <li>
+  The <pkg>hbsae</pkg> package provides functions to compute small area estimates based on a basic area or unit-level model. 
+  The model is fit using restricted maximum likelihood, or in a hierarchical Bayesian way. Auxilary information can be either
+  counts resulting from categorical variables or means from continuous population information. 
+  </li>
+  <li>
+  With package <pkg>JoSAE</pkg> point and variance estimation for the generalized regression (GREG) and a unit level
+  empirical best linear unbiased prediction EBLUP estimators can be made at domain level. It basically provides wrapper functions to the <pkg>nlme</pkg> package 
+that is used to fit the basic random effects models.
+  </li>
+</ul> 
+ 
+<p><strong>Indices and Indicators</strong></p>
+<ul>
+  <li>
+  Package <pkg>laeken</pkg> provides functions to estimate popular 
+  risk-of-poverty and inequality indicators (at-risk-of-poverty rate, quintile 
+  share ratio, relative median risk-of-poverty gap, Gini coefficient). 
+  In addition, standard and robust methods for tail modeling of Pareto 
+  distributions are provided for semi-parametric estimation of indicators
+  from continuous univariate distributions such as income variables.
+  </li>
+  <li>
+  Package <pkg>ineq</pkg> computes various inequality measures (Gini, Theil,
+  entropy, among others), concentration measures (Herfindahl, Rosenbluth), and poverty
+  measures (Watts, Sen, SST, and Foster). It also computes and draws empirical and theoretical
+  Lorenz curves as well as Pen's parade. It is not designed to deal with sampling weights directly
+  (these could only be emulated via <code>rep(x, weights)</code>). 
+  </li>
+  <li> Package <pkg>IC2</pkg> include three inequality indices: 
+  extended Gini, Atkinson and Generalized Entropy. It can deal with sampling weights and 
+  subgroup decomposition is supported.
+  </li>
+  <li>
+  Function <code>priceIndex()</code> from package <pkg>micEcon</pkg> allows to 
+  estimate the Paasche, the Fisher and the Laspeyres price indices.
+  </li>
+</ul>
+ 
+<p><strong>Microsimulation</strong></p>
+<ul>
+  <li>
+The <pkg>MicSim</pkg> package includes methods for microsimulations. Given a initial population, mortality rates, divorce rates, marriage rates, eduction changes, etc. and their transition matrix can be defined and included for the simulation of future states of the population. The package does not contain compiled code but functionality to run the microsimulation in parallel is provided.
+  </li>
+  <li>
+Package <pkg>sms</pkg> provides facilities to simulate micro-data from given area-based macro-data. Simulated annealing is used to best satisfy the available description of an area. 
+For computational issues, the calculations can be run in parallel mode.
+  </li>
+</ul>
+  
+<p><strong>Additional Packages and Functionalities</strong></p>
+Various additional packages are available that provides certain functionality useful in official statistics and survey methodology.
+<p>Data Import and Export:</p>
+<ul>
+  <li>
+  Package <pkg>SAScii</pkg> imports ASCII files directly into R using only a SAS input script, which
+  is parsed and converted into arguments for a read.fwf call. This is useful whenever SAS scripts for importing data
+  are already available.
+  </li> 
+<li>
+The <pkg>foreign</pkg> package includes tools for reading data from SAS Xport (function <code>read.xport()</code>), Stata (function <code>read.dta()</code>), SPSS (function <code>read.spss()</code>) and various other formats. It provides facilites to write file to various formats, see function <code>write.foreign()</code>.
+</li>
+<li>
+Also the package <pkg>Hmisc</pkg> provides tools to read data sets from SPSS (function 
+<code>spss.get()</code>)  or Stata (function <code>stata.get()</code>). 
+</li>
+  <li>
+  The <pkg>pxR</pkg> package provides a set of functions for reading
+and writing PC-Axis files, used by different statistical
+organizations around the globe for disemination of their (multidimensional) tables.
+  </li>
+<li>
+With package <pkg>prevR</pkg> and it's function <code>import.dhs()</code> it is possible to directly imports 
+data from the Demographic Health Survey.
+</li>
+<li>
+Function <code>describe()</code> from package <pkg>questionr</pkg> describes the variables of a dataset that might include labels imported with the foreign or memisc packages.
+</li>
+</ul>
+
+<p>Sampling Techniques:</p>
+<ul>
+  <li>
+  Package <pkg>samplingbook</pkg> includes sampling procedures from the book 
+  'Stichproben. Methoden und praktische Umsetzung mit R' by Goeran Kauermann 
+  and Helmut Kuechenhoff (2010).
+  </li> 
+  <li>
+  Package <pkg>SDaA</pkg> is designed to reproduce results from Lohr, S. (1999) 
+  'Sampling: Design and Analysis, Duxbury' and includes the data sets from this 
+  book.
+  </li>
+    <li>
+  The main contributions of
+ <pkg>samplingVarEst</pkg> are Jackknife alternatives for variance estimation
+ of unequal probability one or two stage designs. 
+  </li>
+  <li>
+  Package <pkg>TeachingSampling</pkg> includes functionality for sampling 
+  designs and parameter estimation in finite populations.
+  </li>
+  <li>
+  Package <pkg>memisc</pkg> includes tools for the management of survey data, 
+  graphics and simulation.
+  </li>
+  <li>
+  Package <pkg>odfWeave.survey</pkg> provides support for <pkg>odfWeave</pkg> 
+  for the <pkg>survey</pkg> package.
+  </li>
+  <li>
+  Package <pkg>spsurvey</pkg> includes facilities for spatial survey design and 
+  analysis for equal and unequal probability (stratified) sampling.
+  </li>
+  <li>
+  The <pkg>FFD</pkg> package is designed to calculate optimal sample sizes of a population of animals 
+  living in herds for surveys to substantiate freedom from disease. 
+  The criteria of estimating the sample sizes take the herd-level clustering of 
+  diseases as well as imperfect diagnostic tests into account and select the samples 
+  based on a two-stage design. Inclusion probabilities are not considered in the estimation. 
+  The package provides a graphical user interface as well. 
+  </li>
+</ul>  
+  
+
+  
+</info>
+
+<packagelist>
+  <pkg>Amelia</pkg>
+  <pkg>cat</pkg>
+  <pkg>deducorrect</pkg>
+  <pkg>editrules</pkg>
+  <pkg>EVER</pkg>
+  <pkg>FFD</pkg>
+  <pkg>foreign</pkg>
+  <pkg>hbsae</pkg>
+  <pkg>Hmisc</pkg>
+  <pkg>IC2</pkg>
+  <pkg>ineq</pkg>
+  <pkg>JoSAE</pkg>
+  <pkg>laeken</pkg>
+  <pkg>lavaan</pkg>
+  <pkg>lavaan.survey</pkg>
+  <pkg>lme4</pkg>
+  <pkg>MatchIt</pkg>
+  <pkg>memisc</pkg>
+  <pkg>mi</pkg>
+  <pkg>mice</pkg>
+  <pkg>micEcon</pkg>
+  <pkg>MicSim</pkg>
+  <pkg>MImix</pkg>
+  <pkg>missMDA</pkg>
+  <pkg>mitools</pkg>
+  <pkg>mix</pkg>
+  <pkg>nlme</pkg>
+  <pkg>norm</pkg>
+  <pkg>odfWeave</pkg>
+  <pkg>odfWeave.survey</pkg>
+  <pkg>pan</pkg>
+  <pkg>pps</pkg>
+  <pkg>prevR</pkg>
+  <pkg>pxR</pkg> 
+  <pkg>questionr</pkg> 
+  <pkg>reweight</pkg>
+  <pkg>robCompositions</pkg>
+  <pkg>rrcovNA</pkg>
+  <pkg>rsae</pkg>
+  <pkg>sampling</pkg>
+  <pkg>samplingbook</pkg>
+  <pkg>SamplingStrata</pkg>
+  <pkg>samplingVarEst</pkg>
+  <pkg>SAScii</pkg>
+  <pkg>SDaA</pkg>
+  <pkg>sdcMicro</pkg>
+  <pkg>sdcTable</pkg>
+  <pkg>seasonal</pkg>
+  <pkg>SeleMix</pkg>
+  <pkg>simFrame</pkg>
+  <pkg>sms</pkg>
+  <pkg>spsurvey</pkg>
+  <pkg>StatMatch</pkg>
+  <pkg>stratification</pkg>
+  <pkg priority="core">survey</pkg>
+  <pkg>tabplot</pkg>
+  <pkg>TeachingSampling</pkg>
+  <pkg>treemap</pkg>
+  <pkg>VIM</pkg>
+  <pkg>x12</pkg>
+  <pkg>x12GUI</pkg>
+  <pkg>yaImpute</pkg>
+</packagelist>
+
+<links>
+  <view>TimeSeries</view>
+  <view>SocialSciences</view>
+  <bioc>impute</bioc>
+  <a href="http://www.R-project.org/conferences/useR-2008/tutorials/gomez.html">useR!2008 Tutorial: Small Area Estimation</a>
+</links>
+
+</CRANTaskView>

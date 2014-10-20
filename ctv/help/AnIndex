@@ -1,0 +1,11 @@
+available.views	ctv-client
+check_ctv_packages	ctv-server
+CRAN.views	ctv-client
+ctv2html	ctv-server
+download.views	ctv-client
+install.views	ctv-client
+print.ctv	ctv-client
+print.ctvlist	ctv-client
+read.ctv	ctv-server
+repos_update_views	ctv-server
+update.views	ctv-client
