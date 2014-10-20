@@ -1,0 +1,69 @@
+HTestimator             The Horvitz-Thompson estimator
+HTstrata                The Horvitz-Thompson estimator for a stratified
+                        design
+Hajekestimator          The Hajek estimator
+Hajekstrata             The Hajek estimator for a stratified design
+MU284                   The MU284 population
+UPbrewer                Brewer sampling
+UPmaxentropy            Maximum entropy sampling with fixed sample size
+                        and unequal probabilities
+UPmidzuno               Midzuno sampling
+UPmidzunopi2            Joint inclusion probabilities for Midzuno
+                        sampling
+UPminimalsupport        Minimal support sampling
+UPmultinomial           Multinomial sampling
+UPopips                 Order pips sampling
+UPpivotal               Pivotal sampling
+UPpoisson               Poisson sampling
+UPrandompivotal         Random pivotal sampling
+UPrandomsystematic      Random systematic sampling
+UPsampford              Sampford sampling
+UPsampfordpi2           Joint inclusion probabilities for Sampford
+                        sampling
+UPsystematic            Systematic sampling
+UPsystematicpi2         Joint inclusion probabilities for systematic
+                        sampling
+UPtille                 Tille sampling
+UPtillepi2              Joint inclusion probabilties for Tille sampling
+balancedcluster         Balanced cluster
+balancedstratification
+                        Balanced stratification
+balancedtwostage        Balanced two-stage sampling
+belgianmunicipalities   The Belgian municipalities population
+calib                   g-weights of the calibration estimator
+calibev                 Calibration estimator and its variance
+                        estimation
+checkcalibration        Check calibration
+cleanstrata             Clean strata
+cluster                 Cluster sampling
+disjunctive             Disjunctive combination
+fastflightcube          Fast flight phase for the cube method
+gencalib                g-weights of the generalized calibration
+                        estimator
+getdata                 Get data
+inclusionprobabilities
+                        Inclusion probabilities
+inclusionprobastrata    Inclusion probabilities for a stratified design
+landingcube             Landing phase for the cube method
+mstage                  Multistage sampling
+postest                 The poststratified estimator
+poststrata              Postratification
+ratioest                The ratio estimator
+ratioest_strata         The ratio estimator for a stratified design
+regest                  The regression estimator
+regest_strata           The regression estimator for a stratified
+                        design
+rhg                     Response homogeneity groups
+rhg_strata              Response homogeneity groups for a stratified
+                        sampling
+rmodel                  Response probability using logistic regression
+samplecube              Sample cube method
+srswor                  Simple random sampling without replacement
+srswor1                 Selection-rejection method
+srswr                   Simple random sampling with replacement
+strata                  Stratified sampling
+swissmunicipalities     The Swiss municipalities population
+varest                  Variance estimation using the Deville's method
+vartaylor_ratio         Taylor-series linearization variance estimation
+                        of a ratio
+writesample             All possible samples of fixed size

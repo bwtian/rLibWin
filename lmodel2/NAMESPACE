@@ -1,0 +1,10 @@
+## The main function
+export(lmodel2)
+## Make visible
+export(plot.lmodel2, lines.lmodel2)
+## import for S3
+importFrom(graphics, plot, lines)
+## S3 methods
+S3method(print, lmodel2)
+S3method(plot, lmodel2)
+S3method(lines, lmodel2)

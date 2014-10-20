@@ -1,0 +1,45 @@
+-.popgraph              Overload '-' operator for pairs of 'popgraph'
+                        objects
+alt                     Sonoran desert altitude.
+arapat_mv               Araptus attenuatus data
+arapat_pop              Arapat popualtion data
+as.popgraph             Converts an object of type matrix or igraph
+                        into 'popgraph'
+baja                    Metadata for Baja Populations.
+centroid_distance       This function takes a data set and a group set
+                        and returns centroid distances
+centroid_variance       This function takes a data set and a group set
+                        and returns centroid variances
+congruence_topology     Returns congruence topology
+decorate_graph          Merge data into popgraph node-wise
+geom_edgelabels         Plotting of a population graph edge labels
+                        using ggplot neumonic
+geom_edgeset            Plotting of a population graph edge set using
+                        ggplot neumonic
+geom_nodeset            Plotting of a population graph edge set using
+                        ggplot neumonic
+lopho                   Lophocereus population graph
+overlay_popgraph        Convience function to plot edges from
+                        'popgraph'
+permute_popgraph        Bootstraps indiviudals to see stability of
+                        graph topology.
+popgraph                Default constructor for a 'PopulationGraph'
+                        object
+popgraph-package        Package for the creation of population graph
+                        objects
+read.popgraph           Reads in a population graph text file
+test_congruence         Returns distance congruence between the two
+                        graphs
+theme_empty             A blank theme for plotting networks
+to_SpatialLines         Converts edge set to SpatialLines object
+to_SpatialPoints        Translate object into a SpatialPoints object
+to_data.frame           Converts 'popgraph' to 'data.frame' based upon
+                        node attributes
+to_html                 Converts population graph to html file for
+                        interactive viewing
+to_json                 Converts to json representation
+to_kml                  Converts population graph to KML file
+to_matrix               Matrix conversion for Population Graph
+to_pgraph               Converts graph to a pgraph file format
+upiga                   Upiga population graph
+write_popgraph          Convience function for file exports
