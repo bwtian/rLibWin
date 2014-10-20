@@ -1,0 +1,36 @@
+Tkp                     Compute the vector T^k*p
+addObservations         Input observations for use in the lattice-based
+                        density estimator.
+addQuantVar             Input response variable for use in the
+                        createNparReg function
+areaRegion              Computes the area of a region
+areaRegionExample       A region with two holes
+createDensity           Generates a density using random walks on a
+                        lattice.
+createNparReg           This function performs nonparametric
+                        regression.
+crossvalDensity         UBC crossvalidation for the lattice-based
+                        density estimator.
+crossvalNparReg         Crossvalidation for non-parametric regression.
+deletedResid            Deleted residuls for non-parametric regression.
+editLattice             Add or remove links in the lattice
+formLattice             Builds a neighbor structure on the nodes.
+homerange               Produces a homerange map.
+latticeDensity-package
+                        Creates a 2-dimensional density estimate or
+                        nonparametric regression surface.
+makeTmatrix             Create the transition matrix for the diffusion.
+nodeFilling             Produces a grid of locations inside the region
+                        boundary.
+nparExample             Example boundary with a grid of locations
+plot.NparRegOut         Plot the non-parametric regression surface.
+plot.densityOut         Plot the density map
+plot.formLatticeOutput
+                        Plot the lattice.
+plot.nodeFillingOutput
+                        Plot a 'nodeFillingOutput' object.
+polygon1                Example boundary with causeway
+predict.NparRegOut      Predictions at data locations from
+                        lattice-based non-parametric regression.
+removeHole              Removes holes from the region prior to density
+                        estimation.

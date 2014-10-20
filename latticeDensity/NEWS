@@ -1,0 +1,42 @@
+Version 1.0.0
+Fixed the indexing of the demo latticeDensity
+Modified the function makeTmatrix so that the function
+  runs even if some nodes have no links to the rest of
+  the lattice.
+homerange now prints out the area of the homerange along with
+  the proportion of the region that is inside the homerange.
+--------------------
+Version 1.0.4  (June 6, 2011)
+Many new items in this version.  Non-parametric regression has been
+implemented.  
+Many function names have been shortened (somewhat).  
+New functions include addQuantVar to add a spatial response variable to
+a non-parametric regression, crossvalNparReg to crossvalidate the
+non-parametric regression, createNparReg to perform the smoothing and
+predict.NparRegOut and plot.NparRegOut to produce predictions and plots
+for non-parametric regression.
+The package passes R CMD check, the demo runs properly, editLattice works
+and the help files are in fairly good shape.
+*This was the first version submitted and accepted at the CRAN repository.
+-------------------
+Version 1.0.5  (June 7, 2011)
+Two examples in help files were improved (makeTmatrix and Tkp).
+Almost all examples were sped up so the checking process will run faster,
+usually by decreasing the number of steps checked under crossvalidation and
+by using a coarser grid.
+The components of the output of crossvalDensity were named ucv and k.
+-------------------
+Version 1.0.6  (June 22, 2011)
+The predict.NparRegOut function was improved to make predictions at new
+locations.  Homerange now has the option of output of node locations with
+a column that identifies the homerange.  Finally, a new function 
+deletedResid produces a column of residuals and deleted residuals for each
+observed response.
+This version was submitted to CRAN.
+-------------------
+Version 1.0.7  (Jan. 6, 2011)
+When an array with unnamed columns was used as a boundary in nodeFilling,
+a warning was generated due to the columns not being labeled x and y.  This
+even caused a warning to occur in the demo(density), though it did not
+affect results.  I fixed the error.
+This version was submitted to CRAN.

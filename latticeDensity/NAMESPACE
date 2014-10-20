@@ -1,0 +1,30 @@
+S3method(plot,nodeFillingOutput)
+S3method(plot,formLatticeOutput)
+S3method(plot,densityOut)
+S3method(plot,NparRegOut)
+S3method(predict,NparRegOut)
+
+
+
+export(crossvalDensity,
+       Tkp,
+       addObservations,
+       editLattice,
+       deletedResid,
+       formLattice,                      
+       homerange,  
+       makeTmatrix,
+       nodeFilling,
+       removeHole,
+       areaRegion,
+       createDensity,
+       addQuantVar,
+       createNparReg,
+       crossvalNparReg,
+       plot.NparRegOut,
+       plot.nodeFillingOutput,
+       plot.formLatticeOutput,
+       plot.densityOut,
+       predict.NparRegOut
+       )
+

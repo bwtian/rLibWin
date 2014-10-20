@@ -1,0 +1,22 @@
+Insurance               Insurance consumption across Italian provinces,
+                        1998-2002
+RiceFarms               Production of Rice in Indonesia
+bsjktest                Baltagi, Song, Jung and Koh LM test for spatial
+                        panels
+bsktest                 Baltagi, Song and Koh LM test for spatial
+                        panels
+effects.splm            method for extracting fixed effects
+itaww                   Spatial weights matrix - Italian provinces
+listw2dgCMatrix         Interface between Matrix class objects and
+                        weights list
+print.splm              print method for class splm
+riceww                  Spatial weights matrix of Indonesian rice farms
+spgm                    GM estimation of spatial panel data models
+sphtest                 Hausman test for spatial panel data models
+spml                    Spatial Panel Model by Maximum Likelihood
+spreml                  Spatial Panel Model with Random Effects by
+                        Maximum Likelihood
+summary.splm            summary method for class splm
+usaww                   Spatial weights matrix - US states
+vcov.splm               Covariance extractor method for 'splm' objects
+write.effects.splm      method for writing a table with fixed effects

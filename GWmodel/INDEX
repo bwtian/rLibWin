@@ -1,0 +1,84 @@
+DubVoter                Voter turnout data in Greater
+                        Dublin(SpatialPolygonsDataFrame)
+EWHP                    house price data set (DataFrame) in England and
+                        Wales
+GWmodel-package         Geographically weighted models
+Gedu.counties           Georgia counties data
+                        (SpatialPolygonsDataFrame)
+Georgia                 Georgia census data set (csv file)
+LondonBorough           London boroughs data
+LondonHP                London house price data set
+                        (SpatialPointsDataFrame)
+USelect2004             Results of the 2004 US presidential election at
+                        the county level(SpatialPolygonsDataFrame)
+bw.ggwr                 Bandwidth selection for generalised
+                        geographically weighted regression (GWR)
+bw.gwda                 Bandwidth selection for GW Discriminant
+                        Analysis
+bw.gwpca                Bandwidth selection for Geographically Weighted
+                        Principal Components Analysis (GWPCA)
+bw.gwr                  Bandwidth selection for basic GWR
+bw.gwr.lcr              Bandwidth selection for locally compensated
+                        ridge GWR (GWR-LCR)
+check.components        Interaction tool with the GWPCA glyph map
+ewoutline               Outline of England and Wales for data EWHP
+ggwr.cv                 Cross-validation score for a specified
+                        bandwidth for generalised GWR
+ggwr.cv.contrib         Cross-validation data at each observation
+                        location for a generalised GWR model
+glyph.plot              Multivariate glyph plots of GWPCA loadings
+gw.dist                 Distance matrix calculation
+gw.pcplot               Geographically weighted parallel coordinate
+                        plot for investigating multivariate data sets
+gwda                    GW Discriminant Analysis
+gwpca                   GWPCA
+gwpca.cv                Cross-validation score for a specified
+                        bandwidth for GWPCA
+gwpca.cv.contrib        Cross-validation data at each observation
+                        location for a GWPCA
+gwr.basic               Basic GWR model
+gwr.collin.diagno       Local collinearity diagnostics for basic GWR
+gwr.cv                  Cross-validation score for a specified
+                        bandwidth for basic GWR
+gwr.cv.contrib          Cross-validation data at each observation
+                        location for a basic GWR model
+gwr.generalised         Generalised GWR models, including Poisson and
+                        Binomial options
+gwr.hetero              Heteroskedastic GWR
+gwr.lcr                 GWR with a locally-compensated ridge term
+gwr.lcr.cv              Cross-validation score for a specified
+                        bandwidth for GWR-LCR model
+gwr.lcr.cv.contrib      Cross-validation data at each observation
+                        location for the GWR-LCR model
+gwr.mixed               Mixed GWR
+gwr.predict             GWR used as a spatial predictor
+gwr.robust              Robust GWR model
+gwr.t.adjust            Adjust p-values for multiple hypothesis tests
+                        in basic GWR
+gwss                    Geographically weighted summary statistics
+                        (GWSS)
+model.selection.gwr     Model selection for GWR with a given set of
+                        independent variables
+model.sort.gwr          Sort the results of the GWR model selection
+                        function 'model.selection.gwr'.
+model.view.gwr          Visualise the GWR models from
+                        'model.selection.gwr'
+montecarlo.gwpca.1      Monte Carlo (randomisation) test for
+                        significance of GW PCA eigenvalue variability
+                        for the first component only - option 1
+montecarlo.gwpca.2      Monte Carlo (randomisation) test for
+                        significance of GW PCA eigenvalue variability
+                        for the first component only - option 2
+montecarlo.gwr          Monte Carlo (randomisation) test for
+                        significance of GWR parameter variability
+montecarlo.gwss         Monte Carlo (randomisation) test for gwss
+plot.mcsims             Plot the results from the Monte Carlo
+                        (randomisation) test of GWPCA
+print.ggwrm             Print the output of the function
+                        'gwr.generalised'
+print.gwrlcr            Print the output of the function 'gwr.lcr'
+print.gwrm              Print the output of the function 'gwr.basic'
+print.gwrm.pred         Print the output of the function 'gwr.predict'
+print.gwss              Print the output of the function 'gwss'
+writeGWR                Write the GWR results
+writeGWR.shp            Write GWR results as shape files

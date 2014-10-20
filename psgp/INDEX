@@ -1,0 +1,10 @@
+buildMetadata           Build Metadata Table
+estimateParameters.psgp
+                        Parameter estimation using a Projected
+                        Sequential Gaussian Process (PSGP)
+learnParameters         Projected Sequential Gaussian Process
+makePrediction          Spatial projected sequential GP prediction
+psgp-package            Projected Sequential Gaussian Processes for
+                        spatial interpolation
+spatialPredict.psgp     Spatial prediction using a Projected Sequential
+                        Gaussian Process (PSGP)

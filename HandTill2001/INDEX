@@ -1,0 +1,13 @@
+HandTill2001-package    Multiple Class Area under ROC Curve
+auc-methods             Methods for Function 'auc' in Package
+                        'HandTill2001'
+bincap                  a ui-constructor for Class '"bincap"' in
+                        Package 'HandTill2001'
+bincap-class            Class '"bincap"' in Package 'HandTill2001'
+cap-class               Class '"cap"' in Package 'HandTill2001'
+ht01.multipleclass      ht01.multipleclass data in Package
+                        'HandTill2001'
+ht01.twoclass           ht01.twoclass data in Package 'HandTill2001'
+multcap                 a ui-constructor for Class '"multcap"' in
+                        Package 'HandTill2001'
+multcap-class           Class '"multcap"' in Package 'HandTill2001'

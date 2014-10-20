@@ -1,0 +1,11 @@
+Clarketest              Clarke's test for non-nested model comparison
+DIC                     Deviance information criterion
+LogLike                 Individual log-likelihood
+Vuongtest               Vuong's test for non-nested model comparison
+est.sc                  Fitting spatial count regression models
+sim.Yin                 Response vector
+sim.fm.X                Design matrix
+sim.gmat                Spatial adjacency matrix
+sim.nmat                Matrix of neighbours
+sim.region              Region vector
+spatcounts-package      Spatial count regression

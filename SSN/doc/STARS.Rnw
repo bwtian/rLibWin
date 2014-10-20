@@ -1,0 +1,6 @@
+%\VignetteIndexEntry{GIS Information and STARS User manual}
+\documentclass{article}
+\begin{document}
+Stangle()
+\end{document}
+

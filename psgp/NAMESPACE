@@ -1,0 +1,10 @@
+import(gstat)
+import(automap)
+import(intamap)
+
+useDynLib(psgp)
+
+export(estimateParameters, spatialPredict, learnParameters, makePrediction, buildMetadata)
+
+S3method(estimateParameters, psgp)
+S3method(spatialPredict, psgp)

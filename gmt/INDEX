@@ -1,0 +1,14 @@
+deg2num                 Convert Degrees to Numeric
+geodist                 Distance Between Geographic Coordinates
+gmt                     Initialize GMT Session
+gmt-package             Interface between the GMT Map-Making Software
+                        and R
+gmt.demo                GMT Example Data
+gmt.system              Invoke shell command
+num2deg                 Convert Numeric to Degrees
+psbar                   Add Bars to GMT Mercator Map
+psclose                 Finalize GMT Map
+pscoast                 Draw GMT Map
+pstext                  Add Text/Symbols to GMT Map
+psxy                    Add Lines/Symbols to GMT Map
+r2gmt                   Prepare Data for GMT

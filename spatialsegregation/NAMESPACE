@@ -1,0 +1,19 @@
+export(biomassF, 
+	   clean.up.data,
+	   freqs,
+	   minusID,
+	   shake,
+	   isarF,
+	   mciF,
+	   minglingF,
+	   mingling.index,
+	   shannonF,
+	   shannon.index,
+	   simpsonF,
+	   simpson.index,
+	   segregationFun,
+     dixon,
+	   print.segtest)
+import(spatstat)
+useDynLib(spatialsegregation)
+	   

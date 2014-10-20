@@ -1,0 +1,5 @@
+cshapes-package         CShapes Dataset and Utilities
+cshp                    Access the CShapes dataset in R
+distlist                Compute distance lists on the CShapes dataset
+distmatrix              Compute distance matrices on the CShapes
+                        dataset

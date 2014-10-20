@@ -1,0 +1,11 @@
+importFrom(MASS, glmmPQL)
+export(addSpatial)
+export( binToBinom)
+export( checkChain, cholInvArray, getDesignMatrix, getRaggedSeq,
+  getStartingValues,
+       glmmBUGS, glmmPQLstrings, restoreParams, startingFunction, 
+       summaryChain, 
+       winBugsRaggedArray, writeBugsModel)
+
+import(abind)
+

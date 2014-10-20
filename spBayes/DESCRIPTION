@@ -1,0 +1,19 @@
+Package: spBayes
+Version: 0.3-8
+Date: 2013-11-15
+Title: Univariate and Multivariate Spatial-temporal Modeling
+Author: Andrew O. Finley <finleya@msu.edu>, Sudipto Banerjee
+        <sudiptob@biostat.umn.edu>
+Maintainer: Andrew O. Finley <finleya@msu.edu>
+Depends: R (>= 1.8.0), coda, magic, abind, Formula
+Suggests: MBA, geoR
+Description: spBayes fits univariate and multivariate spatio-temporal
+        models with Markov chain Monte Carlo (MCMC).
+License: GPL (>= 2)
+URL: http://blue.for.msu.edu/software
+Repository: CRAN
+Packaged: 2013-11-15 14:40:45 UTC; andy
+Date/Publication: 2013-11-15 16:19:45
+NeedsCompilation: yes
+Built: R 3.1.1; x86_64-w64-mingw32; 2014-10-18 22:53:05 UTC; windows
+Archs: i386, x64

@@ -1,0 +1,35 @@
+RArcInfo                RArcInfo
+avctoe00                Converts a ARC/INFO binary coverage into an
+                        ESRI E00 file
+e00toavc                Converts an ESRI E00 file into an Arc/Info V
+                        7.x binary coverage
+get.arcdata             Function for importing the contents of an ARC
+                        file into R
+get.bnddata             Function for importing the contents of a BND
+                        file into R
+get.cntdata             Function for importing the contents of a CNT
+                        file into R
+get.labdata             Funtion for importing the contents of a LAB
+                        file into R
+get.namesofcoverages    Function for getting the names of the coverages
+get.nb                  Function for calculating neighbouting polygons.
+get.paldata             Function for importing the contents of a PAL
+                        file into R
+get.tabledata           Function for importing the contents of a table
+                        file into R
+get.tablefields         Function for reading names of the table fields
+                        in the coverages
+get.tablenames          Function for reading the names of the tables in
+                        the coverages
+get.toldata             Function for importing the contents of a TOL
+                        file into R
+get.txtdata             Function for importing the contents of an TXT
+                        file into R
+plotarc                 Plots the data imported from an ARC file
+plotpal                 Plots the data imported from an ARC file
+                        according to the contents of a PAL file
+plotpoly                Plots polygons defined by the coverages.
+read.coverage           Function for retrieving basic data from a given
+                        coverage
+thinlines               Function for deleting points in an arc
+                        definition object

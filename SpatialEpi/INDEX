@@ -1,0 +1,35 @@
+EBpostdens              Produce plots of emprical Bayes posterior
+                        densities when the data Y are Poisson with
+                        expected number E and relative risk theta, with
+                        the latter having a gamma distribution with
+                        known values alpha and beta, which are
+                        estimated using empirical Bayes.
+EBpostthresh            Produce the probabilities of exceeding a
+                        threshold given a posterior gamma distribution.
+GammaPriorCh            Compute Parameters to Calibrate a Gamma
+                        Distribution
+LogNormalPriorCh        Compute Parameters to Calibrate a Log-normal
+                        Distribution
+NYleukemia              Upstate New York Leukemia Data
+NumericVectorEquality   Test if two numeric vectors are equal
+SpatialEpi              Methods and Data for Spatial Epidemiology
+bayes_cluster           Bayesian Cluster Detection Method
+besag_newell            Besag-Newell Cluster Detection Method
+coeff                   Compute log Bayes Factors
+create_geo_objects      Create geographical objects to be used in
+                        Bayesian Cluster Detection Method
+eBayes                  Empirical Bayes Estimates of Relative Risk
+expected                Compute Expected Numbers of Disease
+kulldorff               Kulldorff Cluster Detection Method
+latlong2grid            Convert Coordinates from Latitude/Longitude to
+                        Grid
+ldmultinom              log multinomial Density
+mapvariable             Plot Levels of a Variable in a Colour-Coded Map
+normalize               Normalize vector to sum to 1.
+pennLC                  Pennsylvania Lung Cancer
+plotmap                 Plot Levels of a Variable in a Colour-Coded Map
+polygon2spatial_polygon
+                        Convert a Polygon to a Spatial Polygons Object
+scotland                Lip Cancer in Scotland
+zones                   Create set of all single zones and output
+                        geographical information

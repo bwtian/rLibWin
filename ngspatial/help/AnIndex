@@ -1,0 +1,12 @@
+A	A
+adjacency.matrix	adjacency.matrix
+autologistic	autologistic
+infant	infant
+rautologistic	rautologistic
+residuals.autologistic	residuals.autologistic
+residuals.sparse.sglmm	residuals.sparse.sglmm
+sparse.sglmm	sparse.sglmm
+summary.autologistic	summary.autologistic
+summary.sparse.sglmm	summary.sparse.sglmm
+vcov.autologistic	vcov.autologistic
+vcov.sparse.sglmm	vcov.sparse.sglmm

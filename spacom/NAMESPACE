@@ -1,0 +1,42 @@
+
+importFrom("stats", AIC, BIC)# and many more!
+
+importFrom("methods", setClass, representation,
+           setGeneric, setMethod, signature, new)
+
+importFrom("nlme", VarCorr, fixef, ranef)# lme4 also imports and exports them 
+importFrom("lme4", lmer)
+importFrom("spdep", "lm.morantest", "mat2listw")
+importFrom("foreach", foreach, "%do%", "%dopar%")
+importFrom("iterators", nextElem, iter)
+importFrom("Matrix", Matrix, rowSums)
+
+exportMethods(
+    "AIC",
+    "BIC",
+    "fixef",
+    "ranef",
+    "show",
+    "summary",
+    "VarCorr",
+    "merge"
+)
+S3method(print, MLSpawExactOutput)
+
+export("MLSpawExact",
+       "ResampleMLSpawExact",
+       "ResampleMLSpawAggregate",
+       "WeightMatrix",
+       "MLSpawResidMoran",
+       "ExploreMLSpawExact",
+       "ExploreMLSpawAggregate",
+       "SpawAggregate",
+       "SpawExact",
+       "wt.gini.group",
+       "wt.gini",
+       "wt.gini.categ",
+       "wt.var",
+       "wt.sd",
+       "wt.RS",
+       "wt.Atkinson",
+       "wt.Theil")

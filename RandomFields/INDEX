@@ -1,0 +1,217 @@
+AuxiliaryModels         Auxiliary and other Models
+Baysian                 Baysian Spatial Modelling
+Changings               Documentation of some further changings
+Circulant               Circulant Embedding methods
+Coins                   Random coin method
+CondSimu                Obsolete functions
+Direct                  Methods relying on square roots of the
+                        covariance matrix
+GSPSJ06                 Fast and Exact Simulation of Large Gaussian
+                        Lattice Systems in R2
+Gaussian                Methods for Gaussian Random Fields
+Hyperplane              Hyperplane method
+MajorRevisions          Documentation of major changings
+Nugget                  Method to simulate the Nugget effect
+Print                   Nice print function returning also the names
+                        automatically
+PrintModelList          Information about the implemented covariance
+                        models
+RFcov                   Evaluate Covariance and Variogram Functions
+RFcrossvalidate         Fitting model parameters to spatial data
+                        (regionalised variables) and to linear (mixed)
+                        models
+RFdistr                 Evaluating distribution families
+RFempVariog-class       Class 'RFempVariog'
+RFempiricalvariogram    Empirical (Cross-)Variogram
+RFfit                   Fitting model parameters to spatial data
+                        (regionalised variables) and to linear (mixed)
+                        models
+RFfit-class             Class 'RFfit'
+RFformula               RFformula - syntax to design random field
+                        models with trend or linear mixed models
+RFfractaldim            RFfractaldimension
+RFfunction              Evaluation operators (RF commands)
+RFgetMethodNames        Simulation Techniques
+RFgetModelInfo          Internal information
+RFgetModelNames         Names of implemented covariance and variogram
+                        models
+RFgridDataFrame-class   Class 'RFgridDataFrame'
+RFgui                   Graphical User Interface For Fitting Covariance
+                        Models And Variograms
+RFhurst                 Hurst coefficient
+RFinterpolate           Interpolation methods
+RFoldstyle              RFoldstyle
+RFoptions               Setting control arguments
+RFoptionsAdvanced       Setting control arguments of 'RandomFields' -
+                        advanced examples
+RFpointsDataFrame-class
+                        Class 'RFpointsDataFrame'
+RFratiotest             Likelihood ratio test
+RFsimulate              Simulation of Random Fields
+RFsimulate.more.examples
+                        Further Examples for the Simulation of Random
+                        Fields
+RFsimulate.sophisticated.examples
+                        Sophisticated Examples for the Simulation of
+                        Random Fields
+RFsimulateAdvanced      Simulation of Random Fields - Advanced
+RFsp-class              Class 'RFsp'
+RFspDataFrame2conventional
+                        coerce RFsp-class to conventional format
+RFspatialGridDataFrame-class
+                        Class "RFspatialGridDataFrame"
+RFspatialPointsDataFrame-class
+                        Class "RFspatialPointsDataFrame"
+RMS                     Scaling operator
+RMangle                 Anisotropy matrix given by angle
+RMaskey                 Askey model
+RMave                   Space-time moving average model
+RMball                  RMball
+RMbcw                   Model bridging stationary and intrinsically
+                        stationary processes
+RMbernoulli             Covariance Model for binary field based on a
+                        Gaussian field
+RMbessel                Bessel Family Covariance Model
+RMbigneiting            Gneiting-Wendland Covariance Models
+RMbiwm                  Full Bivariate Whittle Matern Model
+RMbr2bg                 Transformation from Brown-Resnick to Bernoulli
+RMbr2eg                 Transformation from Brown-Resnick to Gauss
+RMbrownresnick          Tail correlation function of the Brown-Resnick
+                        process
+RMcauchy                Cauchy Family Covariance Model
+RMcauchytbm             Modifications of the Cauchy Family Covariance
+                        Model
+RMcircular              Circular Covariance Model
+RMconstant              Constant Covariance Matrix
+RMcoord                 Coordinates in the mixed model representation
+RMcoxisham              Cox Isham Covariance Model
+RMcubic                 Cubic Covariance Model
+RMcurlfree              Curlfree Covariance Model
+RMcutoff                Gneiting's modification towards finite range
+RMdagum                 Dagum Covariance Model Family
+RMdampedcos             Exponentially Damped Cosine
+RMdelay                 Bivariate Delay Effect
+RMdewijsian             Modified DeWijsian Variogram Model
+RMdivfree               Divfree Covariance Model
+RMeaxxa                 Special models for rotation like fields
+RMepscauchy             Generalized Cauchy Family Covariance Model
+RMexp                   Exponential Covariance Model
+RMexponential           Exponential operator
+RMfbm                   Variogram Model of Fractal Brownian Motion
+RMfixed                 Fixed Effect Model
+RMflatpower             Variogram Model Similar to Fractal Brownian
+                        Motion
+RMfractdiff             Fractionally Differenced Process Model
+RMfractgauss            Fractal Gaussian Model Family
+RMgauss                 Gaussian Covariance Model
+RMgencauchy             Generalized Cauchy Family Covariance Model
+RMgenfbm                Generalized Fractal Brownian Motion Variogram
+                        Model
+RMgengneiting           Gneiting-Wendland Covariance Models
+RMgneiting              Gneiting Covariance Model
+RMgneitingdiff          Gneiting Covariance Model Used as Tapering
+                        Function
+RMhyperbolic            Generalized Hyperbolic Covariance Model
+RMiaco                  Iaco-Cesare model
+RMid                    Identical Model
+RMintern                Internal models
+RMintexp                Integral exponential operator
+RMintrinsic             Intrinsic Embedding Covariance Model
+RMkolmogorov            Identical Model
+RMlgd                   Local-Global Distinguisher Family Covariance
+                        Model
+RMma                    Ma operator
+RMmastein               Ma-Stein operator
+RMmatrix                Matrix operator
+RMmodel                 Covariance and Variogram Models in
+                        'RandomFields' (RM commands)
+RMmodel-class           Class 'RMmodel'
+RMmodelFit-class        Class "RMmodelFit"
+RMmodelgenerator-class
+                        Class 'RMmodelgenerator'
+RMmodelsAdvanced        Advanced features of the mdoels
+RMmppplus               Mixture of shape functions
+RMmqam                  multivariate quasi-arithmetic mean
+RMmult                  Multiplication of Random Field Models
+RMnatsc                 Natural scale
+RMnonstwm               RMnonstwm
+RMnsst                  Non-Separable Space-Time model
+RMnugget                Nugget Effect Covariance Model
+RMparswm                Parsimonious Multivariate Whittle Matern Model
+RMpenta                 Penta Covariance Model
+RMplus                  Addition of Random Field Models
+RMpolygon               RMpolygon
+RMpower                 Power operator for Variograms and Covariance
+                        functions
+RMqam                   Quasi-arithmetic mean
+RMqexp                  Variant of the exponential model
+RMrational              Rational function
+RMrotat                 Rotation matrices
+RMschlather             Covariance Model for binary field based on
+                        Gaussian field
+RMschur                 Schur product
+RMsign                  Random sign
+RMspheric               Spherical Covariance Model
+RMstable                Stable Family / Powered Exponential Model
+RMstein                 Stein nonseparable space-time model
+RMstp                   Single temporal process
+RMstrokorb              Tail correlation function of the Brown-Resnick
+                        process
+RMtbm                   Turning Bands Method
+RMtrafo                 Transformation of coordinate systems
+RMtrend                 Trend Model
+RMtruncsupport          Random sign
+RMuser                  User Defined Function
+RMvector                Vector Covariance Model
+RMwave                  Wave Covariance Model / Cardinal Sine
+RMwhittle               Whittle-Matern Covariance Model
+RPbernoulli             Simulation of Binary Random Fields
+RPbrmixed               Simulation methods for Brown-Resnick processes
+RPbrownresnick          Brown-Resnick process
+RPchi2                  Simulation of a Chi2 Random Fields
+RPgauss                 Simulation of Gaussian Random Fields
+RPopitz                 Extremal t process
+RPpoisson               Simulation of Random Fields
+RPprocess               Models for classes of random fields (RP
+                        commands)
+RPschlather             Extremal Gaussian process
+RPsmith                 (Mixed) Moving Maxima
+RPt                     Simulation of a T Random Fields
+RR                      Distribution families (RR commands)
+RRdeterm                Random scaling used with balls
+RRdistr                 RRdistr
+RRgauss                 Random scaling used with balls
+RRloc                   Random scaling used with balls
+RRrectangular           Random scaling used with balls
+RRspheric               Random scaling used with balls
+RRunif                  Random scaling used with balls
+RandomFields-package    Simulation and Analysis of Random Fields
+S02                     Models for stationary max-stable random fields
+S10                     On some covariance models based on normal scale
+                        mixtures
+SBS14                   Systematic co-occurrence of tail correlation
+                        functions among max-stable processes
+SS12                    Covariance Models for Random Vector Fields
+Specific                Methods that are specific to certain covariance
+                        models
+Spectral                Spectral turning bands method
+Tbm                     Turning Bands method
+constants               Constants used in RandomFields (RC constants)
+conventional2RFspDataFrame
+                        Coercion to class 'RFsp' objects
+fitgauss                Details on fitting Gaussian random fields
+jss14                   Covariance models for multivariate and vector
+                        valued fields
+maxstable               Simulation of Max-Stable Random Fields
+maxstableAdvanced       Simulation examples of advanced Max-Stable
+                        Random Fields
+papers                  Papers involving 'RandomFields' and co-authored
+                        by M. Schlather
+plot-method             Methods for function 'plot' in package
+                        'RandomFields'
+rfGenerateModels        Internal functions
+soil                    Soil data of North Bavaria, Germany
+sp2RF                   Transformation of an 'sp' object to an 'RFsp'
+                        object
+weather                 Pressure and temperature forecast errors over
+                        the Pacific Northwest

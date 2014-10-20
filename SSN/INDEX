@@ -1,0 +1,85 @@
+AIC.glmssn              AIC for glmssn objects
+BLUP                    Compute the joint mean, variance and covariance
+                        of any random effects in a glmssn model
+                        conditional on the data
+BlockPredict            Block Predicton for Streams Data
+CrossValidationSSN      Compute Crossvalidation Values for glmssn
+                        Objects
+CrossValidationStatsSSN
+                        Compute Summary Statistics on Crossvalidation
+                        Values for glmssn Objects
+EmpiricalSemivariogram
+                        Empirical Semivariogram Based on Euclidean
+                        Distance
+GR2                     Generalised R2
+InfoCritCompare         Compare 'glmssn' Information Criteria
+MiddleFork04.ssn        MiddleFork04.ssn data folder
+SSN-package             Spatial Modeling on Stream Networks
+SimulateOnSSN           Simulating Data on Spatial Stream Networks
+SpatialStreamNetwork-class
+                        Class "SpatialStreamNetwork"
+Torgegram               Empirical Semivariogram Based on Hydrologic
+                        Distance and flow connection
+additive.function       Generate an Additive Function Value
+as.SpatialLines         Methods to convert SpatialStreamNetwork objects
+                        classes to sp classes
+binSp                   Fitted glmssn object for example data set
+                        MiddleFork.ssn
+binomialDesign          Design functions
+boxplot.SpatialStreamNetwork
+                        Box-and-whisker plots for data within
+                        SpatialStreamNetwork objects.
+covparms                Get Covariance Parameters
+createDistMat           Calculate Hydrologic Distances for a
+                        SpatialStreamNetwork Object
+createSSN               Create an SpatialStreamnetwork Object
+fitNS                   Fitted glmssn object for example data set
+                        MiddleFork.ssn
+fitRE                   Fitted glmssn object for example data set
+                        MiddleFork.ssn
+fitSimBin               Fitted glmssn object for simulated data
+fitSimGau               Fitted glmssn object for simulated data
+fitSimPoi               Fitted glmssn object for simulated data
+fitSp                   Fitted glmssn object for example data set
+                        MiddleFork.ssn
+fitSpBk                 Fitted glmssn object for example data set
+                        MiddleFork.ssn
+fitSpRE1                Fitted glmssn object for example data set
+                        MiddleFork.ssn
+fitSpRE2                Fitted glmssn object for example data set
+                        MiddleFork.ssn
+getPreds                Extract Predictions with associated standard
+                        errors.
+getSSNdata.frame        Extract data from SSN objects as a data.frame
+getStreamDistMat        Extract the stream network distance matrix from
+                        SSN objects
+glmssn                  Fitting Generalized Linear Models for Spatial
+                        Stream Networks
+glmssn-class            Class "glmssn"
+importPredpts           Import Prediction Points into a
+                        SpatialStreamNetwork or glmssn Object
+importSSN               Import an object of class SpatialStreamNetwork
+influenceSSN-class      Class "influenceSSN"
+mf04                    imported SpatialStreamNetwork object from
+                        MiddleFork04.ssn data folder
+mf04p                   Imported SpatialStreamNetwork object from
+                        MiddleFork04.ssn data folder
+plot.SpatialStreamNetwork
+                        Plotting Method for SpatialStreamNetwork
+                        Objects
+plot.Torgegram          Plotting Method for Torgegram Objects
+plot.glmssn.predict     Plot glmssn.predict Objects
+plot.influenceSSN       Plotting Method for influenceSSN Objects
+poiSp                   Fitted glmssn object for example data set
+                        MiddleFork.ssn
+predict.glmssn          Calculate Predictions for Prediction Sites
+print.summary.glmssn    Print summary - S3 Method for Class 'glmssn'
+putSSNdata.frame        putSSNdata.frame
+residuals.glmssn        Compute Model Residuals for glmssn Objects
+splitPredictions        Split Prediction Sets in a SpatialStreamNetwork
+                        Object
+subsetSSN               Subset a SpatialStreamNetwork Object
+summary.glmssn          Summary - S3 Method for Class 'glmssn'
+updatePath              Update Path Slot in SpatialStreamNetwork Object
+varcomp                 Variance Components for glmssn Objects
+writeSSN                Write a SpatialStreamNetwork Object

@@ -1,0 +1,63 @@
+DEnvelope               Estimation of the confidence envelope of the D
+                        function under its null hypothesis
+Dhat                    Estimation of the D function
+GoFtest                 Goodness of Fit test between a distance based
+                        measure of spatial structure and simulations of
+                        its null hypothesis
+KEnvelope               Estimation of the confidence envelope of the K
+                        function under its null hypothesis
+KdEnvelope              Estimation of the confidence envelope of the Kd
+                        function under its null hypothesis
+Kdhat                   Estimation of the Kd function
+Khat                    Estimation of the K function
+KinhomEnvelope          Estimation of the confidence envelope of the
+                        Kinhom function under its null hypothesis
+Kinhomhat               Estimation of the inhomogenous K function
+KmmEnvelope             Estimation of the confidence envelope of the
+                        Lmm function under its null hypothesis
+Kmmhat                  Estimation of the Kmm function
+Ktest                   Test of a point pattern against Complete
+                        Spatial Randomness
+LEnvelope               Estimation of the confidence envelope of the L
+                        function under its null hypothesis
+Lhat                    Estimation of the L function
+LmmEnvelope             Estimation of the confidence envelope of the
+                        Lmm function under its null hypothesis
+Lmmhat                  Estimation of the Lmm function
+MEnvelope               Estimation of the confidence envelope of the M
+                        function under its null hypothesis
+Mhat                    Estimation of the M function
+as.wmppp                Converts data to class wmppp
+dbmss-package           Distance based measures of spatial structures
+dbmssEnvelope.object    Class of envelope of function values (fv)
+gEnvelope               Estimation of the confidence envelope of the g
+                        function under its null hypothesis
+ghat                    Estimation of the g function
+is.wmppp                Test whether an object is a weighted, marked,
+                        planar point pattern
+paracou16               Paracou field station plot 16, partial map
+print.dbmssEnvelope     Print a confidence envelope
+rPopulationIndependenceK
+                        Simulations of a point pattern according to the
+                        null hypothesis of population independence
+                        defined for K
+rPopulationIndependenceM
+                        Simulations of a point pattern according to the
+                        null hypothesis of population independence
+                        defined for M
+rRandomLabeling         Simulations of a point pattern according to the
+                        null hypothesis of random labeling
+rRandomLabelingM        Simulations of a point pattern according to the
+                        null hypothesis of random labelling defined for
+                        M
+rRandomLocation         Simulations of a point pattern according to the
+                        null hypothesis of random location
+rRandomPositionK        Simulations of a point pattern according to the
+                        null hypothesis of random position defined for
+                        K
+sharpen.wmppp           Methods for weighted, marked planar point
+                        patterns (of class wmppp) from spatstat
+summary.dbmssEnvelope   Summary of a confidence envelope
+wmppp                   Create a Weighted, Marked, Planar Point Pattern
+wmppp.object            Class of Weighted, Marked, Planar Point
+                        Patterns

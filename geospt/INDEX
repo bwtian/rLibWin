@@ -1,0 +1,43 @@
+COSha10                 Soil organic carbon database at a sampling
+                        depth of 0-10 cm
+COSha10map              Map of total soil carbon stock (t/ha) at 0-10
+                        cm depth
+COSha30                 Soil organic carbon database at a sampling
+                        depth of 0-30 cm
+COSha30map              Map of total soil carbon stock (t/ha) at 0-30
+                        cm depth
+RBF.phi                 radial basis function evaluation
+bestnet                 Generate a SpatialPoints object corresponding
+                        to the best result obtained in an optimized
+                        network
+bp.with.outlier.label   geospt internal function
+criterio.cv             Cross-validation summaries
+est.variograms          Variogram Estimator
+extractFormula          geospt internal function
+geospt-package          Spatial geostatistics; some geostatistical and
+                        radial basis functions, prediction and cross
+                        validation; design of optimal spatial sampling
+                        networks based on geostatistical modelling
+graph.rbf               Graph that describes the behavior of the
+                        optimized _eta_ and _rho_ parameters,
+                        associated with a radial basis function
+lalib                   Map of boundary enclosing La Libertad Research
+                        Center
+network.design          Generating 'ASEPE' associated with a
+                        conditioned network design
+pocket.plot             graphs the probability or standardized variance
+                        in the directions north-south or east-west
+preci                   Empirical data related to rainfall
+rbf                     gaussian, exponential, trigonometric, thin
+                        plate spline, inverse multiquadratic, and
+                        multiquadratic radial basis function prediction
+rbf.cv                  rbf cross validation leave-one-out
+rbf.cv1                 Generates a RMSPE value, result of cross
+                        validation leave-one-out
+rbf.tcv                 table of rbf cross validation, leave-one-out
+samplePts               sample _n_ point locations in (or on) a spatial
+                        object
+seqPtsOptNet            Design of optimal sampling networks through the
+                        sequential points method
+simPtsOptNet            Design of optimal sampling networks through the
+                        simultaneous points method

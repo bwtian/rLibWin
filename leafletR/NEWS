@@ -1,0 +1,101 @@
+leafletR 0.3-0 [2014-09-12]
+---------------------------
+
+* rewrite of leaflet: maps now generated using brew and templates;
+  RJSONIO dependency replaced by jsonlite 
+
+* new function addBaseMap: add custom base maps
+
+* print method for leaflet: view your map even faster by typing
+  map object name
+  
+* update to Leaflet version 0.7.3
+
+* bug fixes in leaflet: failed for style lists; bad detection of
+  wrong styles
+
+* bug fix in styleCat/styleGrad/styleSingle: printing failed
+
+* bug fix in toGeoJSON: failed for data frames with three columns
+
+
+leafletR 0.2-1 [2014-07-09]
+---------------------------
+
+* bug fixes in leaflet: base.map check + overwriting data file(s) 
+  in map directory + no map in case of multiple base maps with one
+  singleStyle layer + dot separated data file names denied
+  
+* bug fixes in styleSingle: some arguments failed as exclusive
+  argument
+
+* leaflet: legend for maps with more than one singleStyle layer
+
+* print methods added for styles
+
+
+leafletR 0.2-0 [2014-04-28]
+---------------------------
+
+* bug fix in styleGrad: broken legend in some cases
+
+* bug fix in leaflet: no map display in case of multiple included
+  data layers
+
+* new function getProperties: prints names of properties 
+  available in GeoJSON file (RJSONIO package required)
+
+* leaflet: GeoJSON validation added (RJSONIO package required)
+
+* leaflet: CloudMade tiles removed (not free anymore)
+
+* toGeoJSON: spatial objects (sp) support added
+
+* internal functions improved/fixed
+
+
+leafletR 0.1-2 [2014-03-13]
+---------------------------
+
+* update to Leaflet v0.7.2
+
+* bug fix in styleCat/styleGrad/styleSingle: color conversion 
+  failed in some cases
+
+* leaflet: new base maps added + attribution of maps
+  improved
+
+* leaflet: popups now work for more than one data layer 
+  and multiple properties
+
+* new argument "style.par" in catStyle/gradStyle: categorized
+  or graduated radii can now be applied to point data
+
+
+leafletR 0.1-1 [2014-01-28]
+---------------------------
+
+* bug fix in leaflet: internal function parameter confusion
+
+* bug fix in leaflet/toGeoJSON: incorrect file path returned 
+  under Windows
+
+* new argument "incl.data" in leaflet: data can now be included 
+  in the HTML file itself (e.g. for Google Chrome and Opera 
+  browser support)
+
+* new argument "overwrite" in leaflet/toGeoJSON: replaces user 
+  input, required if file already exists
+  
+* new argument "leg" in styleCat/styleGrad: legend title
+  
+* leaflet/toGeoJSON: spaces replaced with underscores in output 
+  file names 
+
+* leaflet: default map title now taken from data file name
+
+
+leafletR 0.1-0 [2014-01-20]
+---------------------------
+
+* This is the first version

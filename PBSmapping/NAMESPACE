@@ -1,0 +1,29 @@
+# Import all packages listed as Imports or Depends
+# import( some package )
+# importFrom(sp, point.in.polygon)
+# importFrom(maptools, read.shape)
+
+# Export all names from PBSmapping
+# exportPattern(".") # temporary default
+
+exportPattern("^[^\\.]")
+exportPattern("^\\.add")
+exportPattern("^\\.calc")
+exportPattern("^\\.check")
+exportPattern("^\\.clip")
+exportPattern("^\\.closest")
+exportPattern("^\\.create")
+exportPattern("^\\.expand")
+exportPattern("^\\.fix")
+exportPattern("^\\.get")
+exportPattern("^\\.init")
+exportPattern("^\\.insert")
+exportPattern("^\\.PBS")
+exportPattern("^\\.plot")
+exportPattern("^\\.prepare")
+exportPattern("^\\.rollup")
+exportPattern("^\\.validate")
+
+export(.mat2df)
+
+

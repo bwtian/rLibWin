@@ -1,0 +1,9 @@
+addBaseMap              Add custom base maps
+getProperties           Print property names of a GeoJSON file
+leaflet                 Create a Leaflet web-map
+leafletR-package        Interactive web-maps based on the Leaflet
+                        JavaScript library
+styleCat                Categorized styling
+styleGrad               Graduated styling
+styleSingle             Single symbol styling
+toGeoJSON               Create GeoJSON file from spatial data

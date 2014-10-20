@@ -1,0 +1,8 @@
+Stem                    Analysis of spatio-temporal hierarchical models
+Stem.Bootstrap          Parametric bootstrap
+Stem.Estimation         ML Estimation
+Stem.Kriging            Dynamical spatial mapping
+Stem.Model              Create a Stem Model
+Stem.Simulation         Simulation of spatio-temporal data
+pm10                    Realistic data which illustrate the usage of
+                        the package Stem

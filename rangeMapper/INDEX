@@ -1,0 +1,30 @@
+RMQuery                 Query a 'rangeMapper' project
+SpatialPixelsRangeMap-class
+                        Class "SpatialPixelsRangeMap"
+assemblageFetch-methods
+                        Function 'assemblageFetch' retrieves the
+                        species set of an arbitrary canvas cell
+bio.save                Import 'BIO' tables to a 'rangeMapper' project.
+canvas.save             Project's canvas
+global.bbox             Global bounding box
+gridSize.save           Save or retrieve the grid size from an
+                        'rangeMapper' project.
+metadata.update         Updates metadata table
+plot,SpatialPixelsRangeMap,missing-method
+                        Plot a SpatialPixelsRangeMap
+processRanges           Process ranges
+rangeFetch              Range extractor
+rangeMap-class          Class "rangeMap" to formally describe a
+                        rangeMapper sqlite file.
+rangeMap.export         Export 'MAP' tables
+rangeMap.save           Save, retrieve and export maps.
+rangeMap.start          Initiate/open a new rangeMapper project
+rangeMapStart-class     Class '"rangeMapStart"'
+rangeMapper             rangeMapper: A platform for the study of
+                        macroecology of life history traits.
+rangeTraits             A container of functions to apply on a
+                        'SpatialPolygons object'
+rm.rangeMapper          Remove tables from a give project
+selectShpFiles          Select (recursively) shape files
+vertices-methods        Vertices of a SpatialPolygonsDataFrame
+wrens                   Life history data of the New World Wrens

@@ -1,0 +1,24 @@
+
+# Remove the previous line if you edit this file
+
+# Export all names
+exportPattern(".")
+
+# Import all packages listed as Imports or Depends
+
+
+importFrom("fields","image.plot")
+
+importFrom("PresenceAbsence","presence.absence.summary")
+importFrom("PresenceAbsence","error.threshold.plot")
+importFrom("PresenceAbsence","optimal.thresholds")
+importFrom("PresenceAbsence","predicted.prevalence")
+importFrom("PresenceAbsence","Kappa")
+
+import(
+  randomForest,
+  gbm,
+  HandTill2001,
+  raster,
+  rgdal
+)

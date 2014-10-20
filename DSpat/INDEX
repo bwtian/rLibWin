@@ -1,0 +1,36 @@
+DSpat-package           Spatial modelling package for distance sampling
+                        data
+DSpat.covariates        Raster covariates study area
+DSpat.lines             Example DSpat lines dataframe
+DSpat.obs               Observation dataframe for DSpat
+LTDataFrame             Creates covariate dataframes
+Ops.psp                 Internal DSpat functions
+create.covariate.images
+                        Create a list of covariate images
+create.lines            Create a systematic sample of parallel lines
+                        across a grid
+create.points.by.offset
+                        Create point dataframe offset from line
+dist2line               Compute perpendicular distances and projections
+                        onto line
+dspat                   Fits spatial model to distance sampling data
+integrate.intensity     Integrated intensity of fitted model
+lgcp.correction         Calculate Overdispersion factor for IPP fit via
+                        Monte Carlo Integration
+lines_to_strips         Convert lines to transects (strips)
+offset.points           Offset points from the line to actual position
+project2line            Project points onto line
+quadscheme.lt           Create line transect quadrature for spatstat
+sample.points           Sample points within each transect and filter
+                        with specified detection function
+simCovariates           Simulates covariates for an example in DSpat
+simDSpat                Simulate a distance sample from a specified
+                        spatial point process
+simPts                  Simulates point process on a rectangular grid
+transect.intensity      Compute expected and observed counts by
+                        distance within transect
+weeds                   Dubbo weed data
+weeds.all               Dubbo weed data with constructed y-coordinate
+weeds.covariates        Covariate grid for Dubbo weed data
+weeds.lines             Transect lines from Dubbo weed data
+weeds.obs               Observations from Dubbo weed data

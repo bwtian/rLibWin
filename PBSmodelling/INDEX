@@ -1,0 +1,142 @@
+CCA.qbr                 Data: Sampled Counts of Quillback Rockfish
+                        (Sebastes maliger)
+GT0                     Restrict a Numeric Variable to a Positive Value
+PBSmodelling            PBS Modelling
+PBSoptions-class        S4: Project Options Class
+addArrows               Add Arrows to a Plot Using Relative (0:1)
+                        Coordinates
+addLabel                Add a Label to a Plot Using Relative (0:1)
+                        Coordinates
+addLegend               Add a Legend to a Plot Using Relative (0:1)
+                        Coordinates
+calcFib                 Calculate Fibonacci Numbers by Several Methods
+calcGM                  Calculate the Geometric Mean, Allowing for
+                        Zeroes
+calcMin                 Calculate the Minimum of a User-Defined
+                        Function
+chooseWinVal            Choose and Set a String Item in a GUI
+cleanProj               Launch a GUI for Project File Deletion
+cleanWD                 Launch a GUI for File Deletion
+clearAll                Remove all R Objects From a Specified
+                        Environment
+clearPBSext             Clear File Extension Associations
+clearRcon               Clear the R Console / Focus on the RGui Window
+clearWinVal             Remove all Current Widget Variables
+clipVector              Clip a Vector at One or Both Ends
+closeWin                Close GUI Window(s)
+compileC                Compile a C File into a Shared Library Object
+compileDescription      Convert and Save a Window Description as a List
+convSlashes             Convert Slashes from UNIX to DOS
+createVector            Create a GUI with a Vector Widget
+createWin               Create a GUI Window
+declareGUIoptions       Declare Option Names that Correspond with
+                        Widget Names
+doAction                Execute Action Created by a Widget
+drawBars                Draw a Linear Barplot on the Current Plot
+evalCall                Evaluate a Function Call
+expandGraph             Expand the Plot Area by Adjusting Margins
+exportHistory           Export a Saved History
+findPat                 Search a Character Vector to Find Multiple
+                        Patterns
+findPrefix              Find a Prefix Based on Names of Existing Files
+findProgram             Locates a program in the PATH environment
+                        variable
+focusWin                Set the Focus on a Particular Window
+genMatrix               Generate Test Matrices for plotBubbles
+getChoice               Choose One String Item from a List of Choices
+getGUIoptions           Get PBS Options for Widgets
+getOptions              Get and Set User Options
+getOptionsFileName      Get and Set File Name for Saving and Loading of
+                        Options
+getOptionsPrefix        Get and Set GUI Prefix of Options Class
+getPBSext               Get a Command Associated With a File Name
+getPBSoptions           Retrieve A User Option
+getWinAct               Retrieve the Last Window Action
+getWinFun               Retrieve Names of Functions Referenced in a
+                        Window
+getWinVal               Retrieve Widget Values for Use in R Code
+getYes                  Prompt the User to Choose Yes or No
+importHistory           Import a History List from a File
+initHistory             Create Structures for a New History Widget
+isWhat                  Identify an Object and Print Information
+lisp                    List Objects in .PBSmodEnv Workspace
+loadC                   Launch a GUI for Compiling and Loading C Code
+loadOptions             Save and Load Options to and from Disk
+loadOptionsGUI          Load and Save Options Values to and from a GUI
+lucent                  Convert Solid Colours to Translucence
+openExamples            Open Example Files from a Package
+openFile                Open a File with an Associated Program
+openUG                  Open Package User Guide
+packList                Pack a List with Objects
+pad0                    Pad Values with Leading Zeroes
+parseWinFile            Convert a Window Description File into a List
+                        Object
+pause                   Pause Between Graphics Displays or Other
+                        Calculations
+pickCol                 Pick a Colour From a Palette and get the
+                        Hexadecimal Code
+plotACF                 Plot Autocorrelation Bars From a Data Frame,
+                        Matrix, or Vector
+plotAsp                 Construct a Plot with a Specified Aspect Ratio
+plotBubbles             Construct a Bubble Plot from a Matrix
+plotCsum                Plot Cumulative Sum of Data
+plotDens                Plot Density Curves from a Data Frame, Matrix,
+                        or Vector
+plotFriedEggs           Render a Pairs Plot as Fried Eggs and Beer
+plotSidebars            Plot Table as Horizontal Sidebars
+plotTrace               Plot Trace Lines from a Data Frame, Matrix, or
+                        Vector
+presentTalk             Run a Presentation in R
+promptWriteOptions      Prompt the User to Write Changed Options
+readList                Read a List from a File in PBS Modelling Format
+readPBSoptions          Read PBS Options from an External File
+resetGraph              Reset par Values for a Plot
+restorePar              Get Actual Parameters from Scaled Values
+runDemos                Interactive GUI for R Demos
+runExample              Run a Single GUI Example Included with PBS
+                        Modelling
+runExamples             Run GUI Examples Included with PBS Modelling
+scalePar                Scale Parameters to [0,1]
+selectDir               Display Dialogue: Select directory
+selectFile              Display Dialogue: Open or Save File
+setFileOption           Set a PBS File Path Option Interactively
+setGUIoptions           Set PBS Options from Widget Values
+setPBSext               Set a Command Associated with a File Name
+                        Extension
+setPBSoptions           Set A User Option
+setPathOption           Set a PBS Path Option Interactively
+setWidgetColor          Update Widget Color
+setWidgetState          Update Widget State
+setWinAct               Add a Window Action to the Saved Action Vector
+setWinVal               Update Widget Values
+setwdGUI                Browse for Working Directory and Optionally
+                        Find Prefix
+show0                   Convert Numbers into Text with Specified
+                        Decimal Places
+showAlert               Display a Message in an Alert Window
+showArgs                Display Expected Widget Arguments
+showHelp                Display HTML Help Pages for Packages in Browser
+showPacks               Show Packages Required But Not Installed
+showRes                 Show Results of Expression Represented by Text
+showVignettes           Display Vignettes for Packages
+sortHistory             Sort an Active or Saved History
+talk-class              S4: Present Talk Classes
+testAlpha               Test Various Alpha Transparency Values
+testCol                 Display Colours Available Using a Set of
+                        Strings
+testLty                 Display Line Types Available
+testLwd                 Display Line Widths
+testPch                 Display Plotting Symbols or Octal Strings
+testWidgets             Display Sample GUIs and their Source Code
+tget                    Get/Print Objects From or Put Objects Into
+                        Temporary Work Environment
+unpackList              Unpack List Elements into Variables
+updateGUI               Update Active GUI With Local Values
+vbdata                  Data: Lengths-at-Age for von Bertalanffy Curve
+vbpars                  Data: Initial Parameters for a von Bertalanffy
+                        Curve
+view                    View First/Last/Random n Elements/Rows of an
+                        Object
+viewCode                View Package R Code
+writeList               Write a List to a File in PBS Modelling Format
+writePBSoptions         Write PBS Options to an External File

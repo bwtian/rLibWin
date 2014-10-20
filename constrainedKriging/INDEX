@@ -1,0 +1,17 @@
+CKrige                  Spatial interpolation (2D) by constrained,
+                        covariance-matching constrained and universal,
+                        global Point or Block Kriging
+constrainedKriging-package
+                        constrainedKriging a package for nonlinear
+                        spatial predictions with local change of
+                        support
+covmodel                Create isotropic covariance model
+meuse.blocks            Meuse block
+plot.preCKrigePolygons
+                        Plotting polygon configurations and their
+                        approximated areas
+preCKrige               Spatial Variance-Covariance Matrices for Points
+                        and Polygons of any Shape
+preCKrigePoints-class   Class "preCKrigePoints"
+preCKrigePolygons-class
+                        Class "preCKrigePolygons" ~~~

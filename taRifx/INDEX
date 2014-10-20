@@ -1,0 +1,88 @@
+as.data.frame.by        Convert the results of by() to a data.frame.
+as.matrix.by            Coerces a by object into a matrix (only tested
+                        on a 2d objects).
+autoplot.microbenchmark
+                        Autoplot method for microbenchmark objects:
+                        Prettier graphs for microbenchmark using
+                        ggplot2
+between                 Classify values into groups based on which
+                        numbers they're between
+bytable                 Produces a nice summary table by groupings
+categorize              Categorize a vector based on a data.frame with
+                        two columns, the low and high end points of
+                        each category.
+compareplot             Bar plot divided by three groupings
+daysofweek              Return a vector of the days of the week, in
+                        order
+destring                Convert character vector to numeric, ignoring
+                        irrelevant characters.
+distinct                Returns number of distinct observations in each
+                        column of a data frame or in a vector
+evens                   Shortcut functions to return the odd and even
+                        values from a vector
+expandDF                Functions to manipulate data frames
+fpart                   Obtain the fractional part of a numeric
+hist_horiz              Kludgy horizontal histogram function (really
+                        should just fix the lattice equivalent)
+homogenous              Returns whether a vector is homogenous or not
+iapply                  Iteratively (recursively) apply a function to
+                        its own output
+japply                  japply: Judiciously sapply to only selected
+                        columns
+last                    Convenience functions to return the last/first
+                        element of a vector
+latex.table.by          Exports a latex table with the first N columns
+                        being multirow grouping variables.
+merge.list              Method to merge two lists Matches names of each
+                        list element and combines any sub-elements
+middle.group            Return a vector containing the locations of the
+                        middle of every group in a vector, either as a
+                        numerical index or as a TRUE/FALSE boolean.
+munch                   Recursively delete entries containing 'what'
+                        before entry pointed to by 'which'
+panel.ecdf              Various panel functions
+prettify                Function to prettify the output of another
+                        function using a 'var.labels' attribute This is
+                        particularly useful in combination with
+                        read.dta et al.
+readdir                 Loads all readable files in a directory into a
+                        list, with names according to the filenames
+remove.factors          Converts all factors in a data.frame to
+                        character.
+rep_along               Repeat a vector until it matches the length of
+                        another vector
+reshapeasy              reshapeasy: Easier reshaping from "wide" to
+                        "long" and back again
+roundnear               Rounds a numeric vector to arbitrary values
+                        (not just decimal values as with round) or to a
+                        specified number of significant digits.
+searchPattern           Create a vector that starts with a given number
+                        and widens out
+shift                   Shifts a vector's elements left or right by N
+                        elements.
+sides                   Figure out how many "sides" a formula has See
+                        also SimonO101's answer at
+                        http://stackoverflow.com/a/16376939/636656
+sort.data.frame         Sort a data.frame
+splitc                  Split data over columns
+stack.list              Stack lists into data.frames
+tab                     Table function which lists NA entries by
+                        default This is a simple wrapper to change
+                        defaults from the base R table()
+title.page.new          Plot a title page containing the given text.
+                        Good for breaking up sections of plot PDFs.
+trues                   Return vector of equal length containing all
+                        TRUEs
+unfactor.data.frame     Convert all factors to character
+write.sanitized.csv     Outputs a sanitized CSV file for fussy input
+                        systems e.g. ArcGIS and Mechanical Turk
+                        Performs three cleansing actions: converts text
+                        to latin1 encoding, eliminates funny characters
+                        in column names, and writes a CSV without the
+                        leading row.names column
+xtable.CrossTable       Add in methods to handle CrossTable objects in
+                        xtable
+xtable.lme              Add in methods to handle LME objects in xtable
+xtablelm                Produces the output of an lm object as it
+                        appears in the R console when you type
+                        summary(lmobject)

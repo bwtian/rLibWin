@@ -1,0 +1,8 @@
+# Import external pkg names
+# import(ade4, spatstat)
+importFrom(ade4,"divc","is.euclid")
+importFrom(spatstat,"border","bounding.box.xy","area.owin")
+# Export all names (should be improved in the future)
+exportPattern(".")
+# load DLL
+useDynLib(ads)

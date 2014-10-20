@@ -1,0 +1,90 @@
+# CITATION file (see section 1.10 in Writing R Extensions)
+
+if (!exists("meta") || is.null(meta)) {
+    meta <- packageDescription("spcosa")
+}
+
+
+citHeader("To cite package 'spcosa' in publications use:")
+
+year <- sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers <- paste("R package version", meta$Version)
+title <- meta$Title
+author <- meta$Author
+
+citEntry(
+    entry   = "Manual",
+    title   = title,
+    author  = author,
+    year    = year,
+    note    = vers,
+    url     = "http://CRAN.R-project.org/package=spcosa",
+    textVersion = paste(author, " (", year, "). ", title, ". ", vers, ". ",
+        "http://CRAN.R-project.org/package=spcosa", sep = "")
+)
+
+citEntry(
+    entry = "Book",
+    title = "Sampling for Natural Resource Monitoring",
+    author = personList(
+        as.person("J. de Gruijter"),
+        as.person("D. Brus"),
+        as.person("M. Bierkens"),
+        as.person("M. Knotters")
+    ),
+    publisher = "Springer",
+    address   = "Berlin",
+    year      = "2006",
+    note      = "ISBN 978-3-540-22486-0",
+    textVersion = paste(
+        "de Gruijter, J., Brus, D., Bierkens, M. and Knotters, M. (2006)",
+        "Sampling for Natural Resource Monitoring.",
+        "Springer, Berlin, ISBN 978-3-540-22486-0"
+    )
+)
+
+citEntry(
+    entry = "Article",
+    title = "A sampling scheme for estimating the mean extractable phosphorus concentration of fields for environmental regulation",
+    author = personList(
+        as.person("D. J. Brus"),
+        as.person("L. E. E. M. Spatjens"),
+        as.person("J. J. de Gruijter")
+    ),
+    journal = "Geoderma",
+    year    = "1999",
+    volume  = "89",
+    pages   = "129--148",
+    textVersion = paste(
+        "Brus, D. J., Spatjens, L. E. E. M., and de Gruijter, J. J. (1999)",
+        "A sampling scheme for estimating the mean extractable phosphorus concentration of fields for environmental regulation",
+        "Geoderma 89: 129-148"
+    )
+)
+
+citEntry(
+    entry = "Article",
+    title = "An R package for spatial coverage sampling and random sampling from compact geographical strata by $k$-means",
+    author = personList(
+        as.person("D. J. J. Walvoort"),
+        as.person("D. J. Brus"),
+        as.person("J. J. de Gruijter")
+    ),
+    journal = "Computers & Geosciences",
+    year = "2010",
+    volume  = "36",
+    pages   = "1261--1267",
+    note = "Available online at http://dx.doi.org/10.1016/j.cageo.2010.04.005",
+    textVersion = paste(
+        "Walvoort, D. J. J., Brus, D. J., and de Gruijter, J. J. (2010)",
+        "An R package for spatial coverage sampling and random sampling from compact geographical strata by k-means",
+        "Computers & Geosciences 36: 1261-1267",
+        "Available online at http://dx.doi.org/10.1016/j.cageo.2010.04.005"
+    )
+)
+
+citFooter(
+    "See de Gruijter et. al. (2006) and Walvoort et al. (2010) for an introduction to spatial coverage sampling and its applications.\n",
+    paste("Refer to Walvoort et al. (", year, ") for the spcosa package.\n", sep = ""),
+    "See Brus et. al. (1999) for stratified simple random sampling for composites.\n"
+)

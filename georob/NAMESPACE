@@ -1,0 +1,154 @@
+import( stats, parallel, sp )
+
+# importFrom( BB, BBsolve )
+importFrom( constrainedKriging, covmodel, f.point.block.cov, K, preCKrige )
+importFrom( lmtest, waldtest, waldtest.default )
+importFrom( nlme, fixef, fixed.effects, ranef, random.effects )
+importFrom( nleqslv, nleqslv )
+importFrom( quantreg, rq.fit )
+importFrom( snowfall, sfCpus, sfInit, sfLibrary, sfIsRunning, sfLapply, sfStop )
+importFrom( RandomFields, RFvariogram, RFoldstyle, RFoptions)
+importFrom( robustbase, lmrob.control, lmrob.fit, Qn, robMD, summarizeRobWeights )
+
+# exported functions
+
+export(
+#   bbsolve.control,                  # ok
+  bwd.transf,                       # ok
+  compress,                         # ok
+  cv,                               # ok
+  dfwd.transf,                      # ok
+  expand,                           # ok
+  fixed.effects,                    # ok export of generic fixed.effects{nlme}
+  fixef,                            # ok export of generic fixef{nlme}
+  fwd.transf,                       # ok
+  fit.variogram.model,              # ok
+  georob.control,                   # ok
+  georob,                           # ok 
+  K,                                # ok export of K{constrainedKriging}, which is (indirectly) needed by f.point.block.cov{constrainedKriging}
+  lgnpp,                            # ok
+  lmrob.control,                    # ok export of lmrob.control{robustbase}
+  nleqslv.control,                  # ok
+  optim.control,                    # ok
+  parallel.control,                 # ok
+  param.bounds,                     # ok  
+  param.names,                      # ok
+  param.transf,                     # ok
+  pmm,                              # ok
+  control.predict.georob,           # ok
+  random.effects,                   # ok export of generic random.effects{nlme}
+  ranef,                            # ok export of generic ranef{nlme}
+  rq.control,                       # ok
+  sample.variogram,                 # ok
+  step,                             # ok
+  validate.predictions,             # ok
+  waldtest                          # ok export of generic waldtest{lmtest}
+)
+
+# documented but unexported functions
+#
+#   add1.georob,                    # ok
+#   deviance.georob,                # ok
+#   drop1.georob,                   # ok
+#   exportAIC.georob,               # ok
+#   fixed.effects.georob,           # ok
+#   fixef.georob,                   # ok
+#   lines.fitted.variogram,         # ok
+#   lines.georob,                   # ok
+#   logLik.georob,                  # ok
+#   model.frame.georob,             # ok
+#   model.matrix.georob,            # ok
+#   nobs.georob,                    # ok
+#   plot.georob                     # ok
+#   plot.sample.variogram,          # ok
+#   plot.cv.georob,                 # ok
+#   predict.georob,                 # ok
+#   print.fitted.variogram,         # ok
+#   print.georob,                   # ok
+#   print.cv.georob,                # ok
+#   print.summary.cv.georob,        # ok
+#   print.summary.fitted.variogram, # ok
+#   print.summary.georob,           # ok
+#   print.summary.sample.variogram, # ok
+#   random.effects.georob,          # ok
+#   ranef.georob,                   # ok
+#   resid.georob,                   # ok
+#   residuals.georob,               # ok
+#   rstandard.georob,               # ok
+#   rstudent.georob,                # ok
+#   rstudent.cv.georob,             # ok
+#   step.default,                   # ok
+#   step.georob,                    # ok
+#   summary.fitted.variogram,       # ok
+#   summary.georob,                 # ok
+#   summary.sample.variogram,       # ok
+#   summary.cv.georob,              # ok
+#   variogram.georob,               # ok
+#   vcov.georob,                    # ok
+#   waldtest.georob,                # ok
+#   cv.georob                       # ok
+#   cv.likGRF                       # ok
+#   cv.variomodel                   # ok
+  
+# non-documented internal functions
+##
+##   compute.covariances,
+##   compute.estimating.equations,
+##   compute.semivariance,
+##   dcorr.dparam,
+##   estimating.eqations.xihat,
+##   estimate.xihat,
+##   estimating.eqations.xihat,
+##   f.aux.eeq##   f.aux.gradient.nll##   f.aux.Q##   f.aux.Valpha##   f.stop.cluster##   gcr,
+##   georob.fit,
+##   getCall.georob,
+##   gradient.negative.restricted.loglikelihood,
+##   f.stop.cluster
+##   negative.restr.loglikelihood,
+##   prepare.likelihood.calculations,
+##   safe_pchisq,
+##   update.xihat
+
+S3method( add1, georob  )
+S3method( deviance, georob  )
+S3method( drop1, georob  )
+S3method( extractAIC, georob  )
+S3method( fixed.effects, georob  )
+S3method( fixef, georob  )
+S3method( lines, fitted.variogram )
+S3method( lines, fitted.variogram )
+S3method( lines, georob )
+S3method( logLik, georob )
+S3method( model.frame, georob )
+S3method( model.matrix, georob )
+S3method( nobs, georob )
+S3method( plot, georob )
+S3method( plot, sample.variogram )
+S3method( plot, cv.georob )
+S3method( predict, georob )
+S3method( print, fitted.variogram )
+S3method( print, georob )
+S3method( print, summary.fitted.variogram )
+S3method( print, summary.georob )
+S3method( print, summary.sample.variogram )
+S3method( print, summary.cv.georob )
+S3method( print, cv.georob )
+S3method( random.effects, georob )
+S3method( ranef, georob )
+S3method( resid, georob )
+S3method( residuals, georob )
+S3method( rstandard, georob )
+S3method( rstudent, georob )
+S3method( step, default )
+S3method( step, georob )
+S3method( summary, fitted.variogram )
+S3method( summary, georob )
+S3method( summary, sample.variogram )
+S3method( summary, cv.georob )
+S3method( vcov, georob )
+S3method( waldtest, georob )
+# S3method( cv, default )
+S3method( cv, georob )
+# S3method( cv, likGRF )
+# S3method( cv, variomodel )
+

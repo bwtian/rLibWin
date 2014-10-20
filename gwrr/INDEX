@@ -1,0 +1,9 @@
+columbus                Columbus crime
+gwl.est                 Geographically weighted lasso
+gwr.bw.est              Cross-validation estimation of kernel bandwidth
+gwr.est                 Geographically weighted regression
+gwr.vdp                 Collinearity diagnostics for geographically
+                        weighted regression
+gwrr-package            Geographically weighted regression models with
+                        penalties and diagnostic tools
+gwrr.est                Geographically weighted ridge regression

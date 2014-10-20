@@ -1,0 +1,9 @@
+bm                      Perform consistent batch means estimation on a
+                        vector of values from a Markov chain.
+bmmat                   Apply 'bm' to each column of a matrix or data
+                        frame of MCMC samples.
+ess                     Estimate effective sample size (ESS) as
+                        described in Kass et al. (1998) and Robert and
+                        Casella (2004; p. 500).
+estvssamp               Create a plot that shows how Monte Carlo
+                        estimates change with increasing sample size.

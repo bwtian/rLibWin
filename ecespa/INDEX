@@ -1,0 +1,35 @@
+Helianthemum            Spatial point pattern of Helianthemum squamatum
+                        adult plants and seedlings
+K012                    Tests against 'independent labelling'
+K1K2                    Differences between univariate and bivariate
+                        K-functions
+Kci                     Test against non-Poisson (in-)homogeneous
+                        models
+Kinhom.log              Simulation envelopes from the fitted values of
+                        a logistic model
+Kmm                     Mark-weighted K-function
+Kmulti.ls               Lotwick's and Silverman's combined estimator of
+                        the marked K-function
+dixon2002               Dixon (2002) Nearest-neighbor contingency table
+                        analysis
+ecespa                  Functions for spatial point pattern analysis in
+                        ecology
+figuras                 Artificial point data.
+getis                   Neighbourhood density function
+gypsophylous            Spatial point pattern of a plant community
+haz.ppp                 Easily convert xy data to ppp format
+ipc.estK                Fit the (In)homogeneous Poisson Cluster Point
+                        Process by Minimum Contrast
+marksum                 Mark-sum measure
+p2colasr                P-value for a discrete distribution on small
+                        sample data
+pc.estK                 Fit the Poisson Cluster Point Process by
+                        Minimum Contrast
+quercusvm               Alive and dead oak trees
+rIPCP                   Simulate Inhomogeneous Poisson Cluster Process
+seedlings               Cohorts of Helianthemum squamatum seedlings
+sim.poissonc            Simulate Poisson Cluster Process
+swamp                   Tree Species in a Swamp Forest
+syr1                    Syrjala test data
+syrjala                 Syrjala's test for the difference between the
+                        spatial distributions of two populations

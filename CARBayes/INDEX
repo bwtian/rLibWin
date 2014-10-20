@@ -1,0 +1,35 @@
+CARBayes-package        Spatial areal unit modelling
+bymCAR.re               Fit the BYM conditional autoregressive (CAR)
+                        model to spatial data
+clusterCAR.re           Fit a cluster model with spatially correlated
+                        random effects to spatial data.
+combine.data.shapefile
+                        Combine a data frame with a shapefile to create
+                        a SpatialPolygonsDataFrame object.
+dbf                     Shapefile (.dbf) for all Intermediate
+                        Geographies (IG) in Scotland.
+dissimilarityCAR.re     Fit a localised conditional autoregressive
+                        (CAR) model based on dissimilarity metrics with
+                        binary neighbourhood relations to spatial data
+highlight.borders       Create a SpatialPoints object identifying a
+                        subset of borders between neighbouring areas,
+                        which allows them to be overlaid on a spatial
+                        map.
+housedata               Property price data for the 271 Intermediate
+                        Geographies (IG) in the Greater Glasgow and
+                        Clyde health board.
+iarCAR.re               Fit the Intrinsic conditional autoregressive
+                        (CAR) model to spatial data
+independent.re          Fit the independent random effects model to
+                        spatial data
+lerouxCAR.re            Fit the Leroux conditional autoregressive (CAR)
+                        model to spatial data
+print.carbayes          Print a summary of the fitted model to the
+                        screen.
+properCAR.re            Fit the proper conditional autoregressive (CAR)
+                        model to spatial data
+respdata                Respiratory hosptial admissions data for the
+                        271 Intermediate Geographies (IG) in the
+                        Greater Glasgow and Clyde health board.
+shp                     Shapefile (.shp) for all Intermediate
+                        Geographies (IG) in Scotland.

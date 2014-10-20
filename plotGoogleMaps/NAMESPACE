@@ -1,0 +1,21 @@
+#
+import(lattice)
+import(sp)
+import(rgdal )
+importFrom("raster", raster, projectRaster )
+importFrom("maptools", GE_SpatialGrid,ContourLines2SLDF)
+import(spacetime)
+
+export(bubbleGoogleMaps,
+       bubbleSP,
+       ellipseGoogleMaps,
+       elSPDF,
+       iconlabels,
+       pieSP,
+       plotGoogleMaps,
+       PolyCol,
+       segmentGoogleMaps,
+       stplotGoogleMaps,
+       vectorsSP,
+       stfdfGoogleMaps,
+       mcGoogleMaps)

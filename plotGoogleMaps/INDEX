@@ -1,0 +1,29 @@
+PolyCol                 Create list of colors depending on attribute
+                        data.
+bubbleGoogleMaps        Create a bubble plot of spatial data on Google
+                        Maps
+bubbleSP                Create bubble data in form of
+                        SpatialPolygonsDataFrame.
+elSPDF                  Create ellipses in form of
+                        SpatialPolygonsDataFrame.
+ellipseGoogleMaps       Create plot of ellipses from spatial points
+                        data frame on Google Maps, by using three
+                        attributes: semi-major axis, semi-minor axis,
+                        and orientation in degrees.
+iconlabels              Create icon markers depending on attribute
+                        data.
+mcGoogleMaps            Create a plot of spatial data on Google Maps,
+                        creates and manages per-zoom-level clusters for
+                        large amounts of markers
+pieSP                   Create pie charts data in form of
+                        SpatialPolygonsDataFrame.
+plotGoogleMaps          Create a plot of spatial data on Google Maps
+segmentGoogleMaps       Create a segment circles - pie charts plot of
+                        spatial data on Google Maps, by using two or
+                        more related attributes.
+stfdfGoogleMaps         Create a plot of spacetime (STFDF) data on
+                        Google Maps
+stplotGoogleMaps        Create a plot of spacetime (STDIF,STFDF) data
+                        on Google Maps
+vectorsSP               Create radius vector data in form of
+                        SpatialLinesDataFrame.

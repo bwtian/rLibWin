@@ -1,0 +1,30 @@
+Arith-methods           Arithmetic and mathematical operations with
+                        objects of Transition* classes
+Coords-class            Coords class
+Summary-methods         Summary methods
+TransitionLayer-class   Transition* classes
+[,TransitionLayer,numeric,numeric,missing-method
+                        Extracting and replacing: class Transition
+accCost                 Accumulated Cost Surface
+adjacencyFromTransition
+                        Adjacent cells
+commuteDistance         Commute-time distance
+costDistance            Cost distance (least-cost distance)
+gdistance-package       gdistance: geographic distance calculations
+genDist                 Genetic distances and coordinates of haplogroup
+                        R1b1b2 populations in Europe
+geoCorrection           Geographic Correction
+normalize               normalize
+overlap                 Overlap and nonoverlap of trajectories
+passage                 Probability of passage
+pathInc                 Incidence of paths from a common origin:
+                        overlap and non-overlap
+rSPDistance             Randomized shortest path distance
+raster,TransitionLayer-method
+                        RasterLayer from TransitionLayer object
+shortestPath            Shortest path
+sumReciprocal           Reciprocal of the sum of the reciprocals of
+                        conductance values in Transition* objects
+transition              Create an object of the class Transition
+transitionMatrix        Extract or change elements of Transition*
+                        objects

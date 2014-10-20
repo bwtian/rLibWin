@@ -1,0 +1,42 @@
+HLCor                   Fits a (spatially) correlated mixed model, for
+                        given correlation parameters
+HLfit                   Fit mixed models with given correlation matrix
+LRT                     Likelihood ratio test of fixed effects.
+Loaloa                  Loa loa prevalence in North Cameroon, 1991-2001
+Matern.corr             Matern correlation function.
+Predictor               Interface for model formulas
+arabidopsis             Arabidopsis genetic and climatic data
+blackcap                Genetic polymorphism in relation to migration
+                        in the blackcap
+confint.HLfit           Confidence intervals for fixed-effect
+                        parameters.
+corMatern               Matern Correlation Structure as a corSpatial
+                        object
+corrHLfit               Fits a mixed model, typically a spatial GLMM.
+designL.from.Corr       Computation of "square root" of correlation
+                        matrix
+extractors              Functions to extract various components of a
+                        fit
+fixedLRT                Likelihood ratio test of fixed effects.
+make.scaled.dist        Scaled Euclidian distances between unique
+                        locations
+mapMM                   Colorful plots of predicted responses in
+                        two-dimensional space.
+multinomial             Analyzing multinomial data
+plot.HLfit              Model checking plots for mixed models
+predict                 Prediction from a model fit.
+salamander              Salamander mating data
+scotlip                 Lip cancer in Scotland 1975 - 1980
+seaMask                 Masks of seas or lands
+simulate.HLfit          Simulate realizations of a fitted mixed model.
+spaMM                   Inference in spatial GLMMs (and other
+                        non-spatial mixed models)
+spaMM.colors            A flashy color palette.
+spaMM.filled.contour    Level (Contour) Plots with better aspect ratio
+                        control (for geographical maps, at least)
+spaMM.options           spaMM options settings
+summary.HLfit           Summary and print methods for fit and test
+                        results.
+update.HLfit            Updates an HLCor or HLfit fit
+wafers                  Data from a resistivity experiment for
+                        semiconductor materials.

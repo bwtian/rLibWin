@@ -1,0 +1,6 @@
+import("raster", "sp", "methods")
+importFrom("graphics", points)
+exportMethods("predict")
+exportPattern("^[^\\.]")
+exportClasses(DistModel,MaxEnt)
+useDynLib(dismo)

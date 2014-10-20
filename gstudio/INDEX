@@ -1,0 +1,113 @@
++.locus                 Overload '+' operator for pairs of 'locus'
+                        objects
+-.locus                 Overload '-' operator for pairs of 'locus'
+                        objects
+A                       Allelic Diversity
+Ae                      Effective Allelic Diversity
+Dest                    Estimation Joost's Dest parameter
+Fis                     Estimate simple inbreeding from frequencies
+Gst                     Estimation Nei's Gst parameter
+Gst_prime               Estimation Nei's Gst parameter with Hedrick's
+                        correction for allelic diversity
+He                      Estimate expected heterozygosity
+Ho                      Estimate observed heterozygosity
+Pe                      Polymorphic index for loci
+[.locus                 Overload '[' for vectors of 'locus' objects
+alleles                 Returns the alleles in a 'locus' object
+arapat                  Data for Araptus attenuatus
+as.data.frame.locus     Converts locus to a data frame
+as.list.locus           Converts locus to a list
+as.locus                As operator for locus
+bad_parents             Determines of the indicated parent can possibly
+                        be the parent of the offspring
+c.locus                 Concatinate 'locus' objects
+column_class            Find columns of data in a data.frame for a type
+                        of class
+cornus_florida          Cornus mom/offspring data set
+data_2_column           Two Column Example Data
+data_aflp               AFLP example data set
+data_separated          Separated Example Data
+data_snp                SNP Example Data
+data_zymelike           Zyme-like Example Data
+dist_amova              Estimation of amova distance
+dist_bray               Estimation of jaccard distance
+dist_cavalli            Estimation of Bray-Curtis distance
+dist_cgd                Estimation of conditional genetic distance
+dist_euclidean          Estimation of euclidean distance
+dist_jaccard            Estimation of jaccard distance
+dist_nei                Estimation of Bray-Curtis distance
+dist_ss                 Estimation of SS distance
+exclusion_probability   Paternity exclusion probability
+frequencies             Get allele frequencies
+genetic_distance        Estimate genetic distances among strata in a ,
+genetic_diversity       Estimate genetic diversity among strata in a
+                        Population,
+genetic_relatedness     Estimates pair-wise relatedness
+genetic_structure       Estimation of , genetic structure statistics.
+genotype_frequencies    Genotype Frequencies
+geom_frequencies        Plot allele frequencies
+geom_locus              Translate a vector of 'locus' objects into a
+                        'gemo_bars' layer
+geom_strata             Returns ggplot layer for population data
+geom_surface            Translate raster into ggplot object
+grid.csv                CDPop Data
+gstudio-package         Routines used in spatial analysis of genetic
+                        marker data
+indices                 Returns quickly indices for a matrix of size N
+is.locus                An 'is-a' operator for 'locus'
+is.na.locus             Determines if 'locus' is NA
+is_frequency            Is-A function for Allele Frequences
+is_heterozygote         Determine heterozygosity
+kronecker_delta         This function returns the kronecker operator
+                        for two loci.
+locus                   General constructor for locus object
+make_population         Makes a random population
+mate                    Produces offspring
+migrate                 This function returns a data frame that has
+                        moved migrants
+minus_mom               Subtracts maternal component to offspring
+                        genotypes
+multilocus_diversity    Returns multilocus diversity
+optimal_sampling        Estimate optimal sampling allocation
+parent_finder           This function finds a set of potential parents
+                        from an offspring.
+partition               Subdivide , into a list of substrata
+paternity               Estimates fractional paternity probability
+permute_ci              Permute for confidence interval
+pies_on_map             Plot overload
+ploidy                  Returns the number of alleles in a 'locus'
+                        object
+plot.data.frame         Plotting the locations of a 'population'
+plot.locus              Overload plot function
+population_map          Retrieve a map for a set of populations.
+print.locus             Overload of 'print' function for 'locus'
+                        objects
+rarefaction             Does allelic diversity rarefaction
+read_population         Read a raw text file in and translate
+                        appropriate columns into genotypes
+rel_lynch               This estimates the Lynch & Ritland (1999)
+rel_nason               This estimates the Fij statistic from Nason
+                        allele-wise or for a whole locus
+rel_queller             This estimates the Queller & Goodnight (1989)
+rel_ritland             This estimates the relatedness statistic from
+                        Ritland (1996)
+rep.locus               Replicate a locus
+snp_prob.csv            SNP probability data
+spiderplot_data         Translate paternity output into segments for
+                        geom_segments
+strata_coordinates      Grab coordinates for strata
+strata_distance         Return distances between strats
+summary.locus           Provides a summary of the 'locus' object
+to_fixed_locus          returns string representation of locus for
+                        output like genepop/heirfstat
+to_genepop              Translates a 'data.frame'
+to_mv                   Returns the passed itmes as multivariate data
+to_mv_freq              Returns mv frequencies for stratum in long
+                        format
+to_structure            Translates a 'data.frame' with loci into a
+                        textual STRUCTURE file.
+transition_probability
+                        Returns transition probability for offspring
+                        given one or more parents.
+write_population        Writes data frame with genotypes and other data
+                        to a file

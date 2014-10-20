@@ -1,0 +1,27 @@
+CKM                     Coleman, Katz, Menzel "Innovation among
+                        Physicians" dataset
+Katrina                 New Orleans business recovery in the aftermath
+                        of Hurricane Katrina
+LeSagePaceExperiment    Replicate the LeSage and Pace (2009), section
+                        10.1.5 experiment
+c.sarprobit             Combine different SAR probit estimates into one
+coef.sarprobit          Extract Model Coefficients
+kNearestNeighbors       Build Spatial Weight Matrix from k Nearest
+                        Neighbors
+logLik.sarprobit        Log Likelihood for spatial probit models (SAR
+                        probit, SEM probit)
+marginal.effects        Compute marginal effects for the SAR probit
+                        model
+plot.sarprobit          Plot Diagnostics for 'sarprobit', 'semprobit'
+                        or 'sartobit' objects
+sar_eigs                compute the eigenvalues for the spatial weight
+                        matrix W
+sar_lndet               Approximation of the log determinant ln|I_n -
+                        rho*W| of a spatial weight matrix
+sarorderedprobit        Bayesian estimation of the SAR ordered probit
+                        model
+sarprobit               Bayesian estimation of the SAR probit model
+sartobit                Bayesian estimation of the SAR Tobit model
+semprobit               Bayesian estimation of the SEM probit model
+summary.sarprobit       Print the results of the spatial probit/Tobit
+                        estimation via MCMC

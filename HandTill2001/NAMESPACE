@@ -1,0 +1,6 @@
+export(bincap)
+exportClasses(bincap)
+exportClasses(cap)
+exportClasses(multcap)
+exportMethods(auc)
+export(multcap)

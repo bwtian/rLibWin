@@ -1,0 +1,19 @@
+areapoly                Signed Area of Polygon
+cvloglk                 Cross-Validated Log-Likelihood Function
+filled.contour.poly     Level (Contour) Plots with Polygonal Boundary
+kinhat                  Inhomogeneous K-function Estimation
+lambdahat               Kernel Density Estimation of Intensity Function
+lansing                 Lansing Woods Trees
+mcpat.test              Monte Carlo Inference of Temporal Changes in
+                        Spatial Segregation
+mcseg.test              Monte Carlo Test of Spatial Segregation in
+                        Multivariate Point Process
+metre                   Plot Color Level Metre
+package.version         Listing Loaded/Installed Package Versions
+phat                    Estimate Type-Specific Probabilities
+pinpoly                 Check if Points are within Polygon
+risk.colors             Color Palette
+setkernel               Select Smoothing Kernel Function
+spatialkernel-package   The Spatialkernel Package
+spseg                   Integrated Functions for Spatial Segregation
+                        Analysis

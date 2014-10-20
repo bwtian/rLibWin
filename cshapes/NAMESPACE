@@ -1,0 +1,8 @@
+import(sp)
+import(maptools)
+import(plyr)
+export(distmatrix)
+export(distlist)
+export(cshp)
+
+

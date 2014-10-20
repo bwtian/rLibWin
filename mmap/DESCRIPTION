@@ -1,0 +1,16 @@
+Package: mmap
+Type: Package
+Title: Map Pages of Memory
+Version: 0.6-12
+Date: 2013-05-01
+Author: Jeffrey A. Ryan
+LazyLoad: yes
+Maintainer: Jeffrey A. Ryan <jeff.a.ryan@gmail.com>
+Description: R interface to POSIX mmap and Window's MapViewOfFile
+License: GPL-3
+Packaged: 2013-08-28 04:25:24 UTC; jryan
+NeedsCompilation: yes
+Repository: CRAN
+Date/Publication: 2013-08-28 07:25:13
+Built: R 3.1.1; x86_64-w64-mingw32; 2014-07-16 11:14:08 UTC; windows
+Archs: i386, x64

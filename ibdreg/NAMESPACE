@@ -1,0 +1,39 @@
+useDynLib(ibdreg)
+export(align.ibd.var,
+create.ibd.dat,
+create.pairs.frame,
+exact.ibd.var,
+Ginv,
+ibd.df.merlin,
+ibd.moments,
+ibdreg,
+linkage.all,
+linkage.tests,
+lsConstrain.fit,
+mergeIBD,
+minpRows,
+pairSum, pairDiff,
+pchibar, chibar3.w,
+plot.ibdreg,
+plot.ibdreg.unexpect,
+plot.linkage.all,
+plot.linkage.tests,
+plotpval,
+printBanner,
+print.ibdreg,
+print.ibd.var,
+print.linkage.all,
+print.linkage.tests,
+resources,
+sim.ibd.setup,
+sim.ibd.var,
+sim.mark.prop)
+
+S3method(print, ibdreg)
+S3method(plot, ibdreg)
+S3method(plot, linkage.all)
+S3method(print, linkage.all)
+S3method(plot, linkage.tests)
+S3method(print, linkage.tests)
+S3method(plot, ibdreg.unexpect)
+S3method(print, ibd.var)

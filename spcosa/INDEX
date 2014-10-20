@@ -1,0 +1,46 @@
+CompactStratification-class
+                        Class "CompactStratification"
+CompactStratificationEqualArea-class
+                        Class "CompactStratificationEqualArea"
+CompactStratificationPriorPoints-class
+                        Class "CompactStratificationPriorPoints"
+SamplingPattern-class   Class "SamplingPattern"
+SamplingPatternCentroids-class
+                        Class "SamplingPatternCentroids"
+SamplingPatternPriorPoints-class
+                        Class "SamplingPatternPriorPoints"
+SamplingPatternPurposive-class
+                        Class "SamplingPatternPurposive"
+SamplingPatternRandom-class
+                        Class "SamplingPatternRandom"
+SamplingPatternRandomComposite-class
+                        Class "SamplingPatternRandomComposite"
+SamplingPatternRandomSamplingUnits-class
+                        Class "SamplingPatternRandomSamplingUnits"
+SamplingVariance-class
+                        Class "SamplingVariance"
+SpatialCumulativeDistributionFunction-class
+                        Class "SpatialCumulativeDistributionFunction"
+SpatialMean-class       Class "SpatialMean"
+SpatialVariance-class   Class "SpatialVariance"
+StandardError-class     Class "StandardError"
+Statistic-class         Class "Statistic"
+Stratification-class    Class "Stratification"
+estimate-methods        Estimating Statistics
+getArea-methods         Extract the Area of an Object
+getCentroid-methods     Extract Centroids
+getNumberOfStrata-methods
+                        Extract the Number of Strata in an Object
+getObjectiveFunctionValue-methods
+                        Extract the Objective Function Value of an
+                        Object
+getRelativeArea-methods
+                        Extract the Relative Area of an Object
+getSampleSize-methods   Extract the sample size of an object
+plot,CompactStratification,missing-method
+                        Visualizing Compact Stratifications and
+                        Sampling Patterns
+spcosa-package          Spatial Coverage Sampling and Random Sampling
+                        from Compact Geographical Strata
+spsample                Spatial Sampling of Compact Strata
+stratify-methods        Stratification

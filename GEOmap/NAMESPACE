@@ -1,0 +1,6 @@
+# Export all names
+exportPattern(".")
+useDynLib(GEOmap)
+import(RPMG)
+importFrom(splancs,inout, areapl, as.points)
+importFrom(MBA, mba.surf)

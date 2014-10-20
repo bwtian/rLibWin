@@ -1,0 +1,27 @@
+addSpatial              Calculate adjacency values for WinBUGS
+binToBinom              Convert Bernoulli observations to Binomial
+checkChain              Plot an MCMC run
+cholInvArray            Precision matrices to variance matrices for
+                        Winbugs output
+getDesignMatrix         Computes a design matrix from factors and
+                        interactions
+getRaggedSeq            Get one sequence for a ragged array
+getStartingValues       Extract starting values for an MCMC chain from
+                        glmmPQL results
+glmmBUGS                A function to run Generalised Linear Mixed
+                        Models in Bugs
+glmmPQLstrings          An alternat interface to glmmPQL
+muscleResult            data set contains muscle result
+ontario                 Ontario data on molar cancer
+ontarioResult           Ontario Winbugs Results
+popDataAdjMat           Data set contains the adjacency matrix
+restoreParams           Reparametrise bugs output
+rongelapResult          Rongelap Winbugs Results
+rongelapUTM             Rongelap data
+startingFunction        Write a function to generate random MCMC
+                        starting values
+summaryChain            Compute mean, standard deviation, and quantiles
+                        of an MCMC run
+winBugsRaggedArray      Ragged Arrays for multilevel models in BUGS
+writeBugsModel          Write a bugs model file for a Generalised
+                        Linear Mixed Model

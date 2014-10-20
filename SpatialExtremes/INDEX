@@ -1,0 +1,81 @@
+DIC                     Deviance Information Criterion
+SpatialExtremes         Analysis of Spatial Extremes
+TIC                     Takeuchi's information criterion
+anova                   Anova Tables
+condmap                 Produces a conditional 2D map from a fitted
+                        max-stable process
+condrgp                 Conditional simulation of Gaussian random
+                        fields
+condrmaxlin             Conditional simulation of max-linear random
+                        fields
+condrmaxstab            Conditional simulation of max-stable processes
+covariance              Defines and computes covariance functions
+cv                      Estimates the penalty coefficient from the
+                        cross-validation criterion
+distance                Computes distance between pairs of locations
+extcoeff                Plots the extremal coefficient
+fitcopula               Fit a copula-based model to spatial extremes
+fitcovariance           Estimates the covariance function for the
+                        Schlather's model
+fitcovmat               Estimates the covariance matrix for the Smith's
+                        model
+fitextcoeff             Non parametric estimators of the extremal
+                        coefficient function
+fitmaxstab              Fits a max-stable process to data
+fitspatgev              MLE for a spatial GEV model
+fmadogram               Computes the F-madogram
+gcv                     Estimates the penalty coefficient from the
+                        generalized cross-validation criterion
+gev2frech               Transforms GEV data to unit Frechet ones and
+                        vice versa
+gevmle                  Fits univariate extreme value distributions to
+                        data
+kriging                 Simple kriging interpolation
+latent                  Bayesian hierarchical models for spatial
+                        extremes
+lmadogram               Computes the lambda-madogram
+logLik                  Extracts Log-Likelihood
+lsmaxstab               Estimates the spatial dependence parameter of a
+                        max-stable process by minimizing least squares.
+madogram                Computes madograms
+map                     Produces a 2D map from a fitted max-stable
+                        process
+map.latent              Two dimensional map from a Bayesian
+                        hierarchical model
+modeldef                Define a model for the spatial behaviour of the
+                        GEV parameters
+plot.copula             Model checking of a fitted copula based model.
+plot.maxstab            Model checking of a fitted max-stable model
+predict.copula          Prediction of the copula marginal parameters
+predict.maxstab         Prediction of the max-stable marginal
+                        parameters
+predict.pspline         Prediction of smoothing spline with radial
+                        basis functions
+predict.spatgev         Prediction of the GEV parameters
+print.copula            Printing objects of class copula"
+print.latent            Printing objects of class "latent"
+print.maxstab           Printing objects of class "maxstab"
+print.pspline           Printing objects of class "pspline"
+print.spatgev           Printing objects of class "spatgev"
+profile                 Method for profiling fitted max-stable objects
+profile2d               Method for profiling (in 2d) fitted max-stable
+                        objects
+qqextcoeff              QQ-plot for the extremal coefficient
+qqgev                   QQ-plot for the GEV parameters
+rainfall                Summer annual maxima precipitation in
+                        Switzerland
+rb                      Creates a model using penalized smoothing
+                        splines
+rbpspline               Fits a penalized spline with radial basis
+                        functions to data
+rcopula                 Simulation from copula based models with unit
+                        Frechet margins
+rgev                    The Generalized Extreme Value Distribution
+rgp                     Gaussian Random Fields Simulation
+rgpd                    The Generalized Pareto Distribution
+rmaxlin                 Simulation from max-linear models
+rmaxstab                Simulation of Max-Stable Random Fields
+swiss                   Map of the Switzerland.
+swissalt                Elevation in Switzerland
+variogram               Empirical variogram
+vdc                     Van der Corput Sequence

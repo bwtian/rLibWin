@@ -1,0 +1,16 @@
+CARBayes-package	CARBayes-package
+bymCAR.re	bymCAR.re
+CARBayes	CARBayes-package
+clusterCAR.re	clusterCAR.re
+combine.data.shapefile	combine.data.shapefile
+dbf	dbf
+dissimilarityCAR.re	dissimilarityCAR.re
+highlight.borders	highlight.borders
+housedata	housedata
+iarCAR.re	iarCAR.re
+independent.re	independent.re
+lerouxCAR.re	lerouxCAR.re
+print.carbayes	print.carbayes
+properCAR.re	properCAR.re
+respdata	respdata
+shp	shp

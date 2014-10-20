@@ -1,0 +1,42 @@
+BEF.dat                 Bartlett Experimental Forest inventory data
+FBC07.dat               Synthetic multivariate data with spatial and
+                        non-spatial variance structures
+FORMGMT.dat             Data used for illustrations
+NETemp.dat              Monthly weather station temperature data across
+                        the Northeastern US
+NYOzone.dat             Observations of ozone concentration levels.
+WEF.dat                 Western Experimental Forest inventory data
+Zurich.dat              Zurichberg Forest inventory data
+adaptMetropGibbs        Adaptive Metropolis within Gibbs algorithm
+bayesGeostatExact       Simple Bayesian spatial linear model with fixed
+                        semivariogram parameters
+bayesLMConjugate        Simple Bayesian linear model via the
+                        Normal/inverse-Gamma conjugate
+bayesLMRef              Simple Bayesian linear model with
+                        non-informative priors
+iDist                   Euclidean distance matrix
+mkMvX                   Make a multivariate design matrix
+mkSpCov                 Function for calculating univariate and
+                        multivariate covariance matrices
+pointsInPoly            Finds points in a polygon
+spDiag                  Model fit diagnostics
+spDynLM                 Function for fitting univariate Bayesian
+                        dynamic space-time regression models
+spGLM                   Function for fitting univariate Bayesian
+                        generalized linear spatial regression models
+spLM                    Function for fitting univariate Bayesian
+                        spatial regression models
+spMisalignGLM           Function for fitting multivariate generalized
+                        linear Bayesian spatial regression models to
+                        misaligned data
+spMisalignLM            Function for fitting multivariate Bayesian
+                        spatial regression models to misaligned data
+spMvGLM                 Function for fitting multivariate Bayesian
+                        generalized linear spatial regression models
+spMvLM                  Function for fitting multivariate Bayesian
+                        spatial regression models
+spPredict               Function for new locations given a model object
+spRecover               Function for recovering regression coefficients
+                        and spatial random effects for 'spLM',
+                        'spMvLM', and 'spMisalignLM' using composition
+                        sampling

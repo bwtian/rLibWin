@@ -1,0 +1,29 @@
+as.image.pimg           Convert to image list
+astro                   Calculations for position of the sun and moon
+behav.bin               Bin MCMC chains.
+bits                    Set and get bits from binary masks.
+chain.read              Manage MCMC cache.
+elevation               Calculate elevation of astronomical objects
+get.mask                Create, access and manipulate spatial masks
+get.sst                 Read SST data from online service.
+initialize.x            Diagnose and initialize light level estimation.
+julday                  Julian day and Julian century calculations from
+                        date-time values
+metropolis              Metropolis-Hastings sampler for location
+                        estimation for archival and satellite tag
+mkCalibration           Create calibration of solar elevation to
+                        measured light level.
+mkLookup                Create a lookup function to query locations
+                        against spatial masks
+norm.proposal           Manage proposal functions tune variance for
+                        metropolis sampler
+old.metropolis          Older versions of solar location estimation
+pick                    Choose twilight segments interactively from
+                        light data.
+pimg.list               Create a collection of probability images, for
+                        MCMC binning.
+satellite.model         Function to create a satellite model object for
+                        metropolis location sampler
+solar                   Calculate solar postion parameters
+solar.model             Function to create a solar model object for
+                        metropolis location sampler

@@ -1,0 +1,73 @@
+import(coda, fields, maps, Matrix, nlme, methods)
+importFrom(stats, window)
+
+export(
+   corRExp,
+   corRExpwr,
+   corRGaus,
+   corRGneit,
+   corRLin,
+   corRMatern,
+   corRCauchy,
+   corRSpher,
+   corRWave,
+   corRExp2,
+   corRExpwr2,
+   corRExpwr2Dt
+)
+
+export(
+   DIC,
+   expand.chain,
+   georamps,
+   param,
+   ramps.control
+)
+
+export(
+   genUSStateGrid,
+   genUSStateSites
+)
+
+## for testing
+## export(
+##    mpdbeta,
+##    mpdbetaz,
+##    mpdpred,
+##    ramps.engine
+## )
+
+S3method(coef, corSpatial)
+S3method(coef, corSpatioTemporal)
+S3method("coef<-", corSpatial)
+S3method("coef<-", corSpatioTemporal)
+S3method(corFactor, corRExpwr2Dt)
+S3method(corFactor, corSpatial)
+S3method(corFactor, corSpatioTemporal)
+S3method(corMatrix, corRExpwr2Dt)
+S3method(corMatrix, corSpatial)
+S3method(corMatrix, corSpatioTemporal)
+S3method(DIC, ramps)
+S3method(Dim, corRExpwr2Dt)
+S3method(Dim, corSpatial)
+S3method(Dim, corSpatioTemporal)
+S3method(getCovariate, corRExpwr2Dt)
+S3method(getCovariate, corSpatial)
+S3method(getCovariate, corSpatioTemporal)
+S3method(Initialize, corRExp2)
+S3method(Initialize, corRExpwr)
+S3method(Initialize, corRExpwr2)
+S3method(Initialize, corRExpwr2Dt)
+S3method(Initialize, corRMatern)
+S3method(Initialize, corSpatial)
+S3method(Initialize, corSpatioTemporal)
+S3method(length, param)
+S3method(predict, ramps)
+S3method(print, corStruct)
+S3method(print, predict.ramps)
+S3method(print, ramps)
+S3method(summary, ramps)
+S3method(plot, predict.ramps)
+S3method(plot, ramps)
+S3method(window, predict.ramps)
+S3method(window, ramps)

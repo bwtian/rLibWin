@@ -1,0 +1,20 @@
+Changes in Version 0.1-4
+
+  o  Removed DEM data set and Example 3 from documentation.
+
+  o  Replaced deprecated sp::overlay function with sp::over.
+
+Changes in Version 0.1-2
+
+  o  Added option to crop spatial domain using polygons.
+
+Changes in Version 0.1-1
+
+  o  Sorted z levels to make color specification much easier when plotting.
+
+  o  Added option to limit raster extent in the four coordinate directions.
+
+  o  Fixed error with list construction; error sometimes occurs when specifying
+     breakpoints.
+
+  o  Updated examples in documentation

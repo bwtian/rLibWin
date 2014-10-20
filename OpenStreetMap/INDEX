@@ -1,0 +1,23 @@
+LA_places               Places of interest in Los Angeles
+autoplot.OpenStreetMap
+                        Plot an open street map using ggplot2
+autoplot.osmtile        Plots an open street map tile using ggplot2
+getMapInfo              Returns a table with relevant source and
+                        attribution info for each map type
+launchMapHelper         Launches a Java helper GUI.
+longlat                 Latitude Longitude projection
+openmap                 Get a map based on lat long coordinates
+openproj                Projects the open street map to an alternate
+                        coordinate system
+osm                     Open street map (and google) mercator
+                        projection
+osmtile                 Get an open street map tile.
+plot.OpenStreetMap      Plot an OpenStreetMap object.
+plot.osmtile            Add tile to plot
+print.OpenStreetMap     Print map
+projectMercator         Maps long lat values to the open street map
+                        mercator projection
+raster                  Create a RasterLayer from a tile
+setCloudMadeKey         Sets the user identification key for
+                        cloudmade.com
+states                  The United States

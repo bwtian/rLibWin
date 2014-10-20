@@ -1,0 +1,4 @@
+export(gwr.est, gwr.bw.est, gwr.vdp, gwrr.est, gwl.est)
+importFrom(fields, rdist)
+
+

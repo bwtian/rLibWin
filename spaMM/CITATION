@@ -1,0 +1,33 @@
+citHeader("To cite spaMM in publications use:")
+
+
+citEntry(entry="Article",
+
+  title = "Testing environmental and genetic effects in the presence of spatial autocorrelation",
+
+  author = personList(as.person("François Rousset"),
+
+                      as.person("Jean-Baptiste Ferdy")),
+
+  journal      = "Ecography",
+
+  year         = "2014",
+
+  volume       = "in press",
+
+  number       = "",
+
+  pages        = "",
+
+  url          = "http://dx.doi.org/10.1111/ecog.00566",
+
+
+  textVersion = paste("François Rousset and Jean-Baptiste Ferdy (2014)",
+
+                      "Testing environmental and genetic effects in the presence of spatial autocorrelation.",
+
+                      "Ecography",
+
+                      "URL http://dx.doi.org/10.1111/ecog.00566")
+)
+

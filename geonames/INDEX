@@ -1,0 +1,31 @@
+GNcities                find cities
+GNcountryCode           country code for location
+GNcountryInfo           country info
+GNcountrySubdivision    country code and subdivision
+GNearthquakes           recent earthquakes
+GNfindNearByWeather     weather at location
+GNfindNearby            nearby search
+GNfindNearbyPlaceName   populated place search
+GNfindNearbyPostalCodes
+                        find postal code
+GNfindNearbyStreets     nearby street finding
+GNfindNearbyWikipedia   nearby wikipedia entries
+GNfindNearestAddress    nearest address
+GNfindNearestIntersection
+                        nearest intersection
+GNgtopo30               topo30 height
+GNneighbourhood         neighbourhood
+GNpostalCodeCountryInfo
+                        postal code info
+GNpostalCodeLookup      postal code lookup
+GNpostalCodeSearch      postal code search
+GNsearch                search geonames
+GNsrtm3                 srtm3 height
+GNtimezone              timezone for location
+GNweather               weather stations in box
+GNweatherIcao           ICAO weather station data
+GNwikipediaBoundingBox
+                        wikipedia articles in a box
+GNwikipediaSearch       search wikipedia
+geonames                Query the geonames web API for geographic data
+hierarchy               Admin area hierarchy

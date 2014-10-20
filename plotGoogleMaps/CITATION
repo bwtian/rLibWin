@@ -1,0 +1,14 @@
+citHeader("To cite package plotGoogleMaps in publications use:")
+
+citEntry(entry="Article",
+  title = "plotGoogleMaps: the R-based web-mapping tool for thematic spatial data",
+	author = personList(as.person("Milan Kilibarda"),as.person("Branislav Bajat")),
+	journal = "GEOMATICA",
+	year	 = 2012,
+	volume = 66,
+	pages	= "37-49",
+	 
+	textVersion = 
+	paste("M. Kilibarda, B. Bajat (2012) plotGoogleMaps: the R-based web-mapping tool for thematic spatial data.",
+	"GEOMATICA Vol. 66, No. 1, (2012), p. 37-49")
+)

@@ -1,0 +1,3 @@
+useDynLib(spatcounts)
+export(est.sc, DIC, LogLike, Vuongtest, Clarketest)
+

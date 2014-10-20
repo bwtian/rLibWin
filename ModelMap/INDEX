@@ -1,0 +1,13 @@
+ModelMap-package        Modeling and Map production using Random Forest
+                        and Stochastic Gradient Boosting
+build.rastLUT           Build a raster Look-UP-Table for training
+                        dataset
+get.test                Randomly Divide Data into Training and Test
+                        Sets
+model.build             Model Building
+model.diagnostics       Model Predictions and Diagnostics
+model.importance.plot   Compares the variable importance of two models
+                        with a back to back barchart.
+model.interaction.plot
+                        plot of two-way model interactions
+model.mapmake           Map Making

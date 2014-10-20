@@ -1,0 +1,24 @@
+KBivN                   Standard bivariate normal kernel
+KBivQ                   Standard bivariate quartic (biweight) kernel
+LSCV.density            Leave-one-out least-squares cross-validation
+                        (LSCV) for bivariate KDE bandwidths
+LSCV.risk               Leave-one-out least-squares cross-validation
+                        (LSCV) bandwidths for the relative risk
+                        function
+NS                      Normal scale rule for bivariate KDE bandwidths
+OS                      Maximal smoothing principle (oversmoothing) for
+                        bivariate KDE bandwidths
+PBC                     Primary biliary cirrhosis data
+as.im.bivden            Converting a 'sparr' bivariate kernel density
+                        estimate or relative risk surface object into a
+                        'spatstat' pixel image.
+bivariate.density       Bivariate kernel density estimates
+plot.bivden             Plotting a bivariate kernel density estimate
+                        object
+risk                    Bivariate relative risk function
+sparr-package           The sparr Package: SPAtial Relative Risk
+summary.bivden          Summarising a bivariate kernel density estimate
+                        object
+summary.rrs             Summarising an estimated relative risk function
+                        object
+tolerance               Asymptotic p-value surfaces

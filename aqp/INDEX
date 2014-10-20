@@ -1,0 +1,49 @@
+SoilProfileCollection-class
+                        SoilProfileCollection Class
+addBracket              Add Depth Brackets
+addVolumeFraction       Symbolize Volume Fraction on a Soil Profile
+                        Collection Plot
+amarillo                Amarillo Soils
+aqp-package             Algorithms for Quantitative Pedology
+ca630                   Soil Data from the Central Sierra Nevada Region
+                        of California
+depths<-                Getters, Setters, and Utility Methods for
+                        SoilProfileCollection Objects
+estimateSoilDepth       Estimate Soil Depth
+f.noise                 Example Objective Function for Full-Pattern
+                        Matching
+generalize.hz           Generalize Horizon Names
+get.ml.hz               Determine ML Horizon Boundaries
+get.slice               Slicing of SoilProfilecollection Objects
+getSoilDepthClass       Generate Soil Depth Class Matrix
+hzDistinctnessCodeToOffset
+                        Convert Horizon Distinctness Codes
+missingDataGrid         Missing Data Grid
+munsell                 Munsell-RGB Lookup Table for Common Soil Colors
+munsell2rgb             Convert Munsell Notation to RGB
+panel.depth_function    Lattice Panel Function for Soil Profiles
+pc                      Numerical Soil Profile Comparison
+plotSPC                 Profile Plot
+plot_distance_graph     Between Individual Distance Plot
+profileApply            Apply a function to soil profiles within a
+                        SoilProfileCollection object.
+random_profile          Random Profile
+resample.twotheta       Resample an XRD Pattern
+rruff.sample            Sample XRD Patterns
+sim                     Simulate Soil Profiles
+slab                    Slab-Wise Aggregation of SoilProfileCollection
+                        Objects
+sp1                     Soil Profile Data Example 1
+sp2                     Honcut Creek Soil Profile Data
+sp3                     Soil Profile Data Example 3
+sp4                     Soil Chemical Data from Serpentinitic Soils of
+                        California
+sp5                     Sample Soil Database #5
+spatial_subset          Spatial Subsetting of SoilProfileCollection
+                        Objects
+subsetProfiles          Subset SoilProfileCollection Objects.
+test_hz_logic           Test Horizon Logic
+texture.triangle.low.rv.high
+                        Soil Texture Low-RV-High as Defined by
+                        Quantiles
+unroll                  Unroll Genetic Horizons

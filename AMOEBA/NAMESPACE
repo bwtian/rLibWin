@@ -1,0 +1,4 @@
+exportPattern("^[[:alpha:]]+")
+import(snowfall)
+import(rlecuyer)
+import(spdep)

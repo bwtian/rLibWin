@@ -1,0 +1,25 @@
+NYdata                  Observations of ozone concentration levels,
+                        maximum temperature and wind speed.
+confint.spT             Credible intervals for model parameters.
+fitted.spT              Extract model fitted values.
+plot.spT                Plots for spTimer output.
+predict.spT             Spatial and temporal predictions for the
+                        spatio-temporal models.
+spT.Gibbs               MCMC sampling for the spatio-temporal models.
+spT.check.locations     Distance Monitoring Function
+spT.decay               Choice for sampling spatial decay parameter
+                        phi.
+spT.geodist             Geodetic/geodesic Distance
+spT.grid.coords         Grid Coordinates
+spT.initials            Initial values for the spatio-temporal models.
+spT.keep.morethan.dist
+                        Present one coordinate in a defined area for
+                        presentation
+spT.pCOVER              Nominal Coverage
+spT.priors              Priors for the spatio-temporal models.
+spT.segment.plot        Utility plot for prediction/forecast
+spT.subset              Select a subset of Spatial data.
+spT.time                Timer series information.
+spT.validation          Validation Commands
+spTimer-package         Spatio-Temporal Bayesian Modelling using R
+summary.spT             Summary statistics of the parameters.

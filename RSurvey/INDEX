@@ -1,0 +1,40 @@
+AddAxis                 Add an Axis to a Plot
+Autocrop                Autocrop Spatial Domain
+AutocropRegion          Set Autocrop Input Parameters
+BuildHistogram          Set Histogram Input Parameters
+CheckEntry              Control Content in Entry Widget
+ChooseColor             Set Graphic Color
+ChoosePch               Set Graphic Symbol
+CutoutPolygon           Exclude Gridded Data Outside Polygon
+Data                    Set or Query Data and Parameters
+EditData                Edit Data
+EditFunction            Edit Function
+EditText                Edit Text
+EvalFunction            Parse and Evaluate an RSurvey Expression
+ExportData              Export Data
+Format                  Build C-Style String Formats
+FormatDateTime          Build Date-Time String Formats
+GetBitmapImage          Create Icon Bitmap Image
+GetFile                 Select File to Open or Save As
+ImportPackage           Import Data from R Package
+ImportSpreadsheet       Import Data from XML Spreadsheet File
+ImportText              Import Data from Text File
+LoadPackages            Load Suggested Packages
+ManagePolygons          Manage Polygons
+ManageVariables         Manage Variables
+OpenRSurvey             Open RSurvey
+POSIXct2Character       Convert POSIXct to Character
+Plot2d                  Plot Points or Interpolated Surface
+Plot3d                  Plot 3D Surface using OpenGL
+ProcessData             Process Data
+ProgressBar             Progress Bar
+RSurvey-package         Analysis of Spatially Distributed Data
+Rename                  Rename Values in Character Vector
+Search                  Search
+SetAxesLimits           Set Axes Limits
+SetConfiguration        Set Window and Plotting Parameters
+SetInterpolation        Set Interpolation Preferences
+SetPolygonLimits        Set Polygon Limits
+SetSortOrder            Set Sort Order
+ex.data                 Example Data Set
+ex.project              Example Project

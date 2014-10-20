@@ -1,0 +1,9 @@
+assimilation            Compute Assimilation Indices
+boreasNP                Marked Point Pattern Tree Data from BOREAS
+edges                   Adjust for Edge Effects
+efficiency              Efficiency Functions
+influence               Influence Functions
+kernel                  Competition Kernel Functions
+pairwise                Compute Pairwise Competition Indices
+select                  Competitor Selection Rules
+siplab-package          Spatial Individual-Plant Simulation

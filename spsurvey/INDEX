@@ -1,0 +1,72 @@
+FL_lakes                Small Lakes in Florida
+IN_streams              Streams in the Upper Wabash Basin in Indiana
+Luck_Ash_streams        Streams in the Luckiamute Watershed in Oregon
+NE_lakes                Lakes in the Southern New England Region of the
+                        U.S.
+NLA_2007                Western Mountains Ecoregion Lakes in the EPA
+                        National Lakes Assessment (NLA) for 2007
+SC_estuaries            Estuaries in South Carolina
+UT_ecoregions           Ecoregions in Utah
+adjwgt                  Adjust Initial Survey Design Weights
+albersgeod              Project Albers Projection in Plane to Latitude
+                        and Longitude (Spheroid)
+ash1.wgt                Compute the Average Shifted Histogram for
+                        Weighted Data
+attrisk.analysis        Attributable Risk Analysis for Probability
+                        Survey Data
+attrisk.est             Compute the Attributable Risk Estimate
+cat.analysis            Categorical Data Analysis for Probability
+                        Survey Data
+category.est            Category Proportion and Size Estimates
+cdf.decon               Cumulative Distribution Function -
+                        Deconvolution
+cdf.est                 Cumulative Distribution Function - Estimation
+cdf.plot                Plot the CDF and Associated Confidence Limits
+cdf.test                Cumulative Distribution Function - Inference
+change.analysis         Change Analysis for Probability Survey Data
+change.est              Category Proportion and Size Estimates
+cont.analysis           Continuous Data Analysis for Probability Survey
+                        Data
+cont.cdfplot            Create CDF Plots from the cont.analysis Output
+                        Object
+cont.cdftest            Cumulative Distribution Function Inference for
+                        Probability Survey Data
+decon_data              Small Lakes in Florida
+dsgnsum                 Summarize the Sites Selected for a Survey
+                        Design
+framesum                Summarize Frame Size for a Survey Design
+geodalbers              Project Latitude and Longitude (Spheroid) to
+                        Albers Projection in Plane
+grts                    Generalized Random-Tessellation Stratified
+                        (GRTS) Survey Design
+grtsarea                Select GRTS Sample of an Area Resource
+grtslin                 Select GRTS Sample of a Linear Resource
+grtspts                 Select GRTS Sample of a Finite Resource
+irs                     Independent Random Sample (IRS) Survey Design
+irsarea                 Select an Independent Random Sample (IRS) of an
+                        Area Resource
+irslin                  Select an Independent Random Sample (IRS) of a
+                        Linear Resource
+irspts                  Select an Independent Random Sample (IRS) of a
+                        Finite Resource
+marinus                 Convert Coordinates from Latitude/Longitude to
+                        the Equidistant, Cylindric Map Projection
+read.dbf                Read the Attribute (dbf) File of an ESRI
+                        Shapefile
+read.sas                Read SAS Datasets or a SAS XPORT (Transport)
+                        File
+read.shape              Read an ESRI Shapefile
+relrisk.analysis        Relative Risk Analysis for Probability Survey
+                        Data
+relrisk.est             Compute the Relative Risk Estimate
+sp2shape                Convert an sp Package Object to an ESRI
+                        Shapefile
+spbalance               Calculate Spatial Balance Metrics for a Survey
+                        Design
+spsurvey.analysis       Create an Object of Class spsurvey.analysis
+total.est               Population Total, Mean, Variance, and Standard
+                        Deviation Estimates
+uniqueID                Create Unique Site ID Values
+write.dbf               Write a Data Frame to the Attribute (dbf) File
+                        of an ESRI Shapefile
+write.object            Write an Object to a Plot

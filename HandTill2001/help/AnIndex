@@ -1,0 +1,13 @@
+HandTill2001-package	HandTill2001-package
+auc	auc-methods
+auc,bincap-method	auc-methods
+auc,multcap-method	auc-methods
+auc-methods	auc-methods
+bincap	bincap
+bincap-class	bincap-class
+cap-class	cap-class
+HandTill2001	HandTill2001-package
+ht01.multipleclass	ht01.multipleclass
+ht01.twoclass	ht01.twoclass
+multcap	multcap
+multcap-class	multcap-class

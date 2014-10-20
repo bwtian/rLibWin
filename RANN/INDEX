@@ -1,0 +1,4 @@
+RANN-defunct            Defunct functions in RANN package
+RANN-package            Wrapper for Arya and Mount's Approximate
+                        Nearest Neighbours (ANN) C++ library
+nn2                     Nearest Neighbour Search

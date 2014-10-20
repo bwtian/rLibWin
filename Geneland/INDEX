@@ -1,0 +1,39 @@
+EstimateFreqNA          Estimate frequencies of null alleles.
+FormatGenotypes         Formatting file of genotype data.
+Fstat                   Computes F statistics on a population genetics
+                        dataset given as R object
+Fstat.output            Computes F statistics on the output of an
+                        inference by MCMC simulation
+Geneland-package        Simulation and inference for subdivided
+                        populations
+Geneland.GUI            Graphical interface for package Geneland
+HZ                      Estimate parameters of the hybrid zone model by
+                        MCMC simulation
+MCMC                    Markov Chain Monte-Carlo inference of clusters
+                        from genotpype data
+PlotDrift               Plot the drift factors
+PlotFreq                Plot the trace of allele frequencies in present
+                        time population and optionnaly print it.
+PlotFreqA               Plots allele frequencies in ancestral
+                        population along the MCMC run and optionally
+                        prints it
+PlotTessDyn             Plot tessellation along an MCMC run.
+PlotTessellation        Maps of posterior probability of membership
+Plotnpop                Plot of number of populations along the MCMC
+                        run
+Plotntile               Plot of number of tiles along the MCMC run
+PostProcessChain        Computation for maps of posterior probability
+                        of population membership
+PosteriorMode           Map of mode of posterior distribution of
+                        population membership
+coordinates             Example of coordinate file
+genotypes               Example of coordinate file
+gl2gp                   Geneland to Genepop conversion
+nullify                 Simulates null alleles
+show.estimate.hz        Show estimate of parameters of the hybrid zone
+                        model by MCMC simulation
+show.simdata            Graphical display of data simulated by simdata
+simFmodel               Simulation of multi-locus genetic data from the
+                        spatial F-model
+simdata                 Simulation of georeferenced genotypes under an
+                        IBD + barrier model

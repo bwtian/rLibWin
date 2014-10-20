@@ -1,0 +1,18 @@
+import("methods")
+
+export( fieldsim,
+	quadvar,
+	constructcovf,
+	constructgrid,
+	visualize,
+	whichgrid,
+	C2D)
+
+exportClasses(manifold)
+export(setManifold)
+
+exportMethods("initialize")
+
+import("rgl")
+import("RColorBrewer")
+

@@ -1,0 +1,9 @@
+export(
+CookRLF.varobj,
+interact.varobj,
+PlotDiag.varobj,
+QQDecorr.varobj,
+QQVarcloud.varobj,
+varobj
+#p11,p12,p21,p22
+)

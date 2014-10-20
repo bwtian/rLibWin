@@ -1,0 +1,8 @@
+psgp-package	psgp-package
+buildMetadata	buildMetadata
+estimateParameters	estimateParameters
+estimateParameters.psgp	estimateParameters
+learnParameters	learnParameters
+makePrediction	makePrediction
+spatialPredict	spatialPredict
+spatialPredict.psgp	spatialPredict

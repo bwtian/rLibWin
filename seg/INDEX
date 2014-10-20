@@ -1,0 +1,13 @@
+SegDecomp               Create an Object of Class SegDecomp
+SegDecomp-class         Class Decomp
+SegLocal                Create an Object of Class SegLocal
+SegLocal-class          Class SegLocal
+SegSpatial              Create an Object of Class SegSpatial
+SegSpatial-class        Class SegSpatial
+conprof                 Concentration Profile
+deseg                   Decomposable Segregation Measure
+dissim                  Index of Dissimilarity
+isp                     Index of Spatial Proximity
+localenv                Local Population Composition
+segdata                 Hypothetical Patterns of Segregation
+spseg                   Spatial Segregation Measures

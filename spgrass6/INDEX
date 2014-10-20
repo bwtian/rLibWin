@@ -1,0 +1,7 @@
+execGRASS               Run GRASS commands
+gmeta6                  Reads GRASS metadata from the current LOCATION
+initGRASS               Initiate GRASS session
+readRAST6               Read and write GRASS 6+ raster files
+readVECT6               Read and write GRASS 6+ vector object files
+spgrass6-package        Interface between GRASS geographical
+                        information system and R

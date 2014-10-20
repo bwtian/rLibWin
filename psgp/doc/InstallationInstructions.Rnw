@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\title{PSGP package installation instructions}
+\author{Remi Barillec}
+\usepackage[colorlinks]{hyperref}
+\newcommand{\code}[1]{\texttt{#1}}
+% The following commented line is used by R build - do not remove
+% \VignetteIndexEntry{Installation instructions}
+\begin{document}
+\maketitle
+
+\section{Introduction}
+The \code{psgp} package provides a spatial interpolation method based on Projected Sequential Gaussian Processes (PSGP). The PSGP \cite{Csato02} is an approximation to the standard Gaussian process \cite{Rasmussen96} whereby the observations are projected onto a subset of optimal "active" observations, thus reducing possible redundancy in the data and allowing for faster, memory efficient, interpolation. The projection is done in a sequential manner, that is one observation is projected onto the active subset at a time. This allows for larger datasets to be processed, and overcomes the limitations of standard Gaussian processes related to storing the full covariance matrix (which can be unfeasible for really large datasets).
+
+\section{Installation instructions}
+To install \code{psgp} and the required dependencies, use the command (in an R console):
+\begin{verbatim}
+ install.packages('psgp')
+\end{verbatim}
+
+\section{Contact}
+For further help, please contact the package maintainer.
+
+\begin{thebibliography}{1}
+\bibitem{Csato02}
+  Lehel Csat\'{o},
+  \emph{Gaussian Proceeses -- Iterative Sparse Approximations}
+  Ph.D. Thesis,
+  NCRG, Aston University, UK,
+  2002
+\bibitem{Rasmussen96}
+  Carl Edward Rasmussen and Christopher K. Williams,
+  \emph{Gaussian Processes for Machine Learning},
+  The MIT Press, Cambridge, Massachusetts,
+  1996
+\bibitem{Sanderson10}
+  Conrad Sanderson,
+  \emph{Armadillo: An Open Source C++ Linear Algebra Library for Fast Prototyping and Computationally Intensive Experiments},
+  Technical Report, NICTA, 
+  2010
+\end{thebibliography}
+\bibliographystyle{authordate1}
+
+\end{document}

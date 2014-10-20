@@ -1,0 +1,19 @@
+citHeader("To cite ramps in publications use:")
+
+
+citEntry(entry="Article",
+         title = "Unified Geostatistical Modeling for Data Fusion and Spatial Heteroskedasticity with R Package ramps",
+         author = personList(as.person("Brian J. Smith"),
+                             as.person("Jun Yan"),
+                             as.person("Mary Kathryn Cowles")),
+         year         = "2008",
+         journal      = "Journal of Statistical Software",
+         volume       = "25(10)",
+         pages        = "1-21",
+         textVersion = 
+         paste("Smith, B. J., Yan, J., and Cowles, M. K. (2008)",
+               "Unified Geostatistical Modeling for Data Fusion and Spatial Heteroskedasticity with R Package ramps,",
+               "Journal of Statistical Software, 25(10), 1-21")
+)
+
+

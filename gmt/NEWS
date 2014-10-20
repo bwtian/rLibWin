@@ -1,0 +1,148 @@
+--------------------------------------------------------------------------------
+gmt 1.2-0 (2014-03-11)
+--------------------------------------------------------------------------------
+o Added NAMESPACE file.
+
+o Changed example to A4 paper.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-9 (2011-02-09)
+--------------------------------------------------------------------------------
+o Changed -M to -m in psbar.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-8 (2010-09-01)
+--------------------------------------------------------------------------------
+o Changed -M to -m in psbar.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-4 (2010-02-16)
+--------------------------------------------------------------------------------
+o Updated maintainer email address.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-3 (2009-04-20)
+--------------------------------------------------------------------------------
+o Updated URL of GMT manual.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-2 (2007-09-29)
+--------------------------------------------------------------------------------
+o No user-visible changes.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-1 (2007-08-02)
+--------------------------------------------------------------------------------
+o Improved psxy(), pstext(), and psclose() so they no longer expect a
+  Mercator-projected map, but any kind of map.
+
+o Simplified gmt.system(), thanks to improved system() in R 2.5.0.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.1-0 (2007-07-29)
+--------------------------------------------------------------------------------
+o Added function num2deg() to convert numeric to degrees, the opposite of
+  deg2num().
+
+o Changed gmt() so quiet=TRUE by default, and files .gmtcommands4 and
+  .gmtdefaults4 are created in dirname(file) instead of R working directory.
+
+o Changed psxy(), pstext(), and psbar() so temporary GMT input files are saved
+  directory dirname(tempdir()) instead of R working directory. These temporary
+  files are later removed by psclose().
+
+o Changed psclose() so the bounding box declaration is moved to the postscript
+  file header, and GMT input files are removed from temporary directory. If
+  cleanup=TRUE, the files .gmtcommands4 and .gmtdefaults4 are also removed.
+
+o Improved r2gmt() to support # commented table header.
+
+o Added scripts example.bat and example.sh that mimic the behaviour of the 'gmt'
+  package.
+
+o Improved help page examples.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.0-3 (2005-10-18)
+--------------------------------------------------------------------------------
+o Improved help pages.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.0-2 (2005-10-02)
+--------------------------------------------------------------------------------
+o Added function gmt.system() to handle the interface between R and system
+  commands, passing invisible=TRUE on operating systems that support that
+  argument.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.0-1 (2005-10-01)
+--------------------------------------------------------------------------------
+o Improved performance by changing approach from shell("cmd>file") to
+  ps<-system("cmd");writeLines(ps,file). Demo runs four times faster.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 1.0-0 (2005-09-28)
+--------------------------------------------------------------------------------
+o Added help pages for all functions.
+
+o Submitted to CRAN.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 0.9-1 (2005-09-27)
+--------------------------------------------------------------------------------
+o Added argument 'ref' to psbar() to standardize bar height.
+
+o Added function gmt() to initialize GMT session, making .gmthome(),
+  gmtdefaults, and gmtset() obsolete. The package assumes that binaries are in
+  the PATH and GMTHOME is defined.
+
+o Added function r2gmt() to write GMT input files, making .data2gmt() and
+  .file2gmt() obsolete.
+
+
+
+
+--------------------------------------------------------------------------------
+gmt 0.9-0 (2005-09-25)
+--------------------------------------------------------------------------------
+o Added functions .data2gmt(), .file2gmt(), .gmthome(), deg2num(), geodist(),
+  gmt(), gmtdefaults(), gmtset(), psbar(), psclose(), pscoast(), pstext(), and
+  psxy().
+
+o Added example objects demo.bar, demo.coast, demo.set, demo.text, and demo.xy.

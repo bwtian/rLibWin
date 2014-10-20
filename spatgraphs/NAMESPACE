@@ -1,0 +1,10 @@
+## export everything but things starting with "."
+exportPattern("^[^\\.]")
+
+exportClasses(sg, sgc, sgadj)
+exportMethods(sg, t, summary, print, plot, spectral, clip, 
+   edgelengths, cut, prune, weights)
+exportMethods(sgc, summary, print, plot)
+exportMethods(sgadj, print, t, plot)
+
+useDynLib(spatgraphs)

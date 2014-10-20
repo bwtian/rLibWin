@@ -1,0 +1,30 @@
+## Exports
+export(
+  leaflet,
+  leaf,
+  toGeoJSON,
+  tg,
+  getProperties,
+  prop,
+  styleSingle,
+  singles,
+  styleGrad,
+  grads,
+  styleCat,
+  cats,
+  changes,
+  addBaseMap,
+  base
+)
+
+## Imports
+import(
+  brew,
+  jsonlite
+)
+
+## S3 methods
+S3method(print, leaflet)
+S3method(print, single.style)
+S3method(print, categorized.style)
+S3method(print, graduated.style)

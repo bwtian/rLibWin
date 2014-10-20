@@ -1,0 +1,8 @@
+CH1903                  'CH1903'
+DistanceMatrix          Computes distance matrices
+GPS                     'GPS'
+ImagePoly               Plots regional data in map plots
+ReadPoly                Read shape files
+geospacom-package       Helper package to facilitate the generation of
+                        distance matrices used in the package spacom
+yu.reg                  'yu.reg'

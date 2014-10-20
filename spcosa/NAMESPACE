@@ -1,0 +1,52 @@
+import(rJava)
+
+importClassesFrom(sp,
+    Spatial,
+    SpatialPoints,
+    SpatialPixels,
+    SpatialPointsDataFrame,
+    SpatialPixelsDataFrame
+)
+
+importMethodsFrom(sp,
+    spsample
+)
+
+
+importFrom(graphics,
+    plot
+)
+
+exportClasses(
+    Statistic,
+        SpatialCumulativeDistributionFunction,
+        SpatialMean,
+        SpatialVariance,
+        SamplingVariance,
+            StandardError,
+    Stratification,
+        CompactStratification,
+            CompactStratificationEqualArea,
+            CompactStratificationPriorPoints,
+    SamplingPattern,
+        SamplingPatternPurposive,
+            SamplingPatternCentroids,
+            SamplingPatternPriorPoints,
+        SamplingPatternRandom,
+            SamplingPatternRandomSamplingUnits,
+            SamplingPatternRandomComposite
+)
+
+exportMethods(
+    plot,
+    coerce,
+    estimate,
+    stratify,
+    getArea,
+    getRelativeArea,
+    getCentroid,
+    getSampleSize,
+    getNumberOfStrata,
+    getObjectiveFunctionValue,
+    spsample
+)

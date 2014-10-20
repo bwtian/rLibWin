@@ -1,0 +1,51 @@
+add.nas                 Adds NAs to a vector
+aleutians               Bathymetric data for the Aleutians (Alaska)
+antimeridian.box        Adds a box to maps including antimeridian
+as.SpatialGridDataFrame
+                        Convert bathymetric data to a spatial grid
+as.bathy                Convert to bathymetric data in an object of
+                        class bathy
+as.raster               Convert bathymetric data to a raster layer
+as.xyz                  Convert to xyz format
+celt                    Bathymetric data for the North Est Atlantic
+check.bathy             Sort bathymetric data matrix by increasing
+                        latitude and longitude
+col2alpha               Adds alpha transparency to a (vector of)
+                        color(s)
+collate.bathy           Collates two bathy matrices with data from
+                        either sides of the antimeridian
+diag.bathy              Finds matrix diagonal for non-square matrices
+florida                 Bathymetric data around Florida, USA
+get.area                Get projected surface area
+get.box                 Get bathymetric information of a belt transect
+get.depth               Get depth data by clicking on a map
+get.sample              Get sample data by clicking on a map
+get.transect            Compute approximate cross section along a depth
+                        transect
+getNOAA.bathy           Import bathymetric data from the NOAA server
+hawaii                  Bathymetric data for Hawaii, USA
+is.bathy                Test whether an object is of class bathy
+lc.dist                 Computes least cost distances between two or
+                        more locations
+marmap                  Import, plot and analyze bathymetric and
+                        topographic data
+metallo                 Coral sampling information from the North West
+                        Atlantic
+nw.atlantic             Bathymetric data for the North West Atlantic
+nw.atlantic.coast       Coastline data for the North West Atlantic
+palette.bathy           Build a bathymetry- and/or
+                        topography-constrained color palette
+path.profile            Geographic coordinates, kilometric distance and
+                        depth along a path
+plot.bathy              Ploting bathymetric data
+plotProfile             Ploting bathymetric data along a transect or
+                        path
+read.bathy              Read bathymetric data in XYZ format
+readGEBCO.bathy         Read bathymetric data from a GEBCO file
+scaleBathy              Adds a scale to a map
+space.pies              Automatic placement of piecharts on maps
+subsetBathy             Creates bathy objects from larger bathy objects
+subsetSQL               Creating and querying local SQL database for
+                        bathymetric data
+summary.bathy           Summary of bathymetric data of class 'bathy'
+trans.mat               Transition matrix

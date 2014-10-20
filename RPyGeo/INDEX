@@ -1,0 +1,17 @@
+RPyGeo-package          ArcGIS Geoprocessing in R via Python
+rpygeo.ASCIIToRaster.conversion
+                        Wrappers for ASCII/raster conversion
+rpygeo.AreaSolarRadiation.sa
+                        Wrappers for solar radiation and viewshed
+                        geoprocessing tools
+rpygeo.EucDistance.sa   Wrappers for selected ArcGIS functions
+rpygeo.FlowAccumulation.sa
+                        Wrappers for functions from the Hydrology
+                        toolset
+rpygeo.SingleOutputMapAlgebra.sa
+                        Wrapper for the Map Algebra tool
+rpygeo.build.env        RPyGeo Geoprocessing Environments
+rpygeo.geoprocessor     ArcGIS Geoprocessor Workhorse
+rpygeo.required.extensions
+                        Check required ArcGIS extensions
+write.point.shapefile   Helper functions for RPyGeo

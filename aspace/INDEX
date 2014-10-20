@@ -1,0 +1,41 @@
+CF                      Central Feature (CF) Calculator
+CF2PTS                  Central feature between 2 point patterns
+                        (CF2PTS) Calculator
+CMD                     Centre of Minimum Distance (CMD) Calculator
+acos_d                  Compute inverse cosine with angle given in
+                        degrees
+activities              Demo Data: x and y coordinates of 10 specified
+                        point locations
+activities2             Demo Data: x and y coordinates of 10 specified
+                        point locations
+as_radians              Converts degrees to radians
+asin_d                  Compute inverse sine with angle given in
+                        degrees
+aspace-package          A collection of functions for estimating
+                        centrographic statistics and computational
+                        geometries for spatial point patterns
+atan_d                  Compute inverse tangent with angle given in
+                        degrees
+calc_box                Calculate the Standard Deviation Box
+calc_sdd                Calculate the Standard Distance Deviation
+                        (Standard Distance)
+calc_sde                Calculate the Standard Deviation Ellipse
+centre                  Demo Data: Coordinates of a single source,
+                        centre, location
+cos_d                   Compute cosine with angle given in degrees
+distances               Multiple Euclidean distance calculator
+mean_centre             Mean Centre Calculator
+median_centre           Median Centre Calculator
+plot_box                Plot the Standard Distance Box
+plot_centres            Plot centres
+plot_sdd                Plot the Standard Distance Deviation (Standard
+                        Distance)
+plot_sde                Plot the Standard Deviation Ellipse
+r.BOX                   Demo Data: Standard Deviation Box Output Object
+r.SDD                   Demo Data: Standard Deviation Distance Output
+                        Object
+r.SDE                   Demo Data: Standard Deviation Ellipse Output
+                        Object
+sin_d                   Compute sine with angle given in degrees
+tan_d                   Compute tangent with angle given in degrees
+wts                     Weights vector

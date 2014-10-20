@@ -1,0 +1,33 @@
+DIC                     Deviance Information Criterion
+NURE                    Dataset of USGS NURE Uranium Measurements
+corClasses              Spatial Correlation Structure Classes
+corRCauchy              Cauchy Spatial Correlation Structure
+corRExp                 Exponential Spatial Correlation Structure
+corRExp2                Non-Separable Exponential Spatio-Temporal
+                        Correlation Structure
+corRExpwr               Powered Exponential Spatial Correlation
+                        Structure
+corRExpwr2              Non-Separable Powered Exponential
+                        Spatio-Temporal Correlation Structure
+corRExpwr2Dt            Non-Separable Temporally Integrated Powered
+                        Exponential Spatial Correlation Structure
+corRGaus                Gaussian Spatial Correlation Structure
+corRGneit               Gneiting Spatial Correlation Structure
+corRLin                 Linear Spatial Correlation Structure
+corRMatern              Matern Spatial Correlation Structure
+corRSpher               Spherical Spatial Correlation Structure
+corRWave                Sine Wave Spatial Correlation Structure
+expand.chain            Expand MCMC Samples for georamps Model Fits
+genUSStateGrid          Generating a Grid over a US State
+genUSStateSites         Generating Random Sites in a US State
+georamps                Bayesian Geostatistical Model Fitting with
+                        RAMPS
+param                   Initialization of georamps Model Parameters
+plot.ramps              Posterior Spatial Distribution Plots
+predict.ramps           Prediction Method for georamps Model Fits
+ramps.control           Auxiliary for Controlling georamps Model
+                        Fitting
+simJSS                  Dataset of Simulated Measurements from JSS
+                        Publication
+summary.ramps           Posterior Summaries of georamps Model Fits
+window.predict.ramps    Subsetting of MCMC Sampler Results

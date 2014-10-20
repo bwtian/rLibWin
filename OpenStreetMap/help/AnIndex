@@ -1,0 +1,17 @@
+autoplot.OpenStreetMap	autoplot.OpenStreetMap
+autoplot.osmtile	autoplot.osmtile
+getMapInfo	getMapInfo
+launchMapHelper	launchMapHelper
+LA_places	LA_places
+longlat	longlat
+openmap	openmap
+openproj	openproj
+osm	osm
+osmtile	osmtile
+plot.OpenStreetMap	plot.OpenStreetMap
+plot.osmtile	plot.osmtile
+print.OpenStreetMap	print.OpenStreetMap
+projectMercator	projectMercator
+raster	raster
+setCloudMadeKey	setCloudMadeKey
+states	states

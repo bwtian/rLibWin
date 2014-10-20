@@ -1,0 +1,25 @@
+compress                Compact Storage of Symmetric and Triangular
+                        Matrices
+cv                      Generic Cross-validation
+cv.georob               Cross-Validating a Spatial Linear Model Fitted
+                        by 'georob'
+fit.variogram.model     Fitting Model Functions to Sample Variograms
+fixed.effects           Common S3 Methods for Class 'georob'
+georob                  Robust Fitting of Spatial Linear Models
+georob-package          The georob Package
+georob.control          Tuning Parameters for georob
+georobModelBuilding     S3 Methods for Stepwise Building Fixed-Effects
+                        Models for Class 'georob'
+georobObject            Fitted georob Object
+lgnpp                   Unbiased Back-Transformations for Lognormal
+                        Kriging
+param.names             Names and Permissible Ranges of Variogram
+                        Parameters
+plot.georob             Plot Methods for Class 'georob'
+pmm                     Parallelized Matrix Multiplication
+predict.georob          Predict Method for Robustly Fitted Spatial
+                        Linear Models
+sample.variogram        Computing (Robust) Sample Variograms of Spatial
+                        Data
+validate.predictions    Summary Statistics of (Cross-)Validation
+                        Prediction Errors

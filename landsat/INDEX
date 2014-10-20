@@ -1,0 +1,23 @@
+BSL                     Bare Soil Line
+DOS                     Dark Object Subtraction
+ESdist                  Earth-Sun distance for a given date.
+PIF                     Pseudo-Invariant Features
+RCS                     Radiometric Control Sets
+clouds                  Create a cloud mask from Landsat bands 1 and 6.
+ddate                   Decimal Date
+dem                     Digital Elevation Model
+georef                  Simple image-matching georeferencing function.
+geoshift                Shift and pad an image
+histmatch               Histogram matching of an image
+july                    Sample Landsat ETM+ data
+lssub                   Subset a geotiff image.
+minnaert                Whole-image and pixel-based Minnaert
+                        topographic correction of remote sensing data.
+movingwindow            Simple moving window function.
+nov                     Sample Landsat ETM+ data
+radiocorr               Radiometric correction of Landsat data
+relnorm                 Relative normalization of an image
+slopeasp                Calculate slope and aspect from elevation data.
+tasscap                 Tasseled Cap for Landsat data
+thermalband             Thermal band to temperature conversion.
+topocorr                Topographic correction of remote sensing data.

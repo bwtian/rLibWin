@@ -1,0 +1,40 @@
+citHeader("To cite FieldSim in publications use:")
+
+citEntry(entry = "Article",
+  title        = "On Fractional Gaussian Random Fields Simulations",
+  author       = personList(as.person("Alexandre Brouste"),
+                   as.person("Jacques Istas"),
+                   as.person("Sophie Lambert-Lacroix")),
+  journal      = "Journal of Statistical Software",
+  year         = "2007",
+  volume       = "23",
+  number       = "1",
+  pages        = "1--23",
+  url          = "http://www.jstatsoft.org/v23/i01/",
+
+  textVersion  =
+  paste("Alexandre Brouste, Jacques Istas, Sophie Lambert-Lacroix (2007).",
+        "On Fractional Gaussian Random Fields Simulations.",
+        "Journal of Statistical Software, 23(1), 1-23.",
+        "URL http://www.jstatsoft.org/v23/i01/.")
+)
+
+citEntry(entry = "Article",
+  title        = "On Simulation of Manifold Indexed Fractional Gaussian Fields",
+  author       = personList(as.person("Alexandre Brouste"),
+                   as.person("Jacques Istas"),
+                   as.person("Sophie Lambert-Lacroix")),
+  journal      = "Journal of Statistical Software",
+  year         = "2010",
+  volume       = "36",
+  number       = "4",
+  pages        = "1--14",
+  url          = "http://www.jstatsoft.org/v36/i04/",
+
+  textVersion  =
+  paste("Alexandre Brouste, Jacques Istas, Sophie Lambert-Lacroix (2010).",
+        "On Simulation of Manifold Indexed Fractional Gaussian Fields.",
+        "Journal of Statistical Software, 36(4), 1-14.",
+        "URL http://www.jstatsoft.org/v36/i04/.")
+)
+

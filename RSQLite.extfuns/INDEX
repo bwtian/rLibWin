@@ -1,0 +1,4 @@
+RSQLite.extfuns-package
+                        Math and String Extension Functions for RSQLite
+init_extensions         Initialize SQLite extension functions on a
+                        SQLite DB connection

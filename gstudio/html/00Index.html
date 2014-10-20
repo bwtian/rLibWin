@@ -1,0 +1,221 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Analyses and functions related to the spatial analysis of
+genetic marker data.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+<h1> Analyses and functions related to the spatial analysis of
+genetic marker data.
+<img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
+</h1>
+<hr>
+<div align="center">
+<a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
+<a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
+</div><h2>Documentation for package &lsquo;gstudio&rsquo; version 1.3</h2>
+
+<ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
+<li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
+<li><a href="../NEWS">Package NEWS</a>.</li>
+</ul>
+
+<h2>Help Pages</h2>
+
+
+<table width="100%">
+<tr><td width="25%"><a href="gstudio-package.html">gstudio-package</a></td>
+<td>Routines used in spatial analysis of genetic marker data</td></tr>
+<tr><td width="25%"><a href="locus-operator-plus.html">+.locus</a></td>
+<td>Overload '+' operator for pairs of 'locus' objects</td></tr>
+<tr><td width="25%"><a href="locus-operator-minus.html">-.locus</a></td>
+<td>Overload '-' operator for pairs of 'locus' objects</td></tr>
+<tr><td width="25%"><a href="A.html">A</a></td>
+<td>Allelic Diversity</td></tr>
+<tr><td width="25%"><a href="Ae.html">Ae</a></td>
+<td>Effective Allelic Diversity</td></tr>
+<tr><td width="25%"><a href="alleles.html">alleles</a></td>
+<td>Returns the alleles in a 'locus' object</td></tr>
+<tr><td width="25%"><a href="alleles.html">alleles.default</a></td>
+<td>Returns the alleles in a 'locus' object</td></tr>
+<tr><td width="25%"><a href="alleles.html">alleles.locus</a></td>
+<td>Returns the alleles in a 'locus' object</td></tr>
+<tr><td width="25%"><a href="arapat.html">arapat</a></td>
+<td>Data for Araptus attenuatus</td></tr>
+<tr><td width="25%"><a href="as.data.frame.locus.html">as.data.frame.locus</a></td>
+<td>Converts locus to a data frame</td></tr>
+<tr><td width="25%"><a href="as.list.locus.html">as.list.locus</a></td>
+<td>Converts locus to a list</td></tr>
+<tr><td width="25%"><a href="as.locus.html">as.locus</a></td>
+<td>As operator for locus</td></tr>
+<tr><td width="25%"><a href="bad_parents.html">bad_parents</a></td>
+<td>Determines of the indicated parent can possibly be the parent of the offspring</td></tr>
+<tr><td width="25%"><a href="c.locus.html">c.locus</a></td>
+<td>Concatinate 'locus' objects</td></tr>
+<tr><td width="25%"><a href="column_class.html">column_class</a></td>
+<td>Find columns of data in a data.frame for a type of class</td></tr>
+<tr><td width="25%"><a href="cornus_florida.html">cornus_florida</a></td>
+<td>Cornus mom/offspring data set</td></tr>
+<tr><td width="25%"><a href="data_2_column.html">data_2_column</a></td>
+<td>Two Column Example Data</td></tr>
+<tr><td width="25%"><a href="data_aflp.html">data_aflp</a></td>
+<td>AFLP example data set</td></tr>
+<tr><td width="25%"><a href="data_separated.html">data_separated</a></td>
+<td>Separated Example Data</td></tr>
+<tr><td width="25%"><a href="data_snp.html">data_snp</a></td>
+<td>SNP Example Data</td></tr>
+<tr><td width="25%"><a href="data_zymelike.html">data_zymelike</a></td>
+<td>Zyme-like Example Data</td></tr>
+<tr><td width="25%"><a href="Dest.html">Dest</a></td>
+<td>Estimation Joost's Dest parameter</td></tr>
+<tr><td width="25%"><a href="dist_amova.html">dist_amova</a></td>
+<td>Estimation of amova distance</td></tr>
+<tr><td width="25%"><a href="dist_bray.html">dist_bray</a></td>
+<td>Estimation of jaccard distance</td></tr>
+<tr><td width="25%"><a href="dist_cavalli.html">dist_cavalli</a></td>
+<td>Estimation of Bray-Curtis distance</td></tr>
+<tr><td width="25%"><a href="dist_cgd.html">dist_cgd</a></td>
+<td>Estimation of conditional genetic distance</td></tr>
+<tr><td width="25%"><a href="dist_euclidean.html">dist_euclidean</a></td>
+<td>Estimation of euclidean distance</td></tr>
+<tr><td width="25%"><a href="dist_jaccard.html">dist_jaccard</a></td>
+<td>Estimation of jaccard distance</td></tr>
+<tr><td width="25%"><a href="dist_nei.html">dist_nei</a></td>
+<td>Estimation of Bray-Curtis distance</td></tr>
+<tr><td width="25%"><a href="dist_ss.html">dist_ss</a></td>
+<td>Estimation of SS distance</td></tr>
+<tr><td width="25%"><a href="exclusion_probability.html">exclusion_probability</a></td>
+<td>Paternity exclusion probability</td></tr>
+<tr><td width="25%"><a href="Fis.html">Fis</a></td>
+<td>Estimate simple inbreeding from frequencies</td></tr>
+<tr><td width="25%"><a href="frequencies.html">frequencies</a></td>
+<td>Get allele frequencies</td></tr>
+<tr><td width="25%"><a href="frequencies.html">frequencies.data.frame</a></td>
+<td>Get allele frequencies</td></tr>
+<tr><td width="25%"><a href="frequencies.html">frequencies.default</a></td>
+<td>Get allele frequencies</td></tr>
+<tr><td width="25%"><a href="frequencies.html">frequencies.locus</a></td>
+<td>Get allele frequencies</td></tr>
+<tr><td width="25%"><a href="genetic_distance.html">genetic_distance</a></td>
+<td>Estimate genetic distances among strata in a ,</td></tr>
+<tr><td width="25%"><a href="genetic_diversity.html">genetic_diversity</a></td>
+<td>Estimate genetic diversity among strata in a Population,</td></tr>
+<tr><td width="25%"><a href="genetic_relatedness.html">genetic_relatedness</a></td>
+<td>Estimates pair-wise relatedness</td></tr>
+<tr><td width="25%"><a href="genetic_structure.html">genetic_structure</a></td>
+<td>Estimation of , genetic structure statistics.</td></tr>
+<tr><td width="25%"><a href="genotype_frequencies.html">genotype_frequencies</a></td>
+<td>Genotype Frequencies</td></tr>
+<tr><td width="25%"><a href="geom_frequencies.html">geom_frequencies</a></td>
+<td>Plot allele frequencies</td></tr>
+<tr><td width="25%"><a href="geom_locus.html">geom_locus</a></td>
+<td>Translate a vector of 'locus' objects into a 'gemo_bars' layer</td></tr>
+<tr><td width="25%"><a href="geom_strata.html">geom_strata</a></td>
+<td>Returns ggplot layer for population data</td></tr>
+<tr><td width="25%"><a href="geom_surface.html">geom_surface</a></td>
+<td>Translate raster into ggplot object</td></tr>
+<tr><td width="25%"><a href="grid.csv.html">grid.csv</a></td>
+<td>CDPop Data</td></tr>
+<tr><td width="25%"><a href="Gst.html">Gst</a></td>
+<td>Estimation Nei's Gst parameter</td></tr>
+<tr><td width="25%"><a href="Gst_prime.html">Gst_prime</a></td>
+<td>Estimation Nei's Gst parameter with Hedrick's correction for allelic diversity</td></tr>
+<tr><td width="25%"><a href="He.html">He</a></td>
+<td>Estimate expected heterozygosity</td></tr>
+<tr><td width="25%"><a href="Ho.html">Ho</a></td>
+<td>Estimate observed heterozygosity</td></tr>
+<tr><td width="25%"><a href="indices.html">indices</a></td>
+<td>Returns quickly indices for a matrix of size N</td></tr>
+<tr><td width="25%"><a href="is.locus.html">is.locus</a></td>
+<td>An 'is-a' operator for 'locus'</td></tr>
+<tr><td width="25%"><a href="is.na.locus.html">is.na.locus</a></td>
+<td>Determines if 'locus' is NA</td></tr>
+<tr><td width="25%"><a href="is_frequency.html">is_frequency</a></td>
+<td>Is-A function for Allele Frequences</td></tr>
+<tr><td width="25%"><a href="is_heterozygote.html">is_heterozygote</a></td>
+<td>Determine heterozygosity</td></tr>
+<tr><td width="25%"><a href="kronecker_delta.html">kronecker_delta</a></td>
+<td>This function returns the kronecker operator for two loci.</td></tr>
+<tr><td width="25%"><a href="locus.html">locus</a></td>
+<td>General constructor for locus object</td></tr>
+<tr><td width="25%"><a href="make_population.html">make_population</a></td>
+<td>Makes a random population</td></tr>
+<tr><td width="25%"><a href="mate.html">mate</a></td>
+<td>Produces offspring</td></tr>
+<tr><td width="25%"><a href="migrate.html">migrate</a></td>
+<td>This function returns a data frame that has moved migrants</td></tr>
+<tr><td width="25%"><a href="minus_mom.html">minus_mom</a></td>
+<td>Subtracts maternal component to offspring genotypes</td></tr>
+<tr><td width="25%"><a href="multilocus_diversity.html">multilocus_diversity</a></td>
+<td>Returns multilocus diversity</td></tr>
+<tr><td width="25%"><a href="optimal_sampling.html">optimal_sampling</a></td>
+<td>Estimate optimal sampling allocation</td></tr>
+<tr><td width="25%"><a href="parent_finder.html">parent_finder</a></td>
+<td>This function finds a set of potential parents from an offspring.</td></tr>
+<tr><td width="25%"><a href="partition.html">partition</a></td>
+<td>Subdivide , into a list of substrata</td></tr>
+<tr><td width="25%"><a href="paternity.html">paternity</a></td>
+<td>Estimates fractional paternity probability</td></tr>
+<tr><td width="25%"><a href="Pe.html">Pe</a></td>
+<td>Polymorphic index for loci</td></tr>
+<tr><td width="25%"><a href="permute_ci.html">permute_ci</a></td>
+<td>Permute for confidence interval</td></tr>
+<tr><td width="25%"><a href="pies_on_map.html">pies_on_map</a></td>
+<td>Plot overload</td></tr>
+<tr><td width="25%"><a href="ploidy.html">ploidy</a></td>
+<td>Returns the number of alleles in a 'locus' object</td></tr>
+<tr><td width="25%"><a href="plot.data.frame.html">plot.data.frame</a></td>
+<td>Plotting the locations of a 'population'</td></tr>
+<tr><td width="25%"><a href="plot.locus.html">plot.locus</a></td>
+<td>Overload plot function</td></tr>
+<tr><td width="25%"><a href="population_map.html">population_map</a></td>
+<td>Retrieve a map for a set of populations.</td></tr>
+<tr><td width="25%"><a href="print.locus.html">print.locus</a></td>
+<td>Overload of 'print' function for 'locus' objects</td></tr>
+<tr><td width="25%"><a href="rarefaction.html">rarefaction</a></td>
+<td>Does allelic diversity rarefaction</td></tr>
+<tr><td width="25%"><a href="read_population.html">read_population</a></td>
+<td>Read a raw text file in and translate appropriate columns into genotypes</td></tr>
+<tr><td width="25%"><a href="rel_lynch.html">rel_lynch</a></td>
+<td>This estimates the Lynch &amp; Ritland (1999)</td></tr>
+<tr><td width="25%"><a href="rel_nason.html">rel_nason</a></td>
+<td>This estimates the Fij statistic from Nason allele-wise or for a whole locus</td></tr>
+<tr><td width="25%"><a href="rel_queller.html">rel_queller</a></td>
+<td>This estimates the Queller &amp; Goodnight (1989)</td></tr>
+<tr><td width="25%"><a href="rel_ritland.html">rel_ritland</a></td>
+<td>This estimates the relatedness statistic from Ritland (1996)</td></tr>
+<tr><td width="25%"><a href="rep.locus.html">rep.locus</a></td>
+<td>Replicate a locus</td></tr>
+<tr><td width="25%"><a href="snp_prob.csv.html">snp_prob.csv</a></td>
+<td>SNP probability data</td></tr>
+<tr><td width="25%"><a href="spiderplot_data.html">spiderplot_data</a></td>
+<td>Translate paternity output into segments for geom_segments</td></tr>
+<tr><td width="25%"><a href="strata_coordinates.html">strata_coordinates</a></td>
+<td>Grab coordinates for strata</td></tr>
+<tr><td width="25%"><a href="strata_distance.html">strata_distance</a></td>
+<td>Return distances between strats</td></tr>
+<tr><td width="25%"><a href="summary.locus.html">summary.locus</a></td>
+<td>Provides a summary of the 'locus' object</td></tr>
+<tr><td width="25%"><a href="to_fixed_locus.html">to_fixed_locus</a></td>
+<td>returns string representation of locus for output like genepop/heirfstat</td></tr>
+<tr><td width="25%"><a href="to_genepop.html">to_genepop</a></td>
+<td>Translates a 'data.frame'</td></tr>
+<tr><td width="25%"><a href="to_mv.html">to_mv</a></td>
+<td>Returns the passed itmes as multivariate data</td></tr>
+<tr><td width="25%"><a href="to_mv.html">to_mv.data.frame</a></td>
+<td>Returns the passed itmes as multivariate data</td></tr>
+<tr><td width="25%"><a href="to_mv.html">to_mv.default</a></td>
+<td>Returns the passed itmes as multivariate data</td></tr>
+<tr><td width="25%"><a href="to_mv.html">to_mv.locus</a></td>
+<td>Returns the passed itmes as multivariate data</td></tr>
+<tr><td width="25%"><a href="to_mv_freq.html">to_mv_freq</a></td>
+<td>Returns mv frequencies for stratum in long format</td></tr>
+<tr><td width="25%"><a href="to_structure.html">to_structure</a></td>
+<td>Translates a 'data.frame' with loci into a textual STRUCTURE file.</td></tr>
+<tr><td width="25%"><a href="transition_probability.html">transition_probability</a></td>
+<td>Returns transition probability for offspring given one or more parents.</td></tr>
+<tr><td width="25%"><a href="write_population.html">write_population</a></td>
+<td>Writes data frame with genotypes and other data to a file</td></tr>
+<tr><td width="25%"><a href="locus-operator-index.html">[.locus</a></td>
+<td>Overload '[' for vectors of 'locus' objects</td></tr>
+</table>
+</body></html>

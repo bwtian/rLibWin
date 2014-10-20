@@ -1,0 +1,10 @@
+make.fixedwidth         Convert Character Vectors From Variable To
+                        Constant Width
+mmap                    Map And Unmap Pages of Memory
+mmap.csv                Memory Map Text File
+mmapFlags               Create Bitwise Flags for mmap.
+mprotect                Control Protection of Pages
+msync                   Synchronize Memory With Physical Storage
+sizeof                  Calculate the Size of Datatypes
+struct                  Construct a Ctype struct
+types                   Virtual R Types On Disk.

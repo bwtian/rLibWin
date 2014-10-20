@@ -1,0 +1,12 @@
+biomassF                Individual Species Area Relationship
+clean.up.data           Functions for the aid of segregation measures
+dixon                   Dixon's 2-type contingency table tests
+exposurepps             Example datasets for package spatialsegregation
+isarF                   Individual Species Area Relationship
+mciF                    Mean Composite Information
+minglingF               Spatial Mingling Index
+segregationFun          Spatial Segregation Function
+shannonF                Spatial Shannon Index
+simpsonF                Spatial Simpson Index
+spatialsegregation-package
+                        Spatial Segregation Measures

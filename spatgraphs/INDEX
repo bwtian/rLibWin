@@ -1,0 +1,19 @@
+adj2sg                  Adjacency matrix to edgelist and vice versa
+clip.sg                 Clip edges that cross window border
+cut.sg                  cut and prune
+mailer                  mailer
+plot.sg                 plot.sg
+print.sg                print.sg
+runif3d                 runif3d
+sg                      sg
+sg2dxf                  sg2dxf
+sg2igraph               sg2igraph
+sg2sym                  Make the graph symmetric/compute edge lengths
+sgc                     sgc
+shake                   shake
+shortestPath            Shortest path between nodes i and j
+spatcluster             spatcluster
+spatgraph               spatgraph
+spatgraphs-package      Graphs for spatial point patterns
+spectral.sg             Spectral clustering
+weight.sg               Weight edges

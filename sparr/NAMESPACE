@@ -1,0 +1,14 @@
+
+import(spatstat,rgl,MASS)
+
+export(KBivN,KBivQ,OS,NS,LSCV.density,LSCV.risk,bivariate.density,risk,tolerance)
+
+S3method(print, bivden)
+S3method(summary, bivden)
+S3method(plot, bivden)
+S3method(as.im, bivden)
+
+S3method(print, rrs)
+S3method(summary, rrs)
+S3method(plot, rrs)
+S3method(as.im, rrs)

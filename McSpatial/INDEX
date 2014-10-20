@@ -1,0 +1,67 @@
+CookCensusTracts        Shapefile of Census Tracts in Cook County for
+                        2000
+McSpatial-package       Nonparametric spatial data analysis
+condens                 Conditional density estimation
+cookdata                Data set associated with CookCensusTracts shape
+                        file
+cparlogit               Conditionally Parametric logit for two or more
+                        choices
+cparlwr                 Conditionally Parametric LWR Estimation
+cparlwrgrid             Conditionally parametric LWR regression
+                        bandwidth or window selection
+cparmlogit              Conditionally parametric logit for two or more
+                        choices
+cparprobit              Conditionally Parametric probit for two choices
+cubespline              Smooth cubic spline estimation
+dfldens                 Counterfactual Kernel Density Functions
+dupage99                DuPage County assessment ratio data set
+fourier                 Fourier expansion smoothing
+geodensity              Kernel density functions for geo-coded data
+geodistance             Calculates distances using the great circle
+                        formula
+geogravity              Gravity matrix and gravity variable
+                        calculations
+geoshape                Calculates distances between a shape file and a
+                        set of points.
+gmmlogit                GMM Spatial Logit
+gmmprobit               GMM Spatial Probit
+kdensity                K-density functions for distances between
+                        geographic coordinates
+ksim                    Estimates K-density functions with local or
+                        global confidence intervals for counter-factual
+                        locations
+lwr                     Locally Weighted Regression
+lwrgrid                 LWR Bandwidth or Window Selection
+maketarget              Target Points for Nonparametric Models
+makew                   Calculation of spatial weight matrices
+matchdata               Matched samples of house sales in Chicago for
+                        1995 and 2005
+matchmahal              Matched sample data frame based on mahalanobis
+                        distances
+matchprop               Matched sample data frame based on propensity
+                        scores
+matchqreg               Sample quantiles and means over time for a
+                        matched sample data set
+qregbmat                Quantile Regression for Multiple Quantiles
+qregcdf                 Nonparametric quantiles based on conditional
+                        CDF functions
+qregcpar                Conditionally Parametric LWR Quantile
+                        Estimation
+qreglwr                 Locally Weighted Quantile Regression
+qregsim1                Changes in Distributions Implied by Quantile
+                        Regression Estimates
+qregsim2                Machado-Mata Decomposition of Changes in
+                        Distributions
+qregspiv                IV Estimator for the Spatial AR Quantile Model
+repsale                 Repeat Sales Estimation
+repsaledata             Preparation of a Repeat Sales Data Set
+repsalefourier          Repeat Sales Estimation using Fourier
+                        Expansions
+repsaleqreg             Quantile Repeat Sales Estimation
+sarml                   Spatial AR Maximum-Likelihood Estimation
+semip                   Semi-Parametric Regression
+smooth12                Univariate or Bivariate Interpolation
+splogit                 Linearized GMM spatial logit
+spprobit                Linearized GMM spatial probit
+spprobitml              Maximum Likelihood Estimation of a Spatial
+                        Probit Model

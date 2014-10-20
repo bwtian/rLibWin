@@ -1,0 +1,34 @@
+CH1903                  'CH1903'
+ExploreMLSpawExact      Exploratory multilevel analysis with spatially
+                        weighted context data
+GPS                     'GPS'
+MLSpawExact             Standard multilevel analysis applied to
+                        spatially weighted context data
+MLSpawExactOutput-class
+                        Class '"MLSpawExactOutput"'
+MLSpawResidMoran        Testing the (residual) spatial dependency
+ResampleMLSpawAggregate
+                        Spatially weighted multilevel analysis with
+                        stratified resampling for aggregated context
+                        data
+ResampleMLSpawExact     Spatially weighted multilevel analysis with
+                        stratified resampling for exact context data
+ResampleMLSpawOutput-class
+                        Class '"ResampleMLSpawOutput"'
+SpawAggregate           Create and describe spatially weighted survey
+                        estimates for contextual indicators
+SpawAggregateOutput-class
+                        Class '"SpawAggregateOutput"'
+SpawExact               Create and describe spatially weighted precise
+                        contextual indicators
+WeightMatrix            Create spatial weighting matrices
+d_ethnic                A distance matrix for TRACES areas
+d_geo                   A distance matrix for TRACES areas
+d_ident                 A distance matrix for TRACES areas
+d_migr                  A distance matrix for TRACES areas
+homog_census            Dataset homog_census
+spacom-package          Spatially weighted context data for multilevel
+                        modelling
+traces_event            Dataset traces_event
+traces_ind              Dataset traces_ind
+wt.var                  Aggregation functions provided by spacom

@@ -1,0 +1,61 @@
+2013-11-14  andy  <andy@twig>
+
+	* 0.3-8
+	* Added spMisalignLM and spMisalignGLM along with associated spRecover and spPredict utility functions.
+	* Fixed error in calculating GRS in spDiag.
+	* Tidied up man pages.
+
+2013-06-01  andy  <andy@darkstar>
+
+	* 0.3-7
+	* Changed spLM and spMvLM acceptance output for non-amcmc specification.
+	* Added predictive process to spDynLM.
+	* Changed the recover spatial random effects algorithm in spLM and spMvLM to avoid singularity issues encountered using oversmooth spatial correlation functions, e.g., Gaussian.
+	* Removed a bug in the non-predictive process spDynLM.
+	* Removed a bug in spDiag associated with DIC and spGLM Poisson model weights.
+	* Added the NYOzone dataset.
+
+2013-03-18  andy  <andy@darkstar>
+
+	* 0.3-6
+	* Removed second inclusion of #include <omp.h> from spPPMvGLM.cpp.
+	* Added regression coefficient update back into spPPMvLM.cpp.
+	* Changed output from spPredict spLM and spMvLM objects to match the documentation, i.e., p.posterior.samples is now p.y.posterior.samples.
+
+2013-03-01  andy  <andy@darkstar>
+
+	* 0.3-5
+	* Added spDynLM, bayesGeostatExact, and bayesLMConjugate. Modified spPredict to accept bayesGeostatExact objects. Added several additional illustrative data sets.
+
+2013-02-09  andy  <andy@darkstar>
+
+	* 0.3-4
+	* Temporarily commented out #pragma omp parallel regions in C++ code called by spMvLM and spMvGLM until I can figure out some inconsistent behavior that only seems to occur when cov.model=matern.
+
+2013-02-05  andy  <andy@darkstar>
+
+	* 0.3-3
+	* Fixed bug in spLMPredict.cpp that caused the posterior predictive distribution to be too narrow when spLM was called with no nugget.
+
+2013-01-28  andy  <andy@darkstar>
+
+	* 0.3-2
+	* Fixed bug in spDiag.R and spPredict.R associated with bayesLMRef.R Added keywords to serveral Rd files. Added spPPMvGLMPredict.cpp.
+
+2013-01-02  andy  <andy@darkstar>
+
+	* 0.3-1
+	* Fixed bug in spMvGLMPredict.cpp that effected prediction using spGLM and spMvGLM for observed locations only. Prediction for unobserved locations was not effected.
+	* Added three example data sets.
+
+2012-12-17  andy  <andy@darkstar>
+
+	* 0.3-0
+	* Fixed Rprint typos in all _amcmc.cpp file.
+	* Added pointsInPoly.R and associated code.
+
+2012-12-13  andy  <andy@darkstar>
+
+	* 0.2-6
+	* First record of package changes. Staring with 0.2-6, nearly all c/c++ and R functions have been rewritten in an attempt to improve computational efficiency.
+

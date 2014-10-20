@@ -1,0 +1,94 @@
+2010-07-31  ChristophHofer
+
+	* correction of backtransformation in the CKrige example (CKrige.Rd)
+
+
+2010-08-04 Christoph Hofer
+
+   * Punktkriging korrigiert so dass jetzt auch zwischen Messfehler und kleinräumiger Varianz unterschieden werden kann
+
+   * k in K geändert bei der Ausgabe der Punktkriging Vorhersagen
+
+
+2011-01-13 Christoph Hofer
+
+	* warings werden erzeugt falls CK oder CMCK nicht existiert
+	* M für die rücktransformation korrigiert sqrt(dist)
+
+
+2011-01-13 Christoph Hofer
+
+
+	* plot.preCKrige geändert (Zeile 48) (Hinweis von A. Papritz)
+	* Auswahl der zufälligen Farben war auf 155 beschränkt
+ 	* jetzt entspricht die Anzahl der Anzahl Polygone
+	* if statement im File f.bb.cov.one.configuration.R (Zeile 65) erweitert
+	* mit no.pix.in.poly[ t.element.index[ k, 1 ] ] == 0 &&	*  sa.polygons[ t.element.index[ k, 2 ] ] == T |	*  no.pix.in.poly[ t.element.index[ k, 2 ] ] == 0 &&	*  sa.polygons[ t.element.index[ k, 1 ] ] == T
+	* somit wir die Punkt-Punkt-Kovarianz zwischen Blöcken berechnet die keine Pixel enthalten aber 
+	* von der Fläche genug Gross wären (wurde vorher nicht berücksichtigt)
+	
+
+2011-08-11 Christoph Hofer
+	
+	* simple kriging weights wurden falsch ausgegeben
+	* file f.polygons.CKrige.R wurde in Zeile 199 korrigiert
+
+
+2012-04-24 Christoph Hofer
+	
+	* changed Package startup functions from .noLoad to .onAttach and
+	* the cat function for the startup text changed to Packagestartupmessage
+
+
+2012-11-11 Christoph Hofer
+
+	* replacement of gpclib package by the package rgeos
+	* changes in function f.intersect.area
+	* instead of area.poly( intersect( gpc.pixel, polygons))
+	* I have to use the try method since the intersect method of rgeos returns for 
+	* non-overlapping polygons an error
+ 
+		area <- try( area.poly( try( intersect( gpc.pixel, polygons ), silent = T ) ), silent = T )
+                if( is( area ) == "try-error" ){ area <- 0}
+                return( area )
+
+
+2012-11-21
+
+	* based on the wish of Andreas Papritz the function f.point.block.cov is included in the export in the namespace
+
+
+
+2012-11-29
+
+
+	* corrected spelling error in the description file based on a comment of Jason Matney
+
+
+2012-11-30
+
+	* I supplemented the if statement in the hidden function f.intersect.area.R
+	* by the terms length( area ) == 1 to
+        * if( length( area = 1) && is( area ) == "try-error" ){ area <- 0}
+	* since the if statement produced a warning   when  area was a vector
+
+
+2012-12-23
+
+	* in version 0.1.9 all examples are ignored as the step
+	* -- running examples for arch … since their compilation
+	* take to much time
+
+2013-06-13
+        * based on a comment by Andreas Papritz
+	* in f.point.block.cov row and colwidth value was mixed up for the rxwidth and rywidth argument in the   
+	  f.point.rec.covmat -> Covariance between point an polygons discretised by non-quadratic pixels was wrong
+ 	* this bug is now fixed 
+2013-06-16
+	* covmodel "whittlematern" is no longer in use
+	* two new covmodels are added: "matern" and "whittle" see Randomfields package
+2013-06-16
+	* the supplement in the hidden function f.intersect.area.R is not needed anymore since rgeos 0.2-17 can 
+	* can handel gpc.poly objects
+2013-10-02
+	* Package methods and spatialCovariance imported by the Namespace

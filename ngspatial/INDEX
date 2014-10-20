@@ -1,0 +1,21 @@
+A                       Adjacency matrix for the infant mortality data.
+adjacency.matrix        Return an adjacency matrix for a square
+                        lattice.
+autologistic            Fit a centered autologistic model using maximum
+                        pseudolikelihood estimation or MCMC for
+                        Bayesian inference.
+infant                  Infant mortality data.
+rautologistic           Return a perfect sample from a centered
+                        autologistic model.
+residuals.autologistic
+                        Extract model residuals.
+residuals.sparse.sglmm
+                        Extract model residuals.
+sparse.sglmm            Fit a sparse SGLMM.
+summary.autologistic    Print a summary of a centered autologistic
+                        model fit.
+summary.sparse.sglmm    Print a summary of a sparse SGLMM fit.
+vcov.autologistic       Return the estimated covariance matrix for an
+                        'autologistic' model object.
+vcov.sparse.sglmm       Return the covariance matrix of the regression
+                        parameters of a 'sparse.sglmm' model object.

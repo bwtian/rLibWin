@@ -1,0 +1,21 @@
+citHeader("To cite", sQuote("constrainedKriging"), "in publications, please use:")
+
+citEntry(entry = "article",
+         title = "constrainedKriging: an R-package for customary, constrained and covariance-matching constrained point or block kriging",
+         author = personList(
+           as.person("Christoph Hofer"), 
+           as.person("Andreas Papritz")
+           ),
+         journal = "Computers & Geosciences",
+         volume= "-",
+         number = "-",
+         pages = "-",
+         year  = "in preparation",
+         note  = "{ISSN} 1548-7660",
+	 textVersion = paste(
+		"Ch. Hofer and A. Papritz (in preparation).",
+		"constrainedKriging: an R-package for customary, constrained and covariance-matching constrained point or block kriging.",
+	        "Computers & Geosciences.",
+         	"ISSN: 0098-3004.")
+         )
+

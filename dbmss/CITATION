@@ -1,0 +1,14 @@
+citHeader("To cite dbmss in publications use this reference:")
+
+citEntry(entry="Manual",
+  title = "dbmss: Distance-based measures of spatial structures",
+  author = personList(as.person("E. Marcon"), as.person("G. Lang"), as.person("S. Traissac"), as.person("F. Puech")),
+  year = "2014",
+	url = "http://CRAN.R-project.org/package=dbmss",        
+  textVersion = 
+    paste("Marcon, E., Lang, G., Traissac, S. and Puech, F.",
+      "(2014)",
+      "dbmss: Distance-based measures of spatial structures",
+      "http://CRAN.R-project.org/package=dbmss",
+    sep=", ")
+  )

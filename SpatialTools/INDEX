@@ -1,0 +1,30 @@
+coincident              Determine coincident coordinates
+cov.sp                  Calculates spatial covariance
+cov.st                  Calculates spatio-temporal covariance
+decomp.cov              Calculates decomposition of covariance matrix
+dist1                   Calculate Euclidean distance matrix for a
+                        matrix of coordinates
+dist2                   Calculate Euclidean distance matrix between
+                        coordinates of two matrices
+get.contours            Extracts coordinates from contourLines function
+krige.ok                Performs Ordinary Kriging
+krige.sk                Performs Simple Kriging
+krige.uk                Performs universal kriging
+maxlik.cov.sp           Determines maximum likelihood estimates of
+                        covariance parameters
+maxlik.cov.st           Determines maximum likelihood estimates of
+                        covariance parameters
+mspe.uk                 Calculates mean-square prediction error of
+                        Universal Kriging predictions
+plot.contourLines       Plot contour lines
+pweights.uk             Calculates Universal Kriging weights
+rcondnorm               Generate from conditional normal distribution
+rmvnorm                 Generates realizations from a multivariate
+                        normal distribution
+simple.cov.sp           Calculates spatial covariance based on distance
+                        matrix
+simple.cov.time         Calculates temporal covariance based on
+                        distance matrix
+spLMPredictJoint        Returns posterior predictive sample from spLM
+                        object
+toydata                 A toy data set for use in examples.

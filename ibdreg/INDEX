@@ -1,0 +1,41 @@
+Ginv                    Compute Generalized Inverse of Input Matrix
+align.ibd.var           align ibd.var object with relative pairs within
+                        pairs.frame object
+chibar3.w               Compute mixture proportions, w, for mixture
+                        chi-square distribution
+create.ibd.dat          Create an ibd.dat object
+create.pairs.frame      create a data frame for relative pairs
+exact.ibd.var           create an ibd.var object
+ibd.df.merlin           Create and return a data.frame with ibd data
+                        from merlin
+ibd.moments             calculate moments (mean, variance) for
+                        simulated ibd vectors
+ibdreg                  Regression Methods to Test for Linkage With
+                        Covariates
+linkage.all             Linkage test statistics for ALL relative pairs
+linkage.tests           Linkage tests for relative pair groups
+lsConstrain.fit         Minimize Inequality Constrained Mahalanobis
+                        Distance
+mergeIBD                Merge ibd and covariate data
+minpRows                find the rows of a data frame with the minimum
+                        pvalue
+pairSum                 Combine person-specific covariates to
+                        pair-specific
+pchibar                 cumulative probability of a chibar distribution
+plot.ibdreg             plot an ibdreg object
+plot.ibdreg.unexpect    Plot unconstrained and constrained linkage
+                        tests to indicate areas of unexpected allele
+                        sharing
+plot.linkage.all        Plot a linkage.all object
+plot.linkage.tests      Plot a linkage.tests object
+plotpval                Plot the -log10 of pvalues
+print.ibd.var           print an ibd.var object
+print.ibdreg            print and ibdreg object
+print.linkage.all       Print or summarize a linkage.all object
+print.linkage.tests     Print a linkage.tests object
+printBanner             Print a nice banner
+resources               track system resources
+sim.ibd.setup           set-up functions for sim.mark.prop
+sim.ibd.var             Create an ibd.var object via simulations using
+                        gene-dropping
+sim.mark.prop           Simulate Marker Propagation

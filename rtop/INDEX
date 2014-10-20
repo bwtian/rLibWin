@@ -1,0 +1,32 @@
+checkVario              Plot variogram fitted to data with support
+createRtopObject        Create an object for interpolation within the
+                        rtop package
+downloadRtopExampleData
+                        Download additional example data
+gDist                   calculate geostatistical distances between
+                        areas
+getRtopParams           Setting parameters for the intamap package
+netProp                 Propagate values along a river network
+plot.rtopVariogramCloud
+                        Plot and Identify Data Pairs on Sample
+                        Variogram Cloud
+readAreaInfo            create SpatialPointsDataFrame with observations
+                        of data with a spatial support
+readAreas               help file for creating SpatialPolygonsDataFrame
+                        with observations and/or predictionLocations of
+                        data with a spatial support
+rtop-package            A package providing methods for analysis and
+                        spatial interpolation of data with an irregular
+                        support
+rtopDisc                Discretize areas
+rtopFitVariogram        Fit variogram model to sample variogram of data
+                        with spatial support
+rtopKrige               Spatial interpolation of data with spatial
+                        support
+rtopVariogram           create variogram for data with spatial support
+rtopVariogramModel      create or update variogram model
+useRtopWithIntamap      Integrates the rtop package with the intamap
+                        package
+varMat                  create a semivariogram matrix between a set of
+                        locations, or semivariogram matrices between
+                        and within two sets of locations

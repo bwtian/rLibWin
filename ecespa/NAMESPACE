@@ -1,0 +1,27 @@
+## compiled code
+useDynLib(ecespa)
+
+# Export regular functions
+export("dixon2002", "getis","haz.ppp", "ipc.estK","K1K2","K012","Kci","Kclust","Ki","Kinhom.log","Kmm","Kmulti.ls","marksum","pc.estK","rIPCP","sim.poissonc","syrjala0", "syrjala","syrjala.test")
+
+# Import all packages listed as Imports or Depends
+# ToDo: "importFrom" only required functions 
+import(splancs, spatstat)
+
+## Registration of S3 methods
+import(stats)
+import(graphics)
+S3method(plot, ecespa.getis)
+S3method(plot, ecespa.kci)
+S3method(plot, ecespa.kmm)
+S3method(plot, ecespa.marksum)
+S3method(plot, ecespa.minconfit)
+S3method(plot, ecespa.syrjala)
+S3method(plot, syrjala.test)
+S3method(print, ecespa.getis)
+S3method(print, ecespa.kci)
+S3method(print, ecespa.kmm)
+S3method(print, ecespa.marksum)
+S3method(print, ecespa.minconfit)
+S3method(print, ecespa.syrjala)
+S3method(print, syrjala.test)

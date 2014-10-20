@@ -1,0 +1,38 @@
+bayesCopula             Performs spatial interpolation using copulas
+blockPredict            Spatial block prediction
+checkSetup              check setup
+coarsenGrid             Coarsening of a spatial grid
+conformProjections      Getting conformed projections
+copulaEstimation        ML-estimation of the spatial copula model
+                        parameters
+createIntamapObject     Create an object for interpolation within the
+                        intamap package
+estimateAnisotropy      estimateAnisotropy
+estimateParameters      Automatic estimation of correlation structure
+                        parameters
+estimateTimeModel       estimateTimeModel
+generateTimeModels      Generate time models
+getIntamapParams        Setting parameters for the intamap package
+getInterpolationMethodNames
+                        get interpolation method names
+intamap-package         A package providing methods for automatic
+                        interpolation: pre-processing, parameter
+                        estimation, spatial prediction and post
+                        processing
+intamapExampleObject    Simulated Intamap Object
+interpolate             spatial interpolation
+methodParameters        generate string for generation of method
+                        parameters
+observations            Example data for the intamap package
+plotIntamap             plot intamap objects
+postProcess             pre-process data
+preProcess              pre-processing of data
+predictTime             Time prediction for intamap package methods
+rotateAnisotropicData   rotateAnisotropicData
+spatialPredict          Spatial prediction
+summaryIntamap          summary intamap objects
+timeModels              models for estimating prediction time in
+                        intamap package
+unbiasedKrige           Unbiased kriging
+yamamotoKrige           kriging and simulation with alternative kriging
+                        variance

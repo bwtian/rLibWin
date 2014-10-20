@@ -1,0 +1,54 @@
+GeoXp-package           Interactive exploratory spatial data analysis
+angleplotmap            Detection of an eventual directional trend
+barmap                  Interactive Bar plot and map
+barnbmap                Bar plot of the number of neighbour and map
+boxplotmap              Interactive boxplot and map
+carte                   Drawing a map
+choix.bubble            Selection of a variable before plotting bubbles
+choix.couleur           Selection of colors before plotting map
+choixvarfunc            Selection of a variable before plotting bubbles
+clustermap              Classification of dataset using kmeans or
+                        hclust algorithm and representation of clusters
+                        on a map.
+dbledensitymap          Double Kernel density estimates and map
+dblehistomap            Double Interactive Histogram and map
+densitymap              Kernel density estimates and map
+driftmap                Interactive driftplot and map
+genpca                  Generalized Principal Component Analysis (PCA)
+gini                    Calculates a Gini Index
+ginimap                 Lorentz curve and map
+graphique               Drawing a graphic
+histnbmap               Interactive histogram of the distances between
+                        two neighbors of a nb object and map
+histobarmap             Histogram, barplot and map
+histomap                Interactive Histogram and map
+immob                   Some price indices of real estate from biggest
+                        cities in France
+makeneighborsw          Spatial weight matrix
+misolationmap           Interactive multivariate isolation plot and map
+moranplotmap            Moran scatterplot and map
+mp.school               Midi-pyrennees school
+mp.school.ps            Midi-pyrennees school agreggated to the
+                        pseudo-canton levels
+mvariocloudmap          Interactive multivariate variocloud and map
+neighbourmap            Neighbour plot and map
+nonormmoran             Detection of spatial autocorrelation
+normw                   Row-normalize a spatial weight matrix
+pcamap                  Generalized Principal Component Analysis and
+                        map
+plot3dmap               Interactive Plot3d and map
+polyboxplotmap          Interactive polyboxplot and map
+polylist2list           Extract from a polylist object the vertices of
+                        the polygons
+rotation                Transform coordinates of sites using a rotation
+scattermap              Interactive scatterplot and map
+selectgraph             Selection of an additionnal grah
+selectmap               Selection of a point or polygon on a
+                        scatterplot
+selectstat              Selection of values on a graphic
+slider1                 Scroll bar
+spdf2list               Extract from a SpatialPolygonsDataFrame object
+                        the middle coordinates of boundary box and the
+                        vertices of the polygons (in the case where
+                        polygons are given)
+variocloudmap           Interactive variocloud and map

@@ -1,0 +1,23 @@
+%grep%                  Binary operators for grep-like functions
+as_igraph               Convert osmar object to igraph
+as_osm                  Convert osmar object to OSM-XML
+as_osmar                Convert OSM-XML to an osmar object
+as_osmar_bbox           Bounding box converter generic
+as_osmar_bbox.Spatial   Convert sp object to an osmar object
+as_sp                   Convert osmar object to sp object
+c.osmar                 Combine osmar objects
+corner_bbox             Get OSM elements
+dim.osmar               Dimension of osmar objects
+find                    Find element for a given condition
+find_down               Find all elements related to an ID
+find_nearest_node       Find nearest node with given conditions
+get_osm                 Get OSM data
+muc                     Object of class osmar from central Munich
+node                    Element descriptors
+osm_crs                 CRS for OpenStreetMap
+osmsource_api           API OSM data source
+osmsource_file          OSM file data source
+osmsource_osmosis       Osmosis OSM data source
+plot.osmar              Plot osmar object
+subset.osmar            Subset an osmar object
+summary.osmar           Summarize osmar objects
