@@ -1,7 +1,7 @@
 Package: rstudio
 Type: Package
 Title: Tools and Utilities for RStudio
-Version: 0.98.1078
+Version: 0.98.1062
 Date: 2012-09-17
 Author: RStudio
 Maintainer: RStudio <info@rstudio.com>
@@ -10,4 +10,4 @@ Depends: R (>= 2.10.0)
 Imports: utils
 License:
 LazyLoad: yes
-Built: R 3.1.0; ; 2014-10-20 08:13:43 UTC; windows
+Built: R 3.1.1; ; 2014-10-21 03:02:26 UTC; windows
