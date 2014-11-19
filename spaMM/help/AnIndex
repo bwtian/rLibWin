@@ -1,5 +1,4 @@
 %id*id%	spaMM-internal
-.SpaMM	options
 AIC	HLfit
 alternating	spaMM-internal
 anova	anova.HLfit
@@ -12,14 +11,19 @@ as.blockDiag.matrix	spaMM-internal-blockDiag
 as.blockDiag.partition	spaMM-internal-blockDiag
 as.matrix.blockDiag	spaMM-internal-blockDiag
 asStandardFormula	spaMM-internal
+auglinmodfit	spaMM-internal
 Bartlett.robust	spaMM-internal
 bessel_lnKnu	spaMM-internal
 Beta	spaMM-internal
 binomialize	multinomial
 blackcap	blackcap
+calc.p_v	spaMM-internal
 calc.tXinvS	spaMM-internal
+calc.w.resid	spaMM-internal
 calcDhDv2	spaMM-internal
+calcNewCorrs	spaMM-internal
 calcPredVar	spaMM-internal
+calcResidVar	spaMM-internal
 checkDistMatrix	spaMM-internal
 checkRandLink	spaMM-internal
 checkRandLinkS	spaMM-internal
@@ -37,6 +41,7 @@ connectedSets	spaMM-internal-migraine
 corFactor.corMatern	spaMM-internal
 corMatern	corMatern
 corMatrix.corMatern	spaMM-internal
+corr.notEQL.lambda	spaMM-internal
 corrHLfit	corrHLfit
 corrMM.LRT	spaMM-internal
 crossprodCpp	spaMM-internal-Rcpp
@@ -48,6 +53,7 @@ dispFn	spaMM-internal
 dispGammaGLM	spaMM-internal
 dispInv	spaMM-internal
 elim.redundant.V	spaMM-internal-migraine
+eval.corrEst.args	spaMM-internal
 eval.update.call	spaMM-internal
 extract.check.coords	spaMM-internal
 extractors	extractors
@@ -58,7 +64,6 @@ findblocks	spaMM-internal-blockDiag
 findOffset	spaMM-internal
 findplus	spaMM-internal
 findSpatial	spaMM-internal
-findSpatialOrNot	spaMM-internal
 fitted	extractors
 fitted.HLfit	extractors
 fitted.HLfitlist	multinomial
@@ -73,6 +78,7 @@ getCallHL	spaMM-internal
 getCovariate.corMatern	spaMM-internal
 getgroups	spaMM-internal
 getHLfit	spaMM-internal
+getPar	spaMM-internal
 getProcessed	spaMM-internal
 HLCor	HLCor
 HLCor.obj	spaMM-internal
@@ -81,6 +87,7 @@ HLframes	spaMM-internal
 HL_process.args	spaMM-internal
 HL_strictify	spaMM-internal
 Initialize.corMatern	spaMM-internal
+intervalStep	spaMM-internal
 inverse.Gamma	HLfit
 is.identity	spaMM-internal
 is.square.diagonal	spaMM-internal
@@ -97,8 +104,12 @@ Loaloa	Loaloa
 locoptim	spaMM-internal
 locoptimthroughSmooth	spaMM-internal
 LogAbsDetCpp	spaMM-internal-Rcpp
+LogAbsDetWrap	spaMM-internal
 logDet.corMatern	spaMM-internal
 loglfn.ranU	spaMM-internal
+logLik	extractors
+logLik.HLfit	extractors
+logLik.HLfitlist	multinomial
 LRT	anova.HLfit
 LRT.corrHL	spaMM-internal
 make.scaled.dist	make.scaled.dist
@@ -122,6 +133,7 @@ nuFn	spaMM-internal
 nuInv	spaMM-internal
 old.nextPoints	spaMM-internal-migraine
 ordinaryKrigingCoefs	spaMM-internal-migraine
+parseBars	spaMM-internal
 pastefrom	spaMM-internal
 plot	plot.HL
 plot.HLfit	plot.HL
@@ -138,6 +150,7 @@ print.fixedLRT	summary.HL
 print.HLfit	summary.HL
 print.HLfitlist	summary.HL
 print.predictor	spaMM-internal
+print.ranef	spaMM-internal
 pseudoSolvediag	spaMM-internal-Rcpp
 QRwrap	spaMM-internal-Rcpp
 ranef	extractors
@@ -162,6 +175,7 @@ sampleNearby	spaMM-internal-migraine
 sampleNextPoints	spaMM-internal-migraine
 scotlip	scotlip
 seaMask	seaMask
+seeds	seeds
 selectLoglfn	spaMM-internal
 selfAdjointSolverCpp	spaMM-internal-Rcpp
 separator	spaMM-internal
@@ -170,7 +184,6 @@ simulate	simulate.HLCor
 simulate.HLfit	simulate.HLCor
 simulate.HLfitlist	simulate.HLCor
 slashTerms	spaMM-internal
-solveCov	spaMM-internal
 solveWrap.matrix	spaMM-internal
 solveWrap.vector	spaMM-internal
 spaMM	spaMM
@@ -188,6 +201,7 @@ summary.HLfit	summary.HL
 summary.HLfitlist	summary.HL
 sweepZ1W	spaMM-internal-Rcpp
 t.blockDiag	spaMM-internal-blockDiag
+t.identityMatrix	spaMM-internal-blockDiag
 tcrossprodCpp	spaMM-internal-Rcpp
 theta.mu.canonical	spaMM-internal
 theta.mu.conjugate	spaMM-internal
@@ -200,9 +214,13 @@ update.HLfit	update
 updateWranef	spaMM-internal
 updateW_ranefS	spaMM-internal
 upperPoints	spaMM-internal-migraine
+u_h_from_v_h	spaMM-internal
 validData	spaMM-internal
 Variogram.corMatern	spaMM-internal
+vcov	extractors
+vcov.HLfit	extractors
 volTriangulation	spaMM-internal
 wafers	wafers
+welding	welding
 ZtWZ	spaMM-internal-Rcpp
 ZWZt	spaMM-internal-Rcpp

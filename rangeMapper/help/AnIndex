@@ -85,7 +85,6 @@ rangeMapStart,rangeMapStart-method	01_rangeMapStart-class
 rangeMapStart-class	01_rangeMapStart-class
 rangeTraits	07_rangeTraits
 rm.rangeMapper	12_rangeMapRemove
-RMQuery	99_RMQuery
 selectShpFiles	03_rangeFiles
 SpatialPixelsRangeMap-class	09_SpatialPixelsRangeMap-class
 summary,rangeMap-method	00_rangeMap-class
@@ -93,4 +92,5 @@ vertices	07_vertices
 vertices,SpatialPolygonsDataFrame-method	07_vertices
 vertices-methods	07_vertices
 vertices.SpatialPolygonsDataFrame	07_vertices
+WKT2SpatialPolygonsDataFrame	WKT2SpatialPolygonsDataFrame
 wrens	99_wrens

@@ -28,6 +28,7 @@ predict                 Prediction from a model fit.
 salamander              Salamander mating data
 scotlip                 Lip cancer in Scotland 1975 - 1980
 seaMask                 Masks of seas or lands
+seeds                   Seed germination data
 simulate.HLfit          Simulate realizations of a fitted mixed model.
 spaMM                   Inference in spatial GLMMs (and other
                         non-spatial mixed models)
@@ -40,3 +41,4 @@ summary.HLfit           Summary and print methods for fit and test
 update.HLfit            Updates an HLCor or HLfit fit
 wafers                  Data from a resistivity experiment for
                         semiconductor materials.
+welding                 Welding data set

@@ -10,7 +10,7 @@
 <div align="center">
 <a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
 <a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
-</div><h2>Documentation for package &lsquo;vegan&rsquo; version 2.0-10</h2>
+</div><h2>Documentation for package &lsquo;vegan&rsquo; version 2.2-0</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 <li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
@@ -37,9 +37,11 @@
 <a href="#N">N</a>
 <a href="#O">O</a>
 <a href="#P">P</a>
+<a href="#Q">Q</a>
 <a href="#R">R</a>
 <a href="#S">S</a>
 <a href="#T">T</a>
+<a href="#U">U</a>
 <a href="#V">V</a>
 <a href="#W">W</a>
 </p>
@@ -76,20 +78,12 @@
 <td>Multivariate homogeneity of groups dispersions (variances)</td></tr>
 <tr><td width="25%"><a href="anova.cca.html">anova.cca</a></td>
 <td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
-<tr><td width="25%"><a href="anova.cca.html">anova.ccabyaxis</a></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
-<tr><td width="25%"><a href="anova.cca.html">anova.ccabymargin</a></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
-<tr><td width="25%"><a href="anova.cca.html">anova.ccabyterm</a></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
-<tr><td width="25%"><a href="anova.cca.html">anova.ccanull</a></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
-<tr><td width="25%"><a href="anova.cca.html">anova.prc</a></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
 <tr><td width="25%"><a href="fisherfit.html">as.fisher</a></td>
 <td>Fit Fisher's Logseries and Preston's Lognormal Model to Abundance Data</td></tr>
+<tr><td width="25%"><a href="spantree.html">as.hclust.spantree</a></td>
+<td>Minimum Spanning Tree</td></tr>
 <tr><td width="25%"><a href="oecosimu.html">as.mcmc.oecosimu</a></td>
-<td>Null Models for Biological Communities</td></tr>
+<td>Evaluate Statistics with Null Models of Biological Communities</td></tr>
 <tr><td width="25%"><a href="permatfull.html">as.mcmc.permat</a></td>
 <td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td></tr>
 <tr><td width="25%"><a href="as.mlm.html">as.mlm</a></td>
@@ -103,7 +97,7 @@
 <tr><td width="25%"><a href="radfit.html">as.rad</a></td>
 <td>Rank - Abundance or Dominance / Diversity Models</td></tr>
 <tr><td width="25%"><a href="oecosimu.html">as.ts.oecosimu</a></td>
-<td>Null Models for Biological Communities</td></tr>
+<td>Evaluate Statistics with Null Models of Biological Communities</td></tr>
 <tr><td width="25%"><a href="permatfull.html">as.ts.permat</a></td>
 <td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td></tr>
 </table>
@@ -126,6 +120,8 @@
 <tr><td width="25%"><a href="bioenv.html">bioenv.default</a></td>
 <td>Best Subset of Environmental Variables with Maximum (Rank) Correlation with Community Dissimilarities</td></tr>
 <tr><td width="25%"><a href="bioenv.html">bioenv.formula</a></td>
+<td>Best Subset of Environmental Variables with Maximum (Rank) Correlation with Community Dissimilarities</td></tr>
+<tr><td width="25%"><a href="bioenv.html">bioenvdist</a></td>
 <td>Best Subset of Environmental Variables with Maximum (Rank) Correlation with Community Dissimilarities</td></tr>
 <tr><td width="25%"><a href="CCorA.html">biplot.CCorA</a></td>
 <td>Canonical Correlation Analysis</td></tr>
@@ -184,8 +180,10 @@
 <td>Rank - Abundance or Dominance / Diversity Models</td></tr>
 <tr><td width="25%"><a href="predict.cca.html">coef.rda</a></td>
 <td>Prediction Tools for [Constrained] Ordination (CCA, RDA, DCA, CA, PCA)</td></tr>
-<tr><td width="25%"><a href="oecosimu.html">commsimulator</a></td>
-<td>Null Models for Biological Communities</td></tr>
+<tr><td width="25%"><a href="commsim.html">commsim</a></td>
+<td>Create a Object for Null Model Algorithms</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">commsimulator</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
 <tr><td width="25%"><a href="MOStest.html">confint.MOStest</a></td>
 <td>Mitchell-Olds &amp; Shaw Test for the Location of Quadratic Extreme</td></tr>
 <tr><td width="25%"><a href="contribdiv.html">contribdiv</a></td>
@@ -203,24 +201,28 @@
 <td>Detrended Correspondence Analysis and Basic Reciprocal Averaging</td></tr>
 <tr><td width="25%"><a href="decostand.html">decostand</a></td>
 <td>Standardization Methods for Community Ecology</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">density.adonis</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">density.anosim</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">density.mantel</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">density.mrpp</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="oecosimu.html">density.oecosimu</a></td>
-<td>Null Models for Biological Communities</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">density.permutest.cca</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">density.protest</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">densityplot.adonis</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
-<tr><td width="25%"><a href="oecosimu.html">densityplot.oecosimu</a></td>
-<td>Null Models for Biological Communities</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.adonis</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.anosim</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.mantel</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.mrpp</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.oecosimu</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="permustats.html">density.permustats</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.permutest.cca</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">density.protest</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">densityplot.adonis</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">densityplot.oecosimu</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
+<tr><td width="25%"><a href="permustats.html">densityplot.permustats</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
 <tr><td width="25%"><a href="designdist.html">designdist</a></td>
 <td>Design your own Dissimilarities</td></tr>
 <tr><td width="25%"><a href="deviance.cca.html">deviance.cca</a></td>
@@ -233,6 +235,8 @@
 <td>Statistics Resembling Deviance and AIC for Constrained Ordination</td></tr>
 <tr><td width="25%"><a href="dispindmorisita.html">dispindmorisita</a></td>
 <td>Morisita index of intraspecific aggregation</td></tr>
+<tr><td width="25%"><a href="dispweight.html">dispweight</a></td>
+<td>Dispersion-based weighting of species counts</td></tr>
 <tr><td width="25%"><a href="distconnected.html">distconnected</a></td>
 <td>Connectedness of Dissimilarities</td></tr>
 <tr><td width="25%"><a href="diversity.html">diversity</a></td>
@@ -247,8 +251,10 @@
 <td>Vegetation and Environment in Dutch Dune Meadows.</td></tr>
 <tr><td width="25%"><a href="dune.html">dune.env</a></td>
 <td>Vegetation and Environment in Dutch Dune Meadows.</td></tr>
+<tr><td width="25%"><a href="dune.taxon.html">dune.phylodis</a></td>
+<td>Taxonomic Classification and Phylogeny of Dune Meadow Species</td></tr>
 <tr><td width="25%"><a href="dune.taxon.html">dune.taxon</a></td>
-<td>Taxonomic Classification of Dune Meadow Species</td></tr>
+<td>Taxonomic Classification and Phylogeny of Dune Meadow Species</td></tr>
 </table>
 
 <h2><a name="E">-- E --</a></h2>
@@ -330,6 +336,8 @@
 <h2><a name="G">-- G --</a></h2>
 
 <table width="100%">
+<tr><td width="25%"><a href="dispweight.html">gdispweight</a></td>
+<td>Dispersion-based weighting of species counts</td></tr>
 <tr><td width="25%"><a href="goodness.cca.html">goodness</a></td>
 <td>Diagnostic Tools for [Constrained] Ordination (CCA, RDA, DCA, CA, PCA)</td></tr>
 <tr><td width="25%"><a href="goodness.cca.html">goodness.cca</a></td>
@@ -390,6 +398,8 @@
 <table width="100%">
 <tr><td width="25%"><a href="envfit.html">labels.envfit</a></td>
 <td>Fits an Environmental Vector or Factor onto an Ordination</td></tr>
+<tr><td width="25%"><a href="specaccum.html">lines.fitspecaccum</a></td>
+<td>Species Accumulation Curves</td></tr>
 <tr><td width="25%"><a href="humpfit.html">lines.humpfit</a></td>
 <td>No-interaction Model for Hump-backed Species Richness vs. Biomass</td></tr>
 <tr><td width="25%"><a href="permatfull.html">lines.permat</a></td>
@@ -406,6 +416,8 @@
 <td>Rank - Abundance or Dominance / Diversity Models</td></tr>
 <tr><td width="25%"><a href="spantree.html">lines.spantree</a></td>
 <td>Minimum Spanning Tree</td></tr>
+<tr><td width="25%"><a href="specaccum.html">lines.specaccum</a></td>
+<td>Species Accumulation Curves</td></tr>
 <tr><td width="25%"><a href="linestack.html">linestack</a></td>
 <td>Plots One-dimensional Diagrams without Overwriting Labels</td></tr>
 <tr><td width="25%"><a href="radfit.html">logLik, radfit</a></td>
@@ -419,6 +431,8 @@
 <table width="100%">
 <tr><td width="25%"><a href="make.cepnames.html">make.cepnames</a></td>
 <td>Abbreviates a Botanical or Zoological Latin Name into an Eight-character Name</td></tr>
+<tr><td width="25%"><a href="commsim.html">make.commsim</a></td>
+<td>Create a Object for Null Model Algorithms</td></tr>
 <tr><td width="25%"><a href="mantel.html">mantel</a></td>
 <td>Mantel and Partial Mantel Tests for Dissimilarity Matrices</td></tr>
 <tr><td width="25%"><a href="mantel.correlog.html">mantel.correlog</a></td>
@@ -437,8 +451,6 @@
 <td>Nonmetric Multidimensional Scaling with Stable Solution from Random Starts, Axis Scaling and Species Scores</td></tr>
 <tr><td width="25%"><a href="metaMDS.html">metaMDSredist</a></td>
 <td>Nonmetric Multidimensional Scaling with Stable Solution from Random Starts, Axis Scaling and Species Scores</td></tr>
-<tr><td width="25%"><a href="vegan-deprecated.html">metaMDSrotate</a></td>
-<td>Deprecated Functions in vegan package</td></tr>
 <tr><td width="25%"><a href="mite.html">mite</a></td>
 <td>Oribatid Mite Data with Explanatory Variables</td></tr>
 <tr><td width="25%"><a href="mite.html">mite.env</a></td>
@@ -512,15 +524,19 @@
 <td>Extract the Number of Observations from a vegan Fit.</td></tr>
 <tr><td width="25%"><a href="nobs.adonis.html">nobs.wcmdscale</a></td>
 <td>Extract the Number of Observations from a vegan Fit.</td></tr>
+<tr><td width="25%"><a href="nullmodel.html">nullmodel</a></td>
+<td>Null Model and Simulation</td></tr>
 </table>
 
 <h2><a name="O">-- O --</a></h2>
 
 <table width="100%">
 <tr><td width="25%"><a href="oecosimu.html">oecosimu</a></td>
-<td>Null Models for Biological Communities</td></tr>
+<td>Evaluate Statistics with Null Models of Biological Communities</td></tr>
 <tr><td width="25%"><a href="cascadeKM.html">orderingKM</a></td>
 <td>K-means partitioning using a range of values of K</td></tr>
+<tr><td width="25%"><a href="ordihull.html">ordiareatest</a></td>
+<td>Display Groups or Factor Levels in Ordination Diagrams</td></tr>
 <tr><td width="25%"><a href="ordiarrows.html">ordiarrows</a></td>
 <td>Add Arrows and Line Segments to Ordination Diagrams</td></tr>
 <tr><td width="25%"><a href="ordixyplot.html">ordicloud</a></td>
@@ -541,16 +557,12 @@
 <td>Multivariate homogeneity of groups dispersions (variances)</td></tr>
 <tr><td width="25%"><a href="ordiplot.html">ordiplot</a></td>
 <td>Alternative plot and identify Functions for Ordination</td></tr>
-<tr><td width="25%"><a href="ordiplot3d.html">ordiplot3d</a></td>
-<td>Three-Dimensional and Dynamic Ordination Graphics</td></tr>
 <tr><td width="25%"><a href="ordipointlabel.html">ordipointlabel</a></td>
 <td>Ordination Plots with Points and Optimized Locations for Text</td></tr>
 <tr><td width="25%"><a href="ordistep.html">ordiR2step</a></td>
 <td>Choose a Model by Permutation Tests in Constrained Ordination</td></tr>
 <tr><td width="25%"><a href="ordiresids.html">ordiresids</a></td>
 <td>Plots of Residuals and Fitted Values for Constrained Ordination</td></tr>
-<tr><td width="25%"><a href="ordiplot3d.html">ordirgl</a></td>
-<td>Three-Dimensional and Dynamic Ordination Graphics</td></tr>
 <tr><td width="25%"><a href="ordiarrows.html">ordisegments</a></td>
 <td>Add Arrows and Line Segments to Ordination Diagrams</td></tr>
 <tr><td width="25%"><a href="ordihull.html">ordispider</a></td>
@@ -571,14 +583,6 @@
 <td>Add Text or Points to Ordination Plots</td></tr>
 <tr><td width="25%"><a href="ordixyplot.html">ordixyplot</a></td>
 <td>Trellis (Lattice) Plots for Ordination</td></tr>
-<tr><td width="25%"><a href="ordiplot3d.html">orglpoints</a></td>
-<td>Three-Dimensional and Dynamic Ordination Graphics</td></tr>
-<tr><td width="25%"><a href="ordiplot3d.html">orglsegments</a></td>
-<td>Three-Dimensional and Dynamic Ordination Graphics</td></tr>
-<tr><td width="25%"><a href="ordiplot3d.html">orglspider</a></td>
-<td>Three-Dimensional and Dynamic Ordination Graphics</td></tr>
-<tr><td width="25%"><a href="ordiplot3d.html">orgltext</a></td>
-<td>Three-Dimensional and Dynamic Ordination Graphics</td></tr>
 </table>
 
 <h2><a name="P">-- P --</a></h2>
@@ -596,6 +600,36 @@
 <td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td></tr>
 <tr><td width="25%"><a href="permatfull.html">permatswap</a></td>
 <td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.adonis</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.anosim</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.CCorA</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.envfit</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.factorfit</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.mantel</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.mrpp</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.mso</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.oecosimu</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.ordiareatest</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.permutest.betadisper</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.permutest.cca</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.protest</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">permustats.vectorfit</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
 <tr><td width="25%"><a href="permutations.html">permutations</a></td>
 <td>Permutation tests in Vegan</td></tr>
 <tr><td width="25%"><a href="anova.cca.html">permutest</a></td>
@@ -603,8 +637,6 @@
 <tr><td width="25%"><a href="permutest.betadisper.html">permutest.betadisper</a></td>
 <td>Permutation test of multivariate homogeneity of groups dispersions (variances)</td></tr>
 <tr><td width="25%"><a href="anova.cca.html">permutest.cca</a></td>
-<td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
-<tr><td width="25%"><a href="anova.cca.html">permutest.default</a></td>
 <td>Permutation Test for Constrained Correspondence Analysis, Redundancy Analysis and Constrained Analysis of Principal Coordinates</td></tr>
 <tr><td width="25%"><a href="renyi.html">persp.renyiaccum</a></td>
 <td>Renyi and Hill Diversities and Corresponding Accumulation Curves</td></tr>
@@ -692,8 +724,8 @@
 <td>Partition the Variation of Community Matrix by 2, 3, or 4 Explanatory Matrices</td></tr>
 <tr><td width="25%"><a href="varpart.html">plot.varpart234</a></td>
 <td>Partition the Variation of Community Matrix by 2, 3, or 4 Explanatory Matrices</td></tr>
-<tr><td width="25%"><a href="density.adonis.html">plot.vegandensity</a></td>
-<td>Kernel Density Estimation for Permutation Results in Vegan</td></tr>
+<tr><td width="25%"><a href="vegan-deprecated.html">plot.vegandensity</a></td>
+<td>Deprecated Functions in vegan package</td></tr>
 <tr><td width="25%"><a href="wcmdscale.html">plot.wcmdscale</a></td>
 <td>Weighted Classical (Metric) Multidimensional Scaling</td></tr>
 <tr><td width="25%"><a href="plot.cca.html">points.cca</a></td>
@@ -748,8 +780,14 @@
 <td>Fit Fisher's Logseries and Preston's Lognormal Model to Abundance Data</td></tr>
 <tr><td width="25%"><a href="fisherfit.html">prestonfit</a></td>
 <td>Fit Fisher's Logseries and Preston's Lognormal Model to Abundance Data</td></tr>
+<tr><td width="25%"><a href="commsim.html">print.commsim</a></td>
+<td>Create a Object for Null Model Algorithms</td></tr>
+<tr><td width="25%"><a href="nullmodel.html">print.nullmodel</a></td>
+<td>Null Model and Simulation</td></tr>
 <tr><td width="25%"><a href="permatfull.html">print.permat</a></td>
 <td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td></tr>
+<tr><td width="25%"><a href="nullmodel.html">print.simmat</a></td>
+<td>Null Model and Simulation</td></tr>
 <tr><td width="25%"><a href="specaccum.html">print.specaccum</a></td>
 <td>Species Accumulation Curves</td></tr>
 <tr><td width="25%"><a href="plot.cca.html">print.summary.cca</a></td>
@@ -768,6 +806,15 @@
 <td>Procrustes Rotation of Two Configurations and PROTEST</td></tr>
 <tr><td width="25%"><a href="pyrifos.html">pyrifos</a></td>
 <td>Response of Aquatic Invertebrates to Insecticide Treatment</td></tr>
+</table>
+
+<h2><a name="Q">-- Q --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="permustats.html">qqmath.permustats</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
+<tr><td width="25%"><a href="permustats.html">qqnorm.permustats</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
 </table>
 
 <h2><a name="R">-- R --</a></h2>
@@ -811,14 +858,14 @@
 <td>Renyi and Hill Diversities and Corresponding Accumulation Curves</td></tr>
 <tr><td width="25%"><a href="renyi.html">renyiaccum</a></td>
 <td>Renyi and Hill Diversities and Corresponding Accumulation Curves</td></tr>
+<tr><td width="25%"><a href="reorder.hclust.html">reorder.hclust</a></td>
+<td>Reorder a Hierarchical Clustering Tree</td></tr>
 <tr><td width="25%"><a href="predict.cca.html">residuals.cca</a></td>
 <td>Prediction Tools for [Constrained] Ordination (CCA, RDA, DCA, CA, PCA)</td></tr>
 <tr><td width="25%"><a href="procrustes.html">residuals.procrustes</a></td>
 <td>Procrustes Rotation of Two Configurations and PROTEST</td></tr>
-<tr><td width="25%"><a href="isomap.html">rgl.isomap</a></td>
-<td>Isometric Feature Mapping Ordination</td></tr>
-<tr><td width="25%"><a href="renyi.html">rgl.renyiaccum</a></td>
-<td>Renyi and Hill Diversities and Corresponding Accumulation Curves</td></tr>
+<tr><td width="25%"><a href="reorder.hclust.html">rev.hclust</a></td>
+<td>Reorder a Hierarchical Clustering Tree</td></tr>
 <tr><td width="25%"><a href="diversity.html">rrarefy</a></td>
 <td>Ecological Diversity Indices and Rarefaction Species Richness</td></tr>
 <tr><td width="25%"><a href="RsquareAdj.html">RsquareAdj</a></td>
@@ -852,6 +899,8 @@
 <td>Get Species or Site Scores from an Ordination</td></tr>
 <tr><td width="25%"><a href="envfit.html">scores.envfit</a></td>
 <td>Fits an Environmental Vector or Factor onto an Ordination</td></tr>
+<tr><td width="25%"><a href="reorder.hclust.html">scores.hclust</a></td>
+<td>Reorder a Hierarchical Clustering Tree</td></tr>
 <tr><td width="25%"><a href="scores.html">scores.lda</a></td>
 <td>Get Species or Site Scores from an Ordination</td></tr>
 <tr><td width="25%"><a href="metaMDS.html">scores.metaMDS</a></td>
@@ -888,6 +937,8 @@
 <td>Simulate Responses with Gaussian Error or Permuted Residuals for Constrained Ordination</td></tr>
 <tr><td width="25%"><a href="simulate.rda.html">simulate.cca</a></td>
 <td>Simulate Responses with Gaussian Error or Permuted Residuals for Constrained Ordination</td></tr>
+<tr><td width="25%"><a href="nullmodel.html">simulate.nullmodel</a></td>
+<td>Null Model and Simulation</td></tr>
 <tr><td width="25%"><a href="simulate.rda.html">simulate.rda</a></td>
 <td>Simulate Responses with Gaussian Error or Permuted Residuals for Constrained Ordination</td></tr>
 <tr><td width="25%"><a href="sipoo.html">sipoo</a></td>
@@ -916,12 +967,26 @@
 <td>Self-Starting nls Species-Area Models</td></tr>
 <tr><td width="25%"><a href="stepacross.html">stepacross</a></td>
 <td>Stepacross as Flexible Shortest Paths or Extended Dissimilarities</td></tr>
+<tr><td width="25%"><a href="nullmodel.html">str.nullmodel</a></td>
+<td>Null Model and Simulation</td></tr>
 <tr><td width="25%"><a href="goodness.metaMDS.html">stressplot</a></td>
 <td>Goodness of Fit and Shepard Plot for Nonmetric Multidimensional Scaling</td></tr>
+<tr><td width="25%"><a href="stressplot.wcmdscale.html">stressplot.capscale</a></td>
+<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td></tr>
+<tr><td width="25%"><a href="stressplot.wcmdscale.html">stressplot.cca</a></td>
+<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td></tr>
 <tr><td width="25%"><a href="goodness.metaMDS.html">stressplot.default</a></td>
 <td>Goodness of Fit and Shepard Plot for Nonmetric Multidimensional Scaling</td></tr>
 <tr><td width="25%"><a href="goodness.metaMDS.html">stressplot.monoMDS</a></td>
 <td>Goodness of Fit and Shepard Plot for Nonmetric Multidimensional Scaling</td></tr>
+<tr><td width="25%"><a href="stressplot.wcmdscale.html">stressplot.prcomp</a></td>
+<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td></tr>
+<tr><td width="25%"><a href="stressplot.wcmdscale.html">stressplot.princomp</a></td>
+<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td></tr>
+<tr><td width="25%"><a href="stressplot.wcmdscale.html">stressplot.rda</a></td>
+<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td></tr>
+<tr><td width="25%"><a href="stressplot.wcmdscale.html">stressplot.wcmdscale</a></td>
+<td>Display Ordination Distances Against Observed Distances in Eigenvector Ordinations</td></tr>
 <tr><td width="25%"><a href="anosim.html">summary.anosim</a></td>
 <td>Analysis of Similarities</td></tr>
 <tr><td width="25%"><a href="bioenv.html">summary.bioenv</a></td>
@@ -932,6 +997,8 @@
 <td>Multinomial Species Classification Method (CLAM)</td></tr>
 <tr><td width="25%"><a href="decorana.html">summary.decorana</a></td>
 <td>Detrended Correspondence Analysis and Basic Reciprocal Averaging</td></tr>
+<tr><td width="25%"><a href="dispweight.html">summary.dispweight</a></td>
+<td>Dispersion-based weighting of species counts</td></tr>
 <tr><td width="25%"><a href="eigenvals.html">summary.eigenvals</a></td>
 <td>Extract Eigenvalues from an Ordination Object</td></tr>
 <tr><td width="25%"><a href="humpfit.html">summary.humpfit</a></td>
@@ -946,6 +1013,8 @@
 <td>Display Groups or Factor Levels in Ordination Diagrams</td></tr>
 <tr><td width="25%"><a href="permatfull.html">summary.permat</a></td>
 <td>Matrix Permutation Algorithms for Presence-Absence and Count Data</td></tr>
+<tr><td width="25%"><a href="permustats.html">summary.permustats</a></td>
+<td>Extract, Analyse and Display Permutation Results</td></tr>
 <tr><td width="25%"><a href="specpool.html">summary.poolaccum</a></td>
 <td>Extrapolated Species Richness in a Species Pool</td></tr>
 <tr><td width="25%"><a href="prc.html">summary.prc</a></td>
@@ -992,17 +1061,24 @@
 <tr><td width="25%"><a href="tolerance.html">tolerance.cca</a></td>
 <td>Species tolerances and sample heterogeneities</td></tr>
 <tr><td width="25%"><a href="treedive.html">treedist</a></td>
-<td>Functional Diversity estimated from a Species Dendrogram</td></tr>
+<td>Functional Diversity and Community Distances from Species Trees</td></tr>
 <tr><td width="25%"><a href="treedive.html">treedive</a></td>
-<td>Functional Diversity estimated from a Species Dendrogram</td></tr>
+<td>Functional Diversity and Community Distances from Species Trees</td></tr>
 <tr><td width="25%"><a href="treedive.html">treeheight</a></td>
-<td>Functional Diversity estimated from a Species Dendrogram</td></tr>
+<td>Functional Diversity and Community Distances from Species Trees</td></tr>
 <tr><td width="25%"><a href="tsallis.html">tsallis</a></td>
 <td>Tsallis Diversity and Corresponding Accumulation Curves</td></tr>
 <tr><td width="25%"><a href="tsallis.html">tsallisaccum</a></td>
 <td>Tsallis Diversity and Corresponding Accumulation Curves</td></tr>
 <tr><td width="25%"><a href="betadisper.html">TukeyHSD.betadisper</a></td>
 <td>Multivariate homogeneity of groups dispersions (variances)</td></tr>
+</table>
+
+<h2><a name="U">-- U --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="nullmodel.html">update.nullmodel</a></td>
+<td>Null Model and Simulation</td></tr>
 </table>
 
 <h2><a name="V">-- V --</a></h2>

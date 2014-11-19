@@ -28,13 +28,16 @@ MEnvelope               Estimation of the confidence envelope of the M
                         function under its null hypothesis
 Mhat                    Estimation of the M function
 as.wmppp                Converts data to class wmppp
-dbmss-package           Distance based measures of spatial structures
+dbmss-package           Distance-Based Measures of Spatial Structures
 dbmssEnvelope.object    Class of envelope of function values (fv)
 gEnvelope               Estimation of the confidence envelope of the g
                         function under its null hypothesis
 ghat                    Estimation of the g function
 is.wmppp                Test whether an object is a weighted, marked,
                         planar point pattern
+mEnvelope               Estimation of the confidence envelope of the m
+                        function under its null hypothesis
+mhat                    Estimation of the m function
 paracou16               Paracou field station plot 16, partial map
 print.dbmssEnvelope     Print a confidence envelope
 rPopulationIndependenceK

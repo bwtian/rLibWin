@@ -38,22 +38,23 @@ cca.object              Result Object from Constrained Ordination with
                         cca, rda or capscale
 clamtest                Multinomial Species Classification Method
                         (CLAM)
+commsim                 Create a Object for Null Model Algorithms
 contribdiv              Contribution Diversity Approach
 decorana                Detrended Correspondence Analysis and Basic
                         Reciprocal Averaging
 decostand               Standardization Methods for Community Ecology
-density.adonis          Kernel Density Estimation for Permutation
-                        Results in Vegan
 designdist              Design your own Dissimilarities
 deviance.cca            Statistics Resembling Deviance and AIC for
                         Constrained Ordination
 dispindmorisita         Morisita index of intraspecific aggregation
+dispweight              Dispersion-based weighting of species counts
 distconnected           Connectedness of Dissimilarities
 diversity               Ecological Diversity Indices and Rarefaction
                         Species Richness
 dune                    Vegetation and Environment in Dutch Dune
                         Meadows.
-dune.taxon              Taxonomic Classification of Dune Meadow Species
+dune.taxon              Taxonomic Classification and Phylogeny of Dune
+                        Meadow Species
 eigenvals               Extract Eigenvalues from an Ordination Object
 envfit                  Fits an Environmental Vector or Factor onto an
                         Ordination
@@ -94,7 +95,9 @@ nestedtemp              Nestedness Indices for Communities of Islands
                         or Patches
 nobs.adonis             Extract the Number of Observations from a vegan
                         Fit.
-oecosimu                Null Models for Biological Communities
+nullmodel               Null Model and Simulation
+oecosimu                Evaluate Statistics with Null Models of
+                        Biological Communities
 ordiarrows              Add Arrows and Line Segments to Ordination
                         Diagrams
 ordihull                Display Groups or Factor Levels in Ordination
@@ -103,8 +106,6 @@ ordilabel               Add Text on Non-transparent Label to an
                         Ordination Plot.
 ordiplot                Alternative plot and identify Functions for
                         Ordination
-ordiplot3d              Three-Dimensional and Dynamic Ordination
-                        Graphics
 ordipointlabel          Ordination Plots with Points and Optimized
                         Locations for Text
 ordiresids              Plots of Residuals and Fitted Values for
@@ -119,6 +120,8 @@ ordixyplot              Trellis (Lattice) Plots for Ordination
 pcnm                    Principal Coordinates of Neighbourhood Matrix
 permatfull              Matrix Permutation Algorithms for
                         Presence-Absence and Count Data
+permustats              Extract, Analyse and Display Permutation
+                        Results
 permutations            Permutation tests in Vegan
 permutest.betadisper    Permutation test of multivariate homogeneity of
                         groups dispersions (variances)
@@ -141,6 +144,7 @@ raupcrick               Raup-Crick Dissimilarity with Unequal Sampling
 read.cep                Reads a CEP (Canoco) data file
 renyi                   Renyi and Hill Diversities and Corresponding
                         Accumulation Curves
+reorder.hclust          Reorder a Hierarchical Clustering Tree
 scores                  Get Species or Site Scores from an Ordination
 screeplot.cca           Screeplots for Ordination Results and Broken
                         Stick Distributions
@@ -153,10 +157,12 @@ specaccum               Species Accumulation Curves
 specpool                Extrapolated Species Richness in a Species Pool
 stepacross              Stepacross as Flexible Shortest Paths or
                         Extended Dissimilarities
+stressplot.wcmdscale    Display Ordination Distances Against Observed
+                        Distances in Eigenvector Ordinations
 taxondive               Indices of Taxonomic Diversity and Distinctness
 tolerance               Species tolerances and sample heterogeneities
-treedive                Functional Diversity estimated from a Species
-                        Dendrogram
+treedive                Functional Diversity and Community Distances
+                        from Species Trees
 tsallis                 Tsallis Diversity and Corresponding
                         Accumulation Curves
 varespec                Vegetation and environment in lichen pastures

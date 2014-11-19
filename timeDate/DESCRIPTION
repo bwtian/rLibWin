@@ -1,23 +1,26 @@
 Package: timeDate
-Version: 3010.98
-Revision: 5502
-Date: 2013-04-30
 Title: Rmetrics - Chronological and Calendar Objects
-Author: Diethelm Wuertz, Yohan Chalabi and Martin Maechler with
-        contributions from Joe W. Byers, and others
-Depends: R (>= 2.11.0), graphics, utils, stats, methods
+Date: 2014-10-27
+Version: 3011.99
+Author: Rmetrics Core Team,
+	Diethelm Wuertz [aut],
+	Tobias Setz [cre],
+	Yohan Chalabi [ctb],
+	Martin Maechler [ctb],
+	Joe W. Byers [ctb]
+Maintainer: Tobias Setz <tobias.setz@rmetrics.org>
+Description: Environment for teaching 
+	"Financial Engineering and Computational Finance".
+Depends: R (>= 2.15.1), graphics, utils, stats, methods
 Suggests: date, RUnit
-Maintainer: Yohan Chalabi <yohan.chalabi@rmetrics.org>
-Description: Environment for teaching "Financial Engineering and
-        Computational Finance"
-Note: Several parts are still preliminary and may be changed in the
-        future. this typically includes function and argument names, as
-        well as defaults for arguments and return values.
+Note: SEVERAL PARTS ARE STILL PRELIMINARY AND MAY BE CHANGED IN THE
+        FUTURE. THIS TYPICALLY INCLUDES FUNCTION AND ARGUMENT NAMES, AS
+        WELL AS DEFAULTS FOR ARGUMENTS AND RETURN VALUES.
 LazyData: yes
 License: GPL (>= 2)
-URL: http://www.rmetrics.org
-Packaged: 2013-04-30 20:02:05 UTC; yankee
+URL: https://www.rmetrics.org
+Packaged: 2014-10-27 13:33:31 UTC; Tobi
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2013-05-01 07:38:04
-Built: R 3.1.1; ; 2014-07-16 10:35:26 UTC; windows
+Date/Publication: 2014-10-27 20:33:36
+Built: R 3.1.2; ; 2014-11-01 02:09:31 UTC; windows

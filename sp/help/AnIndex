@@ -10,7 +10,8 @@ addAttrToGeom,SpatialPixels,data.frame-method	addattr
 addAttrToGeom,SpatialPoints,data.frame-method	addattr
 addAttrToGeom,SpatialPolygons,data.frame-method	addattr
 addAttrToGeom-methods	addattr
-aggregate.Spatial	over
+aggregate	aggregate
+aggregate.Spatial	aggregate
 areaSpatialGrid	SpatialGrid
 as.array.SpatialGridDataFrame	SpatialGridDataFrame-class
 as.character.DMS	char2dms
@@ -198,6 +199,7 @@ getSpPplotOrderSlot	sp-deprecated
 getSpPPolygonsIDSlots	sp-deprecated
 getSpPPolygonsLabptSlots	sp-deprecated
 getSpPpolygonsSlot	sp-deprecated
+get_col_regions	spplot
 get_ll_TOL	is.projected
 get_ll_warn	is.projected
 get_Polypath	SpatialPolygons-class
@@ -368,6 +370,7 @@ row.names.SpatialPolygons	SpatialPolygons-class
 row.names.SpatialPolygonsDataFrame	SpatialPolygonsDataFrame-class
 select.spatial	select.spatial
 setParUsrBB	Spatial-class
+set_col_regions	spplot
 set_ll_TOL	is.projected
 set_ll_warn	is.projected
 set_Polypath	SpatialPolygons-class

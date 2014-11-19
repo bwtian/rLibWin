@@ -1,6 +1,8 @@
-RMQuery                 Query a 'rangeMapper' project
 SpatialPixelsRangeMap-class
                         Class "SpatialPixelsRangeMap"
+WKT2SpatialPolygonsDataFrame
+                        Convert WKT polygons to
+                        SpatialPolygonsDataFrame
 assemblageFetch-methods
                         Function 'assemblageFetch' retrieves the
                         species set of an arbitrary canvas cell

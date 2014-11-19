@@ -6,6 +6,7 @@ aspect3d                Set the aspect ratios of the current plot
 axes3d                  Draw boxes, axes and other text outside the
                         data
 bg3d                    Set up Background
+bgplot3d                Use base graphics for RGL background
 cylinder3d              Create cylindrical or "tube" plots.
 ellipse3d               Make an ellipsoid
 extrude3d               Generate extrusion mesh

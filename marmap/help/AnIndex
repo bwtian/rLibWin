@@ -1,4 +1,3 @@
-add.nas	add.nas
 aleutians	aleutians
 antimeridian.box	antimeridian.box
 as.bathy	as.bathy
@@ -10,6 +9,7 @@ check.bathy	check.bathy
 col2alpha	col2alpha
 collate.bathy	collate.bathy
 diag.bathy	diag.bathy
+dist2isobath	dist2isobath
 florida	florida
 get.area	get.area
 get.box	get.box
@@ -21,6 +21,7 @@ hawaii	hawaii
 hawaii.sites	hawaii
 is.bathy	is.bathy
 lc.dist	lc.dist
+linesGC	linesGC
 marmap	marmap
 metallo	metallo
 nw.atlantic	nw.atlantic

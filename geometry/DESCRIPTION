@@ -1,9 +1,11 @@
 Package: geometry
-Maintainer: David C. Sterratt <david.c.sterratt@ed.ac.uk>
 License: GPL (>= 3) + file LICENSE
 Title: Mesh generation and surface tesselation
-Author: C. B. Barber, Kai Habel, Raoul Grasman, Robert B. Gramacy, Andreas
-    Stahel and David C. Sterratt
+Authors@R: c(person("C. B.", "Barber" , role="cph"), person("Kai", "Habel",
+    role=c("cph","aut")), person("Raoul", "Grasman", role=c("cph","aut")),
+    person("Andreas", "Stahel", role=c("cph","aut")), person("Andreas",
+    "Stahel", role=c("cph","aut")), person("David C.", "Sterratt",
+    role=c("cph","aut","cre"), email="david.c.sterratt@ed.ac.uk"))
 Description: This package makes the qhull library (www.qhull.org)
     available in R, in a similar manner as in Octave and MATLAB. Qhull
     computes convex hulls, Delaunay triangulations, halfspace
@@ -15,25 +17,22 @@ Description: This package makes the qhull library (www.qhull.org)
     non-convex objects, but the package does include some R functions
     that allow for this. Currently the package only gives access to
     Delaunay triangulation and convex hull computation.
-Version: 0.3-4
+Version: 0.3-5
 URL: http://geometry.r-forge.r-project.org/
-Date: 2014-03-04
+Date: 2014-11-06
 BugReports: https://r-forge.r-project.org/tracker/?group_id=1149
 Depends: R (>= 2.5.0), magic
-Suggests: rgl, R.matlab, tripack
-Collate: 'convhulln.R' 'delaunayn.R' 'distmesh2d.R' 'distmeshnd.R'
-        'entry.value.R' 'extprod3d.R' 'matmax.R' 'matmin.R'
-        'matorder.R' 'matsort.R' 'mesh.dcircle.R' 'mesh.diff.R'
-        'mesh.drectangle.R' 'mesh.dsphere.R' 'mesh.hunif.R'
-        'mesh.intersect.R' 'mesh.union.R' 'surf.tri.R' 'tetramesh.R'
-        'trimesh.R' 'trisplinter.R' 'tsearch.R' 'Unique.R' 'dotprod.R'
-        'polyarea.R'
-Repository: CRAN
-Repository/R-Forge/Project: geometry
-Repository/R-Forge/Revision: 128
-Repository/R-Forge/DateTimeStamp: 2014-03-05 17:21:51
-Date/Publication: 2014-03-06 13:44:47
-Packaged: 2014-03-05 19:18:14 UTC; rforge
+Suggests: testthat, rgl, R.matlab, tripack
+Packaged: 2014-11-07 20:37:50 UTC; dcs
+Author: C. B. Barber [cph],
+  Kai Habel [cph, aut],
+  Raoul Grasman [cph, aut],
+  Andreas Stahel [cph, aut],
+  Andreas Stahel [cph, aut],
+  David C. Sterratt [cph, aut, cre]
+Maintainer: David C. Sterratt <david.c.sterratt@ed.ac.uk>
 NeedsCompilation: yes
-Built: R 3.1.1; x86_64-w64-mingw32; 2014-10-18 22:30:11 UTC; windows
+Repository: CRAN
+Date/Publication: 2014-11-08 17:10:15
+Built: R 3.1.2; x86_64-w64-mingw32; 2014-11-15 23:28:43 UTC; windows
 Archs: i386, x64

@@ -36,6 +36,7 @@ SpatialPolygonsDataFrame-class
                         Class "SpatialPolygonsDataFrame"
 addAttrToGeom-methods   constructs SpatialXxxDataFrame from geometry
                         and attributes
+aggregate               aggregation of spatial objects
 as.SpatialPolygons.GridTopology
                         Make SpatialPolygons object from GridTopology
                         object

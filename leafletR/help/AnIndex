@@ -9,6 +9,7 @@ fileToGeoJSON	fileToGeoJSON
 getFeatureType	getFeatureType
 getHex	getHex
 getProperties	getProperties
+getTopologies	getTopologies
 grads	styleGrad
 leaf	leaflet
 leaflet	leaflet
@@ -21,3 +22,4 @@ styleGrad	styleGrad
 styleSingle	styleSingle
 tg	toGeoJSON
 toGeoJSON	toGeoJSON
+topo	getTopologies

@@ -1,7 +1,7 @@
 Package: geonames
 Type: Package
 Title: Interface to www.geonames.org web service
-Version: 0.996
+Version: 0.997
 Date: 2011-24-11
 Author: Barry Rowlingson
 Maintainer: Barry Rowlingson <b.rowlingson@gmail.com>
@@ -10,9 +10,9 @@ Imports: rjson
 Description: Code for querying the web service at www.geonames.org
 License: GPL-3
 LazyLoad: yes
-BugReports: https://github.com/barryrowlingson/geonames/issues
-Packaged: 2014-05-06 20:39:06 UTC; rowlings
+BugReports: https://github.com/ropensci/geonames/issues
+Packaged: 2014-10-17 09:28:41 UTC; rowlings
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-05-07 07:57:21
-Built: R 3.1.1; ; 2014-07-16 11:09:29 UTC; windows
+Date/Publication: 2014-10-20 01:01:31
+Built: R 3.1.2; ; 2014-11-03 09:40:44 UTC; windows

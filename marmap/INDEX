@@ -1,4 +1,3 @@
-add.nas                 Adds NAs to a vector
 aleutians               Bathymetric data for the Aleutians (Alaska)
 antimeridian.box        Adds a box to maps including antimeridian
 as.SpatialGridDataFrame
@@ -15,6 +14,8 @@ col2alpha               Adds alpha transparency to a (vector of)
 collate.bathy           Collates two bathy matrices with data from
                         either sides of the antimeridian
 diag.bathy              Finds matrix diagonal for non-square matrices
+dist2isobath            Computes the shortest great circle distance
+                        between any point and a given isobath
 florida                 Bathymetric data around Florida, USA
 get.area                Get projected surface area
 get.box                 Get bathymetric information of a belt transect
@@ -27,6 +28,7 @@ hawaii                  Bathymetric data for Hawaii, USA
 is.bathy                Test whether an object is of class bathy
 lc.dist                 Computes least cost distances between two or
                         more locations
+linesGC                 Add Great Circle lines on a map
 marmap                  Import, plot and analyze bathymetric and
                         topographic data
 metallo                 Coral sampling information from the North West

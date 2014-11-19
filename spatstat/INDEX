@@ -6,7 +6,8 @@ DiggleGratton           Diggle-Gratton model
 Emark                   Diagnostics for random marking
 F3est                   Empty Space Function of a Three-Dimensional
                         Point Pattern
-Fest                    Estimate the empty space function F
+Fest                    Estimate the Empty Space Function or its Hazard
+                        Rate
 Fiksel                  The Fiksel Interaction
 Finhom                  Inhomogeneous Empty Space Function
 Frame                   Extract or Change the Containing Rectangle of a
@@ -90,6 +91,7 @@ Tstat                   Third order summary statistic
 Window                  Extract or Change the Window of a Spatial
                         Object
 Window.ppm              Extract Window of Spatial Object
+[.anylist               Extract or Replace Subset of a List of Things
 [.fasp                  Extract Subset of Function Array
 [.fv                    Extract or Replace Subset of Function Values
 [.hyperframe            Extract or Replace Subset of Hyperframe
@@ -107,6 +109,8 @@ Window.ppm              Extract Window of Spatial Object
                         Pattern
 [.psp                   Extract Subset of Line Segment Pattern
 [.quad                  Subset of Quadrature Scheme
+[.solist                Extract or Replace Subset of a List of Spatial
+                        Objest
 [.splitppp              Extract or Replace Sub-Patterns
 [.tess                  Extract or Replace Subset of Tessellation
 [<-.im                  Reset Values in Subset of Image
@@ -141,6 +145,7 @@ anova.ppm               ANOVA for Fitted Point Process Models
 anova.slrm              Analysis of Deviance for Spatial Logistic
                         Regression Models
 ants                    Harkness-Isham ants' nests data
+anylist                 List of Objects
 append.psp              Combine Two Line Segment Patterns
 applynbd                Apply Function to Every Neighbourhood in a
                         Point Pattern
@@ -175,6 +180,7 @@ as.ppm                  Extract Fitted Point Process Model
 as.ppp                  Convert Data To Class ppp
 as.psp                  Convert Data To Class psp
 as.rectangle            Window Frame
+as.solist               Convert List of Two-Dimensional Spatial Objects
 as.tess                 Convert Data To Tessellation
 bdist.pixels            Distance to Boundary of Window
 bdist.points            Distance to Boundary of Window
@@ -224,7 +230,7 @@ chicago                 Chicago Street Crime Data
 chop.tess               Subdivide a Window or Tessellation using a Set
                         of Lines
 chorley                 Chorley-Ribble Cancer Data
-circumradius            Circumradius and Diameter of a Linear Network
+circumradius            Circumradius of a Window
 clarkevans              Clark and Evans Aggregation Index
 clarkevans.test         Clark and Evans Test
 clickbox                Interactively Define a Rectangle
@@ -309,16 +315,19 @@ diameter.box3           Geometrical Calculations for Three-Dimensional
                         Box
 diameter.boxx           Geometrical Calculations for Multi-Dimensional
                         Box
+diameter.linnet         Circumradius and Diameter of a Linear Network
 diameter.owin           Diameter of a Window
 dilated.areas           Areas of Morphological Dilations
 dilation                Morphological Dilation
 dirichlet               Dirichlet Tessellation of Point Pattern
+dirichlet.vertices      Vertices of Dirichlet Tessellation
 dirichlet.weights       Compute Quadrature Weights Based on Dirichlet
                         Tessellation
 disc                    Circular Window
 discpartarea            Area of Part of Disc
 discretise              Safely Convert Point Pattern Window to Binary
                         Mask
+discs                   Union of Discs
 distcdf                 Distribution Function of Interpoint Distance
 distfun                 Distance Map as a Function
 distfun.lpp             Distance Map on Linear Network
@@ -361,6 +370,7 @@ ewcdf                   Weighted Empirical Cumulative Distribution
 exactMPLEstrauss        Exact Maximum Pseudolikelihood Estimate for
                         Stationary Strauss Process
 expand.owin             Apply Expansion Rule
+fardist                 Farthest Distance to Boundary of Window
 fasp.object             Function Arrays for Spatial Patterns
 finpines                Pine saplings in Finland.
 fitin.ppm               Extract the Interaction from a Fitted Point
@@ -393,11 +403,13 @@ gridweights             Compute Quadrature Weights Based on Grid Counts
 grow.rectangle          Add margins to rectangle
 hamster                 Aherne's hamster tumour data
 harmonic                Basis for Harmonic Functions
+harmonise               Make Objects Compatible
 harmonise.fv            Make Function Tables Compatible
 harmonise.im            Make Pixel Images Compatible
 heather                 Diggle's Heather Data
 hextess                 Hexagonal Grid or Tessellation
 hist.im                 Histogram of Pixel Values in an Image
+hopskel                 Hopkins-Skellam Test
 humberside              Humberside Data on Childhood Leukaemia and
                         Lymphoma
 hybrid.family           Hybrid Interaction Family
@@ -414,6 +426,7 @@ imcov                   Spatial Covariance of a Pixel Image
 improve.kppm            Improve Intensity Estimate of Fitted Cluster
                         Point Process Model
 incircle                Find Largest Circle Inside Window
+increment.fv            Increments of a Function
 infline                 Infinite Straight Lines
 influence.ppm           Influence Measure for Spatial Point Process
                         Model
@@ -656,12 +669,15 @@ pcfmulti                Marked pair correlation function
 perimeter               Perimeter Length of Window
 periodify               Make Periodic Copies of a Spatial Pattern
 persp.im                Perspective Plot of Pixel Image
+perspPoints             Draw Points or Lines on a Surface Viewed in
+                        Perspective
 pixelcentres            Extract Pixel Centres as Point Pattern
 pixellate               Convert Spatial Object to Pixel Image
 pixellate.owin          Convert Window to Pixel Image
 pixellate.ppp           Convert Point Pattern to Pixel Image
 pixellate.psp           Convert Line Segment Pattern to Pixel Image
 pixelquad               Quadrature Scheme Based on Pixel Grid
+plot.anylist            Plot a List of Things
 plot.bermantest         Plot Result of Berman Test
 plot.cdftest            Plot a Spatial Distribution Test
 plot.colourmap          Plot a Colour Map
@@ -693,6 +709,7 @@ plot.quadratcount       Plot Quadrat Counts
 plot.quadrattest        Display the result of a quadrat counting test.
 plot.scan.test          Plot Result of Scan Test
 plot.slrm               Plot a Fitted Spatial Logistic Regression
+plot.solist             Plot a List of Spatial Objects
 plot.splitppp           Plot a List of Point Patterns
 plot.symbolmap          Plot a Graphics Symbol Map
 plot.tess               Plot a tessellation
@@ -733,6 +750,7 @@ profilepl               Profile Maximum Pseudolikelihood
 progressreport          Print Progress Reports
 project.ppm             Force Point Process Model to be Valid
 project2segment         Move Point To Nearest Line
+project2set             Find Nearest Point in a Region
 psp                     Create a Line Segment Pattern
 psp.object              Class of Line Segment Patterns
 psst                    Pseudoscore Diagnostic For Fitted Model against
@@ -853,6 +871,7 @@ rotate.im               Rotate a Pixel Image
 rotate.owin             Rotate a Window
 rotate.ppp              Rotate a Point Pattern
 rotate.psp              Rotate a Line Segment Pattern
+rotmean                 Rotational Average of a Pixel Image
 round.ppp               Apply Numerical Rounding to Spatial Coordinates
 rounding                Detect Numerical Rounding
 rpoint                  Generate N Random Points
@@ -913,6 +932,7 @@ simulate.ppm            Simulate a Fitted Gibbs Point Process Model
 simulate.slrm           Simulate a Fitted Spatial Logistic Regression
                         Model
 slrm                    Spatial Logistic Regression
+solist                  List of Two-Dimensional Spatial Objects
 solutionset             Evaluate Logical Expression Involving Pixel
                         Images and Return Region Where Expression is
                         True
@@ -930,10 +950,12 @@ spruces                 Spruces Point Pattern
 square                  Square Window
 stieltjes               Compute Integral of Function Against Cumulative
                         Distribution
+stienen                 Stienen Diagram
 stratrand               Stratified random point pattern
 subfits                 Extract List of Individual Point Process Models
 subset.ppp              Subset of Point Pattern Satisfying A Condition
 suffstat                Sufficient Statistic of Point Process Model
+summary.anylist         Summary of a List of Things
 summary.im              Summarizing a Pixel Image
 summary.listof          Summary of a List of Things
 summary.owin            Summary of a Spatial Window
@@ -941,6 +963,7 @@ summary.ppm             Summarizing a Fitted Point Process Model
 summary.ppp             Summary of a Point Pattern Dataset
 summary.psp             Summary of a Line Segment Pattern Dataset
 summary.quad            Summarizing a Quadrature Scheme
+summary.solist          Summary of a List of Spatial Objects
 summary.splitppp        Summary of a Split Point Pattern
 sumouter                Compute Quadratic Forms
 superimpose             Superimpose Several Geometric Patterns
@@ -991,6 +1014,7 @@ vcov.ppm                Variance-Covariance Matrix for a Fitted Point
 vcov.slrm               Variance-Covariance Matrix for a Fitted Spatial
                         Logistic Regression
 vertices                Vertices of a Window
+vesicles                Vesicles Data
 volume                  Volume of an Object
 waka                    Trees in Waka national park
 waterstriders           Waterstriders data.  Three independent

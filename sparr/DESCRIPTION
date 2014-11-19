@@ -1,16 +1,17 @@
 Package: sparr
 Type: Package
 Title: The sparr package: SPAtial Relative Risk
-Version: 0.3-5
-Date: 2014-05-30
+Version: 0.3-6
+Date: 2014-10-25
 Author: T.M. Davies, M.L. Hazelton and J.C. Marshall
 Maintainer: Tilman M. Davies <tdavies@maths.otago.ac.nz>
 Description: Provides functions to estimate kernel-smoothed relative risk functions and perform subsequent inference.
-Depends: R (>= 2.10.1), spatstat, rgl, MASS
+Depends: R (>= 2.10.1), spatstat
+Imports: rgl, MASS
 License: GPL (>= 2)
 LazyLoad: yes
-Packaged: 2014-05-30 11:22:48 UTC; tdavies
+Packaged: 2014-10-24 20:32:40 UTC; tdavies
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-05-30 17:00:25
-Built: R 3.1.1; ; 2014-10-18 23:28:47 UTC; windows
+Date/Publication: 2014-10-25 01:20:15
+Built: R 3.1.2; ; 2014-11-16 00:28:05 UTC; windows

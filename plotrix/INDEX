@@ -50,6 +50,7 @@ draw.tilted.sector      Display a 3D pie sector
 drawNestedBars          Display nested bars
 drawSectorAnnulus       Display a radial pie sector
 ehplot                  Engelmann-Hecker-Plot - EH-Plot
+election                Assign party members to seats
 emptyspace              Find an empty space on a plot
 fan.plot                Display a fan plot
 feather.plot            Display vectors along a horizontal reference
@@ -99,6 +100,7 @@ multhist                Plot a multiple histogram, as a barplot
 multsymbolbox           Draw boxes filled with symbols
 oz.windrose             Display an Australian wind rose
 oz.windrose.legend      Display an Australian wind rose legend
+p2p_arrows              Draw arrows between points
 panes                   Prepare a "panel" type layout
 pasteCols               Paste the columns of a matrix together
 paxis3d                 Display text in the margins of a 3D plot
@@ -134,6 +136,7 @@ rectFill                Draw a rectangle filled with symbols
 rescale                 Scale numbers into a new range
 revaxis                 Plot with axis direction(s) reversed
 ruginv                  Add an Inverse Rug to a Plot
+seats                   Arrange N seats in M semicircular rows
 size_n_color            Display circles with specified size and color
 sizeplot                Plot with repeated symbols by size
 sizetree                Display a hierarchical breakdown of disjunct

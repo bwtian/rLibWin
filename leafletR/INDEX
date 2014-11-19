@@ -1,8 +1,9 @@
 addBaseMap              Add custom base maps
 getProperties           Print property names of a GeoJSON file
+getTopologies           Print topology objects of a TopoJSON file
 leaflet                 Create a Leaflet web-map
-leafletR-package        Interactive web-maps based on the Leaflet
-                        JavaScript library
+leafletR-package        Interactive Web-Maps Based on the Leaflet
+                        JavaScript Library
 styleCat                Categorized styling
 styleGrad               Graduated styling
 styleSingle             Single symbol styling

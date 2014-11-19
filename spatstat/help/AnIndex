@@ -37,12 +37,15 @@ anova.slrm	anova.slrm
 ants	ants
 ants.extra	ants
 anycrossing.psp	spatstat-internal
+anylist	anylist
 append.psp	append.psp
 apply23sum	spatstat-internal
 applynbd	applynbd
 applytolayers	spatstat-internal
+area	area.owin
+area.default	area.owin
 area.owin	area.owin
-area.xypolygon	spatstat-internal
+Area.xypolygon	spatstat-internal
 areadelta2	spatstat-internal
 areaGain	areaGain
 areaGain.diri	spatstat-internal
@@ -51,6 +54,7 @@ AreaInter	AreaInter
 areaLoss	areaLoss
 areaLoss.diri	spatstat-internal
 areaLoss.grid	spatstat-internal
+as.anylist	anylist
 as.array.im	as.matrix.im
 as.box3	as.box3
 as.breakpts	spatstat-internal
@@ -75,6 +79,7 @@ as.fv.kppm	as.fv
 as.fv.matrix	as.fv
 as.fv.minconfit	as.fv
 as.hyperframe	as.hyperframe
+as.hyperframe.anylist	as.hyperframe
 as.hyperframe.data.frame	as.hyperframe
 as.hyperframe.default	as.hyperframe
 as.hyperframe.hyperframe	as.hyperframe
@@ -103,6 +108,7 @@ as.layered.default	as.layered
 as.layered.listof	as.layered
 as.layered.msr	as.layered
 as.layered.ppp	as.layered
+as.layered.solist	as.layered
 as.layered.splitppp	as.layered
 as.linim	as.linim
 as.linim.default	as.linim
@@ -170,6 +176,7 @@ as.psp.matrix	as.psp
 as.psp.owin	spatstat-deprecated
 as.psp.psp	as.psp
 as.rectangle	as.rectangle
+as.solist	as.solist
 as.tess	as.tess
 as.tess.im	as.tess
 as.tess.list	as.tess
@@ -279,6 +286,8 @@ chop.tess	chop.tess
 chorley	chorley
 chorley.extra	chorley
 circumradius	circumradius
+circumradius.linnet	diameter.linnet
+circumradius.owin	circumradius
 clarkevans	clarkevans
 clarkevans.test	clarkevans.test
 clarkevansCalc	spatstat-internal
@@ -318,6 +327,8 @@ coerce.marks.numeric	spatstat-internal
 col2hex	colourtools
 collapse.fv	collapse.fv
 colourmap	colourmap
+colouroutputs	spatstat-internal
+colouroutputs<-	spatstat-internal
 colourtools	colourtools
 commasep	spatstat-internal
 commonGrid	commonGrid
@@ -411,7 +422,7 @@ diagnose.ppm.engine	spatstat-internal
 diameter	diameter
 diameter.box3	diameter.box3
 diameter.boxx	diameter.boxx
-diameter.linnet	circumradius
+diameter.linnet	diameter.linnet
 diameter.owin	diameter.owin
 DiggleGatesStibbard	DiggleGatesStibbard
 DiggleGratton	DiggleGratton
@@ -431,10 +442,12 @@ dimnames.fasp	spatstat-internal
 dimnames.msr	spatstat-internal
 dimnames<-.fasp	spatstat-internal
 dirichlet	dirichlet
+dirichlet.vertices	dirichlet.vertices
 dirichlet.weights	dirichlet.weights
 disc	disc
 discpartarea	discpartarea
 discretise	discretise
+discs	discs
 dist2dpath	spatstat-internal
 distcdf	distcdf
 distfun	distfun
@@ -497,7 +510,6 @@ eem	eem
 effectfun	effectfun
 ellipse	ellipse
 Emark	Emark
-empty.space	Fest
 emptywindow	spatstat-internal
 endpoints.psp	endpoints.psp
 ensure2vector	spatstat-internal
@@ -560,10 +572,14 @@ f3engine	spatstat-internal
 F3est	F3est
 fakecallstring	spatstat-internal
 fakemaintitle	spatstat-internal
+fardist	fardist
+fardist.owin	fardist
+fardist.ppp	fardist
 fasp	spatstat-internal
 fasp.object	fasp.object
 fave.order	spatstat-internal
 Fest	Fest
+Fhazard	Fest
 fii	spatstat-internal
 Fiksel	Fiksel
 fillNA	spatstat-internal
@@ -589,6 +605,7 @@ flipxy.ppp	flipxy
 flipxy.psp	flipxy
 flipxypolygon	spatstat-internal
 flu	flu
+fontify	spatstat-internal
 foo	foo
 forbid.logi	spatstat-internal
 forbidNA	spatstat-internal
@@ -611,6 +628,7 @@ frypoints	fryplot
 funxy	funxy
 fv	fv
 fv.object	fv.object
+fvexprmap	spatstat-internal
 fvlabelmap	spatstat-internal
 fvlabels	spatstat-internal
 fvlabels<-	spatstat-internal
@@ -669,8 +687,10 @@ handle.r.b.args	spatstat-internal
 handle.rshift.args	spatstat-internal
 Hardcore	Hardcore
 harmonic	harmonic
+harmonise	harmonise
 harmonise.fv	harmonise.fv
 harmonise.im	harmonise.im
+harmonize	harmonise
 harmonize.fv	harmonise.fv
 harmonize.im	harmonise.im
 has.offset	model.depends
@@ -682,6 +702,8 @@ hexgrid	hextess
 hextess	hextess
 hist.im	hist.im
 ho.engine	spatstat-internal
+hopskel	hopskel
+hopskel.test	hopskel
 hsvim	rgbim
 hsvNA	spatstat-internal
 humberside	humberside
@@ -717,6 +739,7 @@ impliedcoefficients	spatstat-internal
 impliedpresence	spatstat-internal
 improve.kppm	improve.kppm
 incircle	incircle
+increment.fv	increment.fv
 infline	infline
 influence.ppm	influence.ppm
 inforder.family	inforder.family
@@ -745,6 +768,7 @@ intX.xypolygon	spatstat-internal
 intY.owin	spatstat-internal
 intY.xypolygon	spatstat-internal
 invoke.symbolmap	invoke.symbolmap
+invokeColourmapRule	spatstat-internal
 iplot	iplot
 iplot.default	iplot
 iplot.layered	iplot
@@ -764,6 +788,7 @@ is.expandable	spatstat-internal
 is.expandable.ppm	spatstat-internal
 is.expandable.rmhmodel	spatstat-internal
 is.fv	spatstat-internal
+is.grey	colourtools
 is.hole.xypolygon	spatstat-internal
 is.hybrid	is.hybrid
 is.hybrid.interact	is.hybrid
@@ -1076,6 +1101,7 @@ murchison	murchison
 n.quad	spatstat-internal
 na.handle.im	spatstat-internal
 names.hyperframe	spatstat-internal
+names<-.fv	spatstat-internal
 names<-.hyperframe	spatstat-internal
 nbfires	nbfires
 nbfires.extra	nbfires
@@ -1216,6 +1242,10 @@ periodify.psp	periodify
 persp.funxy	methods.funxy
 persp.im	persp.im
 persp.objsurf	methods.objsurf
+perspContour	perspPoints
+perspLines	perspPoints
+perspPoints	perspPoints
+perspSegments	perspPoints
 pickoption	spatstat-internal
 pixelcentres	pixelcentres
 pixellate	pixellate
@@ -1226,6 +1256,7 @@ pixelquad	pixelquad
 pknn	rknn
 plan.legend.layout	spatstat-internal
 plot.addvar	spatstat-internal
+plot.anylist	plot.anylist
 plot.barplotdata	spatstat-internal
 plot.bermantest	plot.bermantest
 plot.bw.frac	spatstat-internal
@@ -1276,6 +1307,7 @@ plot.rho2hat	methods.rho2hat
 plot.rhohat	methods.rhohat
 plot.scan.test	plot.scan.test
 plot.slrm	plot.slrm
+plot.solist	plot.solist
 plot.spatialcdf	spatstat-internal
 plot.splitppp	plot.splitppp
 plot.symbolmap	plot.symbolmap
@@ -1330,6 +1362,7 @@ prettyinside	spatstat-internal
 primefactors	spatstat-internal
 primesbelow	spatstat-internal
 print.addvar	spatstat-internal
+print.anylist	spatstat-internal
 print.autoexec	spatstat-internal
 print.box3	methods.box3
 print.boxx	methods.boxx
@@ -1392,6 +1425,7 @@ print.rmhstart	spatstat-internal
 print.simplepanel	spatstat-internal
 print.slrm	methods.slrm
 print.Smoothfun	spatstat-internal
+print.solist	spatstat-internal
 print.splitppp	spatstat-internal
 print.splitppx	spatstat-internal
 print.summary.fii	methods.fii
@@ -1409,6 +1443,7 @@ print.summary.ppp	spatstat-internal
 print.summary.psp	spatstat-internal
 print.summary.quad	summary.quad
 print.summary.rmhexpand	spatstat-internal
+print.summary.solist	spatstat-internal
 print.summary.splitppp	spatstat-internal
 print.summary.splitppx	spatstat-internal
 print.summary.units	spatstat-internal
@@ -1422,6 +1457,7 @@ profilepl	profilepl
 progressreport	progressreport
 project.ppm	project.ppm
 project2segment	project2segment
+project2set	project2set
 prolongseq	spatstat-internal
 psp	psp
 psp.object	psp.object
@@ -1561,7 +1597,9 @@ rlinegrid	rlinegrid
 rMatClust	rMatClust
 rMaternI	rMaternI
 rMaternII	rMaternII
+rmax.Ripley	edge.Ripley
 rmax.rule	spatstat-internal
+rmax.Trans	edge.Trans
 rmh	rmh
 rmh.default	rmh.default
 rmh.ppm	rmh.ppm
@@ -1602,6 +1640,7 @@ rotate.owin	rotate.owin
 rotate.ppp	rotate.ppp
 rotate.psp	rotate.psp
 rotate.tess	affine.tess
+rotmean	rotmean
 rotxy	spatstat-internal
 rotxypolygon	spatstat-internal
 round.pp3	round.ppp
@@ -1655,6 +1694,7 @@ samefunction	spatstat-internal
 SatPiece	SatPiece
 Saturated	Saturated
 scalardilate	scalardilate
+scalardilate.breakpts	spatstat-internal
 scalardilate.default	scalardilate
 scalardilate.im	scalardilate
 scalardilate.layered	methods.layered
@@ -1719,6 +1759,7 @@ signalStatus	spatstat-internal
 simba	simba
 simdat	simdat
 simplenet	simplenet
+simplenumber	spatstat-internal
 simplepanel	simplepanel
 simplify.owin	simplify.owin
 simplify.xypolygon	spatstat-internal
@@ -1744,6 +1785,7 @@ Smoothfun	Smoothfun.ppp
 Smoothfun.ppp	Smoothfun.ppp
 smoothpointsEngine	spatstat-internal
 Softcore	Softcore
+solist	solist
 solutionset	solutionset
 sort.im	spatstat-internal
 sp.foundclass	spatstat-internal
@@ -1770,6 +1812,8 @@ spruces	spruces
 square	square
 startinrange	spatstat-internal
 stieltjes	stieltjes
+stienen	stienen
+stienenSet	stienen
 store.versionstring.spatstat	spatstat-internal
 str.hyperframe	spatstat-internal
 stratrand	stratrand
@@ -1791,6 +1835,7 @@ suffstat.generic	spatstat-internal
 suffstat.poisson	spatstat-internal
 sum.im	mean.im
 summarise.trend	spatstat-internal
+summary.anylist	summary.anylist
 summary.envelope	spatstat-internal
 summary.fii	methods.fii
 summary.hyperframe	spatstat-internal
@@ -1811,6 +1856,7 @@ summary.profilepl	spatstat-internal
 summary.psp	summary.psp
 summary.quad	summary.quad
 summary.rmhexpand	spatstat-internal
+summary.solist	summary.solist
 summary.splitppp	summary.splitppp
 summary.splitppx	spatstat-internal
 summary.units	methods.units
@@ -1939,6 +1985,8 @@ versionstring.interact	spatstat-internal
 versionstring.ppm	spatstat-internal
 versionstring.spatstat	spatstat-internal
 vertices	vertices
+vesicles	vesicles
+vesicles.extra	vesicles
 Vmark	Emark
 volume	volume
 volume.box3	diameter.box3
@@ -1991,6 +2039,7 @@ xypolygon2psp	spatstat-internal
 xypolyselfint	spatstat-internal
 y.quad	spatstat-internal
 zapsmall.im	zapsmall.im
+[.anylist	Extract.anylist
 [.fasp	Extract.fasp
 [.fv	Extract.fv
 [.hyperframe	Extract.hyperframe
@@ -2008,14 +2057,17 @@ zapsmall.im	zapsmall.im
 [.ppx	Extract.ppx
 [.psp	Extract.psp
 [.quad	Extract.quad
+[.solist	Extract.solist
 [.splitppp	Extract.splitppp
 [.splitppx	spatstat-internal
 [.tess	Extract.tess
+[<-.anylist	Extract.anylist
 [<-.fv	Extract.fv
 [<-.hyperframe	Extract.hyperframe
 [<-.im	Replace.im
 [<-.listof	Extract.listof
 [<-.ppp	Extract.ppp
+[<-.solist	Extract.solist
 [<-.splitppp	Extract.splitppp
 [<-.splitppx	spatstat-internal
 [<-.tess	Extract.tess

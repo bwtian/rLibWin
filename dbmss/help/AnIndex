@@ -5,6 +5,7 @@ as.wmppp.ppp	as.wmppp
 CheckdbmssArguments	CheckdbmssArguments
 CountNbd	Rcpp
 CountNbdCC	Rcpp
+CountNbdKd	Rcpp
 dbmss	dbmss-package
 dbmssEnvelope.object	dbmssEnvelope
 DEnvelope	DEnvelope
@@ -30,7 +31,9 @@ Lhat	Lhat
 LmmEnvelope	LmmEnvelope
 Lmmhat	Lmmhat
 MEnvelope	MEnvelope
+mEnvelope	m_Envelope
 Mhat	Mhat
+mhat	m_hat
 paracou16	paracou16
 print.dbmssEnvelope	print.dbmssEnvelope
 rPopulationIndependenceK	rPopulationIndependenceK

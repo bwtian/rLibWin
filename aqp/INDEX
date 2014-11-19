@@ -10,6 +10,7 @@ ca630                   Soil Data from the Central Sierra Nevada Region
 depths<-                Getters, Setters, and Utility Methods for
                         SoilProfileCollection Objects
 estimateSoilDepth       Estimate Soil Depth
+evalGenHZ               Evaluate Generalized Horizon Labels
 f.noise                 Example Objective Function for Full-Pattern
                         Matching
 generalize.hz           Generalize Horizon Names
@@ -20,7 +21,8 @@ hzDistinctnessCodeToOffset
                         Convert Horizon Distinctness Codes
 missingDataGrid         Missing Data Grid
 munsell                 Munsell-RGB Lookup Table for Common Soil Colors
-munsell2rgb             Convert Munsell Notation to RGB
+munsell2rgb             Convert Munsell Notation to and from RGB color
+                        coordinates
 panel.depth_function    Lattice Panel Function for Soil Profiles
 pc                      Numerical Soil Profile Comparison
 plotSPC                 Profile Plot
@@ -39,8 +41,6 @@ sp3                     Soil Profile Data Example 3
 sp4                     Soil Chemical Data from Serpentinitic Soils of
                         California
 sp5                     Sample Soil Database #5
-spatial_subset          Spatial Subsetting of SoilProfileCollection
-                        Objects
 subsetProfiles          Subset SoilProfileCollection Objects.
 test_hz_logic           Test Horizon Logic
 texture.triangle.low.rv.high

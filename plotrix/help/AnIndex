@@ -48,6 +48,7 @@ draw.tilted.sector	draw.tilted.sector
 drawNestedBars	drawNestedBars
 drawSectorAnnulus	drawSectorAnnulus
 ehplot	ehplot
+election	election
 emptyspace	emptyspace
 fan.plot	fan.plot
 feather.plot	feather.plot
@@ -91,6 +92,7 @@ multhist	multhist
 multsymbolbox	multsymbolbox
 oz.windrose	oz.windrose
 oz.windrose.legend	oz.windrose.legend
+p2p_arrows	p2p_arrows
 panes	panes
 pasteCols	pasteCols
 paxis3d	paxis3d
@@ -124,6 +126,7 @@ remove.args	clean.args
 rescale	rescale
 revaxis	revaxis
 ruginv	ruginv
+seats	seats
 sizeplot	sizeplot
 sizetree	sizetree
 size_n_color	size_n_color

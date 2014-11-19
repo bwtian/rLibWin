@@ -23,6 +23,7 @@ diagnostic_hz,SoilProfileCollection-method	SPC-utils
 diagnostic_hz<-	SPC-utils
 diagnostic_hz<-,SoilProfileCollection-method	SPC-utils
 estimateSoilDepth	estimateSoilDepth
+evalGenHZ	evalGenHZ
 f.noise	f.noise
 generalize.hz	generalize.hz
 get.ml.hz	get.ml.hz
@@ -92,8 +93,6 @@ sp2	sp2
 sp3	sp3
 sp4	sp4
 sp5	sp5
-spatial_subset	SPC-spatial-methods
-spatial_subset,SoilProfileCollection-method	SPC-spatial-methods
 subsetProfiles	subsetProfiles-methods
 subsetProfiles,SoilProfileCollection-method	subsetProfiles-methods
 test_hz_logic	test_hz_logic

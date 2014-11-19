@@ -1,8 +1,8 @@
 Package: BH
 Type: Package
 Title: Boost C++ header files
-Version: 1.54.0-4
-Date: 2014-08-29
+Version: 1.54.0-5
+Date: 2014-11-09
 Author: Dirk Eddelbuettel, John W. Emerson and Michael J. Kane
 Maintainer: Dirk Eddelbuettel <edd@debian.org>
 Description: Boost provides free peer-reviewed portable C++ source 
@@ -14,8 +14,8 @@ Description: Boost provides free peer-reviewed portable C++ source
   as replication of this code in the sources of other packages is 
   avoided. 
 License: BSL-1.0
-Packaged: 2014-08-29 16:36:51.982197 UTC; edd
+Packaged: 2014-11-09 16:29:31.415601 UTC; edd
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-08-29 19:54:09
-Built: R 3.1.1; ; 2014-08-29 23:37:34 UTC; windows
+Date/Publication: 2014-11-10 10:32:39
+Built: R 3.1.2; ; 2014-11-10 23:21:05 UTC; windows

@@ -10,6 +10,10 @@ importFrom(methods,
 )
 
 
+importFrom(MASS,
+  isoMDS
+)
+
 importFrom(RColorBrewer,
   brewer.pal
 )
@@ -32,7 +36,8 @@ importFrom(lattice,
 )
 
 importFrom(cluster, 
-  daisy
+  daisy,
+  silhouette
 )
 
 importFrom(graphics, 
@@ -51,7 +56,8 @@ importFrom(plyr,
 
 importFrom(reshape, 
   melt,
-  melt.data.frame
+  melt.data.frame,
+  cast
 )
 
 importFrom(scales,
@@ -122,8 +128,7 @@ exportMethods(
   site,
   "site<-",
   slab,
-  slice,
-  spatial_subset
+  slice
 )
 
 exportPattern("^[^\\.]")

@@ -1,3 +1,18 @@
+  CHANGES IN dbmss VERSION 2.1.2
+  ==============================
+  
+SIGNIFICANT USER-VISIBLE CHANGES
+
+  o Default neighbor type for Khat and Kenvelope is the same as reference type instead of "".
+  o Kd estimation now accepts "" as reference type to use all points.
+  o Approximate argument to calculate Kd on big data sets with little RAM.
+
+BUG FIXES
+
+  o FillEnvelope returned wrong quantiles for local confidence intervals. Fixed.
+
+
+
   CHANGES IN dbmss VERSION 2.1.1
   ==============================
   
