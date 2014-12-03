@@ -38,4 +38,4 @@ GithubRepo: plotly
 GithubUsername: ropensci
 GithubRef: master
 GithubSHA1: 6b8ca780851d87088efe3e4e3fc1bdcccb5e96d9
-Built: R 3.1.2; ; 2014-12-03 01:39:19 UTC; windows
+Built: R 3.1.2; ; 2014-12-03 01:49:03 UTC; windows
