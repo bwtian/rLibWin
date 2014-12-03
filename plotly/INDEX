@@ -1,0 +1,22 @@
+gg2list                 Convert a ggplot to a list.
+group2NA                Drawing ggplot2 geoms with a group aesthetic is
+                        most efficient in plotly when we convert groups
+                        of things that look the same to vectors with
+                        NA.
+layer2traces            Convert a layer to a list of traces. Called
+                        from gg2list()
+paramORdefault          Convert ggplot params to plotly.
+plotly                  Main interface to plotly
+plotly-package          A R API for plot.ly
+set_config_file         Set keyword-value pairs in Plotly config file
+set_credentials_file    Set the keyword-value pairs in Plotly
+                        credentials file
+show_config_file        Read and print Plotly config file, wrapping
+                        get_credentials_file()
+show_credentials_file   Read and print Plotly credentials file,
+                        wrapping get_credentials_file()
+signup                  Sign up to plotly.
+toFill                  Use default ggplot colour for fill (gray20) if
+                        not declared
+toRGB                   Convert R colours to RGBA hexadecimal colour
+                        values
