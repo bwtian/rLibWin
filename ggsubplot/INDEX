@@ -1,0 +1,40 @@
+casualties              casualty data from the Afghan War Diary,
+                        lightly cleaned
+environment-class       environment S4 class
+geom_coxcomb            Coxcomb glyphs
+geom_freqstar           Frequency Star glyphs
+geom_star               Star glyphs
+geom_subplot            Create a layer of embedded subplots
+geom_subplot2d          Bin data and visualize with a grid of subplots.
+gg-class                gg S4 class
+ggplot-class            ggplot S4 class
+ggsubplot               Create a ggsubplot object
+ggsubplot-class         ggsubplot class
+interval_breaks         Pick breaks for interval (1d) bins.
+is.rel                  is x a rel object?
+is.sp_layer             Is an object (functionally) a sp_layer?
+list-class              list S4 class
+names_scales            Returns the first aes of a scale, to use as an
+                        identifier for the scale
+nasa                    Nasa data from the 2006 American Statistical
+                        Association Data Expo
+ply_aes                 Compute aesthetics groupwise
+propogate_aes           Ensure each layer contains all aesthetic
+                        mappings that affect it.
+propogate_data          Ensure each layer contains a data set
+proto-class             proto S4 class
+ref_box                 Reference box glyph
+ref_hline               Horizontal reference line glyph
+ref_vline               Vertical reference line glyph
+rel                     Make a rel class object
+remove_I                replace I() with identity
+rescale_01              rescale vectors to [0,1]
+rescale_11              rescale vectors to [-1,1]
+rescale_2pi             rescale vectors to [0, 2 * pi]
+sp_layer                Create a sp_layer object
+sp_layer-class          sp_layer class
+unpanel                 Format data from a facet plot to use in a
+                        ggsubplot plot
+which_untrained         find scales that have no range yet
+which_x                 find x scale
+which_y                 find y scale
