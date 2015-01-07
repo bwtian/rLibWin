@@ -12,8 +12,14 @@ License: GPL-3
 LazyLoad: yes
 LazyData: yes
 URL: https://github.com/seantuck12/MODISTools/
-Packaged: 2014-12-22 22:39:49 UTC; seantuck
-NeedsCompilation: no
-Repository: CRAN
-Date/Publication: 2014-12-23 16:06:29
-Built: R 3.1.2; ; 2014-12-23 23:20:33 UTC; windows
+RemoteType: github
+RemoteHost: api.github.com
+RemoteRepo: MODISTools
+RemoteUsername: seantuck12
+RemoteRef: master
+RemoteSha: 4f0616d34c9ac4585a82dfa3859dbdda3828fc6a
+GithubRepo: MODISTools
+GithubUsername: seantuck12
+GithubRef: master
+GithubSHA1: 4f0616d34c9ac4585a82dfa3859dbdda3828fc6a
+Built: R 3.1.2; ; 2015-01-07 07:58:52 UTC; windows
