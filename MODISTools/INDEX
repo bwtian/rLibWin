@@ -1,0 +1,32 @@
+BatchDownload           Internal function.
+ConvertExample          Example dataset for ConvertToDD
+ConvertToDD             Degrees Minutes Seconds/Decimal Minutes -
+                        Decimal Degrees Converter
+EndCoordinates          Calculate end location of a transect
+EndCoordinatesExample   Example dataset for EndCoordinates()
+ExtractTile             Extract subset tiles from bigger tiles of MODIS
+                        data.
+FindID                  Time-series matching to IDs
+FindIDExample           Example dataset for FindIDSubsets()
+GetBands                Get MODIS Product Data Band Names
+GetDates                Get list of available dates for requested
+                        time-series
+GetProducts             Get MODIS Product List
+GetSubset               Subset download using MODIS web service method.
+LandCover               Summaries on tiles of land cover data.
+MODISGrid               Create GIS ASCII files from downloaded MODIS
+                        data files
+MODISSubsets            MODIS Subset Tool
+MODISSummaries          MODIS subset processing & organisation tool
+MODISTimeSeries         Create one matrix of data from many downloaded
+                        timeseries.
+MODISTools-package      MODIS subsetting tools
+MODISTransects          MODIS Transect Subset Tool
+QualityCheck            Remove unreliable data and no fill values from
+                        MODIS data
+QualityCheckExample     Example dataset for QualityCheck
+SubsetExample           Example dataset for MODISSubsets()
+TransectExample         Example dataset for MODISTransects()
+UpdateSubsets           Updating Subset List
+WritePRJ                Internal function to write projection files for
+                        MODISGrid
