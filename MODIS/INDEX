@@ -1,0 +1,36 @@
+MODISoptions            Set or retrieve permanent MODIS package options
+arcStats                Get summarisation of local MODIS hdf data. As
+                        Plot or as Table.
+delHdf                  Delete MODIS grid files to reduce the local
+                        storage
+detectBitInfo           List MODIS QA (Quality) SDS information:
+                        bitShift and bitMask
+extractDate             Extract dates from (MODIS) files
+file.size               Size in Byte of file(s)
+genTile                 Generate tiling system
+getCollection           Get available collections of MODIS product(s)
+getHdf                  Create or update a local, user-defined subset
+                        of the global online MODIS grid data pool.
+getProduct              Check the avalability of a given product,
+                        create file related information
+getSds                  List SDS in a MODIS grid file
+getTile                 Get MODIS tile id(s)
+makeWeights             Extract bit-encoded information from a raster
+                        file. Create a weihgts rasterfile
+orgStruc                Re-organise MODIS files in the local data
+                        archive
+orgTime                 Handles the in/output date used in the
+                        filerting
+preStack                Organises (MODIS) files for the generation of a
+                        RasterStack object
+repDoy                  'Repair' DOY values in MODIS composites:
+                        'composite_day_of_the_year' layer/SDS
+runGdal                 Process MODIS hdf with GDAL
+runMrt                  Run Modis Reprojection Tool ('MRT-grid') with
+                        specified parameters
+search4map              Function for 'mapdata' dearch
+smooth.spline.raster    Filter time series imagery with a cubic spline
+transDate               Function for MODIS date conversions and
+                        testing.
+whittaker.raster        Filter vegetation index time series imagery
+                        with the modified whittaker approach
