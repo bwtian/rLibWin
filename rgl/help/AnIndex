@@ -42,6 +42,7 @@ ellipse3d.nls	ellipse3d
 extrude3d	extrude3d
 gc3d	subscene3d
 getr3dDefaults	par3d
+GramSchmidt	GramSchmidt
 grid3d	grid3d
 icosahedron3d	mesh3d
 identify3d	identify3d
@@ -88,6 +89,7 @@ qmesh3d	mesh3d
 quads3d	3dobjects
 r3d	r3d
 r3dDefaults	par3d
+readOBJ	writeOBJ
 readSTL	readSTL
 rgl	rgl-package
 rgl.abclines	abclines

@@ -11,6 +11,9 @@ print.effects.splm	effects.splm
 print.splm	print.splm
 RiceFarms	RiceFarms
 riceww	riceww
+slag	slag
+slag.default	slag
+slag.pseries	slag
 sperrorgm	spgm
 spgm	spgm
 sphtest	sphtest
@@ -22,4 +25,3 @@ spsarargm	spgm
 summary.splm	summary.splm
 usaww	usaww
 vcov.splm	vcov.splm
-write.effects.splm	write.effects.splm

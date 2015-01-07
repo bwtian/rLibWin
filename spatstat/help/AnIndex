@@ -25,6 +25,7 @@ affine.psp	affine.psp
 affine.tess	affine.tess
 affinexy	spatstat-internal
 affinexypolygon	spatstat-internal
+AIC.ppm	logLik.ppm
 allstats	allstats
 alltypes	alltypes
 amacrine	amacrine
@@ -37,6 +38,8 @@ anova.slrm	anova.slrm
 ants	ants
 ants.extra	ants
 anycrossing.psp	spatstat-internal
+anyDuplicated.ppp	duplicated.ppp
+anyDuplicated.ppx	duplicated.ppp
 anylist	anylist
 append.psp	append.psp
 apply23sum	spatstat-internal
@@ -198,6 +201,7 @@ bdist.points	bdist.points
 bdist.tiles	bdist.tiles
 bdry.mask	spatstat-internal
 bdrylength.xypolygon	spatstat-internal
+bdspots	bdspots
 beachcolourmap	beachcolours
 beachcolours	beachcolours
 beginner	beginner
@@ -285,6 +289,8 @@ chicago	chicago
 chop.tess	chop.tess
 chorley	chorley
 chorley.extra	chorley
+circdensity	circdensity
+circticks	spatstat-internal
 circumradius	circumradius
 circumradius.linnet	diameter.linnet
 circumradius.owin	circumradius
@@ -323,6 +329,7 @@ coef.ppm	coef.ppm
 coef.slrm	coef.slrm
 coef.summary.fii	methods.fii
 coef.summary.ppm	spatstat-internal
+coef.vblogit	spatstat-internal
 coerce.marks.numeric	spatstat-internal
 col2hex	colourtools
 collapse.fv	collapse.fv
@@ -345,6 +352,7 @@ compilepcf	spatstat-internal
 complaining	spatstat-internal
 complement.owin	complement.owin
 complementarycolour	colourtools
+Complex.im	Math.im
 concatxy	concatxy
 Concom	Concom
 conform.imagelist	spatstat-internal
@@ -356,7 +364,8 @@ connected.ppp	connected.ppp
 conspire	spatstat-deprecated
 contour.funxy	methods.funxy
 contour.im	contour.im
-contour.listof	contour.listof
+contour.imlist	contour.imlist
+contour.listof	contour.imlist
 contour.objsurf	methods.objsurf
 convexhull	convexhull
 convexhull.xy	convexhull.xy
@@ -419,6 +428,7 @@ dfbetas.ppm	dfbetas.ppm
 dflt.redraw	spatstat-internal
 diagnose.ppm	diagnose.ppm
 diagnose.ppm.engine	spatstat-internal
+diagramobj	spatstat-internal
 diameter	diameter
 diameter.box3	diameter.box3
 diameter.boxx	diameter.boxx
@@ -497,6 +507,7 @@ domain.tess	domain
 doMultiStraussHard	spatstat-internal
 dotexpr.to.call	spatstat-internal
 dropifsingle	spatstat-internal
+dround	spatstat-internal
 dummify	dummify
 dummy.ppm	dummy.ppm
 duplicated.ppp	duplicated.ppp
@@ -572,6 +583,7 @@ f3engine	spatstat-internal
 F3est	F3est
 fakecallstring	spatstat-internal
 fakemaintitle	spatstat-internal
+family.vblogit	spatstat-internal
 fardist	fardist
 fardist.owin	fardist
 fardist.ppp	fardist
@@ -700,6 +712,10 @@ HermiteCoefs	spatstat-internal
 Hest	Hest
 hexgrid	hextess
 hextess	hextess
+hierarchicalordering	spatstat-internal
+hiermat	spatstat-internal
+hierpair.family	hierpair.family
+HierStrauss	HierStrauss
 hist.im	hist.im
 ho.engine	spatstat-internal
 hopskel	hopskel
@@ -731,7 +747,8 @@ im	im
 im.apply	im.apply
 im.object	im.object
 image.im	plot.im
-image.listof	contour.listof
+image.imlist	plot.imlist
+image.listof	plot.imlist
 image.objsurf	methods.objsurf
 imcov	imcov
 implemented.for.K	spatstat-internal
@@ -758,7 +775,9 @@ intensity.ppm	intensity.ppm
 intensity.ppp	intensity.ppp
 intensity.quadratcount	intensity.quadratcount
 intensity.splitppp	intensity.ppp
+intermaker	spatstat-internal
 interp.colourmap	interp.colourmap
+interp.colours	colourtools
 interp.im	interp.im
 intersect.owin	intersect.owin
 intersect.ranges	spatstat-internal
@@ -873,6 +892,7 @@ Kmulti	Kmulti
 Kmulti.inhom	Kmulti.inhom
 Knone.engine	spatstat-internal
 Kount	spatstat-internal
+Kovesi	Kovesi
 Kpcf.kppm	spatstat-internal
 kppm	kppm
 kppm.formula	kppm
@@ -966,6 +986,7 @@ logLik.lppm	methods.lppm
 logLik.mppm	logLik.mppm
 logLik.ppm	logLik.ppm
 logLik.slrm	logLik.slrm
+logLik.vblogit	spatstat-internal
 lohboot	lohboot
 longleaf	longleaf
 lookup.im	spatstat-internal
@@ -1023,6 +1044,7 @@ matclust.estpcf	matclust.estpcf
 matcolall	spatstat-internal
 matcolany	spatstat-internal
 matcolsum	spatstat-internal
+Math.im	Math.im
 matrixsample	spatstat-internal
 matrowall	spatstat-internal
 matrowany	spatstat-internal
@@ -1140,6 +1162,7 @@ nnfun.psp	nnfun
 nnmap	nnmap
 nnmark	nnmark
 nnmean	nncorr
+nnorient	nnorient
 nnvario	nncorr
 nnwhich	nnwhich
 nnwhich.default	nnwhich
@@ -1170,11 +1193,13 @@ objsurf.kppm	objsurf
 objsurf.minconfit	objsurf
 objsurfEngine	spatstat-internal
 offsetsinformula	spatstat-internal
+onearrow	yardstick
 onecolumn	spatstat-internal
 opening	opening
 opening.owin	opening
 opening.ppp	opening
 opening.psp	opening
+Ops.im	Math.im
 optimStatus	spatstat-internal
 Ord	Ord
 ord.family	ord.family
@@ -1271,6 +1296,7 @@ plot.funxy	methods.funxy
 plot.fv	plot.fv
 plot.hyperframe	plot.hyperframe
 plot.im	plot.im
+plot.imlist	plot.imlist
 plot.infline	infline
 plot.influence.ppm	plot.influence.ppm
 plot.kppm	plot.kppm
@@ -1288,6 +1314,7 @@ plot.minconfit	spatstat-internal
 plot.mppm	plot.mppm
 plot.msr	plot.msr
 plot.objsurf	methods.objsurf
+plot.onearrow	plot.onearrow
 plot.owin	plot.owin
 plot.parres	spatstat-internal
 plot.plotpairsim	spatstat-internal
@@ -1312,13 +1339,16 @@ plot.spatialcdf	spatstat-internal
 plot.splitppp	plot.splitppp
 plot.symbolmap	plot.symbolmap
 plot.tess	plot.tess
+plot.textstring	plot.textstring
 plot.texturemap	plot.texturemap
+plot.yardstick	plot.yardstick
 plotEachLayer	spatstat-internal
 ploterodeimage	spatstat-internal
 ploterodewin	spatstat-internal
 pmixpois	dmixpois
 pointgrid	spatstat-internal
 pointsOnLines	pointsOnLines
+PoisSaddleApp	spatstat-internal
 Poisson	Poisson
 polynom	spatstat-internal
 ponderosa	ponderosa
@@ -1355,6 +1385,7 @@ predict.mppm	predict.mppm
 predict.ppm	predict.ppm
 predict.rhohat	methods.rhohat
 predict.slrm	predict.slrm
+predict.vblogit	spatstat-internal
 prefixfv	spatstat-internal
 prepareTitle	spatstat-internal
 prettydiscrete	spatstat-internal
@@ -1379,11 +1410,13 @@ print.fii	methods.fii
 print.funxy	spatstat-internal
 print.fv	spatstat-internal
 print.fvfun	spatstat-internal
+print.hierarchicalordering	spatstat-internal
 print.hyperframe	spatstat-internal
 print.im	print.im
 print.infline	infline
 print.influence.ppm	spatstat-internal
 print.interact	spatstat-internal
+print.intermaker	spatstat-internal
 print.isf	spatstat-internal
 print.kppm	methods.kppm
 print.layered	spatstat-internal
@@ -1400,6 +1433,7 @@ print.mppm	spatstat-internal
 print.msr	spatstat-internal
 print.nnfun	spatstat-internal
 print.objsurf	methods.objsurf
+print.onearrow	spatstat-internal
 print.owin	print.owin
 print.parres	spatstat-internal
 print.plotpairsim	spatstat-internal
@@ -1449,9 +1483,12 @@ print.summary.splitppx	spatstat-internal
 print.summary.units	spatstat-internal
 print.symbolmap	spatstat-internal
 print.tess	spatstat-internal
+print.textstring	spatstat-internal
 print.texturemap	spatstat-internal
 print.timed	spatstat-internal
 print.units	methods.units
+print.vblogit	spatstat-internal
+print.yardstick	spatstat-internal
 printStatus	spatstat-internal
 profilepl	profilepl
 progressreport	progressreport
@@ -1546,6 +1583,8 @@ reflect.tess	affine.tess
 reincarnate.interact	spatstat-internal
 reload.or.compute	reload.or.compute
 relrisk	relrisk
+relrisk.ppm	relrisk.ppm
+relrisk.ppp	relrisk.ppp
 repair.image.xycoords	spatstat-internal
 repair.old.factor.image	spatstat-internal
 rescale	rescale
@@ -1631,6 +1670,12 @@ rmpoint	rmpoint
 rmpoint.I.allim	spatstat-internal
 rmpoispp	rmpoispp
 rNeymanScott	rNeymanScott
+rose	rose
+rose.default	rose
+rose.density	rose
+rose.fv	rose
+rose.histogram	rose
+roseContinuous	spatstat-internal
 rotate	rotate
 rotate.im	rotate.im
 rotate.layered	methods.layered
@@ -1676,6 +1721,7 @@ rsyst	rsyst
 rthin	rthin
 rThomas	rThomas
 rtoro	spatstat-deprecated
+ruletextline	spatstat-internal
 run.simplepanel	run.simplepanel
 runifdisc	runifdisc
 runiflpp	runiflpp
@@ -1731,6 +1777,7 @@ shapley.extra	shapley
 sharpen	sharpen
 sharpen.ppp	sharpen
 shift	shift
+shift.diagramobj	spatstat-internal
 shift.im	shift.im
 shift.influence.ppm	spatstat-internal
 shift.layered	methods.layered
@@ -1839,6 +1886,7 @@ summary.anylist	summary.anylist
 summary.envelope	spatstat-internal
 summary.fii	methods.fii
 summary.hyperframe	spatstat-internal
+Summary.im	Math.im
 summary.im	summary.im
 summary.linnet	methods.linnet
 summary.listof	summary.listof
@@ -1860,6 +1908,7 @@ summary.solist	summary.solist
 summary.splitppp	summary.splitppp
 summary.splitppx	spatstat-internal
 summary.units	methods.units
+summary.vblogit	spatstat-internal
 sumouter	sumouter
 sumsymouter	spatstat-internal
 superimpose	superimpose
@@ -1881,6 +1930,7 @@ termsinformula	spatstat-internal
 tess	tess
 test.crossing.psp	spatstat-internal
 test.selfcrossing.psp	spatstat-internal
+textstring	yardstick
 texturemap	texturemap
 textureplot	textureplot
 thomas.estK	thomas.estK
@@ -1951,6 +2001,7 @@ unmark.psp	unmark
 unmark.splitppp	unmark
 unnormdensity	unnormdensity
 unparen	spatstat-internal
+update.im	spatstat-internal
 update.interact	spatstat-internal
 update.ippm	spatstat-internal
 update.kppm	update.kppm
@@ -1963,6 +2014,7 @@ update.symbolmap	update.symbolmap
 uptrimat	spatstat-internal
 urkiola	urkiola
 valid.ppm	valid.ppm
+validate.angles	spatstat-internal
 validate.mask	spatstat-internal
 validate.quad	spatstat-internal
 validposint	spatstat-internal
@@ -2038,8 +2090,10 @@ xy.grid	spatstat-internal
 xypolygon2psp	spatstat-internal
 xypolyselfint	spatstat-internal
 y.quad	spatstat-internal
+yardstick	yardstick
 zapsmall.im	zapsmall.im
 [.anylist	Extract.anylist
+[.diagramobj	spatstat-internal
 [.fasp	Extract.fasp
 [.fv	Extract.fv
 [.hyperframe	Extract.hyperframe
@@ -2065,9 +2119,11 @@ zapsmall.im	zapsmall.im
 [<-.fv	Extract.fv
 [<-.hyperframe	Extract.hyperframe
 [<-.im	Replace.im
+[<-.layered	Extract.layered
 [<-.listof	Extract.listof
 [<-.ppp	Extract.ppp
 [<-.solist	Extract.solist
 [<-.splitppp	Extract.splitppp
 [<-.splitppx	spatstat-internal
 [<-.tess	Extract.tess
+[[<-.layered	Extract.layered

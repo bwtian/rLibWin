@@ -24,10 +24,13 @@ anova.glmrob            Analysis of Robust Quasi-Deviance for "glmrob"
                         Objects
 anova.lmrob             Analysis of Robust Deviances ('anova') for
                         "lmrob" Objects
+biomassTill             Biomass Tillage Data
 bushfire                Campbell Bushfire Data
 carrots                 Insect Damages on Carrots
 chgDefaults-methods     Change Defaults (Parameters) of "Psi Function"
                         Objects
+classPC                 Compute Classical Principal Components via SVD
+                        or Eigen
 cloud                   Cloud point of a Liquid
 coleman                 Coleman Data Set
 condroz                 Condroz Data
@@ -75,6 +78,7 @@ nlrob                   Robust Fitting of Nonlinear Regression Models
 nlrob.algorithms        MM-, Tau-, CM-, and MTL- Estimators for
                         Nonlinear Robust Regression
 nlrob.control           Control Nonlinear Robust Regression Algorithms
+outlierStats            Robust Regression Outlier Statistics
 pension                 Pension Funds Data
 phosphor                Phosphorus Content Data
 pilot                   Pilot-Plant Data
@@ -91,6 +95,7 @@ psiFunc                 Constructor for Objects "Psi Function" Class
 psi_func-class          Class of "Psi Functions" for M-Estimation
 pulpfiber               Pulp Fiber and Paper Data
 radarImage              Satellite Radar Image Data from near Munich
+rankMM                  Simple Matrix Rank
 residuals.glmrob        Residuals of Robust Generalized Linear Model
                         Fits
 rrcov.control           Control Settings for covMcd and ltsReg

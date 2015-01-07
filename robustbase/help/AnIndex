@@ -11,6 +11,7 @@
 .MrhoInf	M.psi
 .Mwgt	M.psi
 .Mwgt.psi1	M.psi
+.signflip	pkg-internal
 .vcov.avar1	lmrob
 .vcov.w	lmrob
 adjbox	adjbox
@@ -25,6 +26,7 @@ ambientNOxCH	ambientNOxCH
 Animals2	Animals2
 anova.glmrob	anova.glmrob
 anova.lmrob	anova.lmrob
+biomassTill	biomassTill
 bushfire	bushfire
 BYlogreg	BYlogreg
 carrots	carrots
@@ -32,6 +34,7 @@ chgDefaults	chgDefaults-methods
 chgDefaults,ANY-method	chgDefaults-methods
 chgDefaults,psi_func-method	chgDefaults-methods
 chgDefaults-methods	chgDefaults-methods
+classPC	classPC
 cloud	cloud
 coleman	coleman
 condroz	condroz
@@ -42,6 +45,7 @@ covPlot	covPlot
 CrohnD	CrohnD
 cushny	cushny
 delivery	delivery
+doScale	pkg-internal
 education	education
 epilepsy	epilepsy
 estimethod	estimethod
@@ -78,8 +82,8 @@ ltsPlot	ltsPlot
 ltsReg	ltsReg
 ltsReg.default	ltsReg
 ltsReg.formula	ltsReg
+mahalanobisD	pkg-internal
 mc	mc
-mc.default	mc
 Mchi	M.psi
 milk	milk
 model.matrix.lmrob	summary.lmrob
@@ -94,6 +98,7 @@ nlrob.MM	nlrob-algos
 nlrob.mtl	nlrob-algos
 nlrob.tau	nlrob-algos
 NOxEmissions	NOxEmissions
+outlierStats	outlierStats
 pension	pension
 phosphor	phosphor
 pilot	pilot
@@ -119,7 +124,9 @@ psi_func-class	psi_func-class
 pulpfiber	pulpfiber
 Qn	Qn
 Qn.old	Qn
+r6pack	pkg-internal
 radarImage	radarImage
+rankMM	rankMM
 residuals.glmrob	residuals.glmrob
 residuals.nlrob	nlrob
 robMD	pkg-internal

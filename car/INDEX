@@ -5,7 +5,7 @@ Anova                   Anova Tables for Various Statistical Models
 Anscombe                U. S. State Public-School Expenditures
 Baumann                 Methods of Teaching Reading Comprehension
 Bfox                    Canadian Women's Labour-Force Participation
-Blackmoor               Exercise Histories of Eating-Disordered and
+Blackmore               Exercise Histories of Eating-Disordered and
                         Control Subjects
 Boot                    Bootstrapping for regression models
 Boxplot                 Boxplots With Point Identification
@@ -29,6 +29,7 @@ Greene                  Refugee Appeals
 Guyer                   Anonymity and Cooperation
 Hartnagel               Canadian Crime-Rates Time Series
 Highway1                Highway Accidents
+KosteckiDillon          Treatment of Migraine Headaches
 Leinhardt               Data on Infant-Mortality
 Mandel                  Contrived Collinear Data
 Migration               Canadian Interprovincial Migration Data
@@ -94,6 +95,8 @@ leveneTest              Levene's Test
 leveragePlots           Regression Leverage Plots
 linearHypothesis        Test Linear Hypothesis
 logit                   Logit Transformation
+mcPlots                 Draw Linear Model Marginal and Conditional
+                        Plots in Parallel or Overlaid
 mmps                    Marginal Model Plotting
 ncvTest                 Score Test for Non-Constant Error Variance
 outlierTest             Bonferroni Outlier Test

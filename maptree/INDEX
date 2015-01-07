@@ -1,0 +1,20 @@
+clip.clust              Prunes a Hierarchical Cluster Tree
+clip.rpart              Prunes an Rpart Classification or Regression
+                        Tree
+draw.clust              Graph a Hierarchical Cluster Tree
+draw.tree               Graph a Classification or Regression Tree
+group.clust             Observation Groups for a Hierarchical Cluster
+                        Tree
+group.tree              Observation Groups for Classification or
+                        Regression Tree
+kgs                     KGS Measure for Pruning Hierarchical Clusters
+map.groups              Map Groups of Observations
+map.key                 Draw Key to accompany Map of Groups
+ngon                    Outline or Fill a Regular Polygon
+oregon.bird.dist        Presence/Absence of Bird Species in Oregon, USA
+oregon.bird.names       Names of Bird Species in Oregon, USA
+oregon.border           Boundary of Oregon, USA
+oregon.env.vars         Environmental Variables for Oregon, USA
+oregon.grid             Hexagonal Grid Cell Polygons covering Oregon,
+                        USA
+twins.to.hclust         Converts agnes or diana object to hclust object

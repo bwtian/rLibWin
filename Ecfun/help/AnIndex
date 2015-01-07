@@ -27,6 +27,8 @@ interpPairs.function	interpPairs
 interpPairs.list	interpPairs
 lines.qqnorm2	qqnorm2
 match.data.frame	match.data.frame
+matchName	matchName
+matchName1	matchName
 matchQuote	matchQuote
 mergeUShouse.senate	mergeUShouse.senate
 mergeVote	mergeVote
@@ -40,6 +42,7 @@ parseName	parseName
 Ping	Ping
 plot.qqnorm2	qqnorm2
 plot.qqnorm2s	qqnorm2s
+pmatch2	pmatch2
 points.qqnorm2	qqnorm2
 ptruncdist	truncdist
 qqnorm2	qqnorm2

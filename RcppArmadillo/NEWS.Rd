@@ -2,12 +2,50 @@
 \title{News for Package 'RcppArmadillo'}
 \newcommand{\cpkg}{\href{http://CRAN.R-project.org/package=#1}{\pkg{#1}}}
 
+\section{Changes in RcppArmadillo version 0.4.600.0 (2014-12-27)}{
+  \itemize{
+    \item Upgraded to Armadillo release Version 4.600 ("Singapore Sling Deluxe")
+    \itemize{
+      \item added \code{.head()} and \code{.tail()} to submatrix views
+      \item faster matrix transposes within compound expressions
+      \item faster \code{accu()} and \code{norm()} when compiling with
+      -O3 -ffast-math -march=native (gcc and clang) 
+      \item workaround for a bug in GCC 4.4
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.4.550.2.0 (2014-12-02)}{
+  \itemize{
+    \item Upgraded to Armadillo release Version 4.550.2 ("Singapore Sling Deluxe")
+    \itemize{
+      \item Bug fixes for implicit template initiation for \code{std::pow()} seen with the old g++ 4.4* series
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.4.550.1.0 (2014-11-26)}{
+  \itemize{
+    \item Upgraded to Armadillo release Version 4.550.1 ("Singapore Sling Deluxe")
+    \itemize{
+      \item added matrix exponential function: \code{expmat()}
+      \item faster \code{.log_p()} and \code{.avg_log_p()} functions in the \code{gmm_diag} class
+      when compiling with OpenMP enabled
+      \item faster handling of in-place addition/subtraction of expressions
+      with an outer product
+      \item applied correction to \code{gmm_diag} relative to the 4.550 release
+    }
+    \item The Armadillo Field type is now converted in \code{as<>} conversions
+  }
+}
+
 \section{Changes in RcppArmadillo version 0.4.500.0 (2014-10-30)}{
   \itemize{
     \item Upgraded to Armadillo release Version 4.500 ("Singapore Sling")
     \itemize{
       \item faster handling of complex vectors by \code{norm()}
-      \item expanded \code{chol()} to optionally specify output matrix as upper or lower triangular
+      \item expanded \code{chol()} to optionally specify output matrix
+      as upper or lower triangular 
       \item better handling of non-finite values when saving matrices as text files
     }
     \item The \code{sample} functionality has been extended to provide

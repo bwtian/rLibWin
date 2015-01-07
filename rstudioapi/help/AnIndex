@@ -3,4 +3,7 @@ findFun	hasFun
 getVersion	getVersion
 hasFun	hasFun
 isAvailable	isAvailable
+previewRd	previewRd
 verifyAvailable	isAvailable
+versionInfo	versionInfo
+viewer	viewer

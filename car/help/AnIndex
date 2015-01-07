@@ -15,6 +15,7 @@ Anova.merMod	Anova
 Anova.mlm	Anova
 Anova.multinom	Anova
 Anova.polr	Anova
+Anova.rlm	Anova
 Anova.svyglm	Anova
 Anscombe	Anscombe
 av.plot	car-deprecated
@@ -31,7 +32,7 @@ bc	car-deprecated
 bcPower	bcPower
 bcPowerAxis	TransformationAxes
 Bfox	Bfox
-Blackmoor	Blackmoor
+Blackmore	Blackmore
 Boot	Boot
 Boot.default	Boot
 Boot.glm	Boot
@@ -148,6 +149,7 @@ invTranEstimate	invTranPlot
 invTranPlot	invTranPlot
 invTranPlot.default	invTranPlot
 invTranPlot.formula	invTranPlot
+KosteckiDillon	KosteckiDillon
 Leinhardt	Leinhardt
 levene.test	car-deprecated
 leveneTest	leveneTest
@@ -172,6 +174,7 @@ linearHypothesis.merMod	linearHypothesis
 linearHypothesis.mlm	linearHypothesis
 linearHypothesis.nlsList	linearHypothesis
 linearHypothesis.polr	linearHypothesis
+linearHypothesis.rlm	linearHypothesis
 linearHypothesis.svyglm	linearHypothesis
 loessLine	ScatterplotSmoothers
 logit	logit
@@ -187,6 +190,9 @@ matchCoefs.lme	linearHypothesis
 matchCoefs.mer	linearHypothesis
 matchCoefs.merMod	linearHypothesis
 matchCoefs.mlm	linearHypothesis
+mcPlot	mcPlots
+mcPlot.lm	mcPlots
+mcPlots	mcPlots
 Migration	Migration
 mmp	marginalModelPlot
 mmp.default	marginalModelPlot

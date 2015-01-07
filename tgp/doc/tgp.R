@@ -523,7 +523,7 @@ plot(exp.as, main="tgpllm,", layout='as', as='improv')
 
 
 ###################################################
-### code chunk number 77: as.iRnw:110-111
+### code chunk number 77: as.iRnw:109-110
 ###################################################
 graphics.off()
 

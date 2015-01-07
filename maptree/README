@@ -1,0 +1,100 @@
+Changes in contributed package maptree:
+
+1.4-6, 28 January 2010
+
+* fixed clip.clust and draw.clust again to force data required
+  from either twins or hclust models
+
+* removed membership option from draw.clust because not really
+  practical (usually drawing aggregated clusters with multiple 
+  members; complicates determining size of graphic)
+
+1.4-5, 26 January 2009
+
+* changed map.tree.Rd to fix \code quote issue in response 
+  to request from CRAN
+
+1.4-4, 22 October 2007
+
+* changed License to "Unlimited" in DESCRIPTION in response 
+  to request from CRAN
+
+1.4-3, 15 November 2006
+
+* fixed clip.clust and draw.clust to require data from hclust 
+  objects (that had disappeared in recent releases), and 
+  changed help files accordingly (thanks to Mikkel Grum)
+
+* removed dependence on package combinat in function kgs() as 
+  function combn() is now part of standard package utils, and 
+  changed help file accordingly
+
+1.4-2, 10 February 2006
+
+* fixed draw.tree to correctly label nodes when only one  
+  independent variable
+
+1.4-1, 7 January 2006
+
+* changed prune.clust to clip.clust and prune.rpart to clip.rpart
+  to avoid non-generic function warning
+
+* added export and import to NAMESPACE
+
+* removed dependence on package mva, now in stats
+
+* added argument membership to draw.clust that prints members 
+  of clusters at leaves; added retention of membership in 
+  clip.clust
+
+* added function twins.to.hclust to retain data in conversion 
+  to hclust, for use in draw.clust and clip.clust
+
+* removed col="gray" option from draw.clust, draw.tree, map.groups, 
+  and map.key.  Examples in map.groups use gray scale.
+
+1.3-3, 6 March 2003
+
+* removed call to tree.depth in draw.tree (now causing failure)
+
+1.3-2, 22 April 2002
+
+* draw.tree now labels factor splits correctly for rpart objects
+  (but not for tree objects) and has an argument print.levels,
+  default TRUE, to avoid printing levels when there are too many
+
+* kgs has new argument alpha that weights contribution of number 
+  of clusters to penalty function
+
+* draw.tree argument digits defaults to getOption("digits")
+
+1.3-1, 8 April 2002
+
+* new function kgs computes penalty measure for cluster trees.
+
+* draw.clust, draw.tree, and map.groups now have argument new (default
+  TRUE) to accomodate multiple figure plots (when new=FALSE).
+
+* map.groups now maps group identifiers to dense integers for 
+  referencing color numbers.
+
+* prune.clust now returns correct components on pruned clusters, 
+  plus new component "size" having number of observations included 
+  in each pruned leaf.
+
+* draw.clust has new argument nodeinfo, which if TRUE causes the 
+  number of observations included in each leaf to be displayed 
+  (for pruned clusters).
+
+* map.key argument "lables" changed in spelling to "labels".
+
+1.2-1, 15 March 2002
+
+* draw.clust, draw.tree, map.key, and map.groups now use cex for 
+  sizing text and symbols.
+
+* prune.Rpart uses best argument as advertised.  Thanks to Brian 
+  Ripley for identification of problem and suggestion of solution.
+
+* draw.tree now correctly displays response level for classification 
+  trees.

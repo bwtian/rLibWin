@@ -16,6 +16,7 @@ dm.test	diebold.mariano.test
 dshw	dshw
 easter	easter
 ets	ets
+findfrequency	findfrequency
 fitted.Arima	fitted.Arima
 forecast	forecast
 forecast.ar	forecast.Arima

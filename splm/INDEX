@@ -11,6 +11,7 @@ listw2dgCMatrix         Interface between Matrix class objects and
                         weights list
 print.splm              print method for class splm
 riceww                  Spatial weights matrix of Indonesian rice farms
+slag                    Spatial lag operator
 spgm                    GM estimation of spatial panel data models
 sphtest                 Hausman test for spatial panel data models
 spml                    Spatial Panel Model by Maximum Likelihood
@@ -19,4 +20,3 @@ spreml                  Spatial Panel Model with Random Effects by
 summary.splm            summary method for class splm
 usaww                   Spatial weights matrix - US states
 vcov.splm               Covariance extractor method for 'splm' objects
-write.effects.splm      method for writing a table with fixed effects

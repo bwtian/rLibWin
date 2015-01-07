@@ -3,13 +3,19 @@ Title: Safely access the RStudio API.
 Description: This package provides functions to make it easy to access
     the RStudio API when available, and provide informative error messages
     when not.
-Version: 0.1
-Author: RStudio
-Maintainer: Hadley Wickham <hadley@rstudio.com>
+Version: 0.2
+Authors@R: c(
+    person("Hadley", "Wickham", role = c("aut"), email = "hadley@rstudio.com"),
+    person("JJ", "Allaire", role = c("aut", "cre"), email = "jj@rstudio.com"),
+    person(family = "RStudio", role = "cph")
+    )
+Maintainer: JJ Allaire <jj@rstudio.com>
 License: MIT + file LICENSE
-Roxygen: list(wrap = FALSE)
-Packaged: 2014-03-12 18:51:18 UTC; hadley
+Packaged: 2014-12-30 12:00:36 UTC; jjallaire
+Author: Hadley Wickham [aut],
+  JJ Allaire [aut, cre],
+  RStudio [cph]
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-03-27 16:27:00
-Built: R 3.1.2; ; 2014-11-01 02:18:24 UTC; windows
+Date/Publication: 2014-12-31 01:07:34
+Built: R 3.1.2; ; 2014-12-31 23:20:30 UTC; windows

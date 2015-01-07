@@ -4,6 +4,21 @@ Please note that only the most significant changes are reported here.
 A full ChangeLog is available in the log messages of the SVN repository
 on R-Forge.
 
+
+      CHANGES IN VERSION 1.2-4 (2014-12-31)
+
+* Equality constraints (SUMT) checks conformity of the matrices
+
+* coef.maxim() is now exported
+
+* added argument "digits" to print.summary.maxLik()
+
+* added argument "digits" to condiNumber.default()
+
+* further arguments to condiNumber.maxLik() are now passed to
+condiNumber.default() rather than to hessian()
+
+
       CHANGES IN VERSION 1.2-0 (2013-10-22)
 
 * Inequality constraints now support multiple constraints 

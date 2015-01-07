@@ -8,6 +8,8 @@ celt	celt
 check.bathy	check.bathy
 col2alpha	col2alpha
 collate.bathy	collate.bathy
+combine.buffers	combine.buffers
+create.buffer	create.buffer
 diag.bathy	diag.bathy
 dist2isobath	dist2isobath
 florida	florida
@@ -26,9 +28,11 @@ marmap	marmap
 metallo	metallo
 nw.atlantic	nw.atlantic
 nw.atlantic.coast	nw.atlantic.coast
+outline.buffer	outline.buffer
 palette.bathy	palette.bathy
 path.profile	path.profile
 plot.bathy	plot.bathy
+plotArea	plotArea
 plotProfile	plotProfile
 read.bathy	read.bathy
 readGEBCO.bathy	readGEBCO.bathy

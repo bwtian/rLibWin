@@ -1,0 +1,16 @@
+clip.clust	clip.clust
+clip.rpart	clip.rpart
+draw.clust	draw.clust
+draw.tree	draw.tree
+group.clust	group.clust
+group.tree	group.tree
+kgs	kgs
+map.groups	map.groups
+map.key	map.key
+ngon	ngon
+oregon.bird.dist	oregon.bird.dist
+oregon.bird.names	oregon.bird.names
+oregon.border	oregon.border
+oregon.env.vars	oregon.env.vars
+oregon.grid	oregon.grid
+twins.to.hclust	twins.to.hclust

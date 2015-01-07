@@ -19,6 +19,7 @@ dm.test                 Diebold-Mariano test for predictive accuracy
 dshw                    Double-Seasonal Holt-Winters Forecasting
 easter                  Easter holidays in each season
 ets                     Exponential smoothing state space model
+findfrequency           Find dominant frequency of a time series
 fitted.Arima            One-step in-sample forecasts using ARIMA models
 forecast                Forecasting time series
 forecast.Arima          Forecasting using ARIMA or ARFIMA models

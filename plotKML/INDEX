@@ -32,6 +32,8 @@ count.GridTopology      Counts the number of occurrences of a list of
                         vector object over a GridTopology
 display.pal             Display a color palette
 eberg                   Ebergotzen - soil mapping case study
+fmd                     2001 food-and-mouth epidemic, north Cumbria
+                        (UK)
 geopath                 Geopath - shortest trajectory line between two
                         geographic locations
 getCRS                  Methods to get the proj4 string
@@ -74,6 +76,7 @@ metadata2SLD-methods    Methods to create a Styled Layer Description
 metadata2SLD.SpatialPixels
                         Writes a Styled Layer Description (*SLD*) file
 normalizeFilename       Normalize filename string
+northcumbria            Polygon boundary of north Cumbria
 plotKML-method          Methods for plotting results of spatial
                         analysis in Google Earth
 plotKML-package         Visualization of spatial and spatio-temporal

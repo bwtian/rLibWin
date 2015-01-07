@@ -10,7 +10,6 @@ arithmetic.basisfd	arithmetic.basisfd
 arithmetic.fd	arithmetic.fd
 as.array3	as.array3
 as.fd	as.fd
-as.fd.dierckx	as.fd
 as.fd.fdSmooth	as.fd
 as.fd.function	as.fd
 as.fd.smooth.spline	as.fd
@@ -247,7 +246,6 @@ summary.Lfd	summary.Lfd
 svd2	svd2
 symsolve	symsolve
 TaylorSpline	TaylorSpline
-TaylorSpline.dierckx	TaylorSpline
 TaylorSpline.fd	TaylorSpline
 TaylorSpline.fdPar	TaylorSpline
 TaylorSpline.fdSmooth	TaylorSpline

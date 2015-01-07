@@ -1,4 +1,5 @@
 .check3d                Check for an open rgl window.
+GramSchmidt             The Gram-Schmidt algorithm
 abclines3d              Lines intersecting the bounding box
 addNormals              Add normal vectors to objects so they render
                         more smoothly.
@@ -66,6 +67,7 @@ text3d                  add text
 triangulate             Triangulate a two-dimensional polygon.
 turn3d                  Create a solid of rotation from a
                         two-dimensional curve.
-writeOBJ                Write Wavefront OBJ format files
+writeOBJ                Write Wavefront OBJ format files; read simple
+                        ones
 writePLY                Write Stanford PLY format files
 writeWebGL              Write scene to HTML.

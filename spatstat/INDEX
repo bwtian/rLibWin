@@ -27,6 +27,7 @@ Gmulti                  Marked Nearest Neighbour Distance Function
 Gres                    Residual G Function
 Hardcore                The Hard Core Point Process Model
 Hest                    Spherical Contact Distribution Function
+HierStrauss             The Hierarchical Strauss Point Process Model
 Hybrid                  Hybrid Interaction Point Process Model
 Iest                    Estimate the I-function
 Jcross                  Multitype J Function (i-to-j)
@@ -52,6 +53,8 @@ Kmodel.ppm              K Function or Pair Correlation Function of
                         Gibbs Point Process model
 Kmulti                  Marked K-Function
 Kmulti.inhom            Inhomogeneous Marked K-Function
+Kovesi                  Colour Sequences with Uniform Perceptual
+                        Contrast
 Kres                    Residual K Function
 Kscaled                 Locally Scaled K-function
 Ksector                 Sector K-function
@@ -63,6 +66,7 @@ Ldot.inhom              Inhomogeneous Multitype L Dot Function
 LennardJones            The Lennard-Jones Potential
 Lest                    L-function
 Linhom                  L-function
+Math.im                 S3 Group Generic methods for images
 MultiHard               The Multitype Hard Core Point Process Model
 MultiStrauss            The Multitype Strauss Point Process Model
 MultiStraussHard        The Multitype/Hard Core Strauss Point Process
@@ -97,7 +101,7 @@ Window.ppm              Extract Window of Spatial Object
 [.hyperframe            Extract or Replace Subset of Hyperframe
 [.im                    Extract Subset of Image
 [.influence.ppm         Extract Subset of Influence Object
-[.layered               Extract Subset of a Layered Object
+[.layered               Extract or Replace Subset of a Layered Object
 [.leverage.ppm          Extract Subset of Leverage Object
 [.linnet                Extract Subset of Linear Network
 [.lpp                   Extract Subset of Point Pattern on Linear
@@ -185,6 +189,7 @@ as.tess                 Convert Data To Tessellation
 bdist.pixels            Distance to Boundary of Window
 bdist.points            Distance to Boundary of Window
 bdist.tiles             Distance to Boundary of Window
+bdspots                 Breakdown Spots in Microelectronic Materials
 beachcolours            Create Colour Scheme for a Range of Numbers
 beginner                Print Introduction For Beginners
 bei                     Tropical rain forest trees
@@ -230,6 +235,7 @@ chicago                 Chicago Street Crime Data
 chop.tess               Subdivide a Window or Tessellation using a Set
                         of Lines
 chorley                 Chorley-Ribble Cancer Data
+circdensity             Density Estimation for Circular Data
 circumradius            Circumradius of a Window
 clarkevans              Clark and Evans Aggregation Index
 clarkevans.test         Clark and Evans Test
@@ -264,7 +270,7 @@ concatxy                Concatenate x,y Coordinate Vectors
 connected               Connected components
 connected.ppp           Connected components of a point pattern
 contour.im              Contour plot of pixel image
-contour.listof          Plot a List of Things
+contour.imlist          Array of Contour Plots
 convexhull              Convex Hull
 convexhull.xy           Convex Hull of Points
 convolve.im             Convolution of Pixel Images
@@ -408,6 +414,8 @@ harmonise.fv            Make Function Tables Compatible
 harmonise.im            Make Pixel Images Compatible
 heather                 Diggle's Heather Data
 hextess                 Hexagonal Grid or Tessellation
+hierpair.family         Hierarchical Pairwise Interaction Process
+                        Family
 hist.im                 Histogram of Pixel Values in an Image
 hopskel                 Hopkins-Skellam Test
 humberside              Humberside Data on Childhood Leukaemia and
@@ -615,6 +623,7 @@ nnfun                   Nearest Neighbour Index Map as a Function
 nnfun.lpp               Nearest Neighbour Map on Linear Network
 nnmap                   K-th Nearest Point Map
 nnmark                  Mark of Nearest Neighbour
+nnorient                Nearest Neighbour Orientation Distribution
 nnwhich                 Nearest neighbour
 nnwhich.lpp             Identify Nearest Neighbours on a Linear Network
 nnwhich.pp3             Nearest neighbours in three dimensions
@@ -686,6 +695,7 @@ plot.fasp               Plot a Function Array
 plot.fv                 Plot Function Values
 plot.hyperframe         Plot Entries in a Hyperframe
 plot.im                 Plot a Pixel Image
+plot.imlist             Plot a List of Images
 plot.influence.ppm      Plot Influence Measure
 plot.kppm               Plot a fitted cluster point process
 plot.layered            Layered Plot
@@ -698,6 +708,7 @@ plot.lppm               Plot a Fitted Point Process Model on a Linear
                         Network
 plot.mppm               plot a Fitted Multiple Point Process Model
 plot.msr                Plot a Signed or Vector-Valued Measure
+plot.onearrow           Plot an Arrow
 plot.owin               Plot a Spatial Window
 plot.plotppm            Plot a plotppm Object Created by plot.ppm
 plot.pp3                Plot a three-dimensional point pattern
@@ -713,7 +724,9 @@ plot.solist             Plot a List of Spatial Objects
 plot.splitppp           Plot a List of Point Patterns
 plot.symbolmap          Plot a Graphics Symbol Map
 plot.tess               Plot a tessellation
+plot.textstring         Plot a Text String
 plot.texturemap         Plot a Texture Map
+plot.yardstick          Plot a Yardstick or Scale Bar
 pointsOnLines           Place Points Evenly Along Specified Lines
 ponderosa               Ponderosa Pine Tree Point Pattern
 pool                    Pool Data
@@ -746,7 +759,7 @@ print.ppp               Print Brief Details of a Point Pattern Dataset
 print.psp               Print Brief Details of a Line Segment Pattern
                         Dataset
 print.quad              Print a Quadrature Scheme
-profilepl               Profile Maximum Pseudolikelihood
+profilepl               Profile Maximum Pseudolikelihood or AIC
 progressreport          Print Progress Reports
 project.ppm             Force Point Process Model to be Valid
 project2segment         Move Point To Nearest Line
@@ -821,7 +834,10 @@ redwoodfull             California Redwoods Point Pattern (Entire
                         Dataset)
 reflect                 Reflect In Origin
 reload.or.compute       Compute Unless Previously Saved
-relrisk                 Nonparametric Estimate of Spatially-Varying
+relrisk                 Estimate of Spatially-Varying Relative Risk
+relrisk.ppm             Parametric Estimate of Spatially-Varying
+                        Relative Risk
+relrisk.ppp             Nonparametric Estimate of Spatially-Varying
                         Relative Risk
 rescale                 Convert dataset to another unit of length
 rescale.im              Convert Pixel Image to Another Unit of Length
@@ -866,6 +882,7 @@ rmhstart                Determine Initial State for Metropolis-Hastings
                         Simulation.
 rmpoint                 Generate N Random Multitype Points
 rmpoispp                Generate Multitype Poisson Point Pattern
+rose                    Rose Diagram
 rotate                  Rotate
 rotate.im               Rotate a Pixel Image
 rotate.owin             Rotate a Window
@@ -1025,4 +1042,5 @@ will.expand             Test Expansion Rule
 with.fv                 Evaluate an Expression in a Function Table
 with.hyperframe         Evaluate an Expression in Each Row of a
                         Hyperframe
+yardstick               Text, Arrow or Scale Bar in a Diagram
 zapsmall.im             Rounding of Pixel Values

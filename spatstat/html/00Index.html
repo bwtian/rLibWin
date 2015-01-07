@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Spatial Point Pattern analysis, model-fitting, simulation, tests</title>
+<html><head><title>R: Spatial Point Pattern Analysis, Model-fitting, Simulation, Tests</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
-<h1> Spatial Point Pattern analysis, model-fitting, simulation, tests
+<h1> Spatial Point Pattern Analysis, Model-fitting, Simulation, Tests
 <img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
 </h1>
 <hr>
 <div align="center">
 <a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
 <a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
-</div><h2>Documentation for package &lsquo;spatstat&rsquo; version 1.39-1</h2>
+</div><h2>Documentation for package &lsquo;spatstat&rsquo; version 1.40-0</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 <li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
@@ -46,6 +46,7 @@
 <a href="#U">U</a>
 <a href="#V">V</a>
 <a href="#W">W</a>
+<a href="#Y">Y</a>
 <a href="#Z">Z</a>
 <a href="#misc">misc</a>
 </p>
@@ -82,6 +83,8 @@
 <td>Apply Affine Transformation To Line Segment Pattern</td></tr>
 <tr><td width="25%"><a href="affine.tess.html">affine.tess</a></td>
 <td>Apply Geometrical Transformation To Tessellation</td></tr>
+<tr><td width="25%"><a href="logLik.ppm.html">AIC.ppm</a></td>
+<td>Log Likelihood and AIC for Point Process Model</td></tr>
 <tr><td width="25%"><a href="allstats.html">allstats</a></td>
 <td>Calculate four standard summary functions of a point pattern.</td></tr>
 <tr><td width="25%"><a href="alltypes.html">alltypes</a></td>
@@ -104,6 +107,10 @@
 <td>Harkness-Isham ants' nests data</td></tr>
 <tr><td width="25%"><a href="ants.html">ants.extra</a></td>
 <td>Harkness-Isham ants' nests data</td></tr>
+<tr><td width="25%"><a href="duplicated.ppp.html">anyDuplicated.ppp</a></td>
+<td>Determine Duplicated Points in a Spatial Point Pattern</td></tr>
+<tr><td width="25%"><a href="duplicated.ppp.html">anyDuplicated.ppx</a></td>
+<td>Determine Duplicated Points in a Spatial Point Pattern</td></tr>
 <tr><td width="25%"><a href="anylist.html">anylist</a></td>
 <td>List of Objects</td></tr>
 <tr><td width="25%"><a href="append.psp.html">append.psp</a></td>
@@ -377,6 +384,8 @@
 <td>Distance to Boundary of Window</td></tr>
 <tr><td width="25%"><a href="bdist.tiles.html">bdist.tiles</a></td>
 <td>Distance to Boundary of Window</td></tr>
+<tr><td width="25%"><a href="bdspots.html">bdspots</a></td>
+<td>Breakdown Spots in Microelectronic Materials</td></tr>
 <tr><td width="25%"><a href="beachcolours.html">beachcolourmap</a></td>
 <td>Create Colour Scheme for a Range of Numbers</td></tr>
 <tr><td width="25%"><a href="beachcolours.html">beachcolours</a></td>
@@ -494,6 +503,8 @@
 <td>Chorley-Ribble Cancer Data</td></tr>
 <tr><td width="25%"><a href="chorley.html">chorley.extra</a></td>
 <td>Chorley-Ribble Cancer Data</td></tr>
+<tr><td width="25%"><a href="circdensity.html">circdensity</a></td>
+<td>Density Estimation for Circular Data</td></tr>
 <tr><td width="25%"><a href="circumradius.html">circumradius</a></td>
 <td>Circumradius of a Window</td></tr>
 <tr><td width="25%"><a href="diameter.linnet.html">circumradius.linnet</a></td>
@@ -578,6 +589,8 @@
 <td>Take Complement of a Window</td></tr>
 <tr><td width="25%"><a href="colourtools.html">complementarycolour</a></td>
 <td>Convert and Compare Colours in Different Formats</td></tr>
+<tr><td width="25%"><a href="Math.im.html">Complex.im</a></td>
+<td>S3 Group Generic methods for images</td></tr>
 <tr><td width="25%"><a href="concatxy.html">concatxy</a></td>
 <td>Concatenate x,y Coordinate Vectors</td></tr>
 <tr><td width="25%"><a href="Concom.html">Concom</a></td>
@@ -594,8 +607,10 @@
 <td>Methods for Spatial Functions</td></tr>
 <tr><td width="25%"><a href="contour.im.html">contour.im</a></td>
 <td>Contour plot of pixel image</td></tr>
-<tr><td width="25%"><a href="contour.listof.html">contour.listof</a></td>
-<td>Plot a List of Things</td></tr>
+<tr><td width="25%"><a href="contour.imlist.html">contour.imlist</a></td>
+<td>Array of Contour Plots</td></tr>
+<tr><td width="25%"><a href="contour.imlist.html">contour.listof</a></td>
+<td>Array of Contour Plots</td></tr>
 <tr><td width="25%"><a href="methods.objsurf.html">contour.objsurf</a></td>
 <td>Methods for Objective Function Surfaces</td></tr>
 <tr><td width="25%"><a href="convexhull.html">convexhull</a></td>
@@ -1055,6 +1070,10 @@
 <td>Hexagonal Grid or Tessellation</td></tr>
 <tr><td width="25%"><a href="hextess.html">hextess</a></td>
 <td>Hexagonal Grid or Tessellation</td></tr>
+<tr><td width="25%"><a href="hierpair.family.html">hierpair.family</a></td>
+<td>Hierarchical Pairwise Interaction Process Family</td></tr>
+<tr><td width="25%"><a href="HierStrauss.html">HierStrauss</a></td>
+<td>The Hierarchical Strauss Point Process Model</td></tr>
 <tr><td width="25%"><a href="hist.im.html">hist.im</a></td>
 <td>Histogram of Pixel Values in an Image</td></tr>
 <tr><td width="25%"><a href="hopskel.html">hopskel</a></td>
@@ -1096,8 +1115,10 @@
 <td>Class of Images</td></tr>
 <tr><td width="25%"><a href="plot.im.html">image.im</a></td>
 <td>Plot a Pixel Image</td></tr>
-<tr><td width="25%"><a href="contour.listof.html">image.listof</a></td>
-<td>Plot a List of Things</td></tr>
+<tr><td width="25%"><a href="plot.imlist.html">image.imlist</a></td>
+<td>Plot a List of Images</td></tr>
+<tr><td width="25%"><a href="plot.imlist.html">image.listof</a></td>
+<td>Plot a List of Images</td></tr>
 <tr><td width="25%"><a href="methods.objsurf.html">image.objsurf</a></td>
 <td>Methods for Objective Function Surfaces</td></tr>
 <tr><td width="25%"><a href="imcov.html">imcov</a></td>
@@ -1134,6 +1155,8 @@
 <td>Empirical Intensity of Point Pattern</td></tr>
 <tr><td width="25%"><a href="interp.colourmap.html">interp.colourmap</a></td>
 <td>Interpolate smoothly between specified colours</td></tr>
+<tr><td width="25%"><a href="colourtools.html">interp.colours</a></td>
+<td>Convert and Compare Colours in Different Formats</td></tr>
 <tr><td width="25%"><a href="interp.im.html">interp.im</a></td>
 <td>Interpolate a Pixel Image</td></tr>
 <tr><td width="25%"><a href="intersect.owin.html">intersect.owin</a></td>
@@ -1300,6 +1323,8 @@
 <td>Marked K-Function</td></tr>
 <tr><td width="25%"><a href="Kmulti.inhom.html">Kmulti.inhom</a></td>
 <td>Inhomogeneous Marked K-Function</td></tr>
+<tr><td width="25%"><a href="Kovesi.html">Kovesi</a></td>
+<td>Colour Sequences with Uniform Perceptual Contrast</td></tr>
 <tr><td width="25%"><a href="kppm.html">kppm</a></td>
 <td>Fit Cluster or Cox Point Process Model</td></tr>
 <tr><td width="25%"><a href="kppm.html">kppm.formula</a></td>
@@ -1500,6 +1525,8 @@
 <td>Fit the Matern Cluster Point Process by Minimum Contrast</td></tr>
 <tr><td width="25%"><a href="matclust.estpcf.html">matclust.estpcf</a></td>
 <td>Fit the Matern Cluster Point Process by Minimum Contrast Using Pair Correlation</td></tr>
+<tr><td width="25%"><a href="Math.im.html">Math.im</a></td>
+<td>S3 Group Generic methods for images</td></tr>
 <tr><td width="25%"><a href="range.fv.html">max.fv</a></td>
 <td>Range of Function Values</td></tr>
 <tr><td width="25%"><a href="mean.im.html">max.im</a></td>
@@ -1683,6 +1710,8 @@
 <td>Mark of Nearest Neighbour</td></tr>
 <tr><td width="25%"><a href="nncorr.html">nnmean</a></td>
 <td>Nearest-Neighbour Correlation Indices of Marked Point Pattern</td></tr>
+<tr><td width="25%"><a href="nnorient.html">nnorient</a></td>
+<td>Nearest Neighbour Orientation Distribution</td></tr>
 <tr><td width="25%"><a href="nncorr.html">nnvario</a></td>
 <td>Nearest-Neighbour Correlation Indices of Marked Point Pattern</td></tr>
 <tr><td width="25%"><a href="nnwhich.html">nnwhich</a></td>
@@ -1728,6 +1757,8 @@
 <td>Objective Function Surface</td></tr>
 <tr><td width="25%"><a href="objsurf.html">objsurf.minconfit</a></td>
 <td>Objective Function Surface</td></tr>
+<tr><td width="25%"><a href="yardstick.html">onearrow</a></td>
+<td>Text, Arrow or Scale Bar in a Diagram</td></tr>
 <tr><td width="25%"><a href="opening.html">opening</a></td>
 <td>Morphological Opening</td></tr>
 <tr><td width="25%"><a href="opening.html">opening.owin</a></td>
@@ -1736,6 +1767,8 @@
 <td>Morphological Opening</td></tr>
 <tr><td width="25%"><a href="opening.html">opening.psp</a></td>
 <td>Morphological Opening</td></tr>
+<tr><td width="25%"><a href="Math.im.html">Ops.im</a></td>
+<td>S3 Group Generic methods for images</td></tr>
 <tr><td width="25%"><a href="Ord.html">Ord</a></td>
 <td>Generic Ord Interaction model</td></tr>
 <tr><td width="25%"><a href="ord.family.html">ord.family</a></td>
@@ -1885,6 +1918,8 @@
 <td>Plot Entries in a Hyperframe</td></tr>
 <tr><td width="25%"><a href="plot.im.html">plot.im</a></td>
 <td>Plot a Pixel Image</td></tr>
+<tr><td width="25%"><a href="plot.imlist.html">plot.imlist</a></td>
+<td>Plot a List of Images</td></tr>
 <tr><td width="25%"><a href="infline.html">plot.infline</a></td>
 <td>Infinite Straight Lines</td></tr>
 <tr><td width="25%"><a href="plot.influence.ppm.html">plot.influence.ppm</a></td>
@@ -1915,6 +1950,8 @@
 <td>Plot a Signed or Vector-Valued Measure</td></tr>
 <tr><td width="25%"><a href="methods.objsurf.html">plot.objsurf</a></td>
 <td>Methods for Objective Function Surfaces</td></tr>
+<tr><td width="25%"><a href="plot.onearrow.html">plot.onearrow</a></td>
+<td>Plot an Arrow</td></tr>
 <tr><td width="25%"><a href="plot.owin.html">plot.owin</a></td>
 <td>Plot a Spatial Window</td></tr>
 <tr><td width="25%"><a href="plot.plotppm.html">plot.plotppm</a></td>
@@ -1951,8 +1988,12 @@
 <td>Plot a Graphics Symbol Map</td></tr>
 <tr><td width="25%"><a href="plot.tess.html">plot.tess</a></td>
 <td>Plot a tessellation</td></tr>
+<tr><td width="25%"><a href="plot.textstring.html">plot.textstring</a></td>
+<td>Plot a Text String</td></tr>
 <tr><td width="25%"><a href="plot.texturemap.html">plot.texturemap</a></td>
 <td>Plot a Texture Map</td></tr>
+<tr><td width="25%"><a href="plot.yardstick.html">plot.yardstick</a></td>
+<td>Plot a Yardstick or Scale Bar</td></tr>
 <tr><td width="25%"><a href="dmixpois.html">pmixpois</a></td>
 <td>Mixed Poisson Distribution</td></tr>
 <tr><td width="25%"><a href="pointsOnLines.html">pointsOnLines</a></td>
@@ -2066,7 +2107,7 @@
 <tr><td width="25%"><a href="methods.units.html">print.units</a></td>
 <td>Methods for Units</td></tr>
 <tr><td width="25%"><a href="profilepl.html">profilepl</a></td>
-<td>Profile Maximum Pseudolikelihood</td></tr>
+<td>Profile Maximum Pseudolikelihood or AIC</td></tr>
 <tr><td width="25%"><a href="progressreport.html">progressreport</a></td>
 <td>Print Progress Reports</td></tr>
 <tr><td width="25%"><a href="project.ppm.html">project.ppm</a></td>
@@ -2198,6 +2239,10 @@
 <tr><td width="25%"><a href="reload.or.compute.html">reload.or.compute</a></td>
 <td>Compute Unless Previously Saved</td></tr>
 <tr><td width="25%"><a href="relrisk.html">relrisk</a></td>
+<td>Estimate of Spatially-Varying Relative Risk</td></tr>
+<tr><td width="25%"><a href="relrisk.ppm.html">relrisk.ppm</a></td>
+<td>Parametric Estimate of Spatially-Varying Relative Risk</td></tr>
+<tr><td width="25%"><a href="relrisk.ppp.html">relrisk.ppp</a></td>
 <td>Nonparametric Estimate of Spatially-Varying Relative Risk</td></tr>
 <tr><td width="25%"><a href="rescale.html">rescale</a></td>
 <td>Convert dataset to another unit of length</td></tr>
@@ -2307,6 +2352,16 @@
 <td>Generate Multitype Poisson Point Pattern</td></tr>
 <tr><td width="25%"><a href="rNeymanScott.html">rNeymanScott</a></td>
 <td>Simulate Neyman-Scott Process</td></tr>
+<tr><td width="25%"><a href="rose.html">rose</a></td>
+<td>Rose Diagram</td></tr>
+<tr><td width="25%"><a href="rose.html">rose.default</a></td>
+<td>Rose Diagram</td></tr>
+<tr><td width="25%"><a href="rose.html">rose.density</a></td>
+<td>Rose Diagram</td></tr>
+<tr><td width="25%"><a href="rose.html">rose.fv</a></td>
+<td>Rose Diagram</td></tr>
+<tr><td width="25%"><a href="rose.html">rose.histogram</a></td>
+<td>Rose Diagram</td></tr>
 <tr><td width="25%"><a href="rotate.html">rotate</a></td>
 <td>Rotate</td></tr>
 <tr><td width="25%"><a href="rotate.im.html">rotate.im</a></td>
@@ -2596,6 +2651,8 @@
 <td>Summary of a List of Things</td></tr>
 <tr><td width="25%"><a href="methods.fii.html">summary.fii</a></td>
 <td>Methods for Fitted Interactions</td></tr>
+<tr><td width="25%"><a href="Math.im.html">Summary.im</a></td>
+<td>S3 Group Generic methods for images</td></tr>
 <tr><td width="25%"><a href="summary.im.html">summary.im</a></td>
 <td>Summarizing a Pixel Image</td></tr>
 <tr><td width="25%"><a href="methods.linnet.html">summary.linnet</a></td>
@@ -2653,6 +2710,8 @@
 <td>Methods for Spatial Logistic Regression Models</td></tr>
 <tr><td width="25%"><a href="tess.html">tess</a></td>
 <td>Create a Tessellation</td></tr>
+<tr><td width="25%"><a href="yardstick.html">textstring</a></td>
+<td>Text, Arrow or Scale Bar in a Diagram</td></tr>
 <tr><td width="25%"><a href="texturemap.html">texturemap</a></td>
 <td>Texture Map</td></tr>
 <tr><td width="25%"><a href="textureplot.html">textureplot</a></td>
@@ -2902,6 +2961,13 @@
 <td>Evaluate an Expression in Each Row of a Hyperframe</td></tr>
 </table>
 
+<h2><a name="Y">-- Y --</a></h2>
+
+<table width="100%">
+<tr><td width="25%"><a href="yardstick.html">yardstick</a></td>
+<td>Text, Arrow or Scale Bar in a Diagram</td></tr>
+</table>
+
 <h2><a name="Z">-- Z --</a></h2>
 
 <table width="100%">
@@ -2933,7 +2999,7 @@
 <tr><td width="25%"><a href="Extract.influence.ppm.html">[.influence.ppm</a></td>
 <td>Extract Subset of Influence Object</td></tr>
 <tr><td width="25%"><a href="Extract.layered.html">[.layered</a></td>
-<td>Extract Subset of a Layered Object</td></tr>
+<td>Extract or Replace Subset of a Layered Object</td></tr>
 <tr><td width="25%"><a href="Extract.leverage.ppm.html">[.leverage.ppm</a></td>
 <td>Extract Subset of Leverage Object</td></tr>
 <tr><td width="25%"><a href="Extract.linnet.html">[.linnet</a></td>
@@ -2966,6 +3032,8 @@
 <td>Extract or Replace Subset of Hyperframe</td></tr>
 <tr><td width="25%"><a href="Replace.im.html">[&lt;-.im</a></td>
 <td>Reset Values in Subset of Image</td></tr>
+<tr><td width="25%"><a href="Extract.layered.html">[&lt;-.layered</a></td>
+<td>Extract or Replace Subset of a Layered Object</td></tr>
 <tr><td width="25%"><a href="Extract.listof.html">[&lt;-.listof</a></td>
 <td>Extract or Replace Subset of a List of Things</td></tr>
 <tr><td width="25%"><a href="Extract.ppp.html">[&lt;-.ppp</a></td>
@@ -2976,5 +3044,7 @@
 <td>Extract or Replace Sub-Patterns</td></tr>
 <tr><td width="25%"><a href="Extract.tess.html">[&lt;-.tess</a></td>
 <td>Extract or Replace Subset of Tessellation</td></tr>
+<tr><td width="25%"><a href="Extract.layered.html">[[&lt;-.layered</a></td>
+<td>Extract or Replace Subset of a Layered Object</td></tr>
 </table>
 </body></html>

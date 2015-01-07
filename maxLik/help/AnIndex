@@ -3,7 +3,7 @@ activePar.default	activePar
 AIC.maxLik	maxLik-methods
 bread.maxLik	bread.maxLik
 checkFuncArgs	maxLik-internal
-coef.maxim	maxLik-internal
+coef.maxim	maxLik-methods
 coef.maxLik	maxLik
 coef.summary.maxLik	summary.maxLik
 compareDerivatives	compareDerivatives

@@ -1,35 +1,51 @@
-CARBayes-package        Spatial areal unit modelling
-bymCAR.re               Fit the BYM conditional autoregressive (CAR)
-                        model to spatial data
-clusterCAR.re           Fit a cluster model with spatially correlated
-                        random effects to spatial data.
+CARBayes-package        Spatial Areal Unit Modelling
+S.CARbym                Fit a generalised linear model with a set of
+                        spatially autocorrelated random effect
+                        following the BYM conditional autoregressive
+                        (CAR) prior to spatial data.
+S.CARcluster            Fit a generalised linear model with a set of
+                        spatially autocorrelated random effects
+                        following a conditional autoregressive (CAR)
+                        prior and a piecewise constant jump component
+                        proposed by Lee and Sarran (2014) to spatial
+                        data.
+S.CARdissimilarity      Fit a generalised linear model with a set of
+                        spatially autocorrelated random effect
+                        following the localised conditional
+                        autoregressive (CAR) prior proposed by Lee and
+                        Mitchell (2012) to spatial data.
+S.CARiar                Fit a generalised linear model with a set of
+                        spatially autocorrelated random effect
+                        following the intrinsic conditional
+                        autoregressive (CAR) prior to spatial data.
+S.CARleroux             Fit a generalised linear model with a set of
+                        spatially autocorrelated random effect
+                        following the conditional autoregressive (CAR)
+                        prior proposed by Leroux et al. (1999) to
+                        spatial data.
+S.independent           Fit a generalised linear model with a set of
+                        independent random effect to spatial data.
 combine.data.shapefile
                         Combine a data frame with a shapefile to create
                         a SpatialPolygonsDataFrame object.
-dbf                     Shapefile (.dbf) for all Intermediate
-                        Geographies (IG) in Scotland.
-dissimilarityCAR.re     Fit a localised conditional autoregressive
-                        (CAR) model based on dissimilarity metrics with
-                        binary neighbourhood relations to spatial data
 highlight.borders       Create a SpatialPoints object identifying a
                         subset of borders between neighbouring areas,
                         which allows them to be overlaid on a spatial
                         map.
-housedata               Property price data for the 271 Intermediate
-                        Geographies (IG) in the Greater Glasgow and
-                        Clyde health board.
-iarCAR.re               Fit the Intrinsic conditional autoregressive
-                        (CAR) model to spatial data
-independent.re          Fit the independent random effects model to
-                        spatial data
-lerouxCAR.re            Fit the Leroux conditional autoregressive (CAR)
-                        model to spatial data
 print.carbayes          Print a summary of the fitted model to the
                         screen.
-properCAR.re            Fit the proper conditional autoregressive (CAR)
-                        model to spatial data
-respdata                Respiratory hosptial admissions data for the
+spatialhousedata        A SpatialPolygonsDataFrame object (from the sp
+                        package) containing property price data for the
                         271 Intermediate Geographies (IG) in the
                         Greater Glasgow and Clyde health board.
-shp                     Shapefile (.shp) for all Intermediate
-                        Geographies (IG) in Scotland.
+spatialrespdata         A SpatialPolygonsDataFrame object (from the sp
+                        package) containing respiratory hosptial
+                        admissions data for the 134 Intermediate
+                        Geographies (IG) to the north of the river
+                        Clyde in the Greater Glasgow and Clyde health
+                        board.
+summarise.lincomb       Compute the posterior distribution and
+                        quantiles of a linear combination of the
+                        covariate component of the linear predictor.
+summarise.samples       Summarise a matrix of Markov chain Monte Carlo
+                        samples.

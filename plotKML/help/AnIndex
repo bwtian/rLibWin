@@ -15,6 +15,7 @@ eberg_grid	eberg
 eberg_grid25	eberg
 eberg_zones	eberg
 extractProjValue	check_projection
+fmd	fmd
 geopath	geopath
 getCRS	getCRS
 getCRS,Raster-method	getCRS
@@ -96,6 +97,7 @@ metadata2SLD.Spatial	metadata2SLD
 metadata2SLD.SpatialPixels	metadata2SLD.SpatialPixels
 munsell2kml	col2kml
 normalizeFilename	normalizeFilename
+northcumbria	northcumbria
 parse_proj4	check_projection
 paths	plotKML.env
 plot,SpatialPredictions,ANY-method	SpatialPredictions
