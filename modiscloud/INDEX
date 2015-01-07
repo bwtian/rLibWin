@@ -1,0 +1,54 @@
+adf                     Convert to data.frame, without factors
+adf2                    Convert to data.frame, without factors
+byteint2bit             Convert a byte integer (0-255) to a list of 8
+                        bits
+byteint2bit_list        Convert a list of byte integer (0-255) to a
+                        table of 8 bits per row
+check_for_matching_geolocation_files
+                        Checks that every MODIS cloud project HDF has a
+                        matching MOD03 file
+dates_from_fileslist    Convert each MODIS filename to year, month,
+                        day, hourmin
+extract_bit             Get the value of a particular bit in a byte
+extract_fn_from_path    Get the filename from a path
+extract_time_from_MODISfn
+                        Extract the year, day, and hour from a MODIS
+                        filename
+fermat.test             Test an integer for primality with Fermat's
+                        little theorem
+foo                     Test function
+foo2                    Test function
+get_bitgrid             Extract the value of a particular bit at each
+                        pixel
+get_bitgrid_2bits       extract the value of 2 particular bits at each
+                        pixel
+get_date_from_POSIXct   Get the time information from a POSIXct time
+get_dates_from_POSIXct
+                        Get the time information from POSIXct times
+is.pseudoprime          Check an integer for pseudo-primality to an
+                        arbitrary precision
+is.pseudoprime2         Check an integer for pseudo-primality to an
+                        arbitrary precision, second version
+make_POSIXct_date       Take year, month, day, hourmin, convert to
+                        POSIXct
+make_cloudcount_product
+                        Take a cloudcount raster and a
+                        number-of-observations raster and make a
+                        fraction cloud product
+make_weeks_list         Make a list of numbered weeks
+modfns_to_ftp_download_cmd
+                        Make download commands for MODIS files
+modiscloud-package      Process MODIS cloud mask product files to TIF
+numslist_to_grd         Convert a list of numbers to a grid
+run_swath2grid          Run MRTSwath swath2grid tool
+slashslash              Remove double slash (slash a slash)
+sum_bitgrid             Take a series of byte tifs, extract the values
+                        of a bit, and add them up
+unlist_df               Unlist the columns in a data.frame
+unlist_df2              Unlist the columns in a data.frame, with more
+                        checks
+write_MRTSwath_param_file
+                        Write a parameter control file for MRTSwath
+yearday_to_date         Convert a year + a day number to a date
+yearmonthday_to_julianday
+                        Get the julian day for a year/month/day date

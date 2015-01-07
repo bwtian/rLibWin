@@ -1,0 +1,18 @@
+bibentry("Manual",
+         title = "modiscloud: An R Package for processing MODIS Level 2 Cloud Mask products",
+         author = person("Nicholas J. Matzke"),
+         organization = "University of California, Berkeley",
+         address      = "Berkeley, CA",
+         year         = 2013,
+         note         = "This code was developed for the following paper: Goldsmith, Gregory; Matzke, Nicholas J.; Dawson, Todd (2013). The incidence and implications of clouds for cloud forest plant water relations. Ecology Letters, 16(3), 307-314. doi: 10.1111/ele.12039",
+         url          = "http://cran.r-project.org/web/packages/modiscloud/index.html",
+	       
+         mheader = "To cite modiscloud in publications use:",
+	 
+	 mfooter = 
+         paste("I invested a lot of time and effort in creating modiscloud,",
+          "please cite it and Goldsmith et al. (2013) when using it for data analysis.",
+	  "See also", sQuote("citation(\"pkgname\")"),
+	  "for citing R packages.", sep = " ")
+	)
+

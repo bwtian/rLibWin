@@ -1,6 +1,7 @@
 manipulate-package	manipulate-package
 button	button
 checkbox	checkbox
+isAvailable	isAvailable
 manipulate	manipulate
 manipulatorGetState	state
 manipulatorMouseClick	mouseclick
