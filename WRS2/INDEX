@@ -1,0 +1,26 @@
+WRS2-package            Wilcox Robust Estimation and Testing
+WineTasting             Wine Tasting
+ancova                  Robust ANCOVA for 2 independent groups and one
+                        covariate.
+bush                    Bushtucker Foods
+goggles                 Beer Goggles Effect
+invisibility            Cloaks of Invisibility
+med1way                 Heteroscedastic one-way ANOVA for medians.
+med2way                 A two-way ANOVA for medians.
+movie                   Movies and Aggressive Affect
+picture                 Profile Pictures
+rmanova                 A heteroscedastic one-way repeated measures
+                        ANOVA for trimmed means.
+rmanovab                A heteroscedastic one-way repeated measures
+                        bootstrap ANOVA for trimmed means.
+spider                  Arachnophobes
+t1way                   A heteroscedastic one-way ANOVA for trimmed
+                        means.
+t1waybt                 Bootstrap version of the heteroscedastic
+                        one-way ANOVA for trimmed means.
+t2way                   A two-way ANOVA for trimmed means,
+                        M-estimators, and medians.
+t3way                   A three-way ANOVA for trimmed means.
+tsplit                  A robust two-way mixed ANOVA for trimmed means.
+viagra                  Effects of Viagra
+yuen                    Robust t-tests to compare independent means.

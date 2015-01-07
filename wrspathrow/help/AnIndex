@@ -1,0 +1,9 @@
+wrspathrow-package	wrspathrow
+pathrow_num	pathrow_num-methods
+pathrow_num,Raster-method	pathrow_num-methods
+pathrow_num,Spatial-method	pathrow_num-methods
+pathrow_poly	pathrow_poly
+test_poly	test_poly
+wrs1_asc_desc	wrs1_asc_desc
+wrs2_asc_desc	wrs2_asc_desc
+wrspathrow	wrspathrow

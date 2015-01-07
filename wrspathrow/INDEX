@@ -1,0 +1,10 @@
+pathrow_num             Get WRS-2 path/row numbers for a given spatial
+                        object
+pathrow_poly            Get a polgon giving area of coverage of a given
+                        WRS-1 or WRS-2 path and row
+test_poly               Polygon outlining TEAM site in Caxiuanã, Brazil
+wrs1_asc_desc           Worldwide Reference System - 1 (WRS1)
+                        SpatialPolygonsDataFrame
+wrs2_asc_desc           Worldwide Reference System - 2 (WRS2)
+                        SpatialPolygonsDataFrame
+wrspathrow              wrspathrow
