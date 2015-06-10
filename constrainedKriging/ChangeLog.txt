@@ -92,3 +92,5 @@
 	* can handel gpc.poly objects
 2013-10-02
 	* Package methods and spatialCovariance imported by the Namespace
+2015Ð04-22
+	* S3method(print , É) added in the Namesapce file also S3method(summary,É) and S3method(plot, É.)

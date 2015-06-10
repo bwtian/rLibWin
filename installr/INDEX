@@ -41,6 +41,7 @@ get_pid                 Find the pid of a process by name
 get_tasklist            Get the running processes in windows task
                         manager
 install.7zip            Downloads and installs 7-Zip for windows
+install.CMake           Downloads and installs CMake for windows
 install.Cygwin          Downloads and installs Cygwin for windows
 install.FFmpeg          Downloads and installs FFmpeg for windows
 install.GitHub          Downloads and installs GitHub for windows
@@ -57,6 +58,7 @@ install.Rdevel          Downloads and installs the latest Rdevel
                         version
 install.Rtools          Downloads and installs Rtools
 install.SWFTools        Downloads and installs SWFTools for windows
+install.Texmaker        Downloads and installs Texmaker for windows
 install.URL             Downloads and runs a .exe installer file for
                         some software from a URL
 install.git             Downloads and installs git and git-gui for
@@ -116,6 +118,8 @@ remove.installr.GUI     Removes the menu based GUI for updating R
                         within Rgui
 remove_from_.First_in_Rprofile.site
                         Remove a code line from Rprofile.site .First
+rename_r_to_R           Rename files' extensions in a folder from .r to
+                        .R
 require2                Loading Packages (and Installing them if they
                         are missing)
 restart_RGui            Restart RGui from RGui
@@ -136,3 +140,4 @@ up_folder               Performs "up-level" on a folder string
 updateR                 Checks for the latest R version, and if there
                         is a newer version of R - downloads and
                         installs it.
+xlsx2csv                Converts xls(x) to csv using VB

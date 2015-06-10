@@ -1,16 +1,25 @@
 
 #
+##
+#
+#
+#
 #exportPattern("^[^\\.]")
-exportPattern("^R")
+exportPattern("^RM")
+exportPattern("^RP")
+exportPattern("^RF")
+exportPattern("^RC")
+exportPattern("^RR")
+exportPattern("^R\\.")
 
 
-importFrom('colorspace', heat_hcl, rainbow_hcl)
 
 import(graphics)
-
 import(methods)
 
 #importFrom('raster', raster, projection)
+#importFrom('colorspace', heat_hcl, rainbow_hcl)
+#importFrom('spam', as.spam, solve.spam, chol.spam)
 
 importClassesFrom('sp',
 #                  "CRS",
@@ -26,32 +35,32 @@ importFrom('sp', coordinates, CRS, GridTopology, points2grid,
            )
 #import(sp)
 
-importFrom('spam', as.spam, solve.spam, chol.spam)
 
-import(tcltk2, tcltk, tkrplot)
-
+#import(tcltk2, tcltk, tkrplot)
 
 
-export(as.data.frame.RFspatialPointsDataFrame,
-       as.data.frame.RFspatialGridDataFrame,
-       as.matrix.RFspatialGridDataFrame, as.matrix.RFgridDataFrame, 
-       as.array.RFspatialGridDataFrame, as.array.RFgridDataFrame, 
-       as.vector.RFspatialGridDataFrame, as.vector.RFgridDataFrame, 
-       conventional2RFspDataFrame,
-# internal fcts used for maintainance 
-       Print, rfGenerateModels, checkExamples, FinalizeExample, Dependencies,
-       ScreenDevice,
-# obsolete       
-       CondSimu, Covariance, CovarianceFct, CovMatrix,
-       DeleteAllRegisters, DeleteRegister, DoSimulateRF,
-       EmpiricalVariogram, fitvario, fractal.dim, GaussRF, hurst,
-       InitSimulateRF, InitGaussRF, InitMaxStableRF, 
-       Kriging, MaxStableRF, RFparameters, Variogram,
-       plotWithCircles, 
-#others:
-       ## never delete PrintModelList as it is used in Roger's book!
-       PrintModelList,
-       sp2RF
+
+export(
+### internal fcts used for maintainance 
+    rfGenerateModels, rfGenerateConstants, rfGenerateTest, rfGenerateMaths,
+    checkExamples, FinalizeExample, Dependencies,
+### some functions used in the examples       
+    Print, ScreenDevice,
+### obsolete       
+    CondSimu, Covariance, CovarianceFct, CovMatrix,
+    DeleteAllRegisters, DeleteRegister, DoSimulateRF,
+    EmpiricalVariogram, fitvario, fractal.dim, GaussRF, hurst,
+    InitSimulateRF, InitGaussRF, InitMaxStableRF, 
+    Kriging, MaxStableRF, RFparameters, Variogram,
+    plotWithCircles,
+### maths
+    asin, atan, atan2, cos, sin, tan, acosh, asinh, atanh, cosh, sinh,
+    tanh, exp, log, expm1, log1p, logb, log2, sqrt, abs, floor, round, trunc,
+    gamma, lgamma, max, min, 
+### others:
+    ## never delete PrintModelList as it is used in Roger's book!
+    PrintModelList,
+    conventional2RFspDataFrame, sp2RF    
        )
 
 useDynLib(RandomFields)
@@ -61,7 +70,7 @@ useDynLib(RandomFields)
 
 exportClasses()
 
-exportMethods("[", "[<-", "+", show, plot, persp, anova, summary)
+exportMethods("[", "[<-", "+", "*", "/", "-", "^", "c", show, plot, persp, anova, summary)
 #, logLik, AIC, BIC)
 
 exportMethods(RFspDataFrame2conventional,
@@ -72,8 +81,24 @@ exportMethods(RFspDataFrame2conventional,
               isGridded,
               dimensions)
 
-
 ## S3 Methods
+S3method(as.data.frame, RFspatialGridDataFrame)
+S3method(as.data.frame, RFgridDataFrame)
+S3method(as.data.frame, RFspatialPointsDataFrame)
+S3method(as.data.frame, RFpointsDataFrame)
+S3method(as.matrix, RFspatialGridDataFrame)
+S3method(as.matrix, RFgridDataFrame)
+S3method(as.matrix, RFspatialPointsDataFrame)
+S3method(as.matrix, RFpointsDataFrame)
+S3method(as.array, RFspatialGridDataFrame)
+S3method(as.array, RFgridDataFrame)
+S3method(as.array, RFspatialPointsDataFrame)
+S3method(as.array, RFpointsDataFrame)
+S3method(as.vector, RFspatialGridDataFrame)
+S3method(as.vector, RFgridDataFrame)
+S3method(as.vector, RFspatialPointsDataFrame)
+S3method(as.vector, RFpointsDataFrame)
+
 
 S3method(summary, RFcrossvalidate)
 S3method(print, RFcrossvalidate)
@@ -105,6 +130,8 @@ S3method(print, RFgetModelInfo)
 S3method(as.matrix, GridTopology)
 S3method(as.matrix, RFgridDataFrame)
 S3method(cbind, RFgridDataFrame)
+S3method(hist, RFgridDataFrame)
+S3method(range, RFgridDataFrame)
 S3method(print, RFgridDataFrame)
 S3method(summary, RFgridDataFrame)
 
@@ -117,6 +144,8 @@ S3method(summary, RFoptElmnt)
 S3method(print, summary.RFoptElmnt)
 
 S3method(cbind, RFpointsDataFrame)
+S3method(hist, RFpointsDataFrame)
+S3method(range, RFpointsDataFrame)
 S3method(print, RFpointsDataFrame)
 S3method(summary, RFpointsDataFrame)
 S3method(print, summary.RFpointsDataFrame)
@@ -128,10 +157,14 @@ S3method(summary, RFsp)
 S3method(print, summary.RFsp)
 
 S3method(cbind, RFspatialGridDataFrame)
+S3method(hist, RFspatialGridDataFrame)
+S3method(range, RFspatialGridDataFrame)
 S3method(print, RFspatialGridDataFrame)
 S3method(contour, RFspatialGridDataFrame)
 
 S3method(cbind, RFspatialPointsDataFrame)
+S3method(hist, RFspatialPointsDataFrame)
+S3method(range, RFspatialPointsDataFrame)
 S3method(print, RFspatialPointsDataFrame)
 S3method(summary, RFspatialPointsDataFrame)
 
@@ -146,6 +179,9 @@ S3method(print, summary.RMmodel)
 
 S3method(print, RMmodelgenerator)
 
+#S3method(print, RandomFieldsReturn)
+#S3method(summary, RandomFieldsReturn)
+#S3method(print, summary.RandomFieldsReturn)
 
 S3method(anova, RMmodelFit)
 S3method(anova, RM_modelFit)

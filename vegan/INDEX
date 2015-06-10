@@ -98,6 +98,7 @@ nobs.adonis             Extract the Number of Observations from a vegan
 nullmodel               Null Model and Simulation
 oecosimu                Evaluate Statistics with Null Models of
                         Biological Communities
+ordiArrowTextXY         Support Functions for Drawing Vectors
 ordiarrows              Add Arrows and Line Segments to Ordination
                         Diagrams
 ordihull                Display Groups or Factor Levels in Ordination

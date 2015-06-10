@@ -1,8 +1,8 @@
 DubVoter                Voter turnout data in Greater
                         Dublin(SpatialPolygonsDataFrame)
-EWHP                    house price data set (DataFrame) in England and
+EWHP                    House price data set (DataFrame) in England and
                         Wales
-GWmodel-package         Geographically weighted models
+GWmodel-package         Geographically-Weighted Models
 Gedu.counties           Georgia counties data
                         (SpatialPolygonsDataFrame)
 Georgia                 Georgia census data set (csv file)
@@ -57,6 +57,9 @@ gwr.t.adjust            Adjust p-values for multiple hypothesis tests
                         in basic GWR
 gwss                    Geographically weighted summary statistics
                         (GWSS)
+mink.approach           Minkovski approach
+mink.matrixview         Visualisation of the results from
+                        'mink.approach'
 model.selection.gwr     Model selection for GWR with a given set of
                         independent variables
 model.sort.gwr          Sort the results of the GWR model selection

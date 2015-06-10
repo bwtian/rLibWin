@@ -4,6 +4,7 @@ as.bathy	as.bathy
 as.raster	as.raster
 as.SpatialGridDataFrame	as.SpatialGridDataFrame
 as.xyz	as.xyz
+autoplot.bathy	autoplot.bathy
 celt	celt
 check.bathy	check.bathy
 col2alpha	col2alpha
@@ -12,7 +13,11 @@ combine.buffers	combine.buffers
 create.buffer	create.buffer
 diag.bathy	diag.bathy
 dist2isobath	dist2isobath
+etopo	etopo
+etopo.colors	etopo
+etopo.colours	etopo
 florida	florida
+fortify.bathy	fortify.bathy
 get.area	get.area
 get.box	get.box
 get.depth	get.depth
@@ -37,6 +42,9 @@ plotProfile	plotProfile
 read.bathy	read.bathy
 readGEBCO.bathy	readGEBCO.bathy
 scaleBathy	scaleBathy
+scale_color_etopo	etopo
+scale_colour_etopo	etopo
+scale_fill_etopo	etopo
 setSQL	subsetSQL
 space.pies	space.pies
 subsetBathy	subsetBathy

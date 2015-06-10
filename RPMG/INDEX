@@ -22,6 +22,7 @@ getmem                  Get Member
 helpcolors              Help on Personal Color Palettes
 ilocator                Specialized Locator function
 itoxyz                  Vector Index to Matrix Index
+jpng                    png or pdf output
 jpostscript             Postscript Output
 label.it                Labels on Plots
 local.file              Get name for a Local file

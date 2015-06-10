@@ -1,5 +1,5 @@
 Iteration report        Detailed iteration report of nleqslv
-nleqslv                 Solving systems of non linear equations with
+nleqslv                 Solving systems of nonlinear equations with
                         Broyden or Newton
 nleqslv-package         Solving Nonlinear Systems of Equations
 print.test.nleqslv      Printing the result of 'testnslv'

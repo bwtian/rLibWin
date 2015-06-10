@@ -6,6 +6,8 @@ NE_lakes                Lakes in the Southern New England Region of the
 NLA_2007                Western Mountains Ecoregion Lakes in the EPA
                         National Lakes Assessment (NLA) for 2007
 SC_estuaries            Estuaries in South Carolina
+SpatialDesign           Create Objects of Class SpatialDesign
+SpatialDesign-class     Class "SpatialDesign"
 UT_ecoregions           Ecoregions in Utah
 adjwgt                  Adjust Initial Survey Design Weights
 albersgeod              Project Albers Projection in Plane to Latitude

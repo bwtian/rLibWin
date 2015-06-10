@@ -1,3 +1,510 @@
+2015-06-05 09:55  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-06-05 09:55  edzer
+
+	* DESCRIPTION, NAMESPACE, R/spdists.R, inst/include/sp.h, src/sp.h,
+	  src/sp.h.in: add some options to spDists.
+
+2015-06-02 20:46  edzer
+
+	* NAMESPACE, R/Spatial-methods.R, R/SpatialGridDataFrame-methods.R,
+	  R/bubble.R, man/bubble.Rd: add proper degree scales to bubble if
+	  data are longlat
+
+2015-05-28 19:15  edzer
+
+	* NAMESPACE, R/Spatial-methods.R, man/Spatial-class.Rd: add head
+	  and tail methods, donated by Don MacQueen
+
+2015-05-23 16:10  edzer
+
+	* R/spplot.R: clean up sppanel method for lists, argument first now
+	  has no default.
+
+2015-05-23 14:33  edzer
+
+	* R/merge.R, R/spdists.R, man/merge.Rd, man/spDistsN1.Rd: new
+	  method for sp::merge, supplied by Robert Hijmans;
+	  tidying spDists, when ncol(x) > 2
+
+2015-05-21 07:33  edzer
+
+	* R/SpatialPointsDataFrame-methods.R: in as.data.frame methods,
+	  pass ... on to data.frame()
+
+2015-05-19 18:50  edzer
+
+	* R/spdists.R, man/spDistsN1.Rd, src/gcdist.c, src/init.c,
+	  src/sp.h: added two options to spDists, to compute distance
+	  between consecutive
+	  points (as LineLength does), and to compute pairwise distances
+	  (diagonal).
+
+2015-05-19 07:10  edzer
+
+	* man/SpatialLines.Rd: tidy
+
+2015-05-18 13:35  edzer
+
+	* R/spplot.R: fix sp.layout bug, reported by Tim Appelhans on
+	  r-sig-geo
+
+2015-05-13 11:47  edzer
+
+	* R/spdists.R, man/spDistsN1.Rd: improved docs for spDists,
+	  mentioning that longlat is infered from x if x is Spatial
+
+2015-05-10 21:20  edzer
+
+	* R/Spatial-methods.R: remove warning on assigning lists to
+	  data.frame columns, requested
+	  by Sebastian Meyer.
+
+2015-05-04 08:59  rsbivand
+
+	* DESCRIPTION, NAMESPACE: expose compassRose
+
+2015-05-01 19:58  edzer
+
+	* src/zerodist.c: remove unused variable
+
+2015-04-26 19:09  edzer
+
+	* ChangeLog, DESCRIPTION: bump version
+
+2015-04-24 09:00  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-04-24 08:59  edzer
+
+	* ChangeLog, R/aggregate.R: aggregate: add drop_lower_td = TRUE to
+	  gIntersection call
+
+2015-04-24 08:57  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-04-24 07:42  rsbivand
+
+	* R/CRS-methods.R: change to nzchar
+
+2015-04-24 07:33  rsbivand
+
+	* R/CRS-methods.R, R/Class-Spatial.R, R/SpatialLines-methods.R,
+	  R/SpatialPolygons-methods.R, R/projected.R: change to nzchar
+
+2015-04-23 17:56  rsbivand
+
+	* R/CRS-methods.R: R-devel needs !is.na(projargs) in CRS for lazy
+	  loading
+
+2015-04-23 14:36  edzer
+
+	* man/as.SpatialPolygons.GridTopology.Rd: removed non-working
+	  example lines
+
+2015-04-23 10:47  rsbivand
+
+	* R/SpatialPolygonsDataFrame-methods.R, inst/include/sp_xports.c,
+	  src/sp_xports.c: SpatialPolygonsDataFrame error message
+
+2015-04-21 06:29  edzer
+
+	* man/spplot.Rd: modified example
+
+2015-04-20 19:16  edzer
+
+	* R/spplot.R: more spplot fixes
+
+2015-04-20 18:58  edzer
+
+	* R/spplot.R, man/spplot.Rd: more patches from Josh O'Brien
+
+2015-04-19 17:10  edzer
+
+	* DESCRIPTION: add Josh O'Brien to the ctb list
+
+2015-04-19 17:04  edzer
+
+	* R/spplot.R, man/spplot.Rd: corrections to sp.layout processing,
+	  with help from Josh O'Brien
+
+2015-04-16 19:16  edzer
+
+	* .Rbuildignore, ChangeLog, build-prep.sh, build-release.sh: add
+	  build-release script, so that not every build triggers an svn
+	  `tidy' commit
+
+2015-04-16 19:15  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-04-16 19:14  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-04-16 17:08  rsbivand
+
+	* inst/ChangeLog: tidy
+
+2015-04-16 16:39  edzer
+
+	* R/aggregate.R: add comments to somewhat dense code
+
+2015-04-16 14:38  edzer
+
+	* R/aggregate.R: break when IDs contain space characters
+
+2015-04-16 12:44  rsbivand
+
+	* inst/ChangeLog: tidy
+
+2015-04-16 12:44  rsbivand
+
+	* inst/ChangeLog: tidy
+
+2015-04-16 10:01  edzer
+
+	* .Rbuildignore, R/SpatialPolygonsDataFrame-methods.R,
+	  R/aggregate.R, man/aggregate.Rd: correct SpatialPolygonsDataFrame
+	  subsetting with character argument
+	  add area-weighted aggregation, as an option to sp::aggregate
+
+2015-04-14 21:36  edzer
+
+	* ChangeLog, R/Spatial-methods.R, build-prep.sh: warn when
+	  data.frame is assigned to attribute vector
+
+2015-04-14 13:58  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-04-13 17:38  edzer
+
+	* inst/ChangeLog: tidy
+
+2015-04-13 17:35  edzer
+
+	* ChangeLog, inst/ChangeLog, inst/include/sp.h, src/sp.h,
+	  src/sp.h.in: tidy
+
+2015-04-13 17:34  edzer
+
+	* ChangeLog, inst/ChangeLog, inst/include/sp_xports.c,
+	  src/sp_xports.c: tidy
+
+2015-04-13 17:23  edzer
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-04-13 17:19  edzer
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-04-13 15:29  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-04-13 15:28  rsbivand
+
+	* .Rbuildignore, ChangeLog, build-prep.sh, svn2cl.xsl: move to
+	  distributed svn2cl
+
+2015-04-13 10:57  edzer
+
+	* inst/include/sp_xports.c, src/sp_xports.c: tidy
+
+2015-04-13 08:00  rsbivand
+
+	* src/sp.h.in: add sp/src/sp.h.in
+
+2015-04-13 07:49  edzer
+
+	* src/pip.c, src/pip2.c, src/sp_xports.c: add const qualifiers,
+	  tidy sp_xports.c
+
+2015-04-09 19:17  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-04-09 19:16  rsbivand
+
+	* .Rbuildignore, ChangeLog, DESCRIPTION, build-prep.sh,
+	  inst/ChangeLog: tidy
+
+2015-04-09 19:10  rsbivand
+
+	* .Rbuildignore: devel check issues (urls)
+
+2015-04-09 19:07  rsbivand
+
+	* build-prep.sh, inst/include/sp.h, inst/include/sp_xports.c:
+	  adding build-prep.sh
+
+2015-04-09 17:09  rsbivand
+
+	* DESCRIPTION, man/meuse.Rd, man/panel.Rd, man/spDistsN1.Rd,
+	  man/spplot.Rd: devel check issues (urls)
+
+2015-04-09 13:17  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-04-09 13:16  rsbivand
+
+	* man/Spatial-class.Rd, man/SpatialLines-class.Rd,
+	  man/SpatialPoints-class.Rd, man/SpatialPolygons-class.Rd:
+	  document plot methods
+
+2015-04-09 11:14  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-04-09 11:11  rsbivand
+
+	* DESCRIPTION, inst/include/sp.h, inst/include/sp_xports.c,
+	  man/spplot.Rd, src/init.c, src/pip.c, src/pip2.c, src/sp.h,
+	  src/sp_xports.c, tests/fail1.R, tests/fail1.Rout.save: duplicate
+
+2015-04-08 19:19  rsbivand
+
+	* man/CRS-class.Rd, man/degaxis.Rd, man/is.projected.Rd,
+	  man/nowrapSpatialLines.Rd, man/recenter-methods.Rd,
+	  src/sp_xports.c: first cut duplicate and +ellps in man/*
+
+2015-03-30 15:30  edzer
+
+	* man/spplot.Rd: add spplot example with floating legend
+
+2015-03-30 07:50  edzer
+
+	* man/sp-deprecated.Rd: tidy; forgot overlay method definition
+
+2015-03-30 07:39  edzer
+
+	* DESCRIPTION, R/Spatial-methods.R, R/overlay.R,
+	  man/sp-deprecated.Rd: remove overlay method instances, keep
+	  definition for raster
+
+2015-03-28 11:53  edzer
+
+	* man/over.Rd, man/spplot.Rd: tidy examples
+
+2015-03-27 23:18  edzer
+
+	* R/spplot.R, man/spplot.Rd: make `first' argument work again; add
+	  examples of simpler sp.layout.
+
+2015-03-22 19:54  edzer
+
+	* R/spplot.R: argument `first' was not passed; spotted by Josh
+	  O'Brien
+
+2015-03-20 08:13  edzer
+
+	* R/spplot.R: bug on plot order, reported by Josh O'Brien
+
+2015-03-17 18:40  edzer
+
+	* R/bubble.R, demo/gallery.R: update sppanel usage
+
+2015-03-17 18:16  edzer
+
+	* R/spplot.R: col specification for panel.polygonsplot, by Josh
+	  O'Brien
+
+2015-03-16 16:51  edzer
+
+	* man/spplot.Rd: typo
+
+2015-03-15 15:04  edzer
+
+	* NAMESPACE, R/Spatial-methods.R, R/spplot.R, man/spplot.Rd:
+	  refactor sp.layout argument; drop requirement to name function,
+	  allow mixing Spatial* objects; introduce sppanel generic.
+
+2015-03-15 11:38  edzer
+
+	* R/spplot.R, demo/depend.R: sp.lines now obeys col argument longer
+	  than one, email from Josh O'Brien
+
+2015-03-10 14:39  edzer
+
+	* demo/depend.R: change cran mirror
+
+2015-03-09 20:54  edzer
+
+	* DESCRIPTION, R/SpatialPointsDataFrame-methods.R, R/overlay.R,
+	  tests/fail1.Rout.save, tests/pass1.R, tests/pass1.Rout.save: add
+	  back overlay; tidy SpatialPointsDataFrame(), add tests
+
+2015-03-09 11:53  edzer
+
+	* R/SpatialPointsDataFrame-methods.R, man/SpatialPoints.Rd,
+	  tests/fail1.Rout.save, tests/pass1.R, tests/pass1.Rout.save:
+	  match.ID is now missing in SpatialPointsDataFrame(), a warning is
+	  given if matching is applied but match.ID was not set; see the
+	  examples in the docs.
+
+2015-03-09 10:36  rsbivand
+
+	* DESCRIPTION: remove overlay.R from Collate
+
+2015-03-09 10:20  edzer
+
+	* R/SpatialPointsDataFrame-methods.R, man/SpatialPoints.Rd:
+	  match.ID defaults to TRUE if coords is not a data.frame,
+	  otherwise FALSE (for backward compatibility)
+
+2015-03-09 10:07  edzer
+
+	* DESCRIPTION, R/CRS-methods.R, R/Class-CRS.R,
+	  R/Class-SpatialGrid.R, R/Class-SpatialGridDataFrame.R,
+	  R/Class-SpatialPoints.R, R/Class-SpatialPointsDataFrame.R,
+	  R/Spatial-methods.R, R/SpatialGridDataFrame-methods.R,
+	  R/SpatialLines-methods.R, R/SpatialPoints-methods.R,
+	  R/SpatialPointsDataFrame-methods.R, R/SpatialPolygons-methods.R,
+	  R/rbind.R, R/subset.R, man/sp-deprecated.Rd, src/sp_xports.c,
+	  tests/pass1.R, tests/pass1.Rout.save: improve coordinates() logic
+	  to keep row.names of data.frame's
+	  improve support for zero-feature objects (subset, rbind)
+	  add rgdal check on CRS() if rgdal is installed, instead of loaded
+	  have $<- promote a SpatialXxx to a SpatialXxxDataFrame
+	  Version bump to 1.1-0
+
+2015-03-05 23:58  edzer
+
+	* NAMESPACE: remove duplicated gridat
+
+2015-03-02 17:30  edzer
+
+	* vignettes/over.Rnw: update `over' vignette
+
+2015-03-02 15:04  edzer
+
+	* vignettes/over.Rnw: update
+
+2015-03-02 12:57  edzer
+
+	* R/over.R, man/over.Rd: call `over' methods in rgeos automatically
+
+2015-03-02 11:19  edzer
+
+	* R/CRS-methods.R, R/Spatial-methods.R, man/spTransform.Rd,
+	  tests/fail1.Rout.save: load rgdal namespace when needed for
+	  spTransform, clean up methods
+
+2015-03-02 10:21  edzer
+
+	* R/Spatial-methods.R, man/Spatial-class.Rd: allow $<- on
+	  geometry-only objects, promoting them to *DataFrame
+
+2015-02-26 21:00  edzer
+
+	* DESCRIPTION, R/overlay.R, R/projected.R, R/spsample.R,
+	  man/is.projected.Rd, man/sp-deprecated.Rd: remove overlay()
+	  methods altogether, leaving generic for raster
+	  tidy & clean projected.R
+	  add warning to spsample.SpatialLines when data are longlat
+
+2015-02-20 14:36  rsbivand
+
+	* DESCRIPTION: add sp contributors
+
+2015-02-19 21:14  edzer
+
+	* R/SpatialGrid-methods.R: further optimize of plot.SpatialPixels
+
+2015-02-19 17:25  edzer
+
+	* R/SpatialGrid-methods.R, man/SpatialPixels-class.Rd: reduce
+	  number of segments() calls to inprove performance
+
+2015-02-19 15:57  edzer
+
+	* .Rbuildignore, R/SpatialGrid-methods.R,
+	  man/SpatialPixels-class.Rd: plotting SpatialGrid or SpatialPixels
+	  now plots a grid, unless grid = FALSE
+
+2015-02-19 14:05  edzer
+
+	* DESCRIPTION, R/Class-CRS.R, R/Class-GridTopology.R,
+	  R/Class-Spatial.R, R/Class-SpatialGrid.R,
+	  R/Class-SpatialGridDataFrame.R, R/Class-SpatialLines.R,
+	  R/Class-SpatialLinesDataFrame.R, R/Class-SpatialPoints.R,
+	  R/Class-SpatialPointsDataFrame.R, R/Class-SpatialPolygons.R,
+	  R/Class-SpatialPolygonsDataFrame.R, R/SpatialGrid-methods.R,
+	  man/over.Rd: increase dependency on R >= 3.0.0, replace
+	  representation by slots;
+	  remove prototypes from class definitions
+
+2015-01-24 18:54  edzer
+
+	* man/addattr.Rd, man/over.Rd, man/spsample.Rd: cleanup references
+	  to overlay
+
+2015-01-23 21:15  edzer
+
+	* man/SpatialPoints.Rd: correct docs regarding what match.ID
+	  exactly does
+
+2015-01-22 12:27  edzer
+
+	* R/SpatialPoints-methods.R, R/spsample.R, man/spsample.Rd,
+	  tests/grid.Rout.save: fix SpatialPointsDataFrame match.ID issue,
+	  raised in
+	  https://stat.ethz.ch/pipermail/r-sig-geo/2015-January/022242.html;
+	  fix makegrid bug in case of negative bbox
+
+2015-01-19 20:36  edzer
+
+	* R/spplot.R: sp.panel.layout is now also called after the points
+	  are plotted
+
+2015-01-18 22:17  edzer
+
+	* DESCRIPTION, R/spplot.R, man/spplot.Rd: bump version; allow list
+	  for colorkey argument in spplot
+
+2015-01-15 12:10  edzer
+
+	* DESCRIPTION: Title Case Title
+
+2014-12-23 19:56  edzer
+
+	* inst/ChangeLog, man/meuse.riv.Rd: add plot to example
+
+2014-12-23 14:57  edzer
+
+	* data/meuse.area.rda, demo/meuse.R, man/meuse.riv.Rd: add
+	  meuse.area outline of meuse.grid
+
+2014-12-05 14:52  edzer
+
+	* R/over.R: add comment
+
+2014-12-05 14:51  edzer
+
+	* R/SpatialPoints-methods.R, R/SpatialPointsDataFrame-methods.R:
+	  add error messages when NA values occur in SpatialPoints objects
+
+2014-11-17 14:32  edzer
+
+	* R/merge.R: y -> dy
+
+2014-11-16 19:12  edzer
+
+	* DESCRIPTION, R/merge.R, man/merge.Rd: add duplicateGeoms argument
+	  to merge(), add Robert as ctb
+
+2014-11-09 11:21  edzer
+
+	* R/CRS-methods.R, R/disaggregate.R, inst/ChangeLog: release
+	  candidate 1.0-16
+
 2014-11-09 10:45  edzer
 
 	* inst/ChangeLog: ready for release

@@ -11,7 +11,7 @@ dbmssEnvelope.object	dbmssEnvelope
 DEnvelope	DEnvelope
 Dhat	Dhat
 DistKd	Rcpp
-FillEnveloppe	FillEnveloppe
+FillEnvelope	FillEnvelope
 gEnvelope	gEnvelope
 ghat	ghat
 GlobalEnvelope	GlobalEnvelope

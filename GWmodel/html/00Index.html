@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Geographically weighted models</title>
+<html><head><title>R: Geographically-Weighted Models</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
-<h1> Geographically weighted models
+<h1> Geographically-Weighted Models
 <img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
 </h1>
 <hr>
 <div align="center">
 <a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
 <a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
-</div><h2>Documentation for package &lsquo;GWmodel&rsquo; version 1.2-3</h2>
+</div><h2>Documentation for package &lsquo;GWmodel&rsquo; version 1.2-5</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 </ul>
@@ -37,7 +37,7 @@
 
 <table width="100%">
 <tr><td width="25%"><a href="GWmodel-package.html">GWmodel-package</a></td>
-<td>Geographically weighted models</td></tr>
+<td>Geographically-Weighted Models</td></tr>
 </table>
 
 <h2><a name="B">-- B --</a></h2>
@@ -53,6 +53,8 @@
 <td>Bandwidth selection for basic GWR</td></tr>
 <tr><td width="25%"><a href="bw.gwr.lcr.html">bw.gwr.lcr</a></td>
 <td>Bandwidth selection for locally compensated ridge GWR (GWR-LCR)</td></tr>
+<tr><td width="25%"><a href="mink.approach.html">bw.gwr1</a></td>
+<td>Minkovski approach</td></tr>
 </table>
 
 <h2><a name="C">-- C --</a></h2>
@@ -81,9 +83,9 @@
 
 <table width="100%">
 <tr><td width="25%"><a href="EWHP.html">EWHP</a></td>
-<td>house price data set (DataFrame) in England and Wales</td></tr>
+<td>House price data set (DataFrame) in England and Wales</td></tr>
 <tr><td width="25%"><a href="EWHP.html">ewhp</a></td>
-<td>house price data set (DataFrame) in England and Wales</td></tr>
+<td>House price data set (DataFrame) in England and Wales</td></tr>
 <tr><td width="25%"><a href="EWOutline.html">ewoutline</a></td>
 <td>Outline of England and Wales for data EWHP</td></tr>
 <tr><td width="25%"><a href="model.selection.gwr.html">extract.mat</a></td>
@@ -149,7 +151,7 @@
 <tr><td width="25%"><a href="gwda.html">gwda</a></td>
 <td>GW Discriminant Analysis</td></tr>
 <tr><td width="25%"><a href="GWmodel-package.html">GWmodel</a></td>
-<td>Geographically weighted models</td></tr>
+<td>Geographically-Weighted Models</td></tr>
 <tr><td width="25%"><a href="gwpca.html">gwpca</a></td>
 <td>GWPCA</td></tr>
 <tr><td width="25%"><a href="gwpca.cv.html">gwpca.cv</a></td>
@@ -158,6 +160,8 @@
 <td>Cross-validation data at each observation location for a GWPCA</td></tr>
 <tr><td width="25%"><a href="bw.gwr.html">gwr.aic</a></td>
 <td>Bandwidth selection for basic GWR</td></tr>
+<tr><td width="25%"><a href="mink.approach.html">gwr.aic1</a></td>
+<td>Minkovski approach</td></tr>
 <tr><td width="25%"><a href="gwr.basic.html">gwr.basic</a></td>
 <td>Basic GWR model</td></tr>
 <tr><td width="25%"><a href="gwr.generalised.html">gwr.binomial</a></td>
@@ -170,6 +174,8 @@
 <td>Cross-validation score for a specified bandwidth for basic GWR</td></tr>
 <tr><td width="25%"><a href="gwr.cv.contrib.html">gwr.cv.contrib</a></td>
 <td>Cross-validation data at each observation location for a basic GWR model</td></tr>
+<tr><td width="25%"><a href="mink.approach.html">gwr.cv1</a></td>
+<td>Minkovski approach</td></tr>
 <tr><td width="25%"><a href="gwr.generalised.html">gwr.fitted</a></td>
 <td>Generalised GWR models, including Poisson and Binomial options</td></tr>
 <tr><td width="25%"><a href="gwr.generalised.html">gwr.generalised</a></td>
@@ -222,6 +228,10 @@
 <h2><a name="M">-- M --</a></h2>
 
 <table width="100%">
+<tr><td width="25%"><a href="mink.approach.html">mink.approach</a></td>
+<td>Minkovski approach</td></tr>
+<tr><td width="25%"><a href="mink.matrixview.html">mink.matrixview</a></td>
+<td>Visualisation of the results from 'mink.approach'</td></tr>
 <tr><td width="25%"><a href="model.selection.gwr.html">model.selection.gwr</a></td>
 <td>Model selection for GWR with a given set of independent variables</td></tr>
 <tr><td width="25%"><a href="model.sort.gwr.html">model.sort.gwr</a></td>
@@ -257,8 +267,6 @@
 <td>Print the output of the function 'gwss'</td></tr>
 <tr><td width="25%"><a href="gwr.mixed.html">print.mgwr</a></td>
 <td>Mixed GWR</td></tr>
-<tr><td width="25%"><a href="print.gwrm.html">print.summary.lm</a></td>
-<td>Print the output of the function 'gwr.basic'</td></tr>
 </table>
 
 <h2><a name="R">-- R --</a></h2>

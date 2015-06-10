@@ -10,7 +10,6 @@ stream_in, stream_out	stream_in
 stream_out	stream_in
 toJSON	fromJSON
 toJSON, fromJSON	fromJSON
-toMongo	toMongo
 unbox	unbox
 unserializeJSON	serializeJSON
 validate	validate

@@ -39,6 +39,7 @@ predict.rqss            Predict from fitted nonparametric quantile
                         regression smoothing spline models
 print.rq                Print an rq object
 print.summary.rq        Print Quantile Regression Summary Object
+qrisk                   Function to compute Choquet portfolio weights
 qss                     Additive Nonparametric Terms for rqss Fitting
 ranks                   Quantile Regression Ranks
 rearrange               Rearrangement
@@ -52,6 +53,7 @@ rq.fit.fnb              Quantile Regression Fitting via Interior Point
                         Methods
 rq.fit.fnc              Quantile Regression Fitting via Interior Point
                         Methods
+rq.fit.hogg             weighted quantile regression fitting
 rq.fit.lasso            Lasso Penalized Quantile Regression
 rq.fit.pfn              Preprocessing Algorithm for Quantile Regression
 rq.fit.scad             SCADPenalized Quantile Regression
@@ -68,6 +70,8 @@ rqs.fit                 Function to fit multiple response quantile
 rqss                    Additive Quantile Regression Smoothing
 rqss.object             RQSS Objects and Summarization Thereof
 sfn.control             Set Control Parameters for Sparse Fitting
+srisk                   Markowitz (Mean-Variance) Portfolio
+                        Optimization
 summary.crq             Summary methods for Censored Quantile
                         Regression
 summary.rq              Summary methods for Quantile Regression

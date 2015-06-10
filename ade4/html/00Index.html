@@ -1,18 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Analysis of Ecological Data : Exploratory and Euclidean methods
-in Environmental sciences</title>
+<html><head><title>R: Analysis of Ecological Data : Exploratory and Euclidean Methods
+in Environmental Sciences</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
-<h1> Analysis of Ecological Data : Exploratory and Euclidean methods
-in Environmental sciences
+<h1> Analysis of Ecological Data : Exploratory and Euclidean Methods
+in Environmental Sciences
 <img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
 </h1>
 <hr>
 <div align="center">
 <a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
 <a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
-</div><h2>Documentation for package &lsquo;ade4&rsquo; version 1.6-2</h2>
+</div><h2>Documentation for package &lsquo;ade4&rsquo; version 1.7-2</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 </ul>
@@ -108,10 +108,18 @@ in Environmental sciences
 <td>the class of objects 'kdist' (K distance matrices)</td></tr>
 <tr><td width="25%"><a href="dudi.html">as.dudi</a></td>
 <td>Duality Diagram</td></tr>
+<tr><td width="25%"><a href="randboot.html">as.krandboot</a></td>
+<td>Bootstrap simulations</td></tr>
 <tr><td width="25%"><a href="krandtest.html">as.krandtest</a></td>
 <td>Class of the Permutation Tests (in C).</td></tr>
+<tr><td width="25%"><a href="randxval.html">as.krandxval</a></td>
+<td>Two-fold cross-validation</td></tr>
+<tr><td width="25%"><a href="randboot.html">as.randboot</a></td>
+<td>Bootstrap simulations</td></tr>
 <tr><td width="25%"><a href="randtest.html">as.randtest</a></td>
 <td>Class of the Permutation Tests (in C).</td></tr>
+<tr><td width="25%"><a href="randxval.html">as.randxval</a></td>
+<td>Two-fold cross-validation</td></tr>
 <tr><td width="25%"><a href="rtest.html">as.rtest</a></td>
 <td>Class of the Permutation Tests (in R).</td></tr>
 <tr><td width="25%"><a href="as.taxo.html">as.taxo</a></td>
@@ -141,6 +149,8 @@ in Environmental sciences
 <td>Between-Class Analysis</td></tr>
 <tr><td width="25%"><a href="betweencoinertia.html">bca.coinertia</a></td>
 <td>Between-class coinertia analysis</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">bca.dpcoa</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="between.html">bca.dudi</a></td>
 <td>Between-Class Analysis</td></tr>
 <tr><td width="25%"><a href="bca.rlq.html">bca.rlq</a></td>
@@ -165,6 +175,8 @@ in Environmental sciences
 <td>Buech basin</td></tr>
 <tr><td width="25%"><a href="butterfly.html">butterfly</a></td>
 <td>Genetics-Ecology-Environment Triple</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">bwca.dpcoa</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 </table>
 
 <h2><a name="C">-- C --</a></h2>
@@ -198,6 +210,8 @@ in Environmental sciences
 <td>Charolais-Zebus</td></tr>
 <tr><td width="25%"><a href="chevaine.html">chevaine</a></td>
 <td>Enzymatic polymorphism in Leuciscus cephalus</td></tr>
+<tr><td width="25%"><a href="chickenk.html">chickenk</a></td>
+<td>Veterinary epidemiological study to assess the risk factors for losses in broiler chickens</td></tr>
 <tr><td width="25%"><a href="clementines.html">clementines</a></td>
 <td>Fruit Production</td></tr>
 <tr><td width="25%"><a href="cnc2003.html">cnc2003</a></td>
@@ -224,6 +238,8 @@ in Environmental sciences
 <td>Corvus morphology</td></tr>
 <tr><td width="25%"><a href="costatis.html">costatis</a></td>
 <td>STATIS and Co-Inertia : Analysis of a series of paired ecological tables</td></tr>
+<tr><td width="25%"><a href="costatis.randtest.html">costatis.randtest</a></td>
+<td>Monte-Carlo test on a Costatis analysis (in C).</td></tr>
 <tr><td width="25%"><a href="genet.html">count2genet</a></td>
 <td>A class of data: tables of populations and alleles</td></tr>
 <tr><td width="25%"><a href="scalewt.html">covfacwt</a></td>
@@ -384,6 +400,8 @@ in Environmental sciences
 <td>Is a Distance Matrix Euclidean ?</td></tr>
 <tr><td width="25%"><a href="ktab.html">is.ktab</a></td>
 <td>the class of objects 'ktab' (K-tables)</td></tr>
+<tr><td width="25%"><a href="orthobasis.html">is.orthobasis</a></td>
+<td>Orthonormal basis for orthonormal transform</td></tr>
 </table>
 
 <h2><a name="J">-- J --</a></h2>
@@ -420,14 +438,16 @@ in Environmental sciences
 <td>Multiple Graphs for a Partial Triadic Analysis</td></tr>
 <tr><td width="25%"><a href="kplot.sepan.html">kplot.sepan</a></td>
 <td>Multiple Graphs for Separated Analyses in a K-tables</td></tr>
-<tr><td width="25%"><a href="kplot.sepan.html">kplot.sepan.coa</a></td>
-<td>Multiple Graphs for Separated Analyses in a K-tables</td></tr>
 <tr><td width="25%"><a href="kplot.statis.html">kplot.statis</a></td>
 <td>Multiple Graphs of a STATIS Analysis</td></tr>
+<tr><td width="25%"><a href="kplot.sepan.html">kplotsepan.coa</a></td>
+<td>Multiple Graphs for Separated Analyses in a K-tables</td></tr>
 <tr><td width="25%"><a href="mdpcoa.html">kplotX.mdpcoa</a></td>
 <td>Multiple Double Principal Coordinate Analysis</td></tr>
 <tr><td width="25%"><a href="krandtest.html">krandtest</a></td>
 <td>Class of the Permutation Tests (in C).</td></tr>
+<tr><td width="25%"><a href="randxval.html">krandxval</a></td>
+<td>Two-fold cross-validation</td></tr>
 <tr><td width="25%"><a href="ktab.html">ktab</a></td>
 <td>the class of objects 'ktab' (K-tables)</td></tr>
 <tr><td width="25%"><a href="ktab.data.frame.html">ktab.data.frame</a></td>
@@ -438,7 +458,7 @@ in Environmental sciences
 <td>Creation of a K-tables from a list of duality diagrams</td></tr>
 <tr><td width="25%"><a href="ktab.match2ktabs.html">ktab.match2ktabs</a></td>
 <td>STATIS and Co-Inertia : Analysis of a series of paired ecological tables</td></tr>
-<tr><td width="25%"><a href="ktab.html">ktab.util.addfactor&lt;-</a></td>
+<tr><td width="25%"><a href="ktab.html">ktab.util.addfactor</a></td>
 <td>the class of objects 'ktab' (K-tables)</td></tr>
 <tr><td width="25%"><a href="ktab.html">ktab.util.names</a></td>
 <td>the class of objects 'ktab' (K-tables)</td></tr>
@@ -480,6 +500,10 @@ in Environmental sciences
 <td>Phylogeny and quantitative traits of flowers</td></tr>
 <tr><td width="25%"><a href="mariages.html">mariages</a></td>
 <td>Correspondence Analysis Table</td></tr>
+<tr><td width="25%"><a href="mbpcaiv.html">mbpcaiv</a></td>
+<td>Multiblock principal component analysis with instrumental variables</td></tr>
+<tr><td width="25%"><a href="mbpls.html">mbpls</a></td>
+<td>Multiblock partial least squares</td></tr>
 <tr><td width="25%"><a href="mcoa.html">mcoa</a></td>
 <td>Multiple CO-inertia Analysis</td></tr>
 <tr><td width="25%"><a href="mdpcoa.html">mdpcoa</a></td>
@@ -566,8 +590,6 @@ in Environmental sciences
 <td>Orthonormal basis for orthonormal transform</td></tr>
 <tr><td width="25%"><a href="orthobasis.html">orthobasis.line</a></td>
 <td>Orthonormal basis for orthonormal transform</td></tr>
-<tr><td width="25%"><a href="orthobasis.html">orthobasis.listw</a></td>
-<td>Orthonormal basis for orthonormal transform</td></tr>
 <tr><td width="25%"><a href="orthobasis.html">orthobasis.mat</a></td>
 <td>Orthonormal basis for orthonormal transform</td></tr>
 <tr><td width="25%"><a href="orthobasis.html">orthobasis.neig</a></td>
@@ -595,6 +617,8 @@ in Environmental sciences
 <td>Principal Component Analysis with respect to orthogonal instrumental variables</td></tr>
 <tr><td width="25%"><a href="pcoscaled.html">pcoscaled</a></td>
 <td>Simplified Analysis in Principal Coordinates</td></tr>
+<tr><td width="25%"><a href="pcw.html">pcw</a></td>
+<td>Distribution of of tropical trees along the Panama canal</td></tr>
 <tr><td width="25%"><a href="perthi02.html">perthi02</a></td>
 <td>Contingency Table with a partition in Molecular Biology</td></tr>
 <tr><td width="25%"><a href="phylog.html">phylog</a></td>
@@ -635,6 +659,8 @@ in Environmental sciences
 <td>Multivariate spatial analysis</td></tr>
 <tr><td width="25%"><a href="niche.html">plot.niche</a></td>
 <td>Method to Analyse a pair of tables : Environmental and Faunistic Data</td></tr>
+<tr><td width="25%"><a href="orthobasis.html">plot.orthobasis</a></td>
+<td>Orthonormal basis for orthonormal transform</td></tr>
 <tr><td width="25%"><a href="pcaiv.html">plot.pcaiv</a></td>
 <td>Principal component analysis with respect to instrumental variables</td></tr>
 <tr><td width="25%"><a href="plot.phylog.html">plot.phylog</a></td>
@@ -681,6 +707,8 @@ in Environmental sciences
 <td>Apportionment of Quadratic Entropy</td></tr>
 <tr><td width="25%"><a href="plot.between.html">print.betcoi</a></td>
 <td>Between-Class Analysis</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">print.betdpcoa</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="bca.rlq.html">print.betrlq</a></td>
 <td>Between-Class RLQ analysis</td></tr>
 <tr><td width="25%"><a href="plot.between.html">print.between</a></td>
@@ -699,14 +727,20 @@ in Environmental sciences
 <td>K-tables Correspondence Analysis with the same rows and the same columns</td></tr>
 <tr><td width="25%"><a href="kdist.html">print.kdist</a></td>
 <td>the class of objects 'kdist' (K distance matrices)</td></tr>
+<tr><td width="25%"><a href="randboot.html">print.krandboot</a></td>
+<td>Bootstrap simulations</td></tr>
 <tr><td width="25%"><a href="krandtest.html">print.krandtest</a></td>
 <td>Class of the Permutation Tests (in C).</td></tr>
+<tr><td width="25%"><a href="randxval.html">print.krandxval</a></td>
+<td>Two-fold cross-validation</td></tr>
 <tr><td width="25%"><a href="ktab.html">print.ktab</a></td>
 <td>the class of objects 'ktab' (K-tables)</td></tr>
 <tr><td width="25%"><a href="mcoa.html">print.mcoa</a></td>
 <td>Multiple CO-inertia Analysis</td></tr>
 <tr><td width="25%"><a href="mfa.html">print.mfa</a></td>
 <td>Multiple Factorial Analysis</td></tr>
+<tr><td width="25%"><a href="multiblock.html">print.multiblock</a></td>
+<td>Display and summarize multiblock objects</td></tr>
 <tr><td width="25%"><a href="multispati.html">print.multispati</a></td>
 <td>Multivariate spatial analysis</td></tr>
 <tr><td width="25%"><a href="neig.html">print.neig</a></td>
@@ -725,8 +759,12 @@ in Environmental sciences
 <td>Simple Procruste Rotation between two sets of points</td></tr>
 <tr><td width="25%"><a href="pta.html">print.pta</a></td>
 <td>Partial Triadic Analysis of a K-tables</td></tr>
+<tr><td width="25%"><a href="randboot.html">print.randboot</a></td>
+<td>Bootstrap simulations</td></tr>
 <tr><td width="25%"><a href="randtest.html">print.randtest</a></td>
 <td>Class of the Permutation Tests (in C).</td></tr>
+<tr><td width="25%"><a href="randxval.html">print.randxval</a></td>
+<td>Two-fold cross-validation</td></tr>
 <tr><td width="25%"><a href="rlq.html">print.rlq</a></td>
 <td>RLQ analysis</td></tr>
 <tr><td width="25%"><a href="rtest.html">print.rtest</a></td>
@@ -737,6 +775,8 @@ in Environmental sciences
 <td>STATIS, a method for analysing K-tables</td></tr>
 <tr><td width="25%"><a href="plot.within.html">print.witcoi</a></td>
 <td>Within-Class Analysis</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">print.witdpcoa</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="plot.within.html">print.within</a></td>
 <td>Within-Class Analysis</td></tr>
 <tr><td width="25%"><a href="wca.rlq.html">print.witrlq</a></td>
@@ -765,6 +805,10 @@ in Environmental sciences
 <table width="100%">
 <tr><td width="25%"><a href="plot.phylog.html">radial.phylog</a></td>
 <td>Plot phylogenies</td></tr>
+<tr><td width="25%"><a href="randboot.html">randboot</a></td>
+<td>Bootstrap simulations</td></tr>
+<tr><td width="25%"><a href="randboot.multiblock.html">randboot.multiblock</a></td>
+<td>Bootstraped simulations for multiblock methods</td></tr>
 <tr><td width="25%"><a href="randEH.html">randEH</a></td>
 <td>Nee and May's random process</td></tr>
 <tr><td width="25%"><a href="randtest.html">randtest</a></td>
@@ -773,6 +817,8 @@ in Environmental sciences
 <td>Permutation tests on an analysis of molecular variance (in C).</td></tr>
 <tr><td width="25%"><a href="randtest.between.html">randtest.between</a></td>
 <td>Monte-Carlo Test on the between-groups inertia percentage (in C).</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">randtest.betwit</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="randtest.pcaiv.html">randtest.cca</a></td>
 <td>Monte-Carlo Test on the percentage of explained (i.e.  constrained) inertia</td></tr>
 <tr><td width="25%"><a href="randtest.coinertia.html">randtest.coinertia</a></td>
@@ -783,8 +829,12 @@ in Environmental sciences
 <td>Monte-Carlo Test on the percentage of explained (i.e.  constrained) inertia</td></tr>
 <tr><td width="25%"><a href="randtest.pcaiv.html">randtest.pcaivortho</a></td>
 <td>Monte-Carlo Test on the percentage of explained (i.e.  constrained) inertia</td></tr>
+<tr><td width="25%"><a href="procuste.html">randtest.procuste</a></td>
+<td>Simple Procruste Rotation between two sets of points</td></tr>
 <tr><td width="25%"><a href="rlq.html">randtest.rlq</a></td>
 <td>RLQ analysis</td></tr>
+<tr><td width="25%"><a href="randxval.html">randxval</a></td>
+<td>Two-fold cross-validation</td></tr>
 <tr><td width="25%"><a href="rankrock.html">rankrock</a></td>
 <td>Ordination Table</td></tr>
 <tr><td width="25%"><a href="score.coa.html">reciprocal.coa</a></td>
@@ -882,6 +932,8 @@ in Environmental sciences
 <td>Non-linear Iterative Partial Least Squares (NIPALS) algorithm</td></tr>
 <tr><td width="25%"><a href="dudi.pco.html">scatter.pco</a></td>
 <td>Principal Coordinates Analysis</td></tr>
+<tr><td width="25%"><a href="scatterutil.html">scatterutil</a></td>
+<td>Graphical utility functions</td></tr>
 <tr><td width="25%"><a href="scatterutil.html">scatterutil.base</a></td>
 <td>Graphical utility functions</td></tr>
 <tr><td width="25%"><a href="scatterutil.html">scatterutil.chull</a></td>
@@ -952,28 +1004,40 @@ in Environmental sciences
 <td>Morphometric Evolution</td></tr>
 <tr><td width="25%"><a href="statico.html">statico</a></td>
 <td>STATIS and Co-Inertia : Analysis of a series of paired ecological tables</td></tr>
+<tr><td width="25%"><a href="statico.krandtest.html">statico.krandtest</a></td>
+<td>Monte-Carlo test on a Statico analysis (in C).</td></tr>
 <tr><td width="25%"><a href="statis.html">statis</a></td>
 <td>STATIS, a method for analysing K-tables</td></tr>
 <tr><td width="25%"><a href="steppe.html">steppe</a></td>
 <td>Transect in the Vegetation</td></tr>
 <tr><td width="25%"><a href="fourthcorner.html">summary.4thcorner</a></td>
 <td>Functions to compute the fourth-corner statistic</td></tr>
+<tr><td width="25%"><a href="plot.between.html">summary.between</a></td>
+<td>Between-Class Analysis</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">summary.betwit</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="coinertia.html">summary.coinertia</a></td>
 <td>Coinertia Analysis</td></tr>
 <tr><td width="25%"><a href="corkdist.html">summary.corkdist</a></td>
 <td>Tests of randomization between distances applied to 'kdist' objetcs</td></tr>
 <tr><td width="25%"><a href="is.euclid.html">summary.dist</a></td>
 <td>Is a Distance Matrix Euclidean ?</td></tr>
+<tr><td width="25%"><a href="dpcoa.html">summary.dpcoa</a></td>
+<td>Double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="dudi.html">summary.dudi</a></td>
 <td>Duality Diagram</td></tr>
 <tr><td width="25%"><a href="mcoa.html">summary.mcoa</a></td>
 <td>Multiple CO-inertia Analysis</td></tr>
 <tr><td width="25%"><a href="mfa.html">summary.mfa</a></td>
 <td>Multiple Factorial Analysis</td></tr>
+<tr><td width="25%"><a href="multiblock.html">summary.multiblock</a></td>
+<td>Display and summarize multiblock objects</td></tr>
 <tr><td width="25%"><a href="multispati.html">summary.multispati</a></td>
 <td>Multivariate spatial analysis</td></tr>
 <tr><td width="25%"><a href="neig.html">summary.neig</a></td>
 <td>Neighbourhood Graphs</td></tr>
+<tr><td width="25%"><a href="orthobasis.html">summary.orthobasis</a></td>
+<td>Orthonormal basis for orthonormal transform</td></tr>
 <tr><td width="25%"><a href="pcaiv.html">summary.pcaiv</a></td>
 <td>Principal component analysis with respect to instrumental variables</td></tr>
 <tr><td width="25%"><a href="pcaivortho.html">summary.pcaivortho</a></td>
@@ -982,6 +1046,8 @@ in Environmental sciences
 <td>RLQ analysis</td></tr>
 <tr><td width="25%"><a href="sepan.html">summary.sepan</a></td>
 <td>Separated Analyses in a K-tables</td></tr>
+<tr><td width="25%"><a href="plot.within.html">summary.within</a></td>
+<td>Within-Class Analysis</td></tr>
 <tr><td width="25%"><a href="witwit.coa.html">summary.witwit</a></td>
 <td>Internal Correspondence Analysis</td></tr>
 <tr><td width="25%"><a href="supcol.html">supcol</a></td>
@@ -1041,6 +1107,8 @@ in Environmental sciences
 <td>Create phylogeny</td></tr>
 <tr><td width="25%"><a href="testdim.html">testdim</a></td>
 <td>Function to perform a test of dimensionality</td></tr>
+<tr><td width="25%"><a href="testdim.multiblock.html">testdim.multiblock</a></td>
+<td>Selection of the number of dimension by two-fold cross-validation for multiblock methods</td></tr>
 <tr><td width="25%"><a href="testdim.html">testdim.pca</a></td>
 <td>Function to perform a test of dimensionality</td></tr>
 <tr><td width="25%"><a href="tintoodiel.html">tintoodiel</a></td>
@@ -1096,6 +1164,8 @@ in Environmental sciences
 <td>Within-Class Analysis</td></tr>
 <tr><td width="25%"><a href="withincoinertia.html">wca.coinertia</a></td>
 <td>Within-class coinertia analysis</td></tr>
+<tr><td width="25%"><a href="bwca.dpcoa.html">wca.dpcoa</a></td>
+<td>Between- and within-class double principal coordinate analysis</td></tr>
 <tr><td width="25%"><a href="within.html">wca.dudi</a></td>
 <td>Within-Class Analysis</td></tr>
 <tr><td width="25%"><a href="wca.rlq.html">wca.rlq</a></td>
@@ -1135,6 +1205,8 @@ in Environmental sciences
 <h2><a name="misc">-- misc --</a></h2>
 
 <table width="100%">
+<tr><td width="25%"><a href="dudi.html">[.dudi</a></td>
+<td>Duality Diagram</td></tr>
 <tr><td width="25%"><a href="kdist.html">[.kdist</a></td>
 <td>the class of objects 'kdist' (K distance matrices)</td></tr>
 <tr><td width="25%"><a href="ktab.html">[.ktab</a></td>

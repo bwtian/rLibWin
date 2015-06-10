@@ -15,7 +15,8 @@ helpcolors	helpcolors
 HOZscale	HOZscale
 ilocator	ilocator
 itoxyz	itoxyz
-jpng	jpostscript
+jpdf	jpng
+jpng	jpng
 jpostscript	jpostscript
 label.it	label.it
 local.file	local.file

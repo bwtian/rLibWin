@@ -77,22 +77,7 @@ print(stplot(x, mode = "tp", par.strip.text = list(cex=.5)))
 
 
 ###################################################
-### code chunk number 12: sto.Rnw:246-248
-###################################################
-library(rgeos)
-DE = gUnionCascaded(DE_NUTS1)
-
-
-###################################################
-### code chunk number 13: sto.Rnw:251-254
-###################################################
-# trick to cirumvent build break on r-forge
-proj4string(DE)=as.character(NA)
-proj4string(rural)=as.character(NA)
-
-
-###################################################
-### code chunk number 14: sto.Rnw:259-262
+### code chunk number 12: sto.Rnw:248-251
 ###################################################
 x = aggregate(rural[,"2008"], DE, mean, na.rm=TRUE)
 class(x)
@@ -100,20 +85,20 @@ plot(x[,"PM10"])
 
 
 ###################################################
-### code chunk number 15: sto.Rnw:267-268
+### code chunk number 13: sto.Rnw:256-257
 ###################################################
 plot(x[,"PM10"])
 
 
 ###################################################
-### code chunk number 16: sto.Rnw:279-281
+### code chunk number 14: sto.Rnw:268-270
 ###################################################
 x = as(rural[,"2008"], "xts")
 apply(x, 2, mean, na.rm=TRUE)[1:5]
 
 
 ###################################################
-### code chunk number 17: sto.Rnw:288-291
+### code chunk number 15: sto.Rnw:277-280
 ###################################################
 sel = which(!apply(as(rural[,"2008"], "xts"), 2, function(x) all(is.na(x))))
 x = aggregate(rural[sel,"2008"], "month", mean, na.rm=TRUE)
@@ -121,13 +106,13 @@ stplot(x, mode = "tp")
 
 
 ###################################################
-### code chunk number 18: sto.Rnw:296-297
+### code chunk number 16: sto.Rnw:285-286
 ###################################################
 print(stplot(x, mode = "tp", par.strip.text = list(cex=.5)))
 
 
 ###################################################
-### code chunk number 19: sto.Rnw:313-316
+### code chunk number 17: sto.Rnw:302-305
 ###################################################
 library(zoo)
 x = aggregate(rural[sel,"2005::2011"], as.yearqtr, median, na.rm=TRUE)
@@ -135,19 +120,19 @@ stplot(x, mode = "tp")
 
 
 ###################################################
-### code chunk number 20: sto.Rnw:321-322
+### code chunk number 18: sto.Rnw:310-311
 ###################################################
 as.year <- function(x) as.numeric(floor(as.yearmon(x)))
 
 
 ###################################################
-### code chunk number 21: sto.Rnw:328-329
+### code chunk number 19: sto.Rnw:317-318
 ###################################################
 print(stplot(x, mode = "tp", par.strip.text = list(cex=.5)))
 
 
 ###################################################
-### code chunk number 22: sto.Rnw:339-341
+### code chunk number 20: sto.Rnw:328-330
 ###################################################
 DE.years = STF(DE, as.Date(c("2008-01-01", "2009-01-01")))
 aggregate(rural[,"2008::2009"], DE.years, mean, na.rm=TRUE)

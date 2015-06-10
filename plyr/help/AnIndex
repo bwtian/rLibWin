@@ -65,6 +65,7 @@ numcolwise	colwise
 nunique	nunique
 ozone	ozone
 plyr	plyr
+plyr-deprecated	plyr-deprecated
 print.quoted	print.quoted
 print.split	print.split
 progress_none	progress_none

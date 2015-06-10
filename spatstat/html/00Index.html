@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Spatial Point Pattern Analysis, Model-fitting, Simulation, Tests</title>
+<html><head><title>R: Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
-<h1> Spatial Point Pattern Analysis, Model-fitting, Simulation, Tests
+<h1> Spatial Point Pattern Analysis, Model-Fitting, Simulation, Tests
 <img class="toplogo" src="../../../doc/html/logo.jpg" alt="[R logo]">
 </h1>
 <hr>
 <div align="center">
 <a href="../../../doc/html/packages.html"><img src="../../../doc/html/left.jpg" alt="[Up]" width="30" height="30" border="0"></a>
 <a href="../../../doc/html/index.html"><img src="../../../doc/html/up.jpg" alt="[Top]" width="30" height="30" border="0"></a>
-</div><h2>Documentation for package &lsquo;spatstat&rsquo; version 1.40-0</h2>
+</div><h2>Documentation for package &lsquo;spatstat&rsquo; version 1.41-1</h2>
 
 <ul><li><a href="../DESCRIPTION">DESCRIPTION file</a>.</li>
 <li><a href="../doc/index.html">User guides, package vignettes and other documentation.</a></li>
@@ -111,6 +111,8 @@
 <td>Determine Duplicated Points in a Spatial Point Pattern</td></tr>
 <tr><td width="25%"><a href="duplicated.ppp.html">anyDuplicated.ppx</a></td>
 <td>Determine Duplicated Points in a Spatial Point Pattern</td></tr>
+<tr><td width="25%"><a href="solapply.html">anylapply</a></td>
+<td>Apply a Function Over a List and Obtain a List of Objects</td></tr>
 <tr><td width="25%"><a href="anylist.html">anylist</a></td>
 <td>List of Objects</td></tr>
 <tr><td width="25%"><a href="append.psp.html">append.psp</a></td>
@@ -147,6 +149,8 @@
 <td>Coerce Line Segment Pattern to a Data Frame</td></tr>
 <tr><td width="25%"><a href="as.function.fv.html">as.function.fv</a></td>
 <td>Convert Function Value Table to Function</td></tr>
+<tr><td width="25%"><a href="as.function.im.html">as.function.im</a></td>
+<td>Convert Pixel Image to Function of Coordinates</td></tr>
 <tr><td width="25%"><a href="methods.linfun.html">as.function.linfun</a></td>
 <td>Methods for Functions on Linear Network</td></tr>
 <tr><td width="25%"><a href="as.function.fv.html">as.function.rhohat</a></td>
@@ -239,14 +243,18 @@
 <td>Convert to Pixel Image on Linear Network</td></tr>
 <tr><td width="25%"><a href="methods.linnet.html">as.linnet</a></td>
 <td>Methods for Linear Networks</td></tr>
-<tr><td width="25%"><a href="methods.linfun.html">as.linnet.linfun</a></td>
-<td>Methods for Functions on Linear Network</td></tr>
+<tr><td width="25%"><a href="as.linnet.linim.html">as.linnet.linfun</a></td>
+<td>Extract Linear Network from Data on a Linear Network</td></tr>
+<tr><td width="25%"><a href="as.linnet.linim.html">as.linnet.linim</a></td>
+<td>Extract Linear Network from Data on a Linear Network</td></tr>
 <tr><td width="25%"><a href="methods.linnet.html">as.linnet.linnet</a></td>
 <td>Methods for Linear Networks</td></tr>
-<tr><td width="25%"><a href="methods.linnet.html">as.linnet.lpp</a></td>
-<td>Methods for Linear Networks</td></tr>
+<tr><td width="25%"><a href="as.linnet.linim.html">as.linnet.lpp</a></td>
+<td>Extract Linear Network from Data on a Linear Network</td></tr>
 <tr><td width="25%"><a href="methods.lppm.html">as.linnet.lppm</a></td>
 <td>Methods for Fitted Point Process Models on a Linear Network</td></tr>
+<tr><td width="25%"><a href="as.linnet.psp.html">as.linnet.psp</a></td>
+<td>Convert Line Segment Pattern to Linear Network</td></tr>
 <tr><td width="25%"><a href="as.lpp.html">as.lpp</a></td>
 <td>Convert Data to a Point Pattern on a Linear Network</td></tr>
 <tr><td width="25%"><a href="as.mask.html">as.mask</a></td>
@@ -519,6 +527,8 @@
 <td>Run Point-and-Click Interface</td></tr>
 <tr><td width="25%"><a href="clickbox.html">clickbox</a></td>
 <td>Interactively Define a Rectangle</td></tr>
+<tr><td width="25%"><a href="clickdist.html">clickdist</a></td>
+<td>Interactively Measure Distance</td></tr>
 <tr><td width="25%"><a href="clickjoin.html">clickjoin</a></td>
 <td>Interactively join vertices on a plot</td></tr>
 <tr><td width="25%"><a href="clickpoly.html">clickpoly</a></td>
@@ -547,6 +557,28 @@
 <td>Morphological Closing</td></tr>
 <tr><td width="25%"><a href="closing.html">closing.psp</a></td>
 <td>Morphological Closing</td></tr>
+<tr><td width="25%"><a href="clusterfield.html">clusterfield</a></td>
+<td>Field of clusters</td></tr>
+<tr><td width="25%"><a href="clusterfield.html">clusterfield.character</a></td>
+<td>Field of clusters</td></tr>
+<tr><td width="25%"><a href="clusterfield.html">clusterfield.function</a></td>
+<td>Field of clusters</td></tr>
+<tr><td width="25%"><a href="clusterfield.html">clusterfield.kppm</a></td>
+<td>Field of clusters</td></tr>
+<tr><td width="25%"><a href="clusterfit.html">clusterfit</a></td>
+<td>Fit Cluster or Cox Point Process Model via Minimum Contrast</td></tr>
+<tr><td width="25%"><a href="clusterkernel.html">clusterkernel</a></td>
+<td>Extract Cluster Offspring Kernel</td></tr>
+<tr><td width="25%"><a href="clusterkernel.html">clusterkernel.character</a></td>
+<td>Extract Cluster Offspring Kernel</td></tr>
+<tr><td width="25%"><a href="clusterkernel.html">clusterkernel.kppm</a></td>
+<td>Extract Cluster Offspring Kernel</td></tr>
+<tr><td width="25%"><a href="clusterradius.html">clusterradius</a></td>
+<td>Compute or Extract Effective Range of Cluster Kernel</td></tr>
+<tr><td width="25%"><a href="clusterradius.html">clusterradius.character</a></td>
+<td>Compute or Extract Effective Range of Cluster Kernel</td></tr>
+<tr><td width="25%"><a href="clusterradius.html">clusterradius.kppm</a></td>
+<td>Compute or Extract Effective Range of Cluster Kernel</td></tr>
 <tr><td width="25%"><a href="clusterset.html">clusterset</a></td>
 <td>Allard-Fraley Estimator of Cluster Feature</td></tr>
 <tr><td width="25%"><a href="methods.fii.html">coef.fii</a></td>
@@ -591,6 +623,8 @@
 <td>Convert and Compare Colours in Different Formats</td></tr>
 <tr><td width="25%"><a href="Math.im.html">Complex.im</a></td>
 <td>S3 Group Generic methods for images</td></tr>
+<tr><td width="25%"><a href="Math.linim.html">Complex.linim</a></td>
+<td>S3 Group Generic Methods for Images on a Linear Network</td></tr>
 <tr><td width="25%"><a href="concatxy.html">concatxy</a></td>
 <td>Concatenate x,y Coordinate Vectors</td></tr>
 <tr><td width="25%"><a href="Concom.html">Concom</a></td>
@@ -686,12 +720,16 @@
 <td>Delaunay Triangulation of Point Pattern</td></tr>
 <tr><td width="25%"><a href="delaunay.distance.html">delaunay.distance</a></td>
 <td>Distance on Delaunay Triangulation</td></tr>
+<tr><td width="25%"><a href="delaunay.network.html">delaunay.network</a></td>
+<td>Linear Network of Delaunay Triangulation or Dirichlet Tessellation</td></tr>
 <tr><td width="25%"><a href="deltametric.html">deltametric</a></td>
 <td>Delta Metric</td></tr>
 <tr><td width="25%"><a href="demohyper.html">demohyper</a></td>
 <td>Demonstration Example of Hyperframe of Spatial Data</td></tr>
 <tr><td width="25%"><a href="demopat.html">demopat</a></td>
 <td>Artificial Data Point Pattern</td></tr>
+<tr><td width="25%"><a href="dendrite.html">dendrite</a></td>
+<td>Dendritic Spines Data</td></tr>
 <tr><td width="25%"><a href="density.ppp.html">density.ppp</a></td>
 <td>Kernel Smoothed Intensity of Point Pattern</td></tr>
 <tr><td width="25%"><a href="density.psp.html">density.psp</a></td>
@@ -730,8 +768,12 @@
 <td>Morphological Dilation</td></tr>
 <tr><td width="25%"><a href="dirichlet.html">dirichlet</a></td>
 <td>Dirichlet Tessellation of Point Pattern</td></tr>
+<tr><td width="25%"><a href="dirichlet.vertices.html">dirichlet.edges</a></td>
+<td>Vertices and Edges of Dirichlet Tessellation</td></tr>
+<tr><td width="25%"><a href="delaunay.network.html">dirichlet.network</a></td>
+<td>Linear Network of Delaunay Triangulation or Dirichlet Tessellation</td></tr>
 <tr><td width="25%"><a href="dirichlet.vertices.html">dirichlet.vertices</a></td>
-<td>Vertices of Dirichlet Tessellation</td></tr>
+<td>Vertices and Edges of Dirichlet Tessellation</td></tr>
 <tr><td width="25%"><a href="dirichlet.weights.html">dirichlet.weights</a></td>
 <td>Compute Quadrature Weights Based on Dirichlet Tessellation</td></tr>
 <tr><td width="25%"><a href="disc.html">disc</a></td>
@@ -1137,8 +1179,14 @@
 <td>Infinite Order Interaction Family</td></tr>
 <tr><td width="25%"><a href="inside.owin.html">inside.owin</a></td>
 <td>Test Whether Points Are Inside A Window</td></tr>
+<tr><td width="25%"><a href="integral.im.html">integral</a></td>
+<td>Integral of a Pixel Image</td></tr>
 <tr><td width="25%"><a href="integral.im.html">integral.im</a></td>
 <td>Integral of a Pixel Image</td></tr>
+<tr><td width="25%"><a href="integral.linim.html">integral.linfun</a></td>
+<td>Integral on a Linear Network</td></tr>
+<tr><td width="25%"><a href="integral.linim.html">integral.linim</a></td>
+<td>Integral on a Linear Network</td></tr>
 <tr><td width="25%"><a href="integral.msr.html">integral.msr</a></td>
 <td>Integral of a Measure</td></tr>
 <tr><td width="25%"><a href="intensity.html">intensity</a></td>
@@ -1170,6 +1218,10 @@
 <tr><td width="25%"><a href="iplot.html">iplot.default</a></td>
 <td>Point and Click Interface for Displaying Spatial Data</td></tr>
 <tr><td width="25%"><a href="iplot.html">iplot.layered</a></td>
+<td>Point and Click Interface for Displaying Spatial Data</td></tr>
+<tr><td width="25%"><a href="iplot.html">iplot.linnet</a></td>
+<td>Point and Click Interface for Displaying Spatial Data</td></tr>
+<tr><td width="25%"><a href="iplot.html">iplot.lpp</a></td>
 <td>Point and Click Interface for Displaying Spatial Data</td></tr>
 <tr><td width="25%"><a href="iplot.html">iplot.ppp</a></td>
 <td>Point and Click Interface for Displaying Spatial Data</td></tr>
@@ -1217,6 +1269,8 @@
 <td>Determine Type of Window</td></tr>
 <tr><td width="25%"><a href="is.multitype.html">is.multitype</a></td>
 <td>Test whether Object is Multitype</td></tr>
+<tr><td width="25%"><a href="is.multitype.ppp.html">is.multitype.lpp</a></td>
+<td>Test Whether A Point Pattern is Multitype</td></tr>
 <tr><td width="25%"><a href="is.multitype.ppm.html">is.multitype.lppm</a></td>
 <td>Test Whether A Point Process Model is Multitype</td></tr>
 <tr><td width="25%"><a href="is.multitype.ppm.html">is.multitype.ppm</a></td>
@@ -1311,6 +1365,8 @@
 <td>Inhomogeneous K-function</td></tr>
 <tr><td width="25%"><a href="km.rs.html">km.rs</a></td>
 <td>Kaplan-Meier and Reduced Sample Estimator using Histograms</td></tr>
+<tr><td width="25%"><a href="Kmark.html">Kmark</a></td>
+<td>Mark-Weighted K Function</td></tr>
 <tr><td width="25%"><a href="Kmeasure.html">Kmeasure</a></td>
 <td>Reduced Second Moment Measure</td></tr>
 <tr><td width="25%"><a href="Kmodel.html">Kmodel</a></td>
@@ -1489,8 +1545,8 @@
 <td>Mark Connection Function</td></tr>
 <tr><td width="25%"><a href="markcorr.html">markcorr</a></td>
 <td>Mark Correlation Function</td></tr>
-<tr><td width="25%"><a href="markcorrint.html">markcorrint</a></td>
-<td>Mark Correlation Integral</td></tr>
+<tr><td width="25%"><a href="Kmark.html">markcorrint</a></td>
+<td>Mark-Weighted K Function</td></tr>
 <tr><td width="25%"><a href="Smooth.ppp.html">markmean</a></td>
 <td>Spatial smoothing of observations at irregular points</td></tr>
 <tr><td width="25%"><a href="marks.html">marks</a></td>
@@ -1501,6 +1557,8 @@
 <td>Marks of a Point Pattern</td></tr>
 <tr><td width="25%"><a href="marks.psp.html">marks.psp</a></td>
 <td>Marks of a Line Segment Pattern</td></tr>
+<tr><td width="25%"><a href="marks.tess.html">marks.tess</a></td>
+<td>Marks of a Tessellation</td></tr>
 <tr><td width="25%"><a href="marks.html">marks&lt;-</a></td>
 <td>Marks of a Point Pattern</td></tr>
 <tr><td width="25%"><a href="methods.lpp.html">marks&lt;-.lpp</a></td>
@@ -1511,6 +1569,8 @@
 <td>Marks of a Point Pattern</td></tr>
 <tr><td width="25%"><a href="marks.psp.html">marks&lt;-.psp</a></td>
 <td>Marks of a Line Segment Pattern</td></tr>
+<tr><td width="25%"><a href="marks.tess.html">marks&lt;-.tess</a></td>
+<td>Marks of a Tessellation</td></tr>
 <tr><td width="25%"><a href="markstat.html">markstat</a></td>
 <td>Summarise Marks in Every Neighbourhood in a Point Pattern</td></tr>
 <tr><td width="25%"><a href="marktable.html">marktable</a></td>
@@ -1527,6 +1587,8 @@
 <td>Fit the Matern Cluster Point Process by Minimum Contrast Using Pair Correlation</td></tr>
 <tr><td width="25%"><a href="Math.im.html">Math.im</a></td>
 <td>S3 Group Generic methods for images</td></tr>
+<tr><td width="25%"><a href="Math.linim.html">Math.linim</a></td>
+<td>S3 Group Generic Methods for Images on a Linear Network</td></tr>
 <tr><td width="25%"><a href="range.fv.html">max.fv</a></td>
 <td>Range of Function Values</td></tr>
 <tr><td width="25%"><a href="mean.im.html">max.im</a></td>
@@ -1660,6 +1722,8 @@
 <td>Find Pixel Nearest to a Given Point</td></tr>
 <tr><td width="25%"><a href="nearestsegment.html">nearestsegment</a></td>
 <td>Find Line Segment Nearest to Each Point</td></tr>
+<tr><td width="25%"><a href="nestsplit.html">nestsplit</a></td>
+<td>Nested Split</td></tr>
 <tr><td width="25%"><a href="nnclean.html">nnclean</a></td>
 <td>Nearest Neighbour Clutter Removal</td></tr>
 <tr><td width="25%"><a href="nnclean.html">nnclean.pp3</a></td>
@@ -1769,6 +1833,8 @@
 <td>Morphological Opening</td></tr>
 <tr><td width="25%"><a href="Math.im.html">Ops.im</a></td>
 <td>S3 Group Generic methods for images</td></tr>
+<tr><td width="25%"><a href="Math.linim.html">Ops.linim</a></td>
+<td>S3 Group Generic Methods for Images on a Linear Network</td></tr>
 <tr><td width="25%"><a href="Ord.html">Ord</a></td>
 <td>Generic Ord Interaction model</td></tr>
 <tr><td width="25%"><a href="ord.family.html">ord.family</a></td>
@@ -1884,6 +1950,8 @@
 <td>Extract Pixel Centres as Point Pattern</td></tr>
 <tr><td width="25%"><a href="pixellate.html">pixellate</a></td>
 <td>Convert Spatial Object to Pixel Image</td></tr>
+<tr><td width="25%"><a href="methods.linnet.html">pixellate.linnet</a></td>
+<td>Methods for Linear Networks</td></tr>
 <tr><td width="25%"><a href="pixellate.owin.html">pixellate.owin</a></td>
 <td>Convert Window to Pixel Image</td></tr>
 <tr><td width="25%"><a href="pixellate.ppp.html">pixellate.ppp</a></td>
@@ -1957,7 +2025,7 @@
 <tr><td width="25%"><a href="plot.plotppm.html">plot.plotppm</a></td>
 <td>Plot a plotppm Object Created by plot.ppm</td></tr>
 <tr><td width="25%"><a href="plot.pp3.html">plot.pp3</a></td>
-<td>Plot a three-dimensional point pattern</td></tr>
+<td>Plot a Three-Dimensional Point Pattern</td></tr>
 <tr><td width="25%"><a href="plot.ppm.html">plot.ppm</a></td>
 <td>plot a Fitted Point Process Model</td></tr>
 <tr><td width="25%"><a href="plot.ppp.html">plot.ppp</a></td>
@@ -2006,10 +2074,14 @@
 <td>Ponderosa Pine Tree Point Pattern</td></tr>
 <tr><td width="25%"><a href="pool.html">pool</a></td>
 <td>Pool Data</td></tr>
+<tr><td width="25%"><a href="pool.anylist.html">pool.anylist</a></td>
+<td>Pool Data from a List of Objects</td></tr>
 <tr><td width="25%"><a href="pool.envelope.html">pool.envelope</a></td>
 <td>Pool Data from Several Envelopes</td></tr>
 <tr><td width="25%"><a href="pool.fasp.html">pool.fasp</a></td>
 <td>Pool Data from Several Function Arrays</td></tr>
+<tr><td width="25%"><a href="pool.fv.html">pool.fv</a></td>
+<td>Pool Several Functions</td></tr>
 <tr><td width="25%"><a href="pool.quadrattest.html">pool.quadrattest</a></td>
 <td>Pool Several Quadrat Tests</td></tr>
 <tr><td width="25%"><a href="pool.rat.html">pool.rat</a></td>
@@ -2171,6 +2243,14 @@
 <td>Generate a Quadrature Scheme from a Point Pattern</td></tr>
 <tr><td width="25%"><a href="quadscheme.logi.html">quadscheme.logi</a></td>
 <td>Generate a Logistic Regression Quadrature Scheme from a Point Pattern</td></tr>
+<tr><td width="25%"><a href="quantess.html">quantess</a></td>
+<td>Quantile Tessellation</td></tr>
+<tr><td width="25%"><a href="quantess.html">quantess.im</a></td>
+<td>Quantile Tessellation</td></tr>
+<tr><td width="25%"><a href="quantess.html">quantess.owin</a></td>
+<td>Quantile Tessellation</td></tr>
+<tr><td width="25%"><a href="quantess.html">quantess.ppp</a></td>
+<td>Quantile Tessellation</td></tr>
 <tr><td width="25%"><a href="quantile.ewcdf.html">quantile.ewcdf</a></td>
 <td>Quantiles of Weighted Empirical Cumulative Distribution Function</td></tr>
 <tr><td width="25%"><a href="quantile.im.html">quantile.im</a></td>
@@ -2499,8 +2579,14 @@
 <td>Likelihood Ratio Test Statistic for Scan Test</td></tr>
 <tr><td width="25%"><a href="scanpp.html">scanpp</a></td>
 <td>Read Point Pattern From Data File</td></tr>
+<tr><td width="25%"><a href="segregation.test.html">segregation.test</a></td>
+<td>Test of Spatial Segregation of Types</td></tr>
+<tr><td width="25%"><a href="segregation.test.html">segregation.test.ppp</a></td>
+<td>Test of Spatial Segregation of Types</td></tr>
 <tr><td width="25%"><a href="selfcrossing.psp.html">selfcrossing.psp</a></td>
 <td>Crossing Points in a Line Segment Pattern</td></tr>
+<tr><td width="25%"><a href="selfcut.psp.html">selfcut.psp</a></td>
+<td>Cut Line Segments Where They Intersect</td></tr>
 <tr><td width="25%"><a href="sessionLibs.html">sessionLibs</a></td>
 <td>Print Names and Version Numbers of Libraries Loaded</td></tr>
 <tr><td width="25%"><a href="setcov.html">setcov</a></td>
@@ -2587,6 +2673,8 @@
 <td>Smooth Interpolation of Marks as a Spatial Function</td></tr>
 <tr><td width="25%"><a href="Softcore.html">Softcore</a></td>
 <td>The Soft Core Point Process Model</td></tr>
+<tr><td width="25%"><a href="solapply.html">solapply</a></td>
+<td>Apply a Function Over a List and Obtain a List of Objects</td></tr>
 <tr><td width="25%"><a href="solist.html">solist</a></td>
 <td>List of Two-Dimensional Spatial Objects</td></tr>
 <tr><td width="25%"><a href="solutionset.html">solutionset</a></td>
@@ -2597,6 +2685,8 @@
 <td>The Spatstat Package</td></tr>
 <tr><td width="25%"><a href="spatstat.options.html">spatstat.options</a></td>
 <td>Internal Options in Spatstat Package</td></tr>
+<tr><td width="25%"><a href="spiders.html">spiders</a></td>
+<td>Spider Webs on Mortar Lines of a Brick Wall</td></tr>
 <tr><td width="25%"><a href="split.hyperframe.html">split.hyperframe</a></td>
 <td>Divide Hyperframe Into Subsets and Reassemble</td></tr>
 <tr><td width="25%"><a href="split.im.html">split.im</a></td>
@@ -2635,6 +2725,8 @@
 <td>Extract List of Individual Point Process Models</td></tr>
 <tr><td width="25%"><a href="subfits.html">subfits.old</a></td>
 <td>Extract List of Individual Point Process Models</td></tr>
+<tr><td width="25%"><a href="subset.hyperframe.html">subset.hyperframe</a></td>
+<td>Subset of Hyperframe Satisfying A Condition</td></tr>
 <tr><td width="25%"><a href="subset.ppp.html">subset.lpp</a></td>
 <td>Subset of Point Pattern Satisfying A Condition</td></tr>
 <tr><td width="25%"><a href="subset.ppp.html">subset.pp3</a></td>
@@ -2655,12 +2747,16 @@
 <td>S3 Group Generic methods for images</td></tr>
 <tr><td width="25%"><a href="summary.im.html">summary.im</a></td>
 <td>Summarizing a Pixel Image</td></tr>
+<tr><td width="25%"><a href="Math.linim.html">Summary.linim</a></td>
+<td>S3 Group Generic Methods for Images on a Linear Network</td></tr>
 <tr><td width="25%"><a href="methods.linnet.html">summary.linnet</a></td>
 <td>Methods for Linear Networks</td></tr>
 <tr><td width="25%"><a href="summary.listof.html">summary.listof</a></td>
 <td>Summary of a List of Things</td></tr>
 <tr><td width="25%"><a href="methods.lpp.html">summary.lpp</a></td>
 <td>Methods for Point Patterns on a Linear Network</td></tr>
+<tr><td width="25%"><a href="methods.lppm.html">summary.lppm</a></td>
+<td>Methods for Fitted Point Process Models on a Linear Network</td></tr>
 <tr><td width="25%"><a href="summary.owin.html">summary.owin</a></td>
 <td>Summary of a Spatial Window</td></tr>
 <tr><td width="25%"><a href="methods.pp3.html">summary.pp3</a></td>
@@ -2835,6 +2931,8 @@
 <td>Remove Marks</td></tr>
 <tr><td width="25%"><a href="unmark.html">unmark.splitppp</a></td>
 <td>Remove Marks</td></tr>
+<tr><td width="25%"><a href="marks.tess.html">unmark.tess</a></td>
+<td>Marks of a Tessellation</td></tr>
 <tr><td width="25%"><a href="unnormdensity.html">unnormdensity</a></td>
 <td>Weighted kernel smoother</td></tr>
 <tr><td width="25%"><a href="update.kppm.html">update.kppm</a></td>
@@ -2876,7 +2974,13 @@
 <td>Variance-Covariance Matrix for a Fitted Spatial Logistic Regression</td></tr>
 <tr><td width="25%"><a href="quasirandom.html">vdCorput</a></td>
 <td>Quasirandom Patterns</td></tr>
+<tr><td width="25%"><a href="methods.linnet.html">vertexdegree</a></td>
+<td>Methods for Linear Networks</td></tr>
 <tr><td width="25%"><a href="vertices.html">vertices</a></td>
+<td>Vertices of a Window</td></tr>
+<tr><td width="25%"><a href="methods.linnet.html">vertices.linnet</a></td>
+<td>Methods for Linear Networks</td></tr>
+<tr><td width="25%"><a href="vertices.html">vertices.owin</a></td>
 <td>Vertices of a Window</td></tr>
 <tr><td width="25%"><a href="vesicles.html">vesicles</a></td>
 <td>Vesicles Data</td></tr>
@@ -2923,6 +3027,8 @@
 <td>Extract Window of Spatial Object</td></tr>
 <tr><td width="25%"><a href="WindowOnly.html">Window.leverage.ppm</a></td>
 <td>Extract Window of Spatial Object</td></tr>
+<tr><td width="25%"><a href="methods.linnet.html">Window.linnet</a></td>
+<td>Methods for Linear Networks</td></tr>
 <tr><td width="25%"><a href="WindowOnly.html">Window.lpp</a></td>
 <td>Extract Window of Spatial Object</td></tr>
 <tr><td width="25%"><a href="WindowOnly.html">Window.lppm</a></td>

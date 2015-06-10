@@ -2,6 +2,7 @@ Arrows	Arrows
 as.Date1970	as.Date1970
 asNumericChar	asNumericDF
 asNumericDF	asNumericDF
+BoxCox	BoxCox
 camelParse	camelParse
 checkNames	checkNames
 classIndex	classIndex
@@ -25,6 +26,7 @@ interpPairs	interpPairs
 interpPairs.call	interpPairs
 interpPairs.function	interpPairs
 interpPairs.list	interpPairs
+invBoxCox	BoxCox
 lines.qqnorm2	qqnorm2
 match.data.frame	match.data.frame
 matchName	matchName

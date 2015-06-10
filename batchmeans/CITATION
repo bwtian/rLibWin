@@ -1,6 +1,5 @@
-desc = packageDescription("batchmeans")
-year = sub(".*(2[[:digit:]]{3})-.*", "\\1", desc$Date)
-vers = paste("R package version", desc$Version)
+year = sub(".*(2[[:digit:]]{3})-.*", "\\1", meta$Date)
+vers = paste("R package version", meta$Version)
 citHeader("'batchmeans' is a package that provides consistent batch means estimation of Monte Carlo standard errors.\n\nThis version of 'batchmeans' is currently licensed under the GNU Public License, v2 or later.\n\nIf you are using 'batchmeans' for research that will be published, we request that you acknowledge this with the following citation:\n\n")
 citEntry(entry = "Manual",
          title = "batchmeans: Consistent Batch Means Estimation of Monte Carlo Standard Errors",

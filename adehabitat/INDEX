@@ -113,7 +113,7 @@ mcp.rast                Converts a Polygon to Raster
 mindistkeep             Detecting Absence of Movement in an Object of
                         Class 'ltraj'
 modpartltraj            Segmentation of a trajectory based on Markov
-                        models (STILL UNDER RESEARCH!!)
+                        models
 morphology              Morphology: Erosion or Dilatation of Features
                         on a Raster Map
 mouflon                 GPS Monitoring of One Mouflon in the Caroux

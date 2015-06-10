@@ -19,7 +19,7 @@ PROJ = setPROJ(type = 2, LAT0 =mean(USALL$lat), LON0 = mean(USALL$lon) )
 #### readline("Hit Return>")
 
 ####   get(getOption("device"))(width=13, height=10)  
-dev.new()
+#### dev.new()
 
 ####  plot with UTM  projection:
 plotGEOmapXY(USAmap, LIM= c(USALL$lon[1], USALL$lat[1], USALL$lon[2], USALL$lat[2]    )  , PROJ=PROJ, add=FALSE, shiftlon=0)

@@ -16,7 +16,7 @@ ecd.ll = as.matrix(read.table(getFILE("ECDovelatlon.dat"), header=FALSE))
 # space: convert to SpatialPoints, and set CRS:
 library(sp)
 ecd.ll = SpatialPoints(ecd.ll[,c(2,1)]) # lat-lon -> lon-lat
-proj4string(ecd.ll) = "+proj=longlat +datum=WGS84"
+proj4string(ecd.ll) = "+proj=longlat +datum=WGS84 +ellps=WGS84"
 
 # time:
 ecd.years = 1986:2003
@@ -95,21 +95,24 @@ stplot(sst.st[sea,"1998-02::1999-01"],
 )
 
 # Figure 5.17: EOF's
-eof = EOF(sst.st[sea,])
-eof.t = EOF(sst.st[sea,], "temporal")
+eof = eof(sst.st[sea,])
 spplot(eof[1], col.regions = bpy.colors(), scales = list(draw=TRUE),
 	main = "First EOF (Figure 5.17a)")
-plot(eof.t[,1], main = "5.17b (note that sign has flipped)", ylab = "EOF 1")
 spplot(eof[2], col.regions = bpy.colors(), scales = list(draw=TRUE),
 	main = "5.17c; Second EOF")
-plot(eof.t[,2], main = "5.17d", ylab = "EOF 2")
-# ... and so on.
 
 # 5.19: EOF summary stats
-eof.summ = EOF(sst.st[sea,], returnPredictions = FALSE)
+eof.summ = eof(sst.st[sea,], returnEOFs = FALSE)
+
+library(xts)
+eof.t = xts(predict(eof.summ), sst.ym)
+plot(eof.t[,1], main = "5.17b (note that sign has flipped)")
+plot(eof.t[,2], main = "5.17d")
+# ... and so on.
+
 v = eof.summ$sdev^2
 plot(100*cumsum(v[1:100])/sum(v),
-	ylim=c(0,100), ylab = "Percent", xlab = "EOF", main = "Figure 5.19")
+	ylim=c(30, 100), ylab = "Percent", xlab = "EOF", main = "Figure 5.19")
 
 # canton data:
 ca_nb = read.csv(getFILE("Canton_neighbor.csv"))

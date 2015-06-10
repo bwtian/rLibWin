@@ -2,6 +2,88 @@
 \title{News for Package 'RcppArmadillo'}
 \newcommand{\cpkg}{\href{http://CRAN.R-project.org/package=#1}{\pkg{#1}}}
 
+\section{Changes in RcppArmadillo version 0.5.200.1.0 (2015-06-04)}{
+  \itemize{
+    \item Upgraded to Armadillo release 5.200.1 ("Boston Tea Smuggler")
+    \itemize{
+      \item added \code{orth()} for finding the orthonormal basis of the range space of a matrix
+      \item expanded element initialisation to handle nested initialiser lists (C++11)
+      \item workarounds for bugs in GCC, Intel and MSVC C++ compilers
+    }
+    \item Added another example to \code{inst/examples/fastLm.r} 
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.5.100.2.0 (2015-05-12)}{
+  \itemize{
+    \item Upgraded to Armadillo test / bug-fix release 5.100.2
+    \item Non-CRAN release
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.5.100.1.0 (2015-05-01)}{
+  \itemize{
+    \item Upgraded to Armadillo release 5.100.1  ("Ankle Biter Deluxe")
+    \itemize{
+      \item added \code{interp1()} for 1D interpolation
+      \item added \code{.is_sorted()} for checking whether a vector or matrix has sorted elements
+      \item updated physical constants to NIST 2010 CODATA values
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.5.000.0 (2015-04-12)}{
+  \itemize{
+    \item Upgraded to Armadillo release Version 5.000 ("Ankle Biter")
+    \itemize{
+      \item added \code{spsolve()} for solving sparse systems of linear equations
+      \item added \code{svds()} for singular value decomposition of sparse matrices
+      \item added \code{nonzeros()} for extracting non-zero values from matrices
+      \item added handling of diagonal views by sparse matrices
+      \item expanded \code{repmat()} to handle sparse matrices
+      \item expanded \code{join_rows()} and \code{join_cols()} to handle sparse matrices
+      \item \code{sort_index()} and \code{stable_sort_index()} have been
+      placed in the delayed operations framework for increased efficiency 
+      \item use of 64 bit integers is automatically enabled when using a C++11 compiler
+      \item workaround for a bug in recent releases of Apple Xcode
+      \item workaround for a bug in LAPACK 3.5
+    }
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.4.999.1.0 (2015-04-04)}{
+  \itemize{
+    \item Upgraded to Armadillo release preview 4.999.1 
+    \item Non-CRAN test release
+  }
+}
+    
+\section{Changes in RcppArmadillo version 0.4.650.1.1 (2015-02-25)}{
+  \itemize{
+    \item Upgraded to Armadillo release Version 4.650.1 ("Intravenous Caffeine Injector")
+    \itemize{
+      \item added \code{randg()} for generating random values from gamma distributions (C++11 only)
+      \item added \code{.head_rows()} and \code{.tail_rows()} to submatrix views
+      \item added \code{.head_cols()} and \code{.tail_cols()} to submatrix views
+      \item expanded \code{eigs_sym()} to optionally calculate
+      eigenvalues with smallest/largest algebraic values 
+      fixes for handling of sparse matrices
+    }
+    \item Applied small correction to main header file to set up C++11
+    RNG whether or not the alternate RNG (based on R, our default) is used
+  }
+}
+
+\section{Changes in RcppArmadillo version 0.4.600.4.0 (2015-01-23)}{
+  \itemize{
+    \item Upgraded to Armadillo release Version 4.600.4 (still "Off The Reservation")
+    \itemize{
+      \item Speedups in the transpose operation
+      \item Small bug fixes
+    }
+  }
+}
+
 \section{Changes in RcppArmadillo version 0.4.600.0 (2014-12-27)}{
   \itemize{
     \item Upgraded to Armadillo release Version 4.600 ("Singapore Sling Deluxe")

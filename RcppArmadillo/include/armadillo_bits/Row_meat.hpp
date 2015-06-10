@@ -1,5 +1,5 @@
-// Copyright (C) 2008-2013 Conrad Sanderson
-// Copyright (C) 2008-2013 NICTA (www.nicta.com.au)
+// Copyright (C) 2008-2015 Conrad Sanderson
+// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -724,6 +724,54 @@ Row<eT>::tail(const uword N) const
 
 
 
+template<typename eT>
+arma_inline
+subview_row<eT>
+Row<eT>::head_cols(const uword N)
+  {
+  arma_extra_debug_sigprint();
+  
+  return (*this).head(N);
+  }
+
+
+
+template<typename eT>
+arma_inline
+const subview_row<eT>
+Row<eT>::head_cols(const uword N) const
+  {
+  arma_extra_debug_sigprint();
+  
+  return (*this).head(N);
+  }
+
+
+
+template<typename eT>
+arma_inline
+subview_row<eT>
+Row<eT>::tail_cols(const uword N)
+  {
+  arma_extra_debug_sigprint();
+  
+  return (*this).tail(N);
+  }
+
+
+
+template<typename eT>
+arma_inline
+const subview_row<eT>
+Row<eT>::tail_cols(const uword N) const
+  {
+  arma_extra_debug_sigprint();
+  
+  return (*this).tail(N);
+  }
+
+
+
 //! remove specified columns
 template<typename eT>
 inline
@@ -887,7 +935,7 @@ Row<eT>::begin_row(const uword row_num)
   {
   arma_extra_debug_sigprint();
   
-  arma_debug_check( (row_num >= Mat<eT>::n_rows), "begin_row(): index out of bounds");
+  arma_debug_check( (row_num >= Mat<eT>::n_rows), "Row::begin_row(): index out of bounds");
   
   return Mat<eT>::memptr();
   }
@@ -901,7 +949,7 @@ Row<eT>::begin_row(const uword row_num) const
   {
   arma_extra_debug_sigprint();
   
-  arma_debug_check( (row_num >= Mat<eT>::n_rows), "begin_row(): index out of bounds");
+  arma_debug_check( (row_num >= Mat<eT>::n_rows), "Row::begin_row(): index out of bounds");
   
   return Mat<eT>::memptr();
   }
@@ -915,7 +963,7 @@ Row<eT>::end_row(const uword row_num)
   {
   arma_extra_debug_sigprint();
   
-  arma_debug_check( (row_num >= Mat<eT>::n_rows), "end_row(): index out of bounds");
+  arma_debug_check( (row_num >= Mat<eT>::n_rows), "Row::end_row(): index out of bounds");
   
   return Mat<eT>::memptr() + Mat<eT>::n_cols;
   }
@@ -929,7 +977,7 @@ Row<eT>::end_row(const uword row_num) const
   {
   arma_extra_debug_sigprint();
   
-  arma_debug_check( (row_num >= Mat<eT>::n_rows), "end_row(): index out of bounds");
+  arma_debug_check( (row_num >= Mat<eT>::n_rows), "Row::end_row(): index out of bounds");
   
   return Mat<eT>::memptr() + Mat<eT>::n_cols;
   }
@@ -1157,7 +1205,7 @@ Row<eT>::fixed<fixed_n_elem>::operator=(const subview_cube<eT>& X)
     {
     arma_extra_debug_sigprint();
     
-    const uword N = list.size();
+    const uword N = uword(list.size());
     
     arma_debug_check( (N > fixed_n_elem), "Row::fixed: initialiser list is too long" );
     
@@ -1182,13 +1230,92 @@ Row<eT>::fixed<fixed_n_elem>::operator=(const fixed<fixed_n_elem>& X)
   {
   arma_extra_debug_sigprint();
   
-        eT* dest = (use_extra) ?   mem_local_extra : Mat<eT>::mem_local;
-  const eT* src  = (use_extra) ? X.mem_local_extra :        X.mem_local;
-  
-  arrayops::copy( dest, src, fixed_n_elem );
+  if(this != &X)
+    {
+          eT* dest = (use_extra) ?   mem_local_extra : Mat<eT>::mem_local;
+    const eT* src  = (use_extra) ? X.mem_local_extra :        X.mem_local;
+    
+    arrayops::copy( dest, src, fixed_n_elem );
+    }
   
   return *this;
   }
+
+
+
+#if defined(ARMA_GOOD_COMPILER)
+  
+  template<typename eT>
+  template<uword fixed_n_elem>
+  template<typename T1, typename eop_type>
+  inline
+  const Row<eT>&
+  Row<eT>::fixed<fixed_n_elem>::operator=(const eOp<T1, eop_type>& X)
+    {
+    arma_extra_debug_sigprint();
+    
+    arma_type_check(( is_same_type< eT, typename T1::elem_type >::no ));
+    
+    const bool bad_alias = (eOp<T1, eop_type>::proxy_type::has_subview  &&  X.P.is_alias(*this));
+    
+    if(bad_alias == false)
+      {
+      arma_debug_assert_same_size(uword(1), fixed_n_elem, X.get_n_rows(), X.get_n_cols(), "Row::fixed::operator=");
+      
+      eop_type::apply(*this, X);
+      }
+    else
+      {
+      arma_extra_debug_print("bad_alias = true");
+      
+      Row<eT> tmp(X);
+      
+      (*this) = tmp;
+      }
+    
+    return *this;
+    }
+  
+  
+  
+  template<typename eT>
+  template<uword fixed_n_elem>
+  template<typename T1, typename T2, typename eglue_type>
+  inline
+  const Row<eT>&
+  Row<eT>::fixed<fixed_n_elem>::operator=(const eGlue<T1, T2, eglue_type>& X)
+    {
+    arma_extra_debug_sigprint();
+    
+    arma_type_check(( is_same_type< eT, typename T1::elem_type >::no ));
+    arma_type_check(( is_same_type< eT, typename T2::elem_type >::no ));
+    
+    const bool bad_alias =
+      (
+      (eGlue<T1, T2, eglue_type>::proxy1_type::has_subview  &&  X.P1.is_alias(*this))
+      ||
+      (eGlue<T1, T2, eglue_type>::proxy2_type::has_subview  &&  X.P2.is_alias(*this))
+      );
+    
+    if(bad_alias == false)
+      {
+      arma_debug_assert_same_size(uword(1), fixed_n_elem, X.get_n_rows(), X.get_n_cols(), "Row::fixed::operator=");
+      
+      eglue_type::apply(*this, X);
+      }
+    else
+      {
+      arma_extra_debug_print("bad_alias = true");
+      
+      Row<eT> tmp(X);
+      
+      (*this) = tmp;
+      }
+    
+    return *this;
+    }
+  
+#endif
 
 
 

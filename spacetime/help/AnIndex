@@ -1,5 +1,6 @@
 $,ST-method	ST-class
 $<-,ST-method	ST-class
+aggregate	over
 aggregate,ST-method	over
 air	air
 as.data.frame.STF	STFDF-class
@@ -20,10 +21,12 @@ coerce,STIDF,STSDF-method	STIDF-class
 coerce,STSDF,STFDF-method	STSDF-class
 coerce,STSDF,STIDF-method	STSDF-class
 coerce,STTDF,ltraj-method	STTDF-class
+DE	air
 delta	delta
 DE_NUTS1	air
 dim.ST	ST-class
 EOF	eof
+eof	eof
 fires	fires
 geometry,ST-method	ST-class
 geometry,STFDF-method	STFDF-class
@@ -33,7 +36,6 @@ geometry,STSDF-method	STSDF-class
 geometry,STTDF-method	STTDF-class
 index	timematch
 is.projected,ST-method	ST-class
-ISO_3166_2_DE	air
 ltraj-class	STTDF-class
 MATCH	timematch
 na.approx	na
@@ -103,6 +105,7 @@ stplot,STFDF-method	stplot
 stplot,STI-method	stplot
 stplot,STIDF-method	stplot
 stplot,STSDF-method	stplot
+stplot,STT-method	stplot
 stplot,STTDF-method	stplot
 stplot.STFDF	stplot
 stplot.STIDF	stplot
@@ -122,6 +125,7 @@ timeIsInterval<-,ANY,logical-method	interval
 timeIsInterval<-,ST,logical-method	interval
 timeIsInterval<-,STT,logical-method	interval
 timeMatch	timematch
+timeMatch,Date,Date-method	timematch
 timeMatch,POSIXct,POSIXct-method	timematch
 timeMatch,ST,ST-method	timematch
 timeMatch,xts,xts-method	timematch

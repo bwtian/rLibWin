@@ -3,6 +3,7 @@ SoilProfileCollection-class
 addBracket              Add Depth Brackets
 addVolumeFraction       Symbolize Volume Fraction on a Soil Profile
                         Collection Plot
+aggregateSoilDepth      Probabalistic Estimation of Soil Depth
 amarillo                Amarillo Soils
 aqp-package             Algorithms for Quantitative Pedology
 ca630                   Soil Data from the Central Sierra Nevada Region
@@ -25,10 +26,12 @@ munsell2rgb             Convert Munsell Notation to and from RGB color
                         coordinates
 panel.depth_function    Lattice Panel Function for Soil Profiles
 pc                      Numerical Soil Profile Comparison
-plotSPC                 Profile Plot
+plot                    Profile Plot
+plotMultipleSPC         Plot Multiple SoilProfileCollection Objects
 plot_distance_graph     Between Individual Distance Plot
 profileApply            Apply a function to soil profiles within a
                         SoilProfileCollection object.
+profileGroupLabels      Soil Profile Group Labels
 random_profile          Random Profile
 resample.twotheta       Resample an XRD Pattern
 rruff.sample            Sample XRD Patterns
@@ -46,4 +49,6 @@ test_hz_logic           Test Horizon Logic
 texture.triangle.low.rv.high
                         Soil Texture Low-RV-High as Defined by
                         Quantiles
+unique                  Get Indices to Unique Soil Profiles Within a
+                        Collection
 unroll                  Unroll Genetic Horizons

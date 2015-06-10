@@ -1,6 +1,7 @@
 BASICTOPOMAP            Basic Topogrpahy Map
 CCcheck                 Counter Clockwise check
 ColorScale              Color Scale
+DATUMinfo               Datum information.
 DUMPLOC                 DUMP vectors to screen in list format
 EHB.LLZ                 Earthquake Location Data
 Ellipsoidal.Distance    Ellipsoidal Distance
@@ -41,6 +42,9 @@ SSfault                 Strike Slip Fault
 STROKEinfo              Stroke Information
 SynAnticline            Syncline and Anticline traces
 TOPOCOL                 Create Topography ColorMAP
+UTM.ll                  Map projection
+UTM.xy                  Map projection
+UTMzone                 UTM zone information
 X.prod                  Cross Product
 XSECDEMg                Cross Sections Using RPMG
 XSECEQ                  Iinteractive earthquake cross section

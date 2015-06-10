@@ -19,10 +19,12 @@ inv.logit	logit
 invalid	invalid
 keywords	keywords
 lastAdd	lastAdd
+loadedPackages	loadedPackages
 logit	logit
 logratio2foldchange	foldchange
 mixedorder	mixedsort
 mixedsort	mixedsort
+na.replace	na.replace
 odd	oddeven
 permutations	combinations
 permute	permute

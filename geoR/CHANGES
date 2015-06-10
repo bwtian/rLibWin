@@ -1,4 +1,15 @@
-            
+                =====================================
+       		   CHANGES IN geoR VERSION 1.7-5
+	        =====================================
+
+BUGS/Fixes
+       o call to sp::overlay changed to sp::over()
+
+       o changes to fix issues on CRAN reported errors/warnings
+regarding namespaces and foreign calls
+
+
+ 
                 =====================================
        		   CHANGES IN geoR VERSION 1.7-4
 	        =====================================

@@ -52,6 +52,8 @@ ndiffs	numberdiffs
 nnetar	nnetar
 nsdiffs	numberdiffs
 Pacf	Acf
+plot.ar	plot.Arima
+plot.Arima	plot.Arima
 plot.bats	plot.bats
 plot.ets	plot.ets
 plot.forecast	forecastplot
@@ -76,6 +78,8 @@ stlf	forecast.stl
 stlm	forecast.stl
 subset.ts	subsetts
 summary.forecast	forecast
+taperedacf	Acf
+taperedpacf	Acf
 taylor	taylor
 tbats	tbats
 tbats.components	tbats.components

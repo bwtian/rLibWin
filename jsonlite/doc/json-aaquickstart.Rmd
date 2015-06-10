@@ -1,13 +1,14 @@
 ---
 Title: "Getting started with JSON and jsonlite"
+date: "`r Sys.Date()`"
 output:
-  html_document:
-    theme: flatly
+  html_document
+vignette: >
+  %\VignetteIndexEntry{Getting started with JSON and jsonlite}
+  %\VignetteEngine{knitr::rmarkdown}
+  \usepackage[utf8]{inputenc}
 ---
-<!--
-%\VignetteEngine{knitr::rmarkdown}
-%\VignetteIndexEntry{Getting started with JSON and jsonlite}
--->
+
 
 ```{r echo=FALSE}
 library(knitr)
@@ -33,7 +34,7 @@ This vignette introduces basic concepts to get started with jsonlite. For a more
 
 ## Simplification
 
-Simplification is the process where JSON arrays automatically get converted from a list into a more specific R class. The `fromJSON` function has 3 arguments which control the simplification process: `simplifyVector`, `simplifiyDataFrame` and `simplifyMatrix`. Each one is enabled by default.
+Simplification is the process where JSON arrays automatically get converted from a list into a more specific R class. The `fromJSON` function has 3 arguments which control the simplification process: `simplifyVector`, `simplifyDataFrame` and `simplifyMatrix`. Each one is enabled by default.
 
 | JSON structure        | Example JSON data                                        | Simplifies to R class | Argument in fromJSON | 
 | ----------------------|----------------------------------------------------------|-----------------------|----------------------|

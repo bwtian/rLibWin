@@ -17,6 +17,10 @@ Krig.engine.default     Basic linear algebra utilities and other
                         computations supporting the Krig function.
 Krig.null.function      Default function to create fixed matrix part of
                         spatial process model.
+Krig.replicates         Collapse repeated spatial locations into unique
+                        locations
+MLESpatialProcess       Estimates key covariance parameters for a
+                        spatial process.
 NorthAmericanRainfall   Observed North American summer precipitation
                         from the historical climate network.
 QTps                    Robust and Quantile smoothing using a
@@ -77,8 +81,8 @@ ozone                   Data set of ozone measurements at 20 Chicago
                         monitoring stations.
 ozone2                  Daily 8-hour ozone averages for sites in the
                         Midwest
-plot.Krig               Diagnostic and summary plots of a Kriging or
-                        spline object
+plot.Krig               Diagnostic and summary plots of a Kriging,
+                        spatialProcess or spline object.
 plot.surface            Plots a surface
 poly.image              Image plot for cells that are irregular
                         quadrilaterals.
@@ -104,8 +108,9 @@ ribbon.plot             Adds to an existing plot, a ribbon of color,
                         sequence of line segments.
 set.panel               Specify a panel of plots
 sim.Krig                Conditional simulation of a spatial process
-sim.rf                  Simulates a random field
+sim.rf                  Simulates a Stationary Gaussian random field
 smooth.2d               Kernel smoother for irregular 2-d data
+spatialProcess          Estimates a spatial process model.
 spind2spam              Conversion of formats for sparse matrices
 splint                  Cubic spline interpolation
 sreg                    Cubic smoothing spline regression
@@ -113,7 +118,8 @@ stationary.image.cov    Exponential, Matern and general covariance
                         functions for 2-d gridded locations.
 stats                   Calculate summary statistics
 stats.bin               Bins data and finds some summary statistics.
-summary.Krig            Summary for Krig spatial process estimate
+summary.Krig            Summary for Krig or spatialProcess estimated
+                        models.
 summary.ncdf            Summarizes a netCDF file handle
 surface.Krig            Plots a surface and contours
 tim.colors              Some useful color tables for images and tools

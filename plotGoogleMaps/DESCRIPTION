@@ -1,16 +1,17 @@
 Package: plotGoogleMaps
 Type: Package
-Title: Plot spatial or spatio-temporal data over Google Maps
-Version: 2.1
-Date: 2012-04-02
+Title: Plot Spatial or Spatio-Temporal Data Over Google Maps
+Version: 2.2
+Date: 2015-02-13
 Author: Milan Kilibarda
 Maintainer: Milan Kilibarda <kili@grf.bg.ac.rs>
-Description: This package provides a interactive plot device for handling the geographic data for web browsers. It is designed for the automatic creation of web maps as a combination of users' data and Google Maps layers. 
+Description: Provides an interactive plot device for handling the geographic data for web browsers, designed for the automatic creation of web maps as a combination of users' data and Google Maps layers. 
 Depends: R (>= 2.15.0), sp, spacetime
 Imports: rgdal, maptools,lattice, raster
 License: GPL-2
-Packaged: 2014-06-19 12:37:18 UTC; kili
+URL: http://r-forge.r-project.org/projects/plotgooglemaps/
+Packaged: 2015-02-13 08:23:46 UTC; kili
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-06-19 15:42:40
-Built: R 3.1.1; ; 2014-10-18 23:19:36 UTC; windows
+Date/Publication: 2015-02-13 11:03:41
+Built: R 3.1.3; ; 2015-06-09 07:34:10 UTC; windows

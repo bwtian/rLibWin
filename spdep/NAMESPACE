@@ -6,6 +6,8 @@ importFrom(stats, optimize, optim, nlminb)
 
 importFrom(stats, influence.measures)
 
+importFrom(stats, lag)
+
 importFrom(nlme, fdHess)
 
 importFrom(deldir, deldir)
@@ -25,11 +27,11 @@ importFrom(LearnBayes, rwmetrop)
 import(sp)
 import(methods)
 
-import(parallel)
-
 #importClassesFrom(spam, spam)
 #importMethodsFrom(spam, Math, Math2)
 #importFrom(spam, validspamobject)
+
+exportMethods(coerce)
 
 export(EBImoran.mc, probmap, choynowski, EBest, EBlocal, LR.sarlm, 
 	LR1.sarlm, Wald1.sarlm, airdist, card, rookcell, 
@@ -106,6 +108,8 @@ export(MCMCsamp)
 
 export(tolerance.nb, Rotation)
 
+export(lextrB, lextrW, lextrS, l_max)
+
 export(lee.mc, lee, lee.test)
 
 #import(maptools)
@@ -121,6 +125,7 @@ S3method(summary, listw)
 S3method(print, listw)
 S3method(plot, listw)
 S3method(subset, listw)
+S3method(lag, listw)
 
 S3method(plot, Gabriel)
 S3method(plot, relative)

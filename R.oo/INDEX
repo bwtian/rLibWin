@@ -1,3 +1,4 @@
+Class                   The Class class describes an Object class
 Exception               The Exception class to be thrown and caught
 InternalErrorException
                         InternalErrorException represents internal

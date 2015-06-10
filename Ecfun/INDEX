@@ -1,4 +1,5 @@
 Arrows                  Draw arrows between pairs of points.
+BoxCox                  Box-Cox power transformation and its inverse
 Interp                  Interpolate between numbers or numbers of
                         characters
 Ping                    ping a Uniform resource locator (URL)

@@ -9,6 +9,7 @@ areg	areg
 areg.boot	transace
 aregImpute	aregImpute
 aregTran	Hmisc-internal
+arrGrob	ggMisc
 as.character.mChoice	mChoice
 as.data.frame.impute	Hmisc-internal
 as.data.frame.labelled	label
@@ -48,6 +49,7 @@ cleanup.import	upData
 clowess	Misc
 cnvrt.coords	cnvrt.coords
 code.levels	sas.get
+colorFacet	ggMisc
 combine	Hmisc-internal
 combine.levels	varclus
 combine<-	Hmisc-internal
@@ -116,12 +118,12 @@ fit.mult.impute	transcan
 format.df	format.df
 format.mChoice	mChoice
 format.pval	format.pval
-format.sep	Hmisc-internal
 format.special.miss	sas.get
 format.timePOSIXt	Hmisc-internal
 formatCats	Hmisc-internal
 formatCons	Hmisc-internal
 formatDateTime	Hmisc-internal
+formatSep	Hmisc-internal
 formatTestStats	Hmisc-internal
 formula.summary.formula.cross	summary.formula
 ftupwr	Hmisc-internal
@@ -139,13 +141,17 @@ get2rowHeads	Hmisc-internal
 getHdata	getHdata
 getLatestSource	Misc
 GetModelFrame	Hmisc-internal
+getRs	getRs
 getZip	getZip
+ggplot.summaryP	summaryP
+ggplot.transcan	transcan
 Gompertz2	spower
 groupn	Hmisc-internal
 hdquantile	hdquantile
 hist.data.frame	hist.data.frame
 histbackback	histbackback
 histSpike	scat1d
+histSpikeg	scat1d
 Hmisc.Overview	Overview
 HmiscOverview	Overview
 hoeffd	hoeffd
@@ -176,6 +182,7 @@ jitter2.default	scat1d
 Key	legendfunctions
 Key2	legendfunctions
 km.quick	Misc
+knitrSet	knitrSet
 labcurve	labcurve
 Label	label
 label	label
@@ -321,6 +328,7 @@ print.abs.error.pred	abs.error.pred
 print.areg	areg
 print.areg.boot	transace
 print.aregImpute	aregImpute
+print.arrGrob	ggMisc
 print.biVar	biVar
 print.bystats	bystats
 print.bystats2	bystats
@@ -432,6 +440,8 @@ spower	spower
 spss.get	spss.get
 src	src
 stata.get	stata.get
+StatPlsmo	Hmisc-internal
+stat_plsmo	stat_plsmo
 stepfun.eval	Hmisc-internal
 stratify	summary.formula
 strgraphwrap	Misc

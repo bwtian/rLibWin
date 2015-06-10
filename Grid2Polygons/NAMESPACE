@@ -1,2 +1,9 @@
+importFrom(sp, SpatialPolygonsDataFrame, SpatialPolygons, Polygons, Polygon,
+           CRS, gridparameters)
+importMethodsFrom(sp, proj4string, "proj4string<-", over, bbox)
+
+importMethodsFrom(rgeos, intersect)
+importClassesFrom(rgeos, gpc.poly)
+
 useDynLib(Grid2Polygons)
 export(Grid2Polygons)

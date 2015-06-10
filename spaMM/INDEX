@@ -18,7 +18,7 @@ designL.from.Corr       Computation of "square root" of correlation
 extractors              Functions to extract various components of a
                         fit
 fixedLRT                Likelihood ratio test of fixed effects.
-make.scaled.dist        Scaled Euclidian distances between unique
+make.scaled.dist        Scaled Euclidean distances between unique
                         locations
 mapMM                   Colorful plots of predicted responses in
                         two-dimensional space.

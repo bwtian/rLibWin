@@ -42,7 +42,7 @@ ltraj2spdf              Conversion of the class "ltraj" to the package
 mindistkeep             Detecting Absence of Movement in an Object of
                         Class 'ltraj'
 modpartltraj            Segmentation of a trajectory based on Markov
-                        models (STILL UNDER RESEARCH!!)
+                        models
 mouflon                 GPS Monitoring of One Mouflon in the Caroux
                         Mountain
 na.omit.ltraj           Removes the missing values in a trajectory

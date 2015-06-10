@@ -88,7 +88,7 @@ plotTrace               Plot Trace Lines from a Data Frame, Matrix, or
                         Vector
 presentTalk             Run a Presentation in R
 promptWriteOptions      Prompt the User to Write Changed Options
-readList                Read a List from a File in PBS Modelling Format
+readList                Read a List from an ASCII File
 readPBSoptions          Read PBS Options from an External File
 resetGraph              Reset par Values for a Plot
 restorePar              Get Actual Parameters from Scaled Values

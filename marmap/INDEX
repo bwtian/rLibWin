@@ -6,6 +6,7 @@ as.bathy                Convert to bathymetric data in an object of
                         class bathy
 as.raster               Convert bathymetric data to a raster layer
 as.xyz                  Convert to xyz format
+autoplot.bathy          Ploting bathymetric data with ggplot
 celt                    Bathymetric data for the North Est Atlantic
 check.bathy             Sort bathymetric data matrix by increasing
                         latitude and longitude
@@ -20,7 +21,9 @@ create.buffer           Create a buffer of specified radius around one
 diag.bathy              Finds matrix diagonal for non-square matrices
 dist2isobath            Computes the shortest great circle distance
                         between any point and a given isobath
+etopo                   Etopo colours
 florida                 Bathymetric data around Florida, USA
+fortify.bathy           Extract bathymetry data in a data.frame
 get.area                Get projected surface area
 get.box                 Get bathymetric information of a belt transect
 get.depth               Get depth data by clicking on a map

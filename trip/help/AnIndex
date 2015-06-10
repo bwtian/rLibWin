@@ -26,6 +26,7 @@ filter.penSS	filter.penSS
 forceCompliance	forceCompliance
 getTimeID	trip-accessors
 getTORnames	trip-accessors
+homedist	homedist
 interpequal	tripGrid.interp
 kdePoints	tripGrid.interp
 lines,trip-method	trip-class
@@ -35,6 +36,9 @@ oc.colors	oc.theme
 oc.theme	oc.theme
 plot,trip,missing-method	trip-class
 print.summary.TORdata	trip-accessors
+rasterize	rasterize
+rasterize,trip,missing-method	rasterize
+rasterize,trip,RasterLayer-method	rasterize
 readArgos	readArgos
 readDiag	readArgos
 sda	sda

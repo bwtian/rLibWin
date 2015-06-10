@@ -48,6 +48,7 @@ list2mat	Deprecated
 lseq	lseq
 margin2table	printTable2
 mat2tex	mat2tex
+missingCh	missingCh
 mpl	mpl
 mult.fig	mult.fig
 n.code	n.code
@@ -97,6 +98,7 @@ quadrant	quadrant
 QUnif	QUnif
 repChar	repChar
 rot2	rot2
+rotn	rot13
 roundfixS	roundfixS
 rrange	rrange
 seqXtend	seqXtend

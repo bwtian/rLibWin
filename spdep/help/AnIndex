@@ -38,6 +38,9 @@ coef.lagmess	lagmess
 coef.sarlm	residuals.sarlm
 coef.spautolm	spautolm
 coef.stsls	stsls
+coerce,listw,CsparseMatrix-method	as_dgRMatrix_listw
+coerce,listw,RsparseMatrix-method	as_dgRMatrix_listw
+coerce,listw,symmetricMatrix-method	as_dgRMatrix_listw
 col.gal.nb	columbus
 COL.nb	COL.OLD
 COL.OLD	COL.OLD
@@ -85,6 +88,7 @@ geary.mc	geary.mc
 geary.test	geary.test
 get.ClusterOption	set.mcOption
 get.coresOption	set.mcOption
+get.listw_is_CsparseMatrix_Option	set.spChkOption
 get.mcOption	set.mcOption
 get.spChkOption	set.spChkOption
 get.VerboseOption	set.spChkOption
@@ -128,6 +132,9 @@ lagsarlm	lagsarlm
 lee	lee
 lee.mc	lee.mc
 lee.test	lee.test
+lextrB	lextrB
+lextrS	lextrB
+lextrW	lextrB
 listw2lines	nb2lines
 listw2mat	nb2mat
 listw2sn	listw2sn
@@ -155,6 +162,7 @@ LR1.sarlm	LR.sarlm
 LR1.spautolm	spautolm
 LU_prepermutate_setup	do_ldet
 LU_setup	do_ldet
+l_max	lextrB
 make.sym.nb	testnb
 mat2listw	mat2listw
 Matrix_J_setup	do_ldet
@@ -254,6 +262,7 @@ Rotation	rotation
 sacsarlm	sacsarlm
 set.ClusterOption	set.mcOption
 set.coresOption	set.mcOption
+set.listw_is_CsparseMatrix_Option	set.spChkOption
 set.mcOption	set.mcOption
 set.spChkOption	set.spChkOption
 set.VerboseOption	set.spChkOption

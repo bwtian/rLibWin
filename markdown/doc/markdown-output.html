@@ -421,15 +421,15 @@ cat(markdownToHTML(text = mkd, options = c(tOpt)))
 <p><style></style><img src="http://cran.rstudio.com/Rlogo.jpg">Hello</p>
 
 <pre><code class="r"># safelink example
-cat(markdownToHTML(text = &#39;[foo](foo://bar &quot;baz&quot;)&#39;, options = c(tOpt)))
+cat(markdownToHTML(text = &#39;[foo](http://google.com &quot;baz&quot;)&#39;, options = c(tOpt)))
 </code></pre>
 
-<p><a href="foo://bar" title="baz">foo</a></p>
+<p><a href="http://google.com" title="baz">foo</a></p>
 
-<pre><code class="r">cat(markdownToHTML(text = &#39;[foo](foo://bar &quot;baz&quot;)&#39;, options = c(tOpt, &quot;safelink&quot;)))
+<pre><code class="r">cat(markdownToHTML(text = &#39;[foo](http://google.com &quot;baz&quot;)&#39;, options = c(tOpt, &quot;safelink&quot;)))
 </code></pre>
 
-<p>[foo](foo://bar &ldquo;baz&rdquo;)</p>
+<p><a href="http://google.com" title="baz">foo</a></p>
 
 <pre><code class="r"># toc example
 mkd &lt;- paste(c(&quot;# Header 1&quot;, &quot;p1&quot;, &quot;## Header 2&quot;, &quot;p2&quot;), collapse = &quot;\n&quot;)

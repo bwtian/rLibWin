@@ -29,6 +29,8 @@ binomialDesign          Design functions
 boxplot.SpatialStreamNetwork
                         Box-and-whisker plots for data within
                         SpatialStreamNetwork objects.
+copyLSN2temp            Copies the lsn directory MiddleFork04.ssn to
+                        R's temporary directory
 covparms                Get Covariance Parameters
 createDistMat           Calculate Hydrologic Distances for a
                         SpatialStreamNetwork Object

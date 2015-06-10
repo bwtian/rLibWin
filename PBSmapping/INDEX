@@ -35,8 +35,8 @@ convLP                  Convert Polylines into a Polygon
 convUL                  Convert Coordinates between UTM and Lon/Lat
 dividePolys             Divide a Single Polygon into Several Polygons
 extractPolyData         Extract PolyData from a PolySet
-findCells               Find the Grid Cells that Contain Events
-findPolys               Find the Polygons that Contain Events
+findCells               Find Grid Cells that Contain Events
+findPolys               Find Polygons that Contain Events
 fixBound                Fix the Boundary Points of a PolySet
 fixPOS                  Fix the POS Column of a PolySet
 importEvents            Import EventData from a Text File
@@ -55,10 +55,8 @@ makeGrid                Make a Grid of Polygons
 makeProps               Make Polygon Properties
 makeTopography          Make Topography Data From Freely Available
                         Online Data
-nepacLL                 Data: Shoreline of the NE Pacific Ocean (Normal
-                        Resolution)
-nepacLLhigh             Data: Shoreline of the NE Pacific Ocean (High
-                        Resolution)
+nepacLL                 Data: Shorelines of the NE Pacific Ocean and of
+                        the World
 placeHoles              Place Holes Under Correct Solids
 plotLines               Plot a PolySet as Polylines
 plotMap                 Plot a PolySet as a Map
@@ -76,6 +74,3 @@ towData                 Data: Tow Information from Longspine Thornyhead
                         Survey
 towTracks               Data: Tow Track Polylines from Longspine
                         Thornyhead Survey
-worldLL                 Data: Shorelines of the World (Normal
-                        Resolution)
-worldLLhigh             Data: Shorelines of the World (High Resolution)

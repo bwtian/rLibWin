@@ -4,15 +4,18 @@ OSM_scale_lookup        Look up OpenStreetMap scale for a given zoom
                         level.
 XY2LonLat               Convert a tile coordinate to a lon/lat
                         coordinate
+bb2bbox                 Convert a bb specification to a bbox
+                        specification
+calc_zoom               Calculate a zoom given a bounding box
 crime                   Crime data
 distQueryCheck          Check Google Maps Distance Matrix API query
                         limit
 geocode                 Geocode
-geocodeQueryCheck       Check Google Geocoding API query limit
 geom_leg                Single line segments with rounded ends
-get_cloudmademap        Get a CloudMade map
-get_googlemap           Get a Google Map
+get_cloudmademap        Get a CloudMade map.
+get_googlemap           Get a Google Map.
 get_map                 Grab a map.
+get_navermap            Get a Naver Map
 get_openstreetmap       Get an OpenStreetMap
 get_stamenmap           Get a Stamen Map
 ggimage                 Plot an image using ggplot2

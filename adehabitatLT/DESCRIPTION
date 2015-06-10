@@ -1,17 +1,17 @@
 Package: adehabitatLT
-Version: 0.3.17
-Date: 2013/12/17
-Depends: R (>= 2.10.0), sp, methods, ade4, adehabitatMA, CircStats
+Version: 0.3.19
+Date: 2015-03-28
+Depends: R (>= 2.10.0), sp, methods, ade4, adehabitatMA, CircStats,
+        stats
 Suggests: maptools, tkrplot, MASS
-Title: Analysis of animal movements
+Title: Analysis of Animal Movements
 Author: Clement Calenge, contributions from Stephane Dray and Manuela Royer
 Maintainer: Clement Calenge <clement.calenge@oncfs.gouv.fr>
-Description: A collection of tools for the analysis of animal movements
+Description: A collection of tools for the analysis of animal movements.
 License: GPL (>= 2)
-URL: https://trac.faunalia.it/animove/
-Packaged: 2014-12-17 14:32:57 UTC; calenge
 NeedsCompilation: yes
+Packaged: 2015-03-28 13:35:55 UTC; calenge
 Repository: CRAN
-Date/Publication: 2014-12-17 23:03:41
-Built: R 3.1.2; x86_64-w64-mingw32; 2015-01-06 00:27:33 UTC; windows
+Date/Publication: 2015-03-29 08:33:57
+Built: R 3.1.3; x86_64-w64-mingw32; 2015-06-09 07:22:07 UTC; windows
 Archs: i386, x64

@@ -2,6 +2,7 @@ knitr-package	knitr-package
 all_labels	all_labels
 all_patterns	all_patterns
 asis_output	asis_output
+clean_cache	clean_cache
 current_input	current_input
 dep_auto	dep_auto
 dep_prev	dep_prev
@@ -42,11 +43,13 @@ knit_filter	knit_filter
 knit_global	knit_global
 knit_hooks	knit_hooks
 knit_meta	knit_meta
+knit_params	knit_params
 knit_patterns	knit_patterns
 knit_print	knit_print
 knit_rd	knit_rd
 knit_rd_all	knit_rd
 knit_theme	knit_theme
+load_cache	load_cache
 normal_print	knit_print
 opts_chunk	opts_chunk
 opts_current	opts_chunk

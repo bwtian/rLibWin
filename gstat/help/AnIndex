@@ -4,6 +4,9 @@ Chlorid92	tull
 coalash	coalash
 cross.name	gstat-internal
 demstd	sic97
+estiStAni	estiStAni
+extractPar	extractPar
+extractParNames	extractPar
 fit.lmc	fit.lmc
 fit.StVariogram	fit.StVariogram
 fit.variogram	fit.variogram
@@ -66,6 +69,7 @@ plot.pointPairs	plot.pointPairs
 plot.StVariogram	plot.gstatVariogram
 plot.variogramCloud	plot.variogramCloud
 plot.variogramMap	plot.gstatVariogram
+predict	predict.gstat
 predict.gstat	predict.gstat
 prediction.dat	jura
 print.gstat	gstat
@@ -92,12 +96,12 @@ variogram	variogram
 variogram.default	variogram
 variogram.formula	variogram
 variogram.gstat	variogram
-variogram.line	variogram
 variogramLine	variogramLine
 variogramST	variogramST
 variogramSurface	variogramSurface
 vgm	vgm
 vgm.panel.xyplot	vgm.panel
+vgmArea	vgmArea
 vgmST	vgmST
 vv	vv
 walker	walker

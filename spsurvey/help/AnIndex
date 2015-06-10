@@ -87,6 +87,8 @@ numLevels	spsurvey-internal
 pickAreaSamplePoints	spsurvey-internal
 pickGridCells	spsurvey-internal
 pickLinearSamplePoints	spsurvey-internal
+plot,SpatialDesign,missing-method	SpatialDesign-methods
+plot.SpatialDesign	SpatialDesign-methods
 pointInPolygonFile	spsurvey-internal
 pointInPolygonObj	spsurvey-internal
 ranho	spsurvey-internal
@@ -109,8 +111,12 @@ shape2spList	spsurvey-internal
 simex	spsurvey-internal
 sorted	spsurvey-internal
 sp2shape	sp2shape
+SpatialDesign	SpatialDesign-class
+SpatialDesign-class	SpatialDesign-methods
 spbalance	spbalance
 spsurvey.analysis	spsurvey.analysis
+summary,SpatialDesign-method	SpatialDesign-methods
+summary.SpatialDesign	SpatialDesign-methods
 total.est	total.est
 total.var	spsurvey-internal
 uniqueID	uniqueID

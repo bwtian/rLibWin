@@ -41,6 +41,8 @@ bordeaux                Wine Tasting
 bsetal97                Ecological and Biological Traits
 buech                   Buech basin
 butterfly               Genetics-Ecology-Environment Triple
+bwca.dpcoa              Between- and within-class double principal
+                        coordinate analysis
 cailliez                Transformation to make Euclidean a distance
                         matrix
 capitales               Road Distances
@@ -54,6 +56,8 @@ chatcat                 Qualitative Weighted Variables
 chats                   Pair of Variables
 chazeb                  Charolais-Zebus
 chevaine                Enzymatic polymorphism in Leuciscus cephalus
+chickenk                Veterinary epidemiological study to assess the
+                        risk factors for losses in broiler chickens
 clementines             Fruit Production
 cnc2003                 Frequenting movie theaters in France in 2003
 coinertia               Coinertia Analysis
@@ -65,6 +69,7 @@ corkdist                Tests of randomization between distances
 corvus                  Corvus morphology
 costatis                STATIS and Co-Inertia : Analysis of a series of
                         paired ecological tables
+costatis.randtest       Monte-Carlo test on a Costatis analysis (in C).
 deug                    Exam marks for some students
 disc                    Rao's dissimilarity coefficient
 discrimin               Linear Discriminant Analysis (descriptive
@@ -181,6 +186,9 @@ mantel.rtest            Mantel test (correlation between two distance
                         matrices (in R).)
 maples                  Phylogeny and quantitative traits of flowers
 mariages                Correspondence Analysis Table
+mbpcaiv                 Multiblock principal component analysis with
+                        instrumental variables
+mbpls                   Multiblock partial least squares
 mcoa                    Multiple CO-inertia Analysis
 mdpcoa                  Multiple Double Principal Coordinate Analysis
 meau                    Ecological Data : sites-variables,
@@ -227,6 +235,8 @@ pcaiv                   Principal component analysis with respect to
 pcaivortho              Principal Component Analysis with respect to
                         orthogonal instrumental variables
 pcoscaled               Simplified Analysis in Principal Coordinates
+pcw                     Distribution of of tropical trees along the
+                        Panama canal
 perthi02                Contingency Table with a partition in Molecular
                         Biology
 phylog                  Phylogeny
@@ -234,7 +244,6 @@ piosphere               Plant traits response to grazing
 plot.phylog             Plot phylogenies
 presid2002              Results of the French presidential elections of
                         2002
-print.between           Between-Class Analysis
 print.within            Within-Class Analysis
 procella                Phylogeny and quantitative traits of birds
 procuste                Simple Procruste Rotation between two sets of
@@ -247,6 +256,8 @@ pta                     Partial Triadic Analysis of a K-tables
 quasieuclid             Transformation of a distance matrice to a
                         Euclidean one
 randEH                  Nee and May's random process
+randboot                Bootstrap simulations
+randboot.multiblock     Bootstraped simulations for multiblock methods
 randtest                Class of the Permutation Tests (in C).
 randtest.amova          Permutation tests on an analysis of molecular
                         variance (in C).
@@ -258,6 +269,7 @@ randtest.discrimin      Monte-Carlo Test on a Discriminant Analysis (in
                         C).
 randtest.pcaiv          Monte-Carlo Test on the percentage of explained
                         (i.e.  constrained) inertia
+randxval                Two-fold cross-validation
 rankrock                Ordination Table
 reconst                 Reconstitution of Data from a Duality Diagram
 rhizobium               Genetic structure of two nitrogen fixing
@@ -308,7 +320,7 @@ scatter.coa             Plot of the factorial maps for a correspondence
 scatter.dudi            Plot of the Factorial Maps
 scatter.fca             Plot of the factorial maps for a fuzzy
                         correspondence analysis
-scatterutil.base        Graphical utility functions
+scatterutil             Graphical utility functions
 sco.boxplot             Representation of the link between a variable
                         and a set of qualitative variables
 sco.class               1D plot of a numeric score and a factor with
@@ -333,8 +345,11 @@ sepan                   Separated Analyses in a K-tables
 skulls                  Morphometric Evolution
 statico                 STATIS and Co-Inertia : Analysis of a series of
                         paired ecological tables
+statico.krandtest       Monte-Carlo test on a Statico analysis (in C).
 statis                  STATIS, a method for analysing K-tables
 steppe                  Transect in the Vegetation
+summary.between         Between-Class Analysis
+summary.multiblock      Display and summarize multiblock objects
 supcol                  Projections of Supplementary Columns
 suprow                  Projections of Supplementary Rows
 symbols.phylog          Representation of a quantitative variable in
@@ -350,6 +365,9 @@ table.value             Plot of the Arrays
 tarentaise              Mountain Avifauna
 taxo.eg                 Examples of taxonomy
 testdim                 Function to perform a test of dimensionality
+testdim.multiblock      Selection of the number of dimension by
+                        two-fold cross-validation for multiblock
+                        methods
 tintoodiel              Tinto and Odiel estuary geochemistry
 tithonia                Phylogeny and quantitative traits of flowers
 tortues                 Morphological Study of the Painted Turtle

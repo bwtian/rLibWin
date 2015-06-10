@@ -2,5 +2,5 @@
 exportPattern(".")
 useDynLib(GEOmap)
 import(RPMG)
+import(fields)
 importFrom(splancs,inout, areapl, as.points)
-importFrom(MBA, mba.surf)

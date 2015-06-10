@@ -445,16 +445,16 @@ cat(markdownToHTML(text = mkd, options = c(tOpt)))
 </code></pre>
 
 <pre><code class="r"># safelink example
-cat(markdownToHTML(text = &#39;[foo](foo://bar &quot;baz&quot;)&#39;, options = c(tOpt)))
+cat(markdownToHTML(text = &#39;[foo](http://google.com &quot;baz&quot;)&#39;, options = c(tOpt)))
 </code></pre>
 
-<pre><code>## &lt;p&gt;&lt;a href=&quot;foo://bar&quot; title=&quot;baz&quot;&gt;foo&lt;/a&gt;&lt;/p&gt;
+<pre><code>## &lt;p&gt;&lt;a href=&quot;http://google.com&quot; title=&quot;baz&quot;&gt;foo&lt;/a&gt;&lt;/p&gt;
 </code></pre>
 
-<pre><code class="r">cat(markdownToHTML(text = &#39;[foo](foo://bar &quot;baz&quot;)&#39;, options = c(tOpt, &quot;safelink&quot;)))
+<pre><code class="r">cat(markdownToHTML(text = &#39;[foo](http://google.com &quot;baz&quot;)&#39;, options = c(tOpt, &quot;safelink&quot;)))
 </code></pre>
 
-<pre><code>## &lt;p&gt;[foo](foo://bar &amp;quot;baz&amp;quot;)&lt;/p&gt;
+<pre><code>## &lt;p&gt;&lt;a href=&quot;http://google.com&quot; title=&quot;baz&quot;&gt;foo&lt;/a&gt;&lt;/p&gt;
 </code></pre>
 
 <pre><code class="r"># toc example

@@ -72,6 +72,8 @@ lagsarlm                Spatial simultaneous autoregressive lag model
 lee                     Compute Lee's statistic
 lee.mc                  Permutation test for Lee's L statistic
 lee.test                Lee's L test for spatial autocorrelation
+lextrB                  Find extreme eigenvalues of binary symmetric
+                        spatial weights
 listw2sn                Spatial neighbour sparse representation
 lm.LMtests              Lagrange Multiplier diagnostics for spatial
                         dependence in linear models

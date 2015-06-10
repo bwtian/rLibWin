@@ -44,6 +44,7 @@ Kdot.inhom              Inhomogeneous Multitype K Dot Function
 Kest                    K-function
 Kest.fft                K-function using FFT
 Kinhom                  Inhomogeneous K-function
+Kmark                   Mark-Weighted K Function
 Kmeasure                Reduced Second Moment Measure
 Kmodel                  K Function or Pair Correlation Function of a
                         Point Process Model
@@ -67,6 +68,8 @@ LennardJones            The Lennard-Jones Potential
 Lest                    L-function
 Linhom                  L-function
 Math.im                 S3 Group Generic methods for images
+Math.linim              S3 Group Generic Methods for Images on a Linear
+                        Network
 MultiHard               The Multitype Hard Core Point Process Model
 MultiStrauss            The Multitype Strauss Point Process Model
 MultiStraussHard        The Multitype/Hard Core Strauss Point Process
@@ -163,6 +166,7 @@ as.data.frame.im        Convert Pixel Image to Data Frame
 as.data.frame.ppp       Coerce Point Pattern to a Data Frame
 as.data.frame.psp       Coerce Line Segment Pattern to a Data Frame
 as.function.fv          Convert Function Value Table to Function
+as.function.im          Convert Pixel Image to Function of Coordinates
 as.fv                   Convert Data To Class fv
 as.hyperframe           Convert Data to Hyperframe
 as.hyperframe.ppx       Extract coordinates and marks of
@@ -171,6 +175,9 @@ as.im                   Convert to Pixel Image
 as.interact             Extract Interaction Structure
 as.layered              Convert Data To Layered Object
 as.linim                Convert to Pixel Image on Linear Network
+as.linnet.linim         Extract Linear Network from Data on a Linear
+                        Network
+as.linnet.psp           Convert Line Segment Pattern to Linear Network
 as.lpp                  Convert Data to a Point Pattern on a Linear
                         Network
 as.mask                 Pixel Image Approximation of a Window
@@ -240,6 +247,7 @@ circumradius            Circumradius of a Window
 clarkevans              Clark and Evans Aggregation Index
 clarkevans.test         Clark and Evans Test
 clickbox                Interactively Define a Rectangle
+clickdist               Interactively Measure Distance
 clickjoin               Interactively join vertices on a plot
 clickpoly               Interactively Define a Polygon
 clickppp                Interactively Add Points
@@ -248,6 +256,12 @@ clmfires                Castilla-La Mancha Forest Fires
 closepairs              Close Pairs of Points
 closepairs.pp3          Close Pairs of Points in 3 Dimensions
 closing                 Morphological Closing
+clusterfield            Field of clusters
+clusterfit              Fit Cluster or Cox Point Process Model via
+                        Minimum Contrast
+clusterkernel           Extract Cluster Offspring Kernel
+clusterradius           Compute or Extract Effective Range of Cluster
+                        Kernel
 clusterset              Allard-Fraley Estimator of Cluster Feature
 coef.mppm               Coefficients of Point Process Model Fitted to
                         Multiple Point Patterns
@@ -305,10 +319,13 @@ default.rmhcontrol      Set Default Control Parameters for
                         Metropolis-Hastings Algorithm.
 delaunay                Delaunay Triangulation of Point Pattern
 delaunay.distance       Distance on Delaunay Triangulation
+delaunay.network        Linear Network of Delaunay Triangulation or
+                        Dirichlet Tessellation
 deltametric             Delta Metric
 demohyper               Demonstration Example of Hyperframe of Spatial
                         Data
 demopat                 Artificial Data Point Pattern
+dendrite                Dendritic Spines Data
 density.ppp             Kernel Smoothed Intensity of Point Pattern
 density.psp             Kernel Smoothing of Line Segment Pattern
 density.splitppp        Kernel Smoothed Intensity of Split Point
@@ -326,7 +343,7 @@ diameter.owin           Diameter of a Window
 dilated.areas           Areas of Morphological Dilations
 dilation                Morphological Dilation
 dirichlet               Dirichlet Tessellation of Point Pattern
-dirichlet.vertices      Vertices of Dirichlet Tessellation
+dirichlet.vertices      Vertices and Edges of Dirichlet Tessellation
 dirichlet.weights       Compute Quadrature Weights Based on Dirichlet
                         Tessellation
 disc                    Circular Window
@@ -441,6 +458,7 @@ influence.ppm           Influence Measure for Spatial Point Process
 inforder.family         Infinite Order Interaction Family
 inside.owin             Test Whether Points Are Inside A Window
 integral.im             Integral of a Pixel Image
+integral.linim          Integral on a Linear Network
 integral.msr            Integral of a Measure
 intensity               Intensity of a Dataset or a Model
 intensity.lpp           Empirical Intensity of Point Pattern on Linear
@@ -549,9 +567,9 @@ lurking                 Lurking variable plot
 lut                     Lookup Tables
 markconnect             Mark Connection Function
 markcorr                Mark Correlation Function
-markcorrint             Mark Correlation Integral
 marks                   Marks of a Point Pattern
 marks.psp               Marks of a Line Segment Pattern
+marks.tess              Marks of a Tessellation
 markstat                Summarise Marks in Every Neighbourhood in a
                         Point Pattern
 marktable               Tabulate Marks in Neighbourhood of Every Point
@@ -605,6 +623,7 @@ murchison               Murchison gold deposits
 nbfires                 Point Patterns of New Brunswick Forest Fires
 nearest.raster.point    Find Pixel Nearest to a Given Point
 nearestsegment          Find Line Segment Nearest to Each Point
+nestsplit               Nested Split
 nnclean                 Nearest Neighbour Clutter Removal
 nncorr                  Nearest-Neighbour Correlation Indices of Marked
                         Point Pattern
@@ -711,7 +730,7 @@ plot.msr                Plot a Signed or Vector-Valued Measure
 plot.onearrow           Plot an Arrow
 plot.owin               Plot a Spatial Window
 plot.plotppm            Plot a plotppm Object Created by plot.ppm
-plot.pp3                Plot a three-dimensional point pattern
+plot.pp3                Plot a Three-Dimensional Point Pattern
 plot.ppm                plot a Fitted Point Process Model
 plot.ppp                plot a Spatial Point Pattern
 plot.psp                plot a Spatial Line Segment Pattern
@@ -730,8 +749,10 @@ plot.yardstick          Plot a Yardstick or Scale Bar
 pointsOnLines           Place Points Evenly Along Specified Lines
 ponderosa               Ponderosa Pine Tree Point Pattern
 pool                    Pool Data
+pool.anylist            Pool Data from a List of Objects
 pool.envelope           Pool Data from Several Envelopes
 pool.fasp               Pool Data from Several Function Arrays
+pool.fv                 Pool Several Functions
 pool.quadrattest        Pool Several Quadrat Tests
 pool.rat                Pool Data from Several Ratio Objects
 pp3                     Three Dimensional Point Pattern
@@ -791,6 +812,7 @@ quadscheme              Generate a Quadrature Scheme from a Point
                         Pattern
 quadscheme.logi         Generate a Logistic Regression Quadrature
                         Scheme from a Point Pattern
+quantess                Quantile Tessellation
 quantile.ewcdf          Quantiles of Weighted Empirical Cumulative
                         Distribution Function
 quantile.im             Sample Quantiles of Pixel Image
@@ -923,7 +945,9 @@ scaletointerval         Rescale Data to Lie Between Specified Limits
 scan.test               Spatial Scan Test
 scanLRTS                Likelihood Ratio Test Statistic for Scan Test
 scanpp                  Read Point Pattern From Data File
+segregation.test        Test of Spatial Segregation of Types
 selfcrossing.psp        Crossing Points in a Line Segment Pattern
+selfcut.psp             Cut Line Segments Where They Intersect
 sessionLibs             Print Names and Version Numbers of Libraries
                         Loaded
 setcov                  Set Covariance of a Window
@@ -949,6 +973,8 @@ simulate.ppm            Simulate a Fitted Gibbs Point Process Model
 simulate.slrm           Simulate a Fitted Spatial Logistic Regression
                         Model
 slrm                    Spatial Logistic Regression
+solapply                Apply a Function Over a List and Obtain a List
+                        of Objects
 solist                  List of Two-Dimensional Spatial Objects
 solutionset             Evaluate Logical Expression Involving Pixel
                         Images and Return Region Where Expression is
@@ -956,6 +982,7 @@ solutionset             Evaluate Logical Expression Involving Pixel
 spatialcdf              Spatial Cumulative Distribution Function
 spatstat-package        The Spatstat Package
 spatstat.options        Internal Options in Spatstat Package
+spiders                 Spider Webs on Mortar Lines of a Brick Wall
 split.hyperframe        Divide Hyperframe Into Subsets and Reassemble
 split.im                Divide Image Into Sub-images
 split.ppp               Divide Point Pattern into Sub-patterns
@@ -970,6 +997,7 @@ stieltjes               Compute Integral of Function Against Cumulative
 stienen                 Stienen Diagram
 stratrand               Stratified random point pattern
 subfits                 Extract List of Individual Point Process Models
+subset.hyperframe       Subset of Hyperframe Satisfying A Condition
 subset.ppp              Subset of Point Pattern Satisfying A Condition
 suffstat                Sufficient Statistic of Point Process Model
 summary.anylist         Summary of a List of Things

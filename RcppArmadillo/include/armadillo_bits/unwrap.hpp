@@ -1,5 +1,5 @@
-// Copyright (C) 2008-2014 Conrad Sanderson
-// Copyright (C) 2008-2014 NICTA (www.nicta.com.au)
+// Copyright (C) 2008-2015 Conrad Sanderson
+// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -351,6 +351,30 @@ struct quasi_unwrap< mtOp<out_eT, T1, op_type> >
   
   template<typename eT2>
   arma_inline bool is_alias(const Mat<eT2>&) const { return false; }
+  };
+
+
+
+template<typename T1>
+struct quasi_unwrap< Op<T1, op_vectorise_col> >
+  {
+  static const bool has_subview = true;
+  
+  typedef typename T1::elem_type eT;
+  
+  inline
+  quasi_unwrap(const Op<T1, op_vectorise_col>& A)
+    : U( A.m )
+    , M( const_cast<eT*>(U.M.memptr()), U.M.n_elem, 1, false, false )
+    {
+    arma_extra_debug_sigprint();
+    }
+  
+  const unwrap<T1> U;
+  const Mat<eT>    M;
+  
+  template<typename eT2>
+  arma_inline bool is_alias(const Mat<eT2>& X) const { return (void_ptr(&(U.M)) == void_ptr(&X)); }
   };
 
 

@@ -6,12 +6,12 @@ Maintainer: Gilles Guillot <gigu@dtu.dk>
 URL: http://www2.imm.dtu.dk/~gigu/Geneland/
 License: GPL
 Suggests: mapproj,maps
-Version: 4.0.4
-Date: Mon Mar 24 16:31:49 2014
+Version: 4.0.5
+Date: Mon Jan 12 18:56:19 2015
 Depends: RandomFields,fields,tcltk
-Packaged: 2014-03-24 15:33:10 UTC; gigu
+Packaged: 2015-01-12 17:59:11 UTC; gigu
 NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2014-03-24 17:01:00
-Built: R 3.1.1; x86_64-w64-mingw32; 2014-10-18 23:06:59 UTC; windows
+Date/Publication: 2015-01-12 22:51:20
+Built: R 3.1.3; x86_64-w64-mingw32; 2015-06-09 07:09:04 UTC; windows
 Archs: i386, x64

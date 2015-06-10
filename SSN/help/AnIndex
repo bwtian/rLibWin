@@ -3,6 +3,8 @@ additive.function	additive.function
 AIC.glmssn	AIC.glmssn
 as.SpatialLines	as.SpatialLines.SpatialStreamNetwork
 as.SpatialLines.SpatialStreamNetwork	as.SpatialLines.SpatialStreamNetwork
+as.SpatialLinesDataFrame	as.SpatialLines.SpatialStreamNetwork
+as.SpatialLinesDataFrame.SpatialStreamNetwork	as.SpatialLines.SpatialStreamNetwork
 as.SpatialPoints	as.SpatialLines.SpatialStreamNetwork
 as.SpatialPoints.SpatialStreamNetwork	as.SpatialLines.SpatialStreamNetwork
 as.SpatialPointsDataFrame	as.SpatialLines.SpatialStreamNetwork
@@ -12,6 +14,7 @@ binSp	binSp
 BlockPredict	BlockPredict
 BLUP	BLUP
 boxplot.SpatialStreamNetwork	boxplot.SpatialStreamNetwork
+copyLSN2temp	copyLSN2temp
 covparms	covparms
 createDistMat	createDistMat
 createSSN	createSSN

@@ -24,7 +24,6 @@ arrayIndex              Converts vector indices to array indices
 as.character.binmode    Converts a binary/octal/hexadecimal number into
                         a string
 attachLocally.list      Assigns an objects elements locally
-bunzip2                 Bunzip a file
 callHooks               Call hook functions by hook name
 callHooks.function      Call hook functions
 capitalize              Capitalizes/decapitalizes each character string
@@ -34,6 +33,8 @@ captureOutput           Evaluate an R expression and captures the
 cmdArgs                 Simple access to parsed command-line arguments
 colClasses              Creates a vector of column classes used for
                         tabular reading
+compressFile            Compressing and decompressing files
+compressPDF             Compresses a PDF (into a new PDF)
 copyDirectory           Copies a directory
 countLines              Counts the number of lines in a text file
 createFileAtomically    Creates a file atomically
@@ -72,7 +73,6 @@ getRelativePath         Gets the relative pathname relative to a
                         directory
 gstring                 Parses and evaluates a GString into a regular
                         string
-gzip                    Gzip/Gunzip a file
 hasUrlProtocol          Checks if one or several pathnames has a URL
                         protocol
 hpaste                  Concatenating vectors into human-readable
@@ -109,6 +109,8 @@ mkdirs                  Creates a directory including any necessary but
                         nonexistent parent directories
 mout                    Miscellaneous functions for outputting via
                         message()
+mpager                  A \"pager\" function that outputs to standard
+                        error
 onGarbageCollect        Registers a function to be called when the R
                         garbage collector is (detected to be) running
 onSessionExit           Registers a function to be called when the R

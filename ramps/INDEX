@@ -1,7 +1,7 @@
 DIC                     Deviance Information Criterion
 NURE                    Dataset of USGS NURE Uranium Measurements
-corClasses              Spatial Correlation Structure Classes
 corRCauchy              Cauchy Spatial Correlation Structure
+corRClasses             Spatial Correlation Structure Classes
 corRExp                 Exponential Spatial Correlation Structure
 corRExp2                Non-Separable Exponential Spatio-Temporal
                         Correlation Structure

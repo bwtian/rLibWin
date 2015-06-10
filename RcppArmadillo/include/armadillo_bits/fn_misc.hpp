@@ -1,5 +1,5 @@
-// Copyright (C) 2008-2014 Conrad Sanderson
-// Copyright (C) 2008-2014 NICTA (www.nicta.com.au)
+// Copyright (C) 2008-2015 Conrad Sanderson
+// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -160,6 +160,16 @@ is_finite(const T1& X)
   
   const Proxy<T1> P(X);
   
+  const bool have_direct_mem = (is_Mat<typename Proxy<T1>::stored_type>::value) || (is_subview_col<typename Proxy<T1>::stored_type>::value);
+  
+  if(have_direct_mem)
+    {
+    const quasi_unwrap<typename Proxy<T1>::stored_type> tmp(P.Q);
+    
+    return tmp.M.is_finite();
+    }
+  
+  
   if(Proxy<T1>::prefer_at_accessor == false)
     {
     const typename Proxy<T1>::ea_type Pea = P.get_ea();
@@ -190,6 +200,39 @@ is_finite(const T1& X)
     for(uword row=0; row<n_rows; ++row)
       {
       if(arma_isfinite(P.at(row,col)) == false)  { return false; }
+      }
+    }
+  
+  return true;
+  }
+
+
+
+template<typename T1>
+inline
+arma_warn_unused
+bool
+is_finite(const SpBase<typename T1::elem_type,T1>& X)
+  {
+  arma_extra_debug_sigprint();
+  
+  const SpProxy<T1> P(X.get_ref());
+  
+  if(is_SpMat<typename SpProxy<T1>::stored_type>::value)
+    {
+    const unwrap_spmat<typename SpProxy<T1>::stored_type> tmp(P.Q);
+    
+    return tmp.M.is_finite();
+    }
+  else
+    {
+    typename SpProxy<T1>::const_iterator_type it     = P.begin();
+    typename SpProxy<T1>::const_iterator_type it_end = P.end();
+    
+    while(it != it_end)
+      {
+      if(arma_isfinite(*it) == false)  { return false; }
+      ++it;
       }
     }
   
@@ -250,6 +293,36 @@ swap(Cube<eT>& A, Cube<eT>& B)
   arma_extra_debug_sigprint();
   
   A.swap(B);
+  }
+
+
+
+template<typename T1>
+arma_inline
+const Op<T1, op_orth>
+orth(const Base<typename T1::elem_type, T1>& X, const typename T1::pod_type tol = 0.0, const typename arma_blas_type_only<typename T1::elem_type>::result* junk = 0)
+  {
+  arma_extra_debug_sigprint();
+  arma_ignore(junk);
+  
+  typedef typename T1::elem_type eT;
+  
+  return Op<T1, op_orth>(X.get_ref(), eT(tol));
+  }
+
+
+
+template<typename T1>
+inline
+bool
+orth(Mat<typename T1::elem_type>& out, const Base<typename T1::elem_type, T1>& X, const typename T1::pod_type tol = 0.0, const typename arma_blas_type_only<typename T1::elem_type>::result* junk = 0)
+  {
+  arma_extra_debug_sigprint();
+  arma_ignore(junk);
+  
+  try { out = orth(X,tol); } catch (std::runtime_error&) { return false; }
+  
+  return true;
   }
 
 

@@ -44,6 +44,8 @@ linesHyperb.lm          Plot Confidence or Prediction Hyperbolas around
                         a Regression Line
 lseq                    Generate Sequences, Equidistant on Log Scale
 mat2tex                 Produce LaTeX commands to print a matrix
+missingCh               Has a Formal Argument been Set or is it
+                        Missing?
 mpl                     Simple Matrix Plots
 mult.fig                Plot Setup for MULTiple FIGures, incl. Main
                         Title
@@ -86,6 +88,8 @@ quadrant                Give the Quadrant Number of Planar Points
 repChar                 Make Simple String from Repeating a Character,
                         e.g. Blank String
 rot2                    Rotate Planar Points by Angle
+rotn                    Generalized Rot13 Character Translation
+                        (Rotation)
 roundfixS               Round to Integer Keeping the Sum Fixed
 rrange                  Robust Range using Boxplot 'Quartiles'
 seqXtend                Sequence Covering the Range of X, including X

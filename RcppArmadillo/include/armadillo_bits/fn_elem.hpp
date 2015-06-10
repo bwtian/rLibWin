@@ -1,5 +1,5 @@
-// Copyright (C) 2008-2013 Conrad Sanderson
-// Copyright (C) 2008-2013 NICTA (www.nicta.com.au)
+// Copyright (C) 2008-2015 Conrad Sanderson
+// Copyright (C) 2008-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -15,12 +15,12 @@
 
 template<typename T1>
 arma_inline
-const T1&
-real(const Base<typename T1::pod_type, T1>& X)
+typename enable_if2< (is_arma_type<T1>::value && is_cx<typename T1::elem_type>::no), const T1& >::result
+real(const T1& X)
   {
   arma_extra_debug_sigprint();
   
-  return X.get_ref();
+  return X;
   }
 
 
@@ -39,12 +39,12 @@ real(const BaseCube<typename T1::pod_type, T1>& X)
 
 template<typename T1>
 inline
-const mtOp<typename T1::pod_type, T1, op_real>
-real(const Base<std::complex<typename T1::pod_type>, T1>& X)
+typename enable_if2< (is_arma_type<T1>::value && is_cx<typename T1::elem_type>::yes), const mtOp<typename T1::pod_type, T1, op_real> >::result
+real(const T1& X)
   {
   arma_extra_debug_sigprint();
   
-  return mtOp<typename T1::pod_type, T1, op_real>( X.get_ref() );
+  return mtOp<typename T1::pod_type, T1, op_real>( X );
   }
 
 
@@ -94,12 +94,12 @@ imag(const BaseCube<typename T1::pod_type,T1>& X)
 
 template<typename T1>
 inline
-const mtOp<typename T1::pod_type, T1, op_imag>
-imag(const Base<std::complex<typename T1::pod_type>, T1>& X)
+typename enable_if2< (is_arma_type<T1>::value && is_cx<typename T1::elem_type>::yes), const mtOp<typename T1::pod_type, T1, op_imag> >::result
+imag(const T1& X)
   {
   arma_extra_debug_sigprint();
   
-  return mtOp<typename T1::pod_type, T1, op_imag>( X.get_ref() );
+  return mtOp<typename T1::pod_type, T1, op_imag>( X );
   }
 
 
@@ -282,12 +282,10 @@ exp10(const BaseCube<typename T1::elem_type,T1>& A)
 
 template<typename T1>
 arma_inline
-typename enable_if2< is_arma_type<T1>::value, const eOp<T1, eop_abs> >::result
-abs(const T1& X, const typename arma_not_cx<typename T1::elem_type>::result* junk = 0)
+typename enable_if2< (is_arma_type<T1>::value && is_cx<typename T1::elem_type>::no), const eOp<T1, eop_abs> >::result
+abs(const T1& X)
   {
   arma_extra_debug_sigprint();
-  
-  arma_ignore(junk);
   
   return eOp<T1, eop_abs>(X);
   }
@@ -310,14 +308,12 @@ abs(const BaseCube<typename T1::elem_type,T1>& X, const typename arma_not_cx<typ
 
 template<typename T1>
 inline
-const mtOp<typename T1::pod_type, T1, op_abs>
-abs(const Base<std::complex<typename T1::pod_type>, T1>& X, const typename arma_cx_only<typename T1::elem_type>::result* junk = 0)
+typename enable_if2< (is_arma_type<T1>::value && is_cx<typename T1::elem_type>::yes), const mtOp<typename T1::pod_type, T1, op_abs> >::result
+abs(const T1& X)
   {
   arma_extra_debug_sigprint();
   
-  arma_ignore(junk);
-  
-  return mtOp<typename T1::pod_type, T1, op_abs>( X.get_ref() );
+  return mtOp<typename T1::pod_type, T1, op_abs>(X);
   }
 
 

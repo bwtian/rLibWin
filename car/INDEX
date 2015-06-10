@@ -56,6 +56,7 @@ USPop                   Population of the United States
 Vocab                   Vocabulary and Education
 WeightLoss              Weight Loss Data
 Womenlf                 Canadian Women's Labour-Force Participation
+Wong                    Post-Coma Recovery of IQ
 Wool                    Wool data
 avPlots                 Added-Variable Plots
 basicPowerAxis          Axes for Transformed Variables
@@ -64,6 +65,7 @@ boxCox                  Box-Cox Transformations for Linear Models
 boxCoxVariable          Constructed Variable for Box-Cox Transformation
 boxTidwell              Box-Tidwell Transformations
 car-deprecated          Deprecated Functions in car Package
+car-internal.Rd         Internal Objects for the 'car' package
 car-package             Companion to Applied Regression
 carWeb                  Access to the R Companion to Applied Regression
                         website

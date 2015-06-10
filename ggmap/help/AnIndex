@@ -1,12 +1,16 @@
 ggmap-package	ggmap
+bb2bbox	bb2bbox
+calc_zoom	calc_zoom
 crime	crime
 distQueryCheck	distQueryCheck
+file_drawer	file_drawer
 geocode	geocode
-geocodeQueryCheck	geocodeQueryCheck
+geocodeQueryCheck	geocode
 geom_leg	geom_leg
 get_cloudmademap	get_cloudmademap
 get_googlemap	get_googlemap
 get_map	get_map
+get_navermap	get_navermap
 get_openstreetmap	get_openstreetmap
 get_stamenmap	get_stamenmap
 ggimage	ggimage

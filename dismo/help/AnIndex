@@ -1,7 +1,5 @@
 dismo-package	dismo-package
 acaule	acaule
-adm	lookUp
-alt	lookUp
 Anguilla_grids	gbm.data
 Anguilla_test	gbm.data
 Anguilla_train	gbm.data
@@ -30,7 +28,6 @@ convHull	convexHull
 convHull,data.frame-method	convexHull
 convHull,matrix-method	convexHull
 convHull,SpatialPoints-method	convexHull
-country	lookUp
 dcEvaluate	dcEvaluate
 density	density
 density,DistModel-method	density

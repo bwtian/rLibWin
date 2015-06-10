@@ -43,6 +43,7 @@ naive                   Naive forecasts
 ndiffs                  Number of differences required for a stationary
                         series
 nnetar                  Neural Network Time Series Forecasts
+plot.Arima              Plot characteristic roots from ARIMA model
 plot.bats               Plot components from BATS model
 plot.ets                Plot components from ETS model
 plot.forecast           Forecast plot

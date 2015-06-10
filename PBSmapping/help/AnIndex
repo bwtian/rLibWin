@@ -53,7 +53,7 @@ makeGrid	makeGrid
 makeProps	makeProps
 makeTopography	makeTopography
 nepacLL	nepacLL
-nepacLLhigh	nepacLLhigh
+nepacLLhigh	nepacLL
 PBSmapping	PBSmapping
 PBSprint	PBSprint
 placeHoles	placeHoles
@@ -79,5 +79,5 @@ thickenPolys	thickenPolys
 thinPolys	thinPolys
 towData	towData
 towTracks	towTracks
-worldLL	worldLL
-worldLLhigh	worldLLhigh
+worldLL	nepacLL
+worldLLhigh	nepacLL

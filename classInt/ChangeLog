@@ -1,3 +1,20 @@
+2015-01-05 20:00  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
+2015-01-05 20:00  rsbivand
+
+	* DESCRIPTION, man/classIntervals.Rd: improvements to jenks
+	  documentation
+
+2014-04-06 17:05  rsbivand
+
+	* ChangeLog: close ring in Polygon
+
+2013-08-30 11:55  rsbivand
+
+	* ChangeLog, inst/ChangeLog: tidy
+
 2013-08-30 11:54  rsbivand
 
 	* .Rbuildignore, ChangeLog, inst/ChangeLog: tidy

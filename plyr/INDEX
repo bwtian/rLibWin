@@ -60,6 +60,7 @@ name_rows               Toggle row names between explicit and implicit.
 ozone                   Monthly ozone measurements over Central
                         America.
 plyr                    plyr: the split-apply-combine paradigm for R.
+plyr-deprecated         Deprecated Functions in Package plyr
 progress_text           Text progress bar.
 progress_time           Text progress bar with time.
 progress_tk             Graphical progress bar, powered by Tk.

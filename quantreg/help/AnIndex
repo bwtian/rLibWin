@@ -93,6 +93,7 @@ print.summary.rq	print.summary.rq
 print.summary.rqs	print.summary.rq
 print.summary.rqss	summary.rqss
 qdensity	khmaladzeTest
+qrisk	qrisk
 qss	qss
 qss1	qss
 qss2	qss
@@ -106,6 +107,7 @@ rq.fit	rq.fit
 rq.fit.br	rq.fit.br
 rq.fit.fnb	rq.fit.fnb
 rq.fit.fnc	rq.fit.fnc
+rq.fit.hogg	rq.fit.hogg
 rq.fit.lasso	rq.fit.lasso
 rq.fit.pfn	rq.fit.pfn
 rq.fit.scad	rq.fit.scad
@@ -123,6 +125,7 @@ rqss.fit	rqss
 rqss.object	rqss.object
 sfn.control	sfn.control
 sfnMessage	rq.fit.sfn
+srisk	srisk
 start.dynrq	dynrq
 summary.crq	summary.crq
 summary.crqs	summary.crq

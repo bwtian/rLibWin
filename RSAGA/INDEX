@@ -9,7 +9,7 @@ grid.to.xyz             Convert Grid Matrix to (x,y,z) data.frame
 match.arg.ext           Extended Argument Matching
 multi.focal.function    Local and Focal Grid Function with Multiple
                         Grids as Inputs
-pick.from.shapefile     Pick Variable from Spatial Dataset
+pick.from.points        Pick Variable from Spatial Dataset
 read.ascii.grid         Read/write ASCII, SAGA and Rd Grid Files
 relative.position       Relative Topographic Position
 resid.median            Residual Median and Quantile Filters for Grids
@@ -50,8 +50,11 @@ rsaga.sink.removal      Sink Removal Remove sinks from a digital
                         elevation model by deepening drainage routes or
                         filling sinks.
 rsaga.sink.route        Sink Drainage Route Detection
+rsaga.slope.asp.curv    Slope, Aspect, Curvature
 rsaga.solar.radiation   Potential incoming solar radiation
 rsaga.target            Define target grid for interpolation
+rsaga.topdown.processing
+                        Top-Down Processing
 rsaga.wetness.index     SAGA Modules SAGA Wetness Index
 set.file.extension      Determine or modify file name extensions
 wind.shelter            Wind Shelter Index

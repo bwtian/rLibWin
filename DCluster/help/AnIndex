@@ -20,6 +20,7 @@ gearyc.pboot	gearyc.boot
 gearyc.stat	gearyc.stat
 gearyc.test	gearyc.stat
 get.knclusters	get.knclusters
+kn.gumbel.iscluster	kn.iscluster
 kn.iscluster	kn.iscluster
 kullnagar	kullnagar
 kullnagar.boot	kullnagar.boot

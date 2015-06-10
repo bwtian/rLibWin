@@ -2,6 +2,8 @@ Sweave2knitr            Convert Sweave to knitr documents
 all_labels              Get all chunk labels in a document
 all_patterns            All built-in patterns
 asis_output             Mark an R object with a special class
+clean_cache             Clean cache files that are probably no longer
+                        needed
 current_input           Query the current input filename
 dep_auto                Build automatic dependencies among chunks
 dep_prev                Make later chunks depend on previous chunks
@@ -37,6 +39,7 @@ knit_global             The global environment in which code chunks are
 knit_hooks              Hooks for R code chunks, inline R code and
                         output
 knit_meta               Metadata about objects to be printed
+knit_params             Extract knit parameters from a document
 knit_patterns           Patterns to match and extract R code in a
                         document
 knit_print              A custom printing function
@@ -44,6 +47,7 @@ knit_rd                 Knit package documentation
 knit_theme              Syntax highlighting themes
 knitr-package           A general-purpose tool for dynamic report
                         generation in R
+load_cache              Load the cache database of a code chunk
 opts_chunk              Default and current chunk options
 opts_knit               Options for the knitr package
 opts_template           Template for creating reusable chunk options

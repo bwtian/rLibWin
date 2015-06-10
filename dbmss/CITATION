@@ -1,0 +1,14 @@
+citHeader("To cite dbmss in publications use this reference:")
+
+citEntry(entry="Article",
+  title = "Tools to Characterize Point Patterns: dbmss for R",
+  author = personList(as.person("E. Marcon"),as.person("S. Traissac"),as.person("F. Puech"),as.person("G. Lang")),
+  year = "in press",
+  journal = "Journal of Statistical Software",
+  textVersion = 
+    paste("Marcon, E., Traissac, S., Puech, F. and Lang, G.",
+      "(in press)",
+      "Tools to Characterize Point Patterns: dbmss for R",
+      "Journal of Statistical Software",
+    sep=", ")
+  )

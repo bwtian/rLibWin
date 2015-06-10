@@ -14,10 +14,8 @@ bp.with.outlier.label   geospt internal function
 criterio.cv             Cross-validation summaries
 est.variograms          Variogram Estimator
 extractFormula          geospt internal function
-geospt-package          Spatial geostatistics; some geostatistical and
-                        radial basis functions, prediction and cross
-                        validation; design of optimal spatial sampling
-                        networks based on geostatistical modelling
+geospt-package          Geostatistical Analysis and Design of Optimal
+                        Spatial Sampling Networks
 graph.rbf               Graph that describes the behavior of the
                         optimized _eta_ and _rho_ parameters,
                         associated with a radial basis function

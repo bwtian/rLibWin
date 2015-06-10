@@ -40,6 +40,7 @@ ants.extra	ants
 anycrossing.psp	spatstat-internal
 anyDuplicated.ppp	duplicated.ppp
 anyDuplicated.ppx	duplicated.ppp
+anylapply	solapply
 anylist	anylist
 append.psp	append.psp
 apply23sum	spatstat-internal
@@ -57,6 +58,7 @@ AreaInter	AreaInter
 areaLoss	areaLoss
 areaLoss.diri	spatstat-internal
 areaLoss.grid	spatstat-internal
+articlebeforenumber	spatstat-internal
 as.anylist	anylist
 as.array.im	as.matrix.im
 as.box3	as.box3
@@ -71,6 +73,7 @@ as.data.frame.ppx	as.hyperframe.ppx
 as.data.frame.psp	as.data.frame.psp
 as.double.im	spatstat-internal
 as.function.fv	as.function.fv
+as.function.im	as.function.im
 as.function.linfun	methods.linfun
 as.function.rhohat	as.function.fv
 as.fv	as.fv
@@ -118,10 +121,12 @@ as.linim.default	as.linim
 as.linim.linfun	methods.linfun
 as.linim.linim	as.linim
 as.linnet	methods.linnet
-as.linnet.linfun	methods.linfun
+as.linnet.linfun	as.linnet.linim
+as.linnet.linim	as.linnet.linim
 as.linnet.linnet	methods.linnet
-as.linnet.lpp	methods.linnet
+as.linnet.lpp	as.linnet.linim
 as.linnet.lppm	methods.lppm
+as.linnet.psp	as.linnet.psp
 as.list.hyperframe	spatstat-internal
 as.listof	spatstat-internal
 as.lpp	as.lpp
@@ -287,6 +292,7 @@ check.testfun	spatstat-internal
 checkfields	spatstat-internal
 chicago	chicago
 chop.tess	chop.tess
+choptext	spatstat-internal
 chorley	chorley
 chorley.extra	chorley
 circdensity	circdensity
@@ -300,6 +306,7 @@ clarkevansCalc	spatstat-internal
 clear.simplepanel	run.simplepanel
 clf.test	spatstat-deprecated
 clickbox	clickbox
+clickdist	clickdist
 clickjoin	clickjoin
 clickpoly	clickpoly
 clickppp	clickppp
@@ -318,6 +325,17 @@ closing	closing
 closing.owin	closing
 closing.ppp	closing
 closing.psp	closing
+clusterfield	clusterfield
+clusterfield.character	clusterfield
+clusterfield.function	clusterfield
+clusterfield.kppm	clusterfield
+clusterfit	clusterfit
+clusterkernel	clusterkernel
+clusterkernel.character	clusterkernel
+clusterkernel.kppm	clusterkernel
+clusterradius	clusterradius
+clusterradius.character	clusterradius
+clusterradius.kppm	clusterradius
 clusterset	clusterset
 cobble.xy	spatstat-internal
 codetime	spatstat-internal
@@ -353,6 +371,7 @@ complaining	spatstat-internal
 complement.owin	complement.owin
 complementarycolour	colourtools
 Complex.im	Math.im
+Complex.linim	Math.linim
 concatxy	concatxy
 Concom	Concom
 conform.imagelist	spatstat-internal
@@ -414,10 +433,12 @@ default.ntile	spatstat-internal
 default.rmhcontrol	default.rmhcontrol
 delaunay	delaunay
 delaunay.distance	delaunay.distance
+delaunay.network	delaunay.network
 deltametric	deltametric
 deltasuffstat	spatstat-internal
 demohyper	demohyper
 demopat	demopat
+dendrite	dendrite
 density.ppp	density.ppp
 density.psp	density.psp
 density.splitppp	density.splitppp
@@ -452,6 +473,8 @@ dimnames.fasp	spatstat-internal
 dimnames.msr	spatstat-internal
 dimnames<-.fasp	spatstat-internal
 dirichlet	dirichlet
+dirichlet.edges	dirichlet.vertices
+dirichlet.network	delaunay.network
 dirichlet.vertices	dirichlet.vertices
 dirichlet.weights	dirichlet.weights
 disc	disc
@@ -570,6 +593,7 @@ ewcdf	ewcdf
 exactdt	spatstat-internal
 exactMPLEstrauss	exactMPLEstrauss
 exactPdt	spatstat-internal
+exhibitStringList	spatstat-internal
 expand.owin	expand.owin
 expand.polynom	spatstat-internal
 expandwinPerfect	spatstat-internal
@@ -707,6 +731,7 @@ harmonize.fv	harmonise.fv
 harmonize.im	harmonise.im
 has.offset	model.depends
 has.offset.term	model.depends
+head.hyperframe	spatstat-internal
 heather	heather
 HermiteCoefs	spatstat-internal
 Hest	Hest
@@ -767,7 +792,10 @@ inside.range	spatstat-internal
 inside.triangle	spatstat-internal
 inside.xypolygon	spatstat-internal
 instantiate.interact	spatstat-internal
+integral	integral.im
 integral.im	integral.im
+integral.linfun	integral.linim
+integral.linim	integral.linim
 integral.msr	integral.msr
 intensity	intensity
 intensity.lpp	intensity.lpp
@@ -791,6 +819,8 @@ invokeColourmapRule	spatstat-internal
 iplot	iplot
 iplot.default	iplot
 iplot.layered	iplot
+iplot.linnet	iplot
+iplot.lpp	iplot
 iplot.ppp	iplot
 ippm	ippm
 is.atomicQtest	spatstat-internal
@@ -830,6 +860,7 @@ is.mask	is.rectangle
 is.mppm	spatstat-internal
 is.multitype	is.multitype
 is.multitype.default	spatstat-internal
+is.multitype.lpp	is.multitype.ppp
 is.multitype.lppm	is.multitype.ppm
 is.multitype.ppm	is.multitype.ppm
 is.multitype.ppp	is.multitype.ppp
@@ -884,6 +915,7 @@ killinteraction	spatstat-internal
 Kinhom	Kinhom
 km.rs	km.rs
 km.rs.opt	spatstat-internal
+Kmark	Kmark
 Kmeasure	Kmeasure
 Kmodel	Kmodel
 Kmodel.kppm	Kmodel.kppm
@@ -1011,7 +1043,7 @@ markappendop	spatstat-internal
 markcbind	spatstat-internal
 markconnect	markconnect
 markcorr	markcorr
-markcorrint	markcorrint
+markcorrint	Kmark
 markformat	spatstat-internal
 markformat.default	spatstat-internal
 markformat.ppp	spatstat-internal
@@ -1025,11 +1057,13 @@ marks.ppp	marks
 marks.ppx	marks
 marks.psp	marks.psp
 marks.quad	spatstat-internal
+marks.tess	marks.tess
 marks<-	marks
 marks<-.lpp	methods.lpp
 marks<-.ppp	marks
 marks<-.ppx	marks
 marks<-.psp	marks.psp
+marks<-.tess	marks.tess
 markspace.integral	spatstat-internal
 markstat	markstat
 marksubset	spatstat-internal
@@ -1045,6 +1079,7 @@ matcolall	spatstat-internal
 matcolany	spatstat-internal
 matcolsum	spatstat-internal
 Math.im	Math.im
+Math.linim	Math.linim
 matrixsample	spatstat-internal
 matrowall	spatstat-internal
 matrowany	spatstat-internal
@@ -1133,6 +1168,7 @@ nearest.pixel	spatstat-internal
 nearest.raster.point	nearest.raster.point
 nearest.valid.pixel	spatstat-internal
 nearestsegment	nearestsegment
+nestsplit	nestsplit
 newstyle.coeff.handling	spatstat-internal
 niceround	spatstat-internal
 nnclean	nnclean
@@ -1200,6 +1236,7 @@ opening.owin	opening
 opening.ppp	opening
 opening.psp	opening
 Ops.im	Math.im
+Ops.linim	Math.linim
 optimStatus	spatstat-internal
 Ord	Ord
 ord.family	ord.family
@@ -1216,6 +1253,7 @@ owin.object	owin.object
 owinpoly2mask	spatstat-internal
 owinpolycheck	spatstat-internal
 padimage	padimage
+padtowidth	spatstat-internal
 pairdist	pairdist
 pairdist.default	pairdist.default
 pairdist.lpp	pairdist.lpp
@@ -1274,6 +1312,7 @@ perspSegments	perspPoints
 pickoption	spatstat-internal
 pixelcentres	pixelcentres
 pixellate	pixellate
+pixellate.linnet	methods.linnet
 pixellate.owin	pixellate.owin
 pixellate.ppp	pixellate.ppp
 pixellate.psp	pixellate.psp
@@ -1342,6 +1381,7 @@ plot.tess	plot.tess
 plot.textstring	plot.textstring
 plot.texturemap	plot.texturemap
 plot.yardstick	plot.yardstick
+plot3Dpoints	spatstat-internal
 plotEachLayer	spatstat-internal
 ploterodeimage	spatstat-internal
 ploterodewin	spatstat-internal
@@ -1351,11 +1391,14 @@ pointsOnLines	pointsOnLines
 PoisSaddleApp	spatstat-internal
 Poisson	Poisson
 polynom	spatstat-internal
+polytileareaEngine	spatstat-internal
 ponderosa	ponderosa
 ponderosa.extra	ponderosa
 pool	pool
+pool.anylist	pool.anylist
 pool.envelope	pool.envelope
 pool.fasp	pool.fasp
+pool.fv	pool.fv
 pool.quadrattest	pool.quadrattest
 pool.rat	pool.rat
 pp3	pp3
@@ -1465,6 +1508,7 @@ print.splitppx	spatstat-internal
 print.summary.fii	methods.fii
 print.summary.hyperframe	spatstat-internal
 print.summary.im	summary.im
+print.summary.linnet	spatstat-internal
 print.summary.listof	spatstat-internal
 print.summary.logiquad	spatstat-internal
 print.summary.lpp	methods.lpp
@@ -1495,6 +1539,7 @@ progressreport	progressreport
 project.ppm	project.ppm
 project2segment	project2segment
 project2set	project2set
+project3Dhom	spatstat-internal
 prolongseq	spatstat-internal
 psp	psp
 psp.object	psp.object
@@ -1528,6 +1573,10 @@ quadscheme	quadscheme
 quadscheme.logi	quadscheme.logi
 quadscheme.replicated	spatstat-internal
 quadscheme.spatial	spatstat-internal
+quantess	quantess
+quantess.im	quantess
+quantess.owin	quantess
+quantess.ppp	quantess
 quantile.ewcdf	quantile.ewcdf
 quantile.im	quantile.im
 quasirandom	quasirandom
@@ -1742,6 +1791,7 @@ Saturated	Saturated
 scalardilate	scalardilate
 scalardilate.breakpts	spatstat-internal
 scalardilate.default	scalardilate
+scalardilate.diagramobj	spatstat-internal
 scalardilate.im	scalardilate
 scalardilate.layered	methods.layered
 scalardilate.linnet	affine.linnet
@@ -1764,7 +1814,10 @@ scanPoisLRTS	spatstat-internal
 scanpp	scanpp
 second.moment.calc	spatstat-internal
 second.moment.engine	spatstat-internal
+segregation.test	segregation.test
+segregation.test.ppp	segregation.test
 selfcrossing.psp	selfcrossing.psp
+selfcut.psp	selfcut.psp
 sensiblevarname	spatstat-internal
 sessionLibs	sessionLibs
 setcov	setcov
@@ -1832,6 +1885,7 @@ Smoothfun	Smoothfun.ppp
 Smoothfun.ppp	Smoothfun.ppp
 smoothpointsEngine	spatstat-internal
 Softcore	Softcore
+solapply	solapply
 solist	solist
 solutionset	solutionset
 sort.im	spatstat-internal
@@ -1844,8 +1898,10 @@ spatstat	spatstat-package
 spatstat.options	spatstat.options
 spatstat.rawdata.location	spatstat-internal
 spatstatClusterModelInfo	spatstat-internal
+spatstatLocator	spatstat-internal
 spatstatRmhInfo	spatstat-internal
 sphere.volume	spatstat-internal
+spiders	spiders
 split.hyperframe	split.hyperframe
 split.im	split.im
 split.ppp	split.ppp
@@ -1871,6 +1927,7 @@ strsplitretain	spatstat-internal
 subfits	subfits
 subfits.new	subfits
 subfits.old	subfits
+subset.hyperframe	subset.hyperframe
 subset.lpp	subset.ppp
 subset.pp3	subset.ppp
 subset.ppp	subset.ppp
@@ -1888,10 +1945,12 @@ summary.fii	methods.fii
 summary.hyperframe	spatstat-internal
 Summary.im	Math.im
 summary.im	summary.im
+Summary.linim	Math.linim
 summary.linnet	methods.linnet
 summary.listof	summary.listof
 summary.logiquad	spatstat-internal
 summary.lpp	methods.lpp
+summary.lppm	methods.lppm
 summary.lut	spatstat-internal
 summary.mppm	spatstat-internal
 summary.owin	summary.owin
@@ -1922,6 +1981,7 @@ swedishpines	swedishpines
 symbolmap	symbolmap
 symbolmaptype	spatstat-internal
 sympoly	spatstat-internal
+tail.hyperframe	spatstat-internal
 terms.kppm	methods.kppm
 terms.lppm	methods.lppm
 terms.ppm	formula.ppm
@@ -1933,6 +1993,7 @@ test.selfcrossing.psp	spatstat-internal
 textstring	yardstick
 texturemap	texturemap
 textureplot	textureplot
+there.is.no.try	spatstat-internal
 thomas.estK	thomas.estK
 thomas.estpcf	thomas.estpcf
 tile.areas	tile.areas
@@ -1999,6 +2060,7 @@ unmark.ppp	unmark
 unmark.ppx	unmark
 unmark.psp	unmark
 unmark.splitppp	unmark
+unmark.tess	marks.tess
 unnormdensity	unnormdensity
 unparen	spatstat-internal
 update.im	spatstat-internal
@@ -2036,7 +2098,10 @@ verifyclass	spatstat-internal
 versionstring.interact	spatstat-internal
 versionstring.ppm	spatstat-internal
 versionstring.spatstat	spatstat-internal
+vertexdegree	methods.linnet
 vertices	vertices
+vertices.linnet	methods.linnet
+vertices.owin	vertices
 vesicles	vesicles
 vesicles.extra	vesicles
 Vmark	Emark
@@ -2063,6 +2128,7 @@ Window.influence.ppm	WindowOnly
 Window.kppm	WindowOnly
 Window.layered	WindowOnly
 Window.leverage.ppm	WindowOnly
+Window.linnet	methods.linnet
 Window.lpp	WindowOnly
 Window.lppm	WindowOnly
 Window.msr	WindowOnly

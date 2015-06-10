@@ -1,51 +1,30 @@
 CARBayes-package        Spatial Areal Unit Modelling
-S.CARbym                Fit a generalised linear model with a set of
-                        spatially autocorrelated random effect
-                        following the BYM conditional autoregressive
-                        (CAR) prior to spatial data.
-S.CARcluster            Fit a generalised linear model with a set of
-                        spatially autocorrelated random effects
-                        following a conditional autoregressive (CAR)
-                        prior and a piecewise constant jump component
-                        proposed by Lee and Sarran (2014) to spatial
-                        data.
-S.CARdissimilarity      Fit a generalised linear model with a set of
-                        spatially autocorrelated random effect
-                        following the localised conditional
-                        autoregressive (CAR) prior proposed by Lee and
-                        Mitchell (2012) to spatial data.
-S.CARiar                Fit a generalised linear model with a set of
-                        spatially autocorrelated random effect
-                        following the intrinsic conditional
-                        autoregressive (CAR) prior to spatial data.
-S.CARleroux             Fit a generalised linear model with a set of
-                        spatially autocorrelated random effect
-                        following the conditional autoregressive (CAR)
-                        prior proposed by Leroux et al. (1999) to
-                        spatial data.
-S.independent           Fit a generalised linear model with a set of
-                        independent random effect to spatial data.
+S.CARbym                Fit a spatial generalised linear mixed model to
+                        data, where the random effects have a BYM
+                        conditional autoregressive prior.
+S.CARcluster            Fit a spatial generalised linear mixed model to
+                        data, where the random effects have a localised
+                        clustered conditional autoregressive prior.
+S.CARdissimilarity      Fit a spatial generalised linear mixed model to
+                        data, where the random effects have a localised
+                        conditional autoregressive prior.
+S.CARiar                Fit a spatial generalised linear mixed model to
+                        data, where the random effects have an
+                        intrinsic conditional autoregressive prior.
+S.CARleroux             Fit a spatial generalised linear mixed model to
+                        data, where the random effects have a Leroux
+                        conditional autoregressive prior.
+S.independent           Fit a spatial generalised linear mixed model to
+                        data, where the random effects are independent.
 combine.data.shapefile
-                        Combine a data frame with a shapefile to create
-                        a SpatialPolygonsDataFrame object.
-highlight.borders       Create a SpatialPoints object identifying a
-                        subset of borders between neighbouring areas,
-                        which allows them to be overlaid on a spatial
-                        map.
-print.carbayes          Print a summary of the fitted model to the
-                        screen.
-spatialhousedata        A SpatialPolygonsDataFrame object (from the sp
-                        package) containing property price data for the
-                        271 Intermediate Geographies (IG) in the
-                        Greater Glasgow and Clyde health board.
-spatialrespdata         A SpatialPolygonsDataFrame object (from the sp
-                        package) containing respiratory hosptial
-                        admissions data for the 134 Intermediate
-                        Geographies (IG) to the north of the river
-                        Clyde in the Greater Glasgow and Clyde health
-                        board.
-summarise.lincomb       Compute the posterior distribution and
-                        quantiles of a linear combination of the
-                        covariate component of the linear predictor.
+                        Combines a data frame with a shapefile to
+                        create a SpatialPolygonsDataFrame object.
+highlight.borders       Creates a SpatialPoints object identifying a
+                        subset of borders between neighbouring areas.
+print.carbayes          Print a summary of a fitted carbayes model to
+                        the screen.
+summarise.lincomb       Compute the posterior distribution for a linear
+                        combination of the covariates from the linear
+                        predictor.
 summarise.samples       Summarise a matrix of Markov chain Monte Carlo
                         samples.

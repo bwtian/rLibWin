@@ -1,68 +1,68 @@
-DCluster                A package for the detection of spatial clusters
-                        of diseases for count data
-achisq                  Another implementation of Pearson's Chi-square
-                        statistic
-achisq.boot             Bootstrap replicates of Pearson's Chi-square
-                        statistic
-achisq.stat             Another implementation of Pearson's Chi-square
-                        statistic
-besagnewell             Besag and Newell's statistic for spatial
-                        clustering
-besagnewell.boot        Generate boostrap replicates of Besag and
-                        Newell's statistic
-besagnewell.stat        Besag and Newell's statistic for spatial
-                        clustering
-bn.iscluster            Clustering function for Besag and Newell's
-                        method
-calculate.mle           Calculate parameters involved in smapling
-                        procedures
+DCluster                A Package for the Detection of Spatial Clusters
+                        of Diseases for Count Data
+achisq                  Another Implementation of Pearson's Chi-square
+                        Statistic
+achisq.boot             Bootstrap Replicates of Pearson's Chi-square
+                        Statistic
+achisq.stat             Another Implementation of Pearson's Chi-square
+                        Statistic
+besagnewell             Besag and Newell's Statistic for Spatial
+                        Clustering
+besagnewell.boot        Generate Boostrap Replicates of Besag and
+                        Newell's Statistic
+besagnewell.stat        Besag and Newell's Statistic for Spatial
+                        Clustering
+bn.iscluster            Clustering Function for Besag and Newell's
+                        Method
+calculate.mle           Calculate Parameters Involved in Sampling
+                        Procedures
 empbaysmooth            Empirical Bayes Smoothing
-gearyc                  Moran's I autocorrelation statistic
-gearyc.boot             Generate bootstrap replicates of Moran's I
-                        autocorrelation statistic
-gearyc.stat             Compute Moran's I autocorrelation statistic
-get.knclusters          Get areas in a cluster detected with
-                        Kulldorff's statistic
-kn.iscluster            Clustering function for Kulldorff and
-                        Nagarwalla's statistic
-kullnagar               Kulldorff and Nagarwalla's statistic for
-                        spatial clustering.
-kullnagar.boot          Generate bootstrap replicates of Kulldorff and
-                        Nagarwalla's statistic
-kullnagar.stat          Kulldorff and Nagarwalla's statistic for
-                        spatial clustering.
-lognormalEB             Empirical Bayes Smoothing using a log-normal
-                        model
-moranI                  Moran's I autocorrelation statistic
-moranI.boot             Generate bootstrap replicates of Moran's I
-                        autocorrelation statistic
-moranI.stat             Compute Moran's I autocorrelation statistic
-multinom.sim            Randomly generate observed cases from different
-                        statistical distributions
+gearyc                  Geary's C Autocorrelation Statistic
+gearyc.boot             Generate Bootstrap Replicates of Geary's C
+                        Autocorrelation Statistic
+gearyc.stat             Compute Geary's C Autocorrelation Statistic
+get.knclusters          Get Areas in a Cluster Detected with
+                        Kulldorff's Statistic
+kn.iscluster            Clustering Function for Kulldorff and
+                        Nagarwalla's Statistic
+kullnagar               Kulldorff and Nagarwalla's Statistic for
+                        Spatial Clustering.
+kullnagar.boot          Generate Bootstrap Replicates of Kulldorff and
+                        Nagarwalla's Statistic
+kullnagar.stat          Kulldorff and Nagarwalla's Statistic for
+                        Spatial Clustering.
+lognormalEB             Empirical Bayes Smoothing Using a log-Normal
+                        Model
+moranI                  Moran's I Autocorrelation Statistic
+moranI.boot             Generate Bootstrap Replicates of Moran's I
+                        Autocorrelation Statistic
+moranI.stat             Compute Moran's I Autocorrelation Statistic
+multinom.sim            Randomly Generate Observed Cases from Different
+                        Statistical Distributions
 opgam                   Openshaw's GAM
 opgam.iscluster.default
-                        Local clustering test function
-plot.dcluster           Class for results from a test for the detection
-                        of disease clusters
-pottwhitt               Potthoff-Whittinghill's statistic for
-                        overdispersion
-pottwhitt.boot          Bootstrap replicates of Potthoff-Whittinghill's
-                        statistic
-pottwhitt.stat          Compute Potthoff-Whittinghill's statistic
-rmultin                 Generate random observations from a multinomial
-                        distribution
+                        Local Clustering Test Function
+plot.dcluster           Class for Results from a Test for the Detection
+                        of Disease Clusters
+pottwhitt               Potthoff-Whittinghill's Statistic for
+                        Overdispersion
+pottwhitt.boot          Bootstrap Replicates of Potthoff-Whittinghill's
+                        Statistic
+pottwhitt.stat          Compute Potthoff-Whittinghill's Statistic
+rmultin                 Generate Random Observations from a Multinomial
+                        Distribution
 stone                   Stone's Test
-stone.boot              Generate boostrap replicates of Stone's
-                        statistic
-stone.stat              Compute Stone's statistic
-tango                   Tango's statistic for general clustering
-tango.boot              Generate bootstrap replicated of Tango's
-                        statistic
-tango.stat              Compute Tango's statistic for general
-                        clustering
-test.nb.pois            Likelihood ratio test and Dean's tests for
+stone.boot              Generate Boostrap Replicates of Stone's
+                        Statistic
+stone.stat              Compute Stone's Statistic
+tango                   Tango's Statistic for General Clustering
+tango.boot              Generate Bootstrap Replicated of Tango's
+                        Statistic
+tango.stat              Compute Tango's Statistic for General
+                        Clustering
+test.nb.pois            Likelihood Ratio Test and Dean's Tests for
                         Overdispertion
-whittermore             Whittermore's statistic
-whittermore.boot        Generate bootstrap replicates of Whittermore's
-                        statistic
-whittermore.stat        Compute Whittermore's statistic
+whittermore             Whittermore's Statistic
+whittermore.boot        Generate Bootstrap Replicates of Whittermore's
+                        Statistic
+whittermore.stat        Compute Whittermore's Statistic

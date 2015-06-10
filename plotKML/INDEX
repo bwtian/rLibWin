@@ -42,6 +42,7 @@ getWikiMedia.ImageInfo
 gpxbtour                GPS log of a bike tour
 grid2poly               Converts a gridded map to a polygon map
 kml-methods             Write to a KML file
+kml.tiles               Write vector object as tiled KML
 kml_compress            Compress a KML file with auxiliary files
 kml_description         Generate a table description from a data frame
 kml_layer               Write objects to a KML connection
@@ -81,6 +82,7 @@ plotKML-method          Methods for plotting results of spatial
                         analysis in Google Earth
 plotKML-package         Visualization of spatial and spatio-temporal
                         objects in Google Earth
+plotKML.GDALobj         Write tiled objects to KML
 plotKML.env             plotKML specific environmental variables /
                         paths
 readGPX                 Import GPX (GPS track) files

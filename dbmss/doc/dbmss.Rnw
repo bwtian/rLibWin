@@ -1,12 +1,10 @@
+%\VignetteIndexEntry{User manual}
+
 \documentclass[nojss]{jss}
 
-% \VignetteIndexEntry{User manual}
-% \VignetteEngine{knitr::knitr}
-
 \usepackage[utf8]{inputenc}  
-\usepackage[T1]{fontenc} 
-\usepackage{url}
-\usepackage[labelfont=bf,labelsep=period,justification=justified]{caption}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
 %% Set PDF 1.5 and compression, including object compression
 %% Needed for MiKTeX -- most other distributions default to this
 \ifx\pdfoutput\undefined
@@ -21,7 +19,12 @@
     \fi
   \fi
 \fi
+\usepackage{url}
 
+%% for those who use Sweave please include the following line (with % symbols):
+%% need no \usepackage(Sweave.sty)
+% Vignette only: replace () by {} around Sweave.sty and uncomment the following line 
+\usepackage[labelfont=bf, labelsep=period, justification=justified]{caption}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% declarations for jss.cls %%
@@ -82,12 +85,10 @@ Their confidence envelopes (including global ones) and tests against counterfact
 
 
 \begin{document}
+\SweaveOpts{concordance=TRUE, keep.source=FALSE, width=5, height=4}
 
-<<Declarations, echo=FALSE, include=FALSE>>=
-library(knitr)
-# set global chunk options
-opts_chunk$set(cache=TRUE, warning=FALSE, tidy=FALSE, fig.width=8, fig.height=6, out.width='0.7\\maxwidth')
-par(mar=c(0,0,0,0))
+<<Declarations, echo=FALSE>>=
+options(prompt = "R> ", continue = "+  ", width = 70, useFancyQuotes = FALSE)
 library(dbmss)
 @
 
@@ -147,8 +148,10 @@ $K_d$ is a leading tool in spatial economics. A great number of its applications
 
 
 \subsection{Relative functions}\label{Relative}
+
 The univariate and bivariate \emph{M} function \citep{Marcon2010} are the ratio of neighbors of interest up to distance $r$ normalized by its value over the whole domain. Their null hypotheses are the same as $K_d$'s. They do not suffer edge effects. \cite{Marcon2010} show that the $M$ function respect most of the axioms generally accepted as the ``good properties'' to evaluate geographic concentration in spatial economics \citep{Combes2004, Duranton2005}.
 
+\emph{m} \citep{Lang2014} is the density function measuring the same ratio as \emph{M}, at distance $r$.
 
 
 \subsection{Unification}
@@ -162,7 +165,7 @@ Reference points are denoted $x_i$, neighbor points are $x_j$. For density funct
    n\left(x_i,r\right){\rm =}\sum_{j{\rm ,\ }i\ne j}{k\left(\left\|x_i{\rm -}x_j\right\|,r\right)c\left(i,j\right)}
 \end{equation}
 
-$k\left(\left\|x_i{\rm -}x_j\right\|,r\right)$ is a kernel estimator, necessary to evaluate the number of neighbors at distance $r$, and $c\left(i,j\right)$ is an edge-effect correction (points located close to boundaries have less neighbors because of the lack of knowledge outside the observation window).
+$k(\left\|x_i{\rm -}x_j\right\|,r)$ is a kernel estimator, necessary to evaluate the number of neighbors at distance $r$, and $c(i,j)$ is an edge-effect correction (points located close to boundaries have less neighbors because of the lack of knowledge outside the observation window).
 
 To compute the bivariate \emph{M} function, reference points are of a particular type in a marked point pattern: $x_i \in \mathcal{R}$, where $\mathcal{R}$ is the set of points of the reference type. Neighbors of the chosen type are denoted $x_j \in \mathcal{N}$. In cumulative functions such as \emph{M}, neighbors are counted up to $r$:
 
@@ -170,7 +173,7 @@ To compute the bivariate \emph{M} function, reference points are of a particular
    n\left(x_i,r\right){\rm =}\sum_{x_j \in \mathcal{N}, i \ne j}{{\mathbf 1}\left(\left\|x_i{\rm -}x_j\right\|\le r\right)w\left(x_j\right)}
 \end{equation}
 
-Points can be weighted, $w\left(x_j\right)$ is the neighbor's weight.
+Points can be weighted, $w(x_j)$ is the neighbor's weight.
 
 The number of neighbors is averaged then. $n$ is the number of reference points:
 
@@ -181,28 +184,28 @@ The number of neighbors is averaged then. $n$ is the number of reference points:
 The average number of neighbors is compared to a reference measure. It may be a measure of space (the perimeter of the circle of radius $r$ for \emph{g}), defining topographic functions:
 
 \begin{equation}
-  m\left(r\right)=2 \pi r
+  z\left(r\right)=2 \pi r
 \end{equation}
 
 It may also be the number of neighbors of all types in a relative function such as \emph{M}:
 
 \begin{equation}
-   m\left(r\right)=\sum_{j,i\ne j}{{\mathbf 1}\left(\left\|x_i{\rm -}x_j\right\|\le r\right)w\left(x_j\right)}
+  z\left(r\right)=\sum_{j,i\ne j}{{\mathbf 1}\left(\left\|x_i{\rm -}x_j\right\|\le r\right)w\left(x_j\right)}
 \end{equation}
 
-Finally, $\frac{\bar{n}\left(r\right)}{m\left(r\right)}$ is compared to the same ratio computed on the whole window. For \emph{g}:
+Finally, $\frac{\bar{n}(r)}{z(r)}$ is compared to the same ratio computed on the whole window. For \emph{g}:
 
 \begin{equation}
-   \frac{\bar{n}_0}{m_0}{\rm =}\frac{n-1}{A}
+   \frac{\bar{n}_0}{z_0}{\rm =}\frac{n-1}{A}
 \end{equation}
 
-$A$ is the area of the window, $\bar{n}_0$ and $m_0$ are the limit values of $\bar{n}\left(r\right)$ and $m\left(r\right)$ when $r$ gets larger than the window's size. For \emph{M}, it comes:
+$A$ is the area of the window, $\bar{n}_0$ and $z_0$ are the limit values of $\bar{n}(r)$ and $z(r)$ when $r$ gets larger than the window's size. For \emph{M}, it comes:
 
 \begin{equation}
-   \frac{{\bar{n}}_0}{m_0}=\frac{1}{n}\sum_i{\frac{W_\mathcal{N}}{W-w\left(x_i\right)}}
+   \frac{{\bar{n}}_0}{z_0}=\frac{1}{n}\sum_i{\frac{W_\mathcal{N}}{W-w\left(x_i\right)}}
 \end{equation}
 
-$W_\mathcal{N}$ is the total weight of neighbor points, $W$ that of all points. Finally, despite the functions are quite different (density vs.\ cumulative, topographic vs.\ relative, univariate vs.\ bivariate), both estimators can be written as ${\frac{{\bar{n}}}{m}}/{\frac{{\bar{n}}_0}{m_0}}$. Their value (except for absolute functions) can be interpreted as a location quotient: $g\left(r\right)=2$ or $M\left(r\right)=2$ means than twice more neighbors are observed at (or up to) distance $r$ than expected on average, \emph{i.e.}\ ignoring the point locations in the window. The appropriate function will be chosen among the toolbox according to the question raised.
+$W_\mathcal{N}$ is the total weight of neighbor points, $W$ that of all points. Finally, despite the functions are quite different (density vs.\ cumulative, topographic vs.\ relative, univariate vs.\ bivariate), both estimators can be written as ${\frac{{\bar{n}}}{z}}/{\frac{{\bar{n}}_0}{z_0}}$. Their value (except for absolute functions) can be interpreted as a location quotient: $g(r)=2$ or $M(r)=2$ means than twice more neighbors are observed at (or up to) distance $r$ than expected on average, \emph{i.e.}\ ignoring the point locations in the window. The appropriate function will be chosen among the toolbox according to the question raised.
 
 
 \section{Package content}
@@ -250,7 +253,7 @@ Building a confidence envelope this way is problematic because the test is repea
 
 \subsection{Examples}
 
-<<CSBIGS, echo=FALSE, results='hide'>>=
+<<CSBIGS, echo=FALSE, results=hide>>=
 load("CSBIGS.Rdata")
 Category <- cut(Emergencies$M, quantile(Emergencies$M, c(0, 0.9, 1)),
    labels = c("Other", "Biggest"), include.lowest = TRUE)
@@ -261,15 +264,15 @@ X$window$units <- c("meter","meters")
 
 \begin{figure}
 \centering
-<<Toulouse, echo=FALSE, results='hide', fig.height=4, fig.width=6>>=
+<<Toulouse, fig=TRUE, eval=TRUE, echo=FALSE, results=hide, height=4, width=6>>=
 <<CSBIGS>>
 X2 <- split(X)
 marks(X2$Other) <- rep(1, X2$Other$n)
 marks(X2$Biggest) <- rep(1, X2$Biggest$n)
 par(mfrow=c(1,2), mar=c(0,0,0,0))  
-plot(X2$Other, main="", maxsize=1)
+plot(X2$Other, main="", maxsize=1, legend=FALSE)
 text(514300,  1826800, "a")
-plot(X2$Biggest, main="", maxsize=1)
+plot(X2$Biggest, main="", maxsize=1, legend=FALSE)
 text(514300,  1826800, "b")
 par(mfrow=c(1,1))
 @
@@ -291,7 +294,10 @@ The \code{Emergencies} data frame contains point coordinates (in meters) in colu
 
 \begin{figure}
 \centering
-<<KdFig, echo=FALSE, results='hide'>>=
+\includegraphics{KdFig.pdf}
+%% Chunk not run to save CRAN resources. 
+%% Comment the previous line and set eval=TRUE below to run it
+<<KdFig, eval=FALSE, echo=FALSE, results=hide>>=
 <<KdCode>>
 @
 \caption{Representation of $K_d(r)$ values of the 10\% most serious emergencies in year 2004 in Toulouse urban area, showing their significant dispersion at all distances up to 10~km. The solid, black curve is  $K_d$. The dotted red curve is the average simulated value and he shaded area is the confidence envelope under the null hypothesis of random location. The risk level is 5\%, 1000 simulations have been run. Distances are in meters.}
@@ -302,12 +308,12 @@ The second example uses the \code{paracou16} point pattern (Figure~\ref{paracou1
 
 <<P16Code, eval=FALSE>>=
 data("paracou16")
-plot(paracou16, which.marks="PointWeight", main="")
+plot(paracou16, which.marks="PointWeight", main="", legend=FALSE)
 @
 
 \begin{figure}
 \centering
-<<P16Fig, echo=FALSE, results='hide'>>=
+<<P16Fig, fig=TRUE, eval=TRUE, echo=FALSE, results=hide, width=5, height=3>>=
 par(mar=c(0,1,0,4))
 <<P16Code>>
 @
@@ -322,12 +328,12 @@ Bivariate $M(r)$ is calculated for $r$ between 0 and 30 meters. 1000 simulations
 Envelope <- MEnvelope(paracou16, r = seq(0, 30, 2), NumberOfSimulations 
    = 1000, Alpha = 0.05, ReferenceType = "V. Americana", NeighborType 
    = "Q. Rosea", SimulationType = "RandomLabeling", Global = TRUE)
-plot(Envelope, main="")
+plot(Envelope, main="", ylim=c(0, 20))
 @
 
 \begin{figure}
 \centering
-<<MFig, echo=FALSE, results='hide'>>=
+<<MFig, fig=TRUE, eval=TRUE, echo=FALSE, results=hide, width=6, height=5>>=
 <<MCode>>
 @
 \caption{Representation of $M(r)$ values of \emph{Qualea rosea} around \emph{Vouacapoua Americana} trees in the \code{paracou16} point pattern. The solid, black curve is \emph{M}. The dotted red curve is the average simulated value. The shaded area is the confidence envelope. $M=1$ is expected if points are independently distributed. The risk level is 5\%, 1000 simulations have been run. Distances are in meters.}
@@ -367,8 +373,6 @@ Future developments include the use of distance matrices as input of the distanc
 \section{Acknowledgments}
 
 We thank Florent Bonneu who kindly allowed us to use his published fire emergency data.
-
-This work has benefited from an ``Investissement d'Avenir" grant managed by Agence Nationale de la Recherche (CEBA, ref. ANR-10-LABX-25-01).
 
 \bibliography{dbmss}
 

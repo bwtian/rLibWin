@@ -9,7 +9,6 @@ boxplot,ModelEvaluation-method
 calc.deviance           Calculate deviance
 circles                 Circles range
 convHull                Convex hull model
-country                 lookup
 dcEvaluate              Evaluate by distance class
 density                 density
 dismo-package           Species distribution modeling

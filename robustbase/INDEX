@@ -11,7 +11,7 @@ Qn                      Robust Location-Free Scale Estimate More
 SiegelsEx               Siegel's Exact Fit Example Data
 Sn                      Robust Location-Free Scale Estimate More
                         Efficient than MAD
-adjOutlyingness         Compute Skewness-adjusted Multivariate
+adjOutlyingness         Compute (Skewness-adjusted) Multivariate
                         Outlyingness
 adjbox                  Plot an Adjusted Boxplot for Skew Distributions
 adjboxStats             Statistics for Skewness-adjusted Boxplots
@@ -32,8 +32,11 @@ chgDefaults-methods     Change Defaults (Parameters) of "Psi Function"
 classPC                 Compute Classical Principal Components via SVD
                         or Eigen
 cloud                   Cloud point of a Liquid
+colMedians              Fast Row or Column-wise Medians of a Matrix
 coleman                 Coleman Data Set
 condroz                 Condroz Data
+covComed                Co-Median Location and Scatter "Covariance"
+                        Estimator
 covMcd                  Robust Location and Scatter Estimation via MCD
 covOGK                  Orthogonalized Gnanadesikan-Kettenring (OGK)
                         Covariance Matrix Estimation
@@ -94,6 +97,8 @@ print.lmrob             Print Method for Objects of Class "lmrob"
 psiFunc                 Constructor for Objects "Psi Function" Class
 psi_func-class          Class of "Psi Functions" for M-Estimation
 pulpfiber               Pulp Fiber and Paper Data
+r6pack                  Robust Distance based observation orderings
+                        based on robust "Six pack"
 radarImage              Satellite Radar Image Data from near Munich
 rankMM                  Simple Matrix Rank
 residuals.glmrob        Residuals of Robust Generalized Linear Model
@@ -102,6 +107,8 @@ rrcov.control           Control Settings for covMcd and ltsReg
 salinity                Salinity Data
 scaleTau2               Robust Tau-Estimate of Scale
 sigma                   Extract Residual Standard Error 'Sigma'
+smoothWgt               Smooth Weighting Function - Generalized
+                        Biweight
 splitFrame              Split Continuous and Categorical Predictors
 starsCYG                Hertzsprung-Russell Diagram Data of Star
                         Cluster CYG OB1

@@ -5,6 +5,7 @@ adipart	adipart
 adipart.default	adipart
 adipart.formula	adipart
 adonis	adonis
+AIC.fitspecaccum	specaccum
 AIC.radfit	radfit
 AIC.radfit.frame	radfit
 alias.cca	goodness.cca
@@ -79,6 +80,7 @@ densityplot.oecosimu	vegan-deprecated
 densityplot.permustats	permustats
 designdist	designdist
 deviance.cca	deviance.cca
+deviance.fitspecaccum	specaccum
 deviance.radfit	radfit
 deviance.radfit.frame	radfit
 deviance.rda	deviance.cca
@@ -132,7 +134,6 @@ goodness	goodness.cca
 goodness.cca	goodness.cca
 goodness.metaMDS	goodness.metaMDS
 goodness.monoMDS	goodness.metaMDS
-goodness.rda	goodness.cca
 head.summary.cca	plot.cca
 hierParseFormula	vegan-internal
 hiersimu	adipart
@@ -214,8 +215,9 @@ oecosimu	oecosimu
 orderingKM	cascadeKM
 ordiareatest	ordihull
 ordiArgAbsorber	vegan-internal
-ordiArrowMul	vegan-internal
+ordiArrowMul	ordiArrowTextXY
 ordiarrows	ordiarrows
+ordiArrowTextXY	ordiArrowTextXY
 ordicloud	ordixyplot
 ordicluster	ordihull
 ordiellipse	ordihull
@@ -243,7 +245,6 @@ ordiTerminfo	vegan-internal
 orditkplot	orditkplot
 orditorp	orditorp
 ordixyplot	ordixyplot
-oridArrowTextXY	vegan-internal
 panel.ordi	ordixyplot
 panel.ordi3d	ordixyplot
 panel.ordiarrows	ordixyplot
@@ -368,6 +369,7 @@ radlattice	radfit
 rankindex	rankindex
 rarecurve	diversity
 rarefy	diversity
+rareslope	diversity
 raupcrick	raupcrick
 rda	cca
 rda.default	cca
@@ -421,6 +423,7 @@ specaccum	specaccum
 specnumber	diversity
 specpool	specpool
 specpool2vect	specpool
+specslope	specaccum
 spenvcor	goodness.cca
 SSarrhenius	SSarrhenius
 SSgitay	SSarrhenius

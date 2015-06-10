@@ -1,3 +1,7 @@
+Changes in Version 0.1-5
+
+  o  Import sp and rgeos package functions in the NAMESPACE file.
+
 Changes in Version 0.1-4
 
   o  Removed DEM data set and Example 3 from documentation.

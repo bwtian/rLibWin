@@ -1,0 +1,12 @@
+CARBayesdata-package    Data sets used in the vignette accompanying the
+                        CARBayes package
+lipdata                 Lip cancer data for Scotland
+lipdbf                  Shapefile (.dbf) for the 56 districts in
+                        Scotland for the lip cancer data
+lipshp                  Shapefile (.shp) for the 56 districts in
+                        Scotland for the lip cancer data
+propertydata.spatial    Property price data for the Greater Glasgow and
+                        Clyde health board
+respiratorydata.spatial
+                        Respiratory hospital admissions data for the
+                        Greater Glasgow and Clyde health board

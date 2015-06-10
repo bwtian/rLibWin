@@ -40,6 +40,7 @@ kml,SpatialPhotoOverlay-method	kml
 kml,STIDF-method	kml
 kml-methods	kml
 kml.Spatial	kml
+kml.tiles	kml.tiles
 kml2hex	col2kml
 kml_aes	aesthetics
 kml_alpha	kml_layer
@@ -129,6 +130,7 @@ plotKML,STTDF-method	plotKML
 plotKML-method	plotKML
 plotKML.env	plotKML.env
 plotKML.fileIO	kml
+plotKML.GDALobj	plotKML.GDALobj
 plotKML.opts	plotKML.env
 RasterBrick	layer.RasterBrick
 RasterBrickSimulations-class	RasterBrickSimulations

@@ -8,11 +8,11 @@ ans	ans
 Args	Args
 as.levelsMap	mapLevels
 as.listLevelsMap	mapLevels
-as.object_size	object.size
+as.object_sizes	object.size
 bindData	bindData
 c.levelsMap	mapLevels
 c.listLevelsMap	mapLevels
-c.object_size	object.size
+c.object_sizes	object.size
 case	case
 cbindX	cbindX
 centerText	centerText
@@ -22,6 +22,8 @@ drop.levels	drop.levels
 duplicated2	duplicated2
 elem	elem
 env	env
+first	first
+format.object_sizes	object.size
 frameApply	frameApply
 gdata	gdata-package
 getDateTimeParts	getDateTimePart
@@ -51,7 +53,7 @@ installXLSXsupport	installXLSXsupport
 interleave	interleave
 is.levelsMap	mapLevels
 is.listLevelsMap	mapLevels
-is.object_size	object.size
+is.object_sizes	object.size
 is.what	is.what
 isUnknown	unknown
 isUnknown.data.frame	unknown
@@ -60,6 +62,8 @@ isUnknown.list	unknown
 isUnknown.matrix	unknown
 isUnknown.POSIXlt	unknown
 keep	keep
+last	first
+left	left
 ll	ll
 lowerTriangle	upperTriangle
 lowerTriangle<-	upperTriangle
@@ -91,12 +95,13 @@ nPairs	nPairs
 object.size	object.size
 print.levelsMap	mapLevels
 print.listLevelsMap	mapLevels
-print.object_size	object.size
+print.object_sizes	object.size
 read.xls	read.xls
 remove.vars	rename.vars
 rename.vars	rename.vars
 reorder.factor	reorder
 resample	resample
+right	left
 sheetCount	sheetCount
 sheetNames	sheetCount
 sort.levelsMap	mapLevels

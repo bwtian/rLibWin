@@ -91,12 +91,11 @@ grid.list	grid.list
 half.image	image2lz
 igpoly	FORTRAN.internal
 image.plot	image.plot
-image.plot.info	fields-internal
-image.plot.plt	fields-internal
 image.smooth	image.smooth
 image2lz	image2lz
 imageplot.info	fields-internal
 imageplot.setup	fields-internal
+imagePlotInfo	fields-internal
 in.land.grid	world
 in.poly	image2lz
 in.poly.grid	image2lz
@@ -116,8 +115,6 @@ Krig.fdf	fields-internal
 Krig.fgcv	fields-internal
 Krig.fgcv.model	fields-internal
 Krig.fgcv.one	fields-internal
-Krig.find.gcvmin	fields-internal
-Krig.find.REML	fields-internal
 Krig.flplike	fields-internal
 Krig.fs2hat	fields-internal
 Krig.ftrace	fields-internal
@@ -127,7 +124,7 @@ Krig.make.W	Krig.engine.default
 Krig.make.Wi	Krig.engine.default
 Krig.null.function	Krig.null.function
 Krig.parameters	fields-internal
-Krig.replicates	fields-internal
+Krig.replicates	Krig.replicates
 Krig.transform.xY	Krig.engine.default
 Krig.updateY	fields-internal
 Krig.which.lambda	fields-internal
@@ -155,6 +152,8 @@ mKrig.trace	mKrig
 MLE.Matern	REML.test
 MLE.Matern.fast	REML.test
 MLE.objective.fn	REML.test
+MLESpatialProcess	MLESpatialProcess
+MLESpatialProcess.fast	MLESpatialProcess
 multeb	FORTRAN.internal
 multrb	FORTRAN.internal
 multWendlandGrid	fields-internal
@@ -167,6 +166,7 @@ plot.krig.image	fields-internal
 plot.qsreg	fields-internal
 plot.sim.krig.image	fields-internal
 plot.spatial.design	fields-internal
+plot.spatialProcess	plot.Krig
 plot.sreg	plot.Krig
 plot.surface	plot.surface
 plot.vgram.matrix	vgram.matrix
@@ -205,7 +205,9 @@ print.sreg	fields-internal
 print.summary.Krig	fields-internal
 print.summary.krig.image	fields-internal
 print.summary.spatial.design	fields-internal
+print.summary.spatialProcess	fields-internal
 print.summary.sreg	fields-internal
+printGCVWarnings	fields-internal
 PRISMelevation	RMprecip
 pushpin	pushpin
 qr.q2ty	fields-internal
@@ -218,6 +220,7 @@ qsreg.rho	fields-internal
 qsreg.rho.OLD	fields-internal
 qsreg.trace	fields-internal
 QTps	QTps
+quickPrint	fields-internal
 quilt.plot	quilt.plot
 Rad.cov	exp.cov
 Rad.image.cov	image.cov
@@ -246,6 +249,7 @@ sim.rf	sim.rf
 smooth.2d	smooth.2d
 spam2full	spam2lz
 spam2spind	spam2lz
+spatialProcess	spatialProcess
 spind2full	spam2lz
 spind2spam	spam2lz
 splint	splint
@@ -270,6 +274,7 @@ summary.mKrig	mKrig
 summary.ncdf	summary.ncdf
 summary.qsreg	fields-internal
 summary.spatial.design	fields-internal
+summary.spatialProcess	summary.Krig
 summary.sreg	fields-internal
 summaryGCV.Krig	fields-internal
 summaryGCV.sreg	fields-internal
@@ -278,7 +283,6 @@ surface.default	fields-internal
 surface.Krig	surface.Krig
 surface.krig.image	fields-internal
 surface.mKrig	surface.Krig
-surface.surface	fields-internal
 test.for.zero	fields.tests
 tim.colors	tim.colors
 Tps	Tps

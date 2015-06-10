@@ -1,5 +1,5 @@
-// Copyright (C) 2013-2014 Conrad Sanderson
-// Copyright (C) 2013-2014 NICTA (www.nicta.com.au)
+// Copyright (C) 2013-2015 Conrad Sanderson
+// Copyright (C) 2013-2015 NICTA (www.nicta.com.au)
 // 
 // This Source Code Form is subject to the terms of the Mozilla Public
 // License, v. 2.0. If a copy of the MPL was not distributed with this
@@ -11,13 +11,18 @@
 
 
 #if defined(ARMA_RNG_ALT)
-  #undef ARMA_USE_CXX11_RNG
+  #undef ARMA_USE_EXTERN_CXX11_RNG
 #endif
 
 
-#if defined(ARMA_USE_CXX11_RNG)
+#if !defined(ARMA_USE_CXX11)
+  #undef ARMA_USE_EXTERN_CXX11_RNG
+#endif
+
+
+#if defined(ARMA_USE_EXTERN_CXX11_RNG)
   extern thread_local arma_rng_cxx11 arma_rng_cxx11_instance;
-  // thread_local arma_rng_cxx11 arma_rng_cxx11_instance;
+  // namespace { thread_local arma_rng_cxx11 arma_rng_cxx11_instance; }
 #endif
 
 
@@ -27,7 +32,7 @@ class arma_rng
   
   #if   defined(ARMA_RNG_ALT)
     typedef arma_rng_alt::seed_type   seed_type;
-  #elif defined(ARMA_USE_CXX11_RNG)
+  #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
     typedef arma_rng_cxx11::seed_type seed_type;
   #else
     typedef arma_rng_cxx98::seed_type seed_type;
@@ -35,7 +40,7 @@ class arma_rng
   
   #if   defined(ARMA_RNG_ALT)
     static const int rng_method = 2;
-  #elif defined(ARMA_USE_CXX11_RNG)
+  #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
     static const int rng_method = 1;
   #else
     static const int rng_method = 0;
@@ -59,7 +64,7 @@ arma_rng::set_seed(const arma_rng::seed_type val)
     {
     arma_rng_alt::set_seed(val);
     }
-  #elif defined(ARMA_USE_CXX11_RNG)
+  #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
     {
     arma_rng_cxx11_instance.set_seed(val);
     }
@@ -82,7 +87,7 @@ arma_rng::set_seed_random()
   seed_type seed4 = seed_type(0);
   seed_type seed5 = seed_type(0);
   
-  bool rd_ok = false;
+  bool have_seed = false;
   
   #if defined(ARMA_USE_CXX11)
     {
@@ -90,28 +95,44 @@ arma_rng::set_seed_random()
       {
       std::random_device rd;
       
-      seed1 = static_cast<seed_type>( rd() );
+      if(rd.entropy() > double(0))  { seed1 = static_cast<seed_type>( rd() ); }
       
-      rd_ok = true;
+      if(seed1 != seed_type(0))  { have_seed = true; }
       }
     catch(...) {}
     }
   #endif
   
-  if(rd_ok == false)
+  
+  if(have_seed == false)
     {
     try
       {
-      unsigned char buffer = 0;
+      union
+        {
+        seed_type     a;
+        unsigned char b[sizeof(seed_type)];
+        } tmp;
+      
+      tmp.a = seed_type(0);
       
       std::ifstream f("/dev/urandom", std::ifstream::binary);
       
-      f.read((char*)(&buffer), 1);
+      if(f.good())  { f.read((char*)(&(tmp.b[0])), sizeof(seed_type)); }
       
-      seed2 = static_cast<seed_type>(buffer);
+      if(f.good())
+        {
+        seed2 = tmp.a;
+        
+        if(seed2 != seed_type(0))  { have_seed = true; }
+        }
       }
     catch(...) {}
-    
+    }
+  
+  
+  if(have_seed == false)
+    {
     // get better-than-nothing seeds in case reading /dev/urandom failed 
     
     #if defined(ARMA_HAVE_GETTIMEOFDAY)
@@ -130,13 +151,16 @@ arma_rng::set_seed_random()
       {
       uword*        a;
       unsigned char b[sizeof(uword*)];
-      } address;
+      } tmp;
     
-    uword junk = 0;
+    tmp.a = (uword*)malloc(sizeof(uword));
     
-    address.a = &junk;
-    
-    seed5 = seed_type(address.b[0]) + seed_type(address.b[sizeof(uword*)-1]);
+    if(tmp.a != NULL)
+      {
+      for(size_t i=0; i<sizeof(uword*); ++i)  { seed5 += seed_type(tmp.b[i]); }
+      
+      free(tmp.a);
+      }
     }
   
   arma_rng::set_seed( seed1 + seed2 + seed3 + seed4 + seed5 );
@@ -154,7 +178,7 @@ struct arma_rng::randi
       {
       return eT( arma_rng_alt::randi_val() );
       }
-    #elif defined(ARMA_USE_CXX11_RNG)
+    #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
       {
       return eT( arma_rng_cxx11_instance.randi_val() );
       }
@@ -175,7 +199,7 @@ struct arma_rng::randi
       {
       return arma_rng_alt::randi_max_val();
       }
-    #elif defined(ARMA_USE_CXX11_RNG)
+    #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
       {
       return arma_rng_cxx11::randi_max_val();
       }
@@ -196,7 +220,7 @@ struct arma_rng::randi
       {
       return arma_rng_alt::randi_fill(mem, N, a, b);
       }
-    #elif defined(ARMA_USE_CXX11_RNG)
+    #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
       {
       return arma_rng_cxx11_instance.randi_fill(mem, N, a, b);
       }
@@ -220,7 +244,7 @@ struct arma_rng::randu
       {
       return eT( arma_rng_alt::randu_val() );
       }
-    #elif defined(ARMA_USE_CXX11_RNG)
+    #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
       {
       return eT( arma_rng_cxx11_instance.randu_val() );
       }
@@ -297,7 +321,7 @@ struct arma_rng::randn
       {
       return eT( arma_rng_alt::randn_val() );
       }
-    #elif defined(ARMA_USE_CXX11_RNG)
+    #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
       {
       return eT( arma_rng_cxx11_instance.randn_val() );
       }
@@ -318,7 +342,7 @@ struct arma_rng::randn
       {
       arma_rng_alt::randn_dual_val(out1, out2);
       }
-    #elif defined(ARMA_USE_CXX11_RNG)
+    #elif defined(ARMA_USE_EXTERN_CXX11_RNG)
       {
       arma_rng_cxx11_instance.randn_dual_val(out1, out2);
       }

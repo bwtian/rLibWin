@@ -16,6 +16,7 @@ Print                   Nice print function returning also the names
                         automatically
 PrintModelList          Information about the implemented covariance
                         models
+RFcalc                  Transformation of coordinate systems
 RFcov                   Evaluate Covariance and Variogram Functions
 RFcrossvalidate         Fitting model parameters to spatial data
                         (regionalised variables) and to linear (mixed)
@@ -44,6 +45,7 @@ RFoldstyle              RFoldstyle
 RFoptions               Setting control arguments
 RFoptionsAdvanced       Setting control arguments of 'RandomFields' -
                         advanced examples
+RFpar                   Graphical parameters for plots
 RFpointsDataFrame-class
                         Class 'RFpointsDataFrame'
 RFratiotest             Likelihood ratio test
@@ -82,8 +84,9 @@ RMcauchy                Cauchy Family Covariance Model
 RMcauchytbm             Modifications of the Cauchy Family Covariance
                         Model
 RMcircular              Circular Covariance Model
-RMconstant              Constant Covariance Matrix
+RMconstant              Covariance Matrix Constant in Space
 RMcoord                 Coordinates in the mixed model representation
+RMcovariate             Model for covariates
 RMcoxisham              Cox Isham Covariance Model
 RMcubic                 Cubic Covariance Model
 RMcurlfree              Curlfree Covariance Model
@@ -98,6 +101,7 @@ RMepscauchy             Generalized Cauchy Family Covariance Model
 RMexp                   Exponential Covariance Model
 RMexponential           Exponential operator
 RMfbm                   Variogram Model of Fractal Brownian Motion
+RMfixcov                Fixed Covariance Matrix
 RMfixed                 Fixed Effect Model
 RMflatpower             Variogram Model Similar to Fractal Brownian
                         Motion
@@ -108,6 +112,7 @@ RMgencauchy             Generalized Cauchy Family Covariance Model
 RMgenfbm                Generalized Fractal Brownian Motion Variogram
                         Model
 RMgengneiting           Gneiting-Wendland Covariance Models
+RMgennsst               Non-Separable Space-Time model
 RMgneiting              Gneiting Covariance Model
 RMgneitingdiff          Gneiting Covariance Model Used as Tapering
                         Function
@@ -143,6 +148,7 @@ RMplus                  Addition of Random Field Models
 RMpolygon               RMpolygon
 RMpower                 Power operator for Variograms and Covariance
                         functions
+RMprod                  Plain scalar product
 RMqam                   Quasi-arithmetic mean
 RMqexp                  Variant of the exponential model
 RMrational              Rational function
@@ -151,12 +157,13 @@ RMschlather             Covariance Model for binary field based on
                         Gaussian field
 RMschur                 Schur product
 RMsign                  Random sign
-RMspheric               Spherical Covariance Model
+RMspheric               The Spherical Covariance Model
 RMstable                Stable Family / Powered Exponential Model
 RMstein                 Stein nonseparable space-time model
 RMstp                   Single temporal process
 RMstrokorb              Tail correlation function of the Brown-Resnick
                         process
+RMsum                   Plain scalar product
 RMtbm                   Turning Bands Method
 RMtrafo                 Transformation of coordinate systems
 RMtrend                 Trend Model
@@ -182,6 +189,7 @@ RRdeterm                Random scaling used with balls
 RRdistr                 RRdistr
 RRgauss                 Random scaling used with balls
 RRloc                   Random scaling used with balls
+RRmcmc                  RRmcmc
 RRrectangular           Random scaling used with balls
 RRspheric               Random scaling used with balls
 RRunif                  Random scaling used with balls
@@ -195,6 +203,7 @@ SS12                    Covariance Models for Random Vector Fields
 Specific                Methods that are specific to certain covariance
                         models
 Spectral                Spectral turning bands method
+Spherical models        Covariance models valid on a sphere
 Tbm                     Turning Bands method
 constants               Constants used in RandomFields (RC constants)
 conventional2RFspDataFrame
@@ -213,5 +222,8 @@ rfGenerateModels        Internal functions
 soil                    Soil data of North Bavaria, Germany
 sp2RF                   Transformation of an 'sp' object to an 'RFsp'
                         object
+tcf                     Covariance models valid for max-stable random
+                        fields
 weather                 Pressure and temperature forecast errors over
                         the Pacific Northwest
+zenit                   Coordinate systems

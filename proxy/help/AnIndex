@@ -1,4 +1,5 @@
 as.dist	dist
+as.matrix	dist
 as.matrix.dist	dist
 as.matrix.simil	dist
 as.simil	dist

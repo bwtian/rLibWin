@@ -71,8 +71,10 @@ rsaga.sgrd.to.esri	rsaga.sgrd.to.esri
 rsaga.sink.removal	rsaga.sink.removal
 rsaga.sink.route	rsaga.sink.route
 rsaga.slope	rsaga.local.morphometry
+rsaga.slope.asp.curv	rsaga.slope.asp.curv
 rsaga.solar.radiation	rsaga.solar.radiation
 rsaga.target	rsaga.target
+rsaga.topdown.processing	rsaga.topdown.processing
 rsaga.triangulation	rsaga.inverse.distance
 rsaga.wetness.index	rsaga.wetness.index
 set.file.extension	set.file.extension

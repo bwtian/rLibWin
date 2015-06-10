@@ -1,3 +1,18 @@
+  CHANGES IN dbmss VERSION 2.2.0
+  ==============================
+  
+SIGNIFICANT USER-VISIBLE CHANGES
+  o m function added.
+  o Default value Controls=NULL for Dhat: controls are by default all points except for cases.
+  o Kd and m are both computed by default up to one third of the diameter of the window, other options are added.
+  o Original and Adjust arguments allow to change the default bandwith used by Kd and m.
+
+MINOR CHANGE
+
+  o Typo in internal function name FillEnveloppe corrected: FillEnvelope is the new name.
+
+
+  
   CHANGES IN dbmss VERSION 2.1.2
   ==============================
   
@@ -12,7 +27,7 @@ BUG FIXES
   o FillEnvelope returned wrong quantiles for local confidence intervals. Fixed.
 
 
-
+  
   CHANGES IN dbmss VERSION 2.1.1
   ==============================
   

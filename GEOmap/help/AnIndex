@@ -11,6 +11,7 @@ ccw	ccw
 coastmap	coastmap
 ColorScale	ColorScale
 darc	darc
+DATUMinfo	DATUMinfo
 demcmap	demcmap
 difflon	difflon
 distaz	distaz
@@ -143,11 +144,14 @@ TOPOCOL	TOPOCOL
 trans4	trans4
 utm.elps.ll	utm.sphr.ll
 utm.elps.xy	utm.sphr.xy
+UTM.ll	UTM.ll
 utm.sphr.ll	utm.sphr.ll
 utm.sphr.xy	utm.sphr.xy
-utm.wgs84.ll	utm.sphr.ll
-utm.wgs84.xy	utm.sphr.xy
+utm.wgs84.ll	UTM.ll
+utm.wgs84.xy	UTM.xy
+UTM.xy	UTM.xy
 utmbox	utmbox
+UTMzone	UTMzone
 vane	NSarrow
 X.prod	X.prod
 XSECDEMg	XSECDEMg

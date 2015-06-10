@@ -5,15 +5,16 @@
 <title>An Introduction to formatR</title>
 <link rel="stylesheet" media="all" href="http://jashkenas.github.io/docco/resources/linear/public/stylesheets/normalize.css" />
 <link rel="stylesheet" media="all" href="http://jashkenas.github.io/docco/resources/linear/docco.css" />
+<link href='http://yihui.name/media/css/docco-linear.css' rel='stylesheet' type='text/css'>
 <style type="text/css">
 img{display:block;margin:auto;}
-.container{width:920px;}
-.page{width:800px;}
-.page pre{width:768px;}
+.container{width:auto;max-width:920px;}
+.page{width:auto;max-width:800px;}
+.page pre{width:100%;max-width:768px;}
 pre, code{font-size:90%;}
 </style>
-<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
-<script src="http://yandex.st/highlightjs/8.0/languages/r.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/languages/r.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="http://yihui.name/media/js/center-images.js"></script>
 
@@ -45,25 +46,26 @@ pre, code{font-size:90%;}
 sessionInfo()
 </code></pre>
 
-<pre><code>## R version 3.1.1 (2014-07-10)
+<pre><code>## R version 3.2.0 (2015-04-16)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
+## Running under: Ubuntu 14.04.2 LTS
 ## 
 ## locale:
-##  [1] LC_CTYPE=en_US.utf8       LC_NUMERIC=C             
-##  [3] LC_TIME=en_US.utf8        LC_COLLATE=C             
-##  [5] LC_MONETARY=en_US.utf8    LC_MESSAGES=en_US.utf8   
-##  [7] LC_PAPER=en_US.utf8       LC_NAME=C                
-##  [9] LC_ADDRESS=C              LC_TELEPHONE=C           
-## [11] LC_MEASUREMENT=en_US.utf8 LC_IDENTIFICATION=C      
+##  [1] LC_CTYPE=en_US.UTF-8       LC_NUMERIC=C              
+##  [3] LC_TIME=en_US.UTF-8        LC_COLLATE=C              
+##  [5] LC_MONETARY=en_US.UTF-8    LC_MESSAGES=en_US.UTF-8   
+##  [7] LC_PAPER=en_US.UTF-8       LC_NAME=C                 
+##  [9] LC_ADDRESS=C               LC_TELEPHONE=C            
+## [11] LC_MEASUREMENT=en_US.UTF-8 LC_IDENTIFICATION=C       
 ## 
 ## attached base packages:
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] formatR_1.0
+## [1] formatR_1.2
 ## 
 ## loaded via a namespace (and not attached):
-## [1] evaluate_0.5.5 knitr_1.6.14   stringr_0.6.2  tools_3.1.1
+## [1] tools_3.2.0   knitr_1.10    stringr_0.6.2 evaluate_0.7
 </code></pre>
 
 <h2>2. Reformat R code</h2>

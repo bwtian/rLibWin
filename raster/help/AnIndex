@@ -6,6 +6,8 @@ $<-,Raster-method	replacement
 %in%	match
 %in%,Raster-method	match
 *,SpatialPolygons,SpatialPolygons-method	Arith-methods
++,SpatialLines,SpatialLines-method	Arith-methods
++,SpatialPoints,SpatialPoints-method	Arith-methods
 +,SpatialPolygons,SpatialPolygons-method	Arith-methods
 -,SpatialPolygons,SpatialPolygons-method	Arith-methods
 ==,BasicRaster,BasicRaster-method	Compare-methods
@@ -33,7 +35,6 @@ as.character,CRS-method	projection
 as.data.frame	as.data.frame
 as.data.frame,Raster-method	as.data.frame
 as.data.frame,SpatialLines-method	as.data.frame
-as.data.frame,SpatialPoints-method	as.data.frame
 as.data.frame,SpatialPolygons-method	as.data.frame
 as.factor	factor
 as.factor,RasterLayer-method	factor
@@ -61,6 +62,7 @@ bbox,Raster-method	extent
 beginCluster	cluster
 bind	bind
 bind,data.frame,data.frame-method	bind
+bind,data.frame,missing-method	bind
 bind,SpatialLines,SpatialLines-method	bind
 bind,SpatialPoints,SpatialPoints-method	bind
 bind,SpatialPolygons,SpatialPolygons-method	bind
@@ -200,6 +202,8 @@ extract,Raster,SpatialLines-method	extract
 extract,Raster,SpatialPoints-method	extract
 extract,Raster,SpatialPolygons-method	extract
 extract,Raster,vector-method	extract
+extract,SpatialPolygons,data.frame-method	extract
+extract,SpatialPolygons,matrix-method	extract
 extract,SpatialPolygons,SpatialPoints-method	extract
 factorValues	factor
 filename	filename
@@ -268,10 +272,12 @@ interpolate,Raster-method	interpolate
 intersect	intersect
 intersect,Extent,ANY-method	intersect
 intersect,Raster,ANY-method	intersect
-intersect,SpatialPoints,ANY-method	intersect
-intersect,SpatialPoints,Raster-method	intersect
+intersect,SpatialLines,SpatialPolygons-method	intersect
 intersect,SpatialPoints,SpatialPolygons-method	intersect
+intersect,SpatialPolygons,SpatialLines-method	intersect
+intersect,SpatialPolygons,SpatialPoints-method	intersect
 intersect,SpatialPolygons,SpatialPolygons-method	intersect
+intersect,SpatialVector,ANY-method	intersect
 is.factor	factor
 is.factor,Raster-method	factor
 is.factor,RasterStack-method	factor
@@ -508,9 +514,12 @@ show,RasterLayer-method	Raster-classes
 show,RasterStack-method	Raster-classes
 showTmpFiles	rasterTmpFile
 slopeAspect	slopeAspect
+SpatialVector-class	Raster-classes
+spLines	spEasy
 spplot	spplot
 spplot,Raster-method	spplot
 spplot,SpatialPoints-method	spplot
+spPolygons	spEasy
 stack	stack
 stack,character-method	stack
 stack,kasc-method	stack

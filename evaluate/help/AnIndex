@@ -1,6 +1,5 @@
 create_traceback	create_traceback
 evaluate	evaluate
-getSrcRegion	getSrcRegion
 is.error	is.message
 is.message	is.message
 is.recordedplot	is.message

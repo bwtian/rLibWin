@@ -4,6 +4,7 @@ bw.gwda	bw.gwda
 bw.gwpca	bw.gwpca
 bw.gwr	bw.gwr
 bw.gwr.lcr	bw.gwr.lcr
+bw.gwr1	mink.approach
 Chebyshev	gw.dist
 check.components	check.components
 confusion.matrix	gwda
@@ -44,12 +45,14 @@ gwpca	gwpca
 gwpca.cv	gwpca.cv
 gwpca.cv.contrib	gwpca.cv.contrib
 gwr.aic	bw.gwr
+gwr.aic1	mink.approach
 gwr.basic	gwr.basic
 gwr.binomial	gwr.generalised
 gwr.binomial.wt	gwr.generalised
 gwr.collin.diagno	gwr.collin.diagno
 gwr.cv	gwr.cv
 gwr.cv.contrib	gwr.cv.contrib
+gwr.cv1	mink.approach
 gwr.fitted	gwr.generalised
 gwr.generalised	gwr.generalised
 gwr.hetero	gwr.hetero
@@ -71,6 +74,8 @@ LondonBorough	LondonBorough
 londonborough	LondonBorough
 LondonHP	LondonHP
 londonhp	LondonHP
+mink.approach	mink.approach
+mink.matrixview	mink.matrixview
 model.selection.gwr	model.selection.gwr
 model.sort.gwr	model.sort.gwr
 model.view.gwr	model.view.gwr
@@ -86,7 +91,6 @@ print.gwrm	print.gwrm
 print.gwrm.pred	print.gwrm.pred
 print.gwss	print.gwss
 print.mgwr	gwr.mixed
-print.summary.lm	print.gwrm
 ridge.lm	gwr.lcr
 robustSvd	gwpca
 rwpca	gwpca

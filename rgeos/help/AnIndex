@@ -148,10 +148,14 @@ set_RGEOS_warnSlivers	utility-functions
 show,gpc.poly-method	class-gpc.poly
 SpatialCollections	constructor-SpatialCollections
 SpatialCollections-class	class-SpatialCollections
+SpatialLinesNULL-class	class-SpatialCollections
+SpatialPointsNULL-class	class-SpatialCollections
+SpatialPolygonsNULL-class	class-SpatialCollections
 SpatialRings	constructor-SpatialRings
 SpatialRings-class	class-SpatialRings
 SpatialRingsDataFrame	constructor-SpatialRings
 SpatialRingsDataFrame-class	class-SpatialRingsDataFrame
+SpatialRingsNULL-class	class-SpatialCollections
 spChFIDs,SpatialRings,character-method	class-SpatialRings
 spChFIDs,SpatialRingsDataFrame,character-method	class-SpatialRingsDataFrame
 symdiff	gpc-new-generics

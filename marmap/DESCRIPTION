@@ -1,19 +1,19 @@
 Package: marmap
 Type: Package
-Title: Import, plot and analyze bathymetric and topographic data
-Version: 0.9.1
-Date: 2014-12-16
+Title: Import, Plot and Analyze Bathymetric and Topographic Data
+Version: 0.9.2
+Date: 2015-01-28
 Author: Eric Pante, Benoit Simon-Bouhet, and Jean-Olivier Irisson
 Maintainer: Eric Pante <pante.eric@gmail.com>
 Depends: R (>= 2.10)
 Imports: DBI, RSQLite, gdistance, geosphere, sp, raster, ncdf, plotrix,
-        shape, reshape2, adehabitatMA
+        shape, reshape2, adehabitatMA, ggplot2
 Suggests: maps, mapdata, lattice, mapproj, R.rsp
-Description: Import, plot and analyze bathymetric and topographic data
+Description: Import xyz data from the NOAA, GEBCO and other sources, plot xyz data to prepare publication-ready figures, analyze xyz data to extract transects, get depth / altitude based on geographical coordinates, or calculate z-constrained least-cost paths.
 License: GPL (>= 3)
-Packaged: 2014-12-16 09:27:52 UTC; bsimonbo
+Packaged: 2015-01-28 19:21:56 UTC; bsimonbo
 VignetteBuilder: R.rsp
 NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2014-12-16 13:19:48
-Built: R 3.1.2; ; 2015-01-06 00:21:09 UTC; windows
+Date/Publication: 2015-01-28 23:21:11
+Built: R 3.1.3; ; 2015-06-09 07:38:48 UTC; windows

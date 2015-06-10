@@ -1,3 +1,29 @@
+-------------------------- aqp 1.8-5 (2015-04-17) --------------------------
+* bug fixes and documentation updates
+* digest::digest is now imported by default
+* better documentatinon unique-method for SoilProfileCollection objects
+
+-------------------------- aqp 1.8-3 (2015-03-02) --------------------------
+* updated documentation
+* plotSPC gets a new argument: `x.idx.offset`: allows for plotting of multiple SPC objects within the same figure, see examples
+* plotSCP gets a new argument: `plot.depth.axis`: enable / disable depth axis, useful for multi-collection plots
+* new function: `profileGroupLabels`: simple annotation for groups of profiles within a profile sketch, see manual page for examples
+* new function: `plotMultipleSPC`: plot several SPC objects on the same axis, see manual page for examples
+
+
+-------------------------- aqp 1.7-11 (2015-01-30) --------------------------
+* fixed bugs in addBrackets(), panel.depth_function(), and plotSPC()
+* new arguments to addBrackets() allow for annotation of brackets
+
+-------------------------- aqp 1.7-10 (2015-01-15) --------------------------
+* names() method for SoilProfileCollection objects returns a concatenated vector of horizon + site names
+* siteNames() and horizonNames() can now be used to extract from SoilProfileCollection
+* siteNames<- and horizonNames<- can now be used to change names; experimental!
+* note: internal structure of SoilProfileCollection objects will be changing soon!!!
+
+-------------------------- aqp 1.7-8 (2014-12-08) --------------------------
+* texture.triangle.low.rv.high(): new arguments, likely breaking previous usage when method='closest', see manual page for details
+
 -------------------------- aqp 1.7-7 (2014-11-06) --------------------------
 * bug fix c/o José Padarian: SPC objects now understand logical indexing rules
 * removed spatial_subset(): this functionality can be accomplished outside of AQP and removes dependency on rgeos package

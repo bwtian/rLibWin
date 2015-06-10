@@ -130,7 +130,7 @@ quantile                Raster quantiles
 raster                  Create a RasterLayer object
 raster-package          Overview of the functions in the raster package
 rasterFromCells         Subset a raster by cell numbers
-rasterFromXYZ           Create a RasterLayer from x, y, z values
+rasterFromXYZ           Create a Raster* object from x, y, z values
 rasterOptions           Global options for the raster package
 rasterTmpFile           Temporary files
 rasterToContour         Raster to contour lines conversion
@@ -161,6 +161,7 @@ setValues               Set values of a Raster object
 shapefile               Read or write a shapefile
 shift                   Shift
 slopeAspect             Slope and aspect
+spLines                 Create SpatialLines* or SpatialPolygons*
 spplot                  Use spplot to plot a Raster* object
 stack                   Create a RasterStack object
 stackApply              Apply a function on subsets of a RasterStack or

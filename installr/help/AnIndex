@@ -22,6 +22,8 @@ get_pid	get_pid
 get_Rscript_PID	get_Rscript_PID
 get_tasklist	get_tasklist
 install.7zip	install.7zip
+install.CMake	install.CMake
+install.cmake	install.CMake
 install.Cygwin	install.Cygwin
 install.cygwin	install.Cygwin
 install.FFmpeg	install.FFmpeg
@@ -51,6 +53,8 @@ install.Rtools	install.Rtools
 install.rtools	install.Rtools
 install.SWFTools	install.SWFTools
 install.swftools	install.SWFTools
+install.Texmaker	install.Texmaker
+install.texmaker	install.Texmaker
 install.URL	install.URL
 installr	installr
 is.empty	is.empty
@@ -77,6 +81,7 @@ pkgDNLs_worldmapcolor	pkgDNLs_worldmapcolor
 read_RStudio_CRAN_data	read_RStudio_CRAN_data
 remove.installr.GUI	remove.installr.GUI
 remove_from_.First_in_Rprofile.site	remove_from_.First_in_Rprofile.site
+rename_r_to_R	rename_r_to_R
 require2	require2
 restart_RGui	restart_RGui
 rm_installr_from_startup	rm_installr_from_startup
@@ -90,4 +95,6 @@ uninstall.packages	uninstall.packages
 uninstall.R	uninstall.R
 uninstall.r	uninstall.R
 updateR	updateR
+updater	updateR
 up_folder	up_folder
+xlsx2csv	xlsx2csv
